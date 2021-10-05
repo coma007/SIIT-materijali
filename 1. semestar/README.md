@@ -5,6 +5,9 @@
 ## Arhitektura računara (9 ESPB)
 Profesor: **Gajić, Dušan**  
 Asistent: Horvat, Nebojša  
+
+[Link ka sajtu predmeta](http://www.acs.uns.ac.rs/sr/arsiit)  
+[Snimci predavanja](https://www.youtube.com/watch?v=0b45tgrycnw&list=PLXJYJOTdIanRyG-nuTiv1pc10ekyQgwQU&ab_channel=Du%C5%A1anGaji%C4%87)
   
 ### Obaveze:
 
@@ -54,7 +57,9 @@ Svi bodovi se stiču na odbrani projekta koja se obično održava neposredno nak
 
 ## Algebra (6 ESPB)
 Profesor: **Doroslovački, Ksenija**  
-Asistent: Arsić, Dunja
+Asistent: Arsić, Dunja  
+
+[Link ka sajtu predmeta](http://imft.ftn.uns.ac.rs/~Ksenija/Algebra_SW.html)
 
 
 ### Obaveze:
