@@ -16,6 +16,7 @@ Asistent: Horvat, Nebojša
 
 * Predispitne obaveze čine tri vrste zadataka (slični se rade na vježbama) i one se održavaju tokom semestra. Nakon predispitnih obaveza postoji odbrana zadataka, na kojoj se i stiču bodovi. 
 Odbrana zadataka je veoma važna jer na njoj može da se izvrši ispravka nekog od zadataka, ukoliko asistent to dozvoli.
+* [Link ka repozitorijumu sa riješenim zadacima za vježbanje](https://github.com/micamaca/ARH-zadaci.git)
 
 | Ispitne | Bodovi
 | ------------- | ------------- | 
