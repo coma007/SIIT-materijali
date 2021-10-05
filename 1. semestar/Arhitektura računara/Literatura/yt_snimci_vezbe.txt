@@ -1,0 +1,13 @@
+Prezentacije (stariji snimci):
+https://www.youtube.com/watch?v=CWcWAMAFRmk&list=PLrcYJ7SYyAtM64MGf5KriN-wMlsm9QmdV
+Zadaci (stariji snimci):
+https://www.youtube.com/watch?v=mlZU4QzRcpY&list=PLrcYJ7SYyAtMAx8QsWeT8H1ZggwpDxhIJ
+
+Vezbe po terminima (noviji snimci):
+
+	vežba3 - Nizovi : 									https://www.youtube.com/watch?v=mjWN_5p9das
+	vežba4 - Sistemski pozivi : 						https://www.youtube.com/watch?v=UfNfVRAZRus&feature=youtu.be
+	vežbe5 - Potprogrami :								https://www.youtube.com/watch?v=zgir2BmSMJg&feature=youtu.be
+	vežbe6 - Rukovanje bitima:							https://www.youtube.com/playlist?list=PLR8JunLIG5E8BMLPOufvjCn3Rwu77155a
+	vežba7 - Konverzije iz internog u znakovni oblik:	https://www.youtube.com/watch?v=U2Vjdz1mpso&feature=youtu.be
+	vežba8 - Konverzije iz znakovnog u interni oblik:	https://www.youtube.com/watch?v=OLNjPylv5Pc
