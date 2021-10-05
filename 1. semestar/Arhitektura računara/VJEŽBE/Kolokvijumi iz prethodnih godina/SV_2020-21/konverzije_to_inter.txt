@@ -1,0 +1,92 @@
+oct_str -> inter a vazi za bilo koju bazu do 10
+
+oct_str_to_inter:
+
+	movl $adresa_stringa, %ecx  # adresa stringa
+
+	movl $8, %esi       # BAZA
+			
+	xorl %eax, %eax     # rezultat
+	xorl %ebx, %ebx     # trenutni broj
+
+pretvori:
+
+	movb (%ecx), %bl
+	andb %bl, %bl
+	jz to_je_to
+
+	subb $'0', %bl
+	
+	cmpb $0, %bl       # donja_granica_sistema
+	jl greska
+	cmpb $7, %bl       # gornja_granica_sistema
+	jg greska
+
+	mull %esi
+	andl %edx, %edx   
+	jnz greska_prekoracenje
+	addl %ebx, %eax
+	jc greska_prekoracenje
+
+	incl %ecx
+
+	jmp pretvori
+
+........................................................
+
+hex_str -> inter 
+
+prepoznaj_broj:     # u ediju je adresa stringa a broj ce na kraju biti u %eaxu
+
+	xorl %eax, %eax       # trebace kasnije sigurno
+	xorl %ebx, %ebx
+
+	movb 1(%edi,%esi,1), %bl
+	cmpb $'x', %bl
+	jne nije_hex
+
+	addl $2, %esi       # ovo je vazno ako ima 0x na pocetku !!!!!!!!!!!!!!
+
+hex_str_to_inter:
+
+	movb $16, %bh
+
+	movb (%edi, %esi,1), %bl
+    cmpb $' ', %bl
+	je operacija
+	cmpb $10, %bl
+	je operacija
+
+	cmpb $'f', %bl
+	ja greska_operand
+
+	cmpb $'a', %bl
+	jb veliko
+
+	subb $'a'-'A', %bl
+
+veliko:
+
+	cmpb $'A', %bl
+	jb dalje_hex
+
+	subb $7, %bl
+
+dalje_hex:
+
+	subb $'0', %bl
+	
+	cmpb $0x0, %bl
+	jl greska_operand
+	cmpb $0xf, %bl
+	jg greska_operand
+
+	mulb %bh
+	andb %ah, %ah
+	jnz greska_operand
+	addb %bl, %al
+	jc greska_operand
+
+	incl %esi
+
+	jmp str_hex_to_inter

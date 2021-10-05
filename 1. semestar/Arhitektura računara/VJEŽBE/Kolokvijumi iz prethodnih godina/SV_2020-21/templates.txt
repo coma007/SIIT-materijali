@@ -1,0 +1,113 @@
+# ne zaboravi .section .text !!
+# ne zaboravi dobar .zip
+# ne zaboravi potpis
+
+------------------------------------------------------------------
+
+
+# SISTEMSKI POZIV ULAZA - UNOS:
+	movl $3, %eax
+	movl $0, %ebx
+	leal adresa_ulaznog_fajla, %ecx   # zavrsava se sa ENTEROM "\n"
+	movl velicina_bafera, %edx
+	int $0x80
+
+# SISTEMSKI POZIV IZLAZA - ISPIS:
+	movl $4, %eax
+	movl $1, %ebx
+	leal adresa_ulaznog_fajla, %ecx
+	movl velicina_bafera, %edx
+	int $0x80
+
+# zauzimanje memorije
+.fill broj_elemenata, velicina_elemenata, vrijednost_elemenata
+
+
+------------------------------------------------------------------
+
+
+# DEFAULT MASKE
+# najnizi bit registra na 0            - and $0xfffffffe, %registar
+# najnizi bit registra na 1            - or $1, %registar
+# invertovanje najnizeg bita registra  - xor $1, %registar
+
+
+# POMJERANJE / ROTIRANJE U DVOSTRUKOJ PRECIZNOSTI %edx:%eax
+# pormjeranje lijevo <- 0
+	shll $1, %eax
+	rcll $1, %edx
+# 0 -> pormjeranje desno
+	shrl $1, %edx
+	rcrl $1, %eax
+# 0 -> pomjeranje desno sa znakom
+	sarl $1, %edx
+	rcrl $1, %eax
+# -> rotiranje ulijevo ->
+	shll $1, %eax
+	rcll $1, %edx
+	rcrl $1, %eax
+	roll $1, %eax
+# <- rotiranje udesno <-
+	shrl $1, %edx
+	rcrl $1, %eax
+	rcll $1, %edx
+	rorl $1, %edx
+
+
+------------------------------------------------------------------
+
+
+jos nesto:
+
+
+# prvo izvorni operand, pa odredisni
+# kod poredjenja, jmp uslov se odnosi na stanje drugog operanda u odnosu na prvi
+
+
+# obrati paznju na sufikse "b", "w" i "l"
+# -----------------------ASEMBLER----------------C--------
+# 64bit - %edx:%eax       .quad          (unsigned) long long
+  32bit - %eax            .long          (unsigned) int
+  16bit - %ax             .word          (unsigned) short int
+   8bit - %al ili %ah     .byte          (unsigned) char
+
+
+-------------------------------------------------------------------
+
+
+# konstanta =
+# promjenljiva:
+# ------------
+# pristupi adresi promjenljive -> $promjeljiva (ukoliko je promjenljiva niz, to je efektivna adresa, tj. adresa prvog elementa)
+# pristupi vrijednosti promjenljive -> promjenljiva (ukoliko je promjenljiva niz, to je prvi element, ostali -> promjenljiva(,index,velicina)
+# pristupi vrijednosti konstante -> $konstanta
+# SEGMENTATION FAULT -> konstanta (pokusaj pristupa adresi na koju pokazuje vrijednost konstante)
+
+
+-------------------------------------------------------------------
+
+
+# kod carry radnji u dvostrukoj preciznosti, pripaziti na stanje u flegovima
+# pripaziti na uslovne skokove sa oznacenim (jo) i neoznacenim (jc) brojevima
+# adc za sabiranje i sbb za oduzimanje
+# NEGIRANJE U DVOSTRUKOJ PRECIZNOSTI %edx:%eax
+	notl %eax
+	notl %edx
+	addl $1, %eax
+	adcl $0, %edx
+
+
+-------------------------------------------------------------------
+
+
+# mnozenje (za oznacene dodati i)
+mulb operand #  al * operand ->     ax
+mulw operand #  ax * operand ->  dx:ax
+mull operand # eax * operand -> edx:eax
+
+# dijeljenje (za oznacene dodati i)
+divb operand #      ax / operand ->  al , ostatak ->  ah
+divw operand #   dx:ax / operand ->  ax , ostatak ->  dx
+divl operand # edx:eax / operand -> eax , ostatak -> edx
+
+

@@ -1,0 +1,85 @@
+inter -> oct_str a mogu i svi nizi, samo promijeniti bazu
+
+inter_to_oct_str:
+	
+	movl broj, %eax
+	movl $adresa_stringa, %ecx
+
+	movl $8, %ebx  # BAZA
+
+pretvori:
+
+	xorl %edx, %edx
+	divl %ebx
+	addb $'0', %dl
+	movb %dl, (%ecx)
+	incl %ecx # next adresa
+	andl %eax, %eax
+	jnz pretvori
+
+	movb $0, (%ecx)
+
+	decl %ecx							# priprema za obrtanje
+	movl $adresa_stringa, %esi 
+
+
+inter -> hex_str
+
+inter_to_hex_str:
+
+	movl broj, %eax
+	movl $string, %ecx
+
+	movl $16, %edi    # BAZA
+
+	movb $'0', (%ecx)     # preskociti ovo ako ne treba 0x ispred !!!
+	incl %ecx
+	movb $'x', (%ecx)
+	incl %ecx
+	
+pretvori:
+
+	xorl %edx, %edx
+	divl %edi
+
+	cmpb $10, %dl
+	jb dalje_pr
+
+	addb $7, %dl  #'A'-10-'0'
+
+dalje_pr:
+
+	addb $'0', %dl
+	movb %dl, (%ecx)
+	incl %ecx # next adresa
+	andl %eax, %eax
+	jnz pretvori
+
+	movb $10, (%ecx)
+	movl %ecx, %edi
+	incl %edi
+
+	decl %ecx
+	movl $string, %esi
+
+	subl %esi, %edi          # duzina_stringa
+
+	addl $2, %esi
+
+
+###### 	obrtanje - isto za sve   #######
+
+obrni:
+
+	cmpl %ecx, %esi
+	jae ispis			     # skok na ispis
+
+	movb (%ecx), %al
+	movb (%esi), %ah
+	movb %al, (%esi)
+	movb %ah, (%ecx)
+
+ 	decl %ecx
+	incl %esi
+
+	jmp obrni
