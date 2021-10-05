@@ -1,0 +1,16 @@
+Zadaci za vežbanje stringova (preuzeto sa pynative.com):
+
+1.	Na osnovu stringa neparne dužine veće od 7, ispiši srednja 3 karaktera:
+Primer: ulaz: “NekiPrimeri“, izlaz: “Pri“
+
+2.	Na osnovu 2 dobijena stringa kreirati novi tako da bude sastavljen od prvog,
+srednjeg i poslednjeg karaktera jednog i drugog stringa naizmenično.
+Pretpostaviti da stringovi imaju neparan broj karaktera i da su dužine veće od 2.
+Primer:
+string1: Lampica
+string2: Kokos
+izlaz: LKpkas
+
+3.	Iz zadatog stringa izdvojiti i ispisati:
+a.	Sve cifre
+b.	Sva mala slova

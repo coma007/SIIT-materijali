@@ -1,0 +1,224 @@
+Mount Everest|8848|29029|Himalayas|Nepal/China
+K2|8611|28251|Karakoram|Pakistan
+Kangchenjunga|8586|28169|Himalayas|Nepal/India
+Lhotse|8516|27940|Himalayas|Nepal/China
+Makalu|8485|27838|Himalayas|Nepal/China
+Cho Oyu|8201|26906|Himalayas|Nepal/China
+Dhaulagiri|8167|26795|Himalayas|Nepal
+Manaslu|8163|26781|Himalayas|Nepal
+Nanga Parbat|8126|26660|Himalayas|Pakistan
+Annapurna|8091|26545|Himalayas|Nepal
+Gasherbrum I|8080|26509|Karakoram|Pakistan
+Broad Peak|8051|26414|Karakoram|Pakistan
+Gasherbrum II|8035|26362|Karakoram|Pakistan
+Shishapangma|8027|26335|Himalayas|China
+Gasherbrum III|7952|26089|Karakoram|Pakistan
+Gyachung Kang|7952|26089|Himalayas|Nepal/China
+Annapurna II|7937|26040|Himalayas|Nepal
+Gasherbrum IV|7932|26024|Karakoram|Pakistan
+Himalchuli|7893|25896|Himalayas|Nepal
+Distaghil Sar|7885|25869|Karakoram|Pakistan
+Ngadi Chuli|7871|25823|Himalayas|Nepal
+Nuptse|7861|25791|Himalayas|Nepal
+Khunyang Chhish|7852|25761|Karakoram|Pakistan
+Masherbrum|7821|25659|Karakoram|Pakistan
+Nanda Devi|7816|25643|Himalayas|India
+Chomo Lonzo|7804|25604|Himalayas|Nepal/China
+Batura Sar|7795|25574|Karakoram|Pakistan
+Kanjut Sar|7790|25558|Karakoram|Pakistan
+Rakaposhi|7788|25551|Karakoram|Pakistan
+Namcha Barwa|7782|25531|Himalayas|China
+Batura II|7762|25466|Karakoram|Pakistan
+Kamet|7756|25446|Himalayas|India
+Saltoro Kangri|7742|25400|Karakoram|India
+Batura III|7729|25358|Karakoram|Pakistan
+Kongur Tagh|7719|25325|Kunlun Mountains|China
+Jannu|7710|25295|Himalayas|Nepal
+Molamenqing|7710|25295|Himalayas|China
+Gurla Mandhata|7694|25243|Himalayas|China
+Tirich Mir|7690|25230|Hindu Kush|Pakistan
+Saser Kangri|7672|25171|Karakoram|India
+Chogolisa|7665|25148|Karakoram|Pakistan
+Shispare|7611|24970|Karakoram|Pakistan
+Silberzacken|7597|24925|Himalaya|Pakistan
+Batura IV|7594|24915|Karakoram|Pakistan
+Changtse|7583|24879|Himalayas|China
+Trivor|7577|24859|Karakoram|Pakistan
+Gangkhar Puensum|7570|24836|Himalayas|Bhutan/China
+Gongga Shan|7556|24790|Daxue Shan|China
+Annapurna III|7555|24787|Himalayas|Nepal
+Kula Kangri|7554|24783|Himalayas|China
+Chogolisa II|7554|24783|Karakoram|Pakistan
+Muztagh Ata|7546|24757|Kongur Tagh|China
+Skyang Kangri|7545|24754|Karakoram|Pakistan
+Liankang Kangri|7535|24721|Himalayas|Bhutan/China
+Yukshin Gardan Sar|7530|24705|Karakoram|Pakistan
+Annapurna IV|7525|24688|Himalayas|Nepal
+Mamostong Kangri|7516|24659|Karakoram|India
+Ismoil Somoni Peak|7495|24,590|Pamir Mountains|Tajikistan
+Noshaq|7492|24580|Hindu Kush|Afganistan
+Pumari Chhish|7492|24580|Karakoram|Pakistan
+Passu Sar|7476|24528|Karakoram|Pakistan
+Malubiting|7458|24469|Karakoram|Pakistan
+Gangapurna|7455|24459|Himalaya|Nepal
+Muchu Chhish (Batura V)|7453|24452|Karakoram|Pakistan
+Jengish Chokusu|7439|24406|Tian Shan|China/Kyrgystan
+K12|7428|24370|Karakoram|Pakistan
+Sia Kangri|7422|24350|Karakoram|Pakistan/India
+Istor-o-Nal|7403|24288|Hindu Kush|Pakistan
+Ghent Kangri|7401|24281|Karakoram|India
+Haramosh Peak|7397|24268|Karakoram|Pakistan
+Kabru|7394|24259|Himalayas|India/Nepal
+Ultar|7388|24239|Karakoram|Pakistan
+Rimo I|7385|24229|Karakoram|India
+Sherpi Kangri|7380|24213|Karakoram|Pakistan
+Labuche Kang|7367|24170|Himalayas|Nepal/China
+Kirat Chuli|7365|24163|Himalayas|Nepal/India
+Skil Brum|7360|24147|Karakoram|Pakistan
+Gimmigela Chuli|7350|24114|Himalayas|Nepal/India
+Bojohagur Duanasir|7329|24045|Karakoram|Pakistan
+Chamlang|7319|24012|Himalayas|Nepal
+Jomolhari/Chomolhari|7314|23996|Himalayas|Bhutan/China
+Baltoro Kangri|7312|23990|Karakoram|Pakistan
+Siguang Ri|7308|23976|Himalayas|China
+The Crown|7295|23934|Karakoram|China
+Gyala Peri|7294|23930|Himalayas|China
+Porong Ri|7292|23924|Himalayas|China
+Baintha Brakk|7285|23901|Karakoram|Pakistan
+Yutmaru Sar|7283|23894|Karakoram|Pakistan
+K6|7282|23891|Karakoram|Pakistan
+Kangpenqing|7281|23888|Himalayas|China
+Mana Peak|7272|23858|Himalayas|India
+Muztagh Tower|7273|23862|Karakoram|Pakistan
+Diran|7257|23809|Karakoram|Pakistan
+Apsarasas Kangri|7245|23770|Karakoram|China/India
+Langtang Lirung|7227|23711|Himalayas|Nepal
+Khartaphu|7213|23665|Himalayas|China
+Tongshanjiabu|7207|23645|Himalayas|Bhutan/China
+Langtang Ri|7205|23638|Himalayas|Nepal/China
+Kangphu Kang|7204|23635|Himalayas|Bhutan/China
+Annapurna South|7219|23684|Himalayas|Nepal
+Melungtse|7181|23560|Rolwaling|Himalayas
+Liushi Shan|7167|23514|Kunlun|China
+Baruntse|7162|23497|Himalayas|Nepal
+Pumori|7161|23494|Himalayas|Nepal
+Hardeol|7151|23461|Himalayas|India
+Nemjung|7140|23425|Himalayas|Nepal
+Udren Zom|7140|23425|Hindu Kush|Pakistan
+Chaukhamba|7138|23419|Himalayas|India
+Nun Kun|7135|23409|Karakoram|India
+Tilicho Peak|7134|23406|Himalayas|Nepal
+Gauri Sankar|7134|23406|Himalayas|Nepal/China
+Lenin Peak|7134|23406|Pamir Mountains|Tajikistan/Kyrgystan
+Api|7132|23399|Himalayas|Nepal
+Pauhunri|7128|23386|Himalayas|India
+Trisul|7120|23360|Himalayas|India
+Korzhenevskaya|7105|23310|Pamir Mountains|Tajikistan
+Lunpo Gangri|7095|23278|Himalayas|China
+Satopanth|7075|23212|Himalayas|India
+Tirsuli|7074|23209|Himalayas|India
+Dunagiri|7066|23182|Himalayas|India
+Kangto|7060|23163|Himalayas|India
+Nyegyi Kansang|7047|23120|Himalayas|India
+Kezhen Peak|7038|23091|Karakoram|China
+Shah Dhar|7038|23091|Hindu Kush|Afghanistan/Pakistan
+Spantik|7027|23054|Karakoram|Pakistan
+Khan Tengri|7010|22999|Tian Shan|Kyrgyzstan/Kazakhstan/China
+Machapuchare|6993|22943|Himalayas|Nepal
+Laila Peak (Haramosh Valley)|6985|22917|Karakoram|Pakistan
+Kang Guru|6981|22904|Himalayas|Nepal
+Karun Kuh|6977|22890|Karakoram|Pakistan
+Avicenna Peak|6974|22881|Pamir Mountains|Tajikistan
+Ulugh Muztagh|6973|22877|Kunlun Mountains|China
+Aconcagua|6962|22841|Andes|Argentina
+Kedarnath (mountain)|6940|22769|Himalayas|India
+K7|6934|22749|Karakoram|Pakistan
+Panchchuli|6904|22651|Himalayas|India
+Thalay Sagar|6904|22651|Himalayas|India
+Lunkho e Dosare|6901|22641|Hindu Kush|Afghanistan/Pakistan
+Ojos del Salado|6891|22608|Andes|Argentina/Chile
+Siniolchu|6888|22598|Himalayas|India
+Kanjiroba|6883|22582|Himalayas|Nepal
+Nanda Kot|6861|22510|Himalayas|India
+Kubi Gangri|6859|22503|Himalayas|Nepal/China
+Angel Sar|6858|22500|Karakoram|Pakistan
+Jethi Bahurani|6850|22474|Himalayas|Nepal
+Chongra Peak|6830|22408|Nanga Parbat Himalaya|Pakistan
+Reo Purgyil|6816|22362|Western Himalaya|India/China
+Ama Dablam|6812|22349|Himalayas|Nepal
+Monte Pissis|6795|22293|Andes|Argentina
+Biarchedi|6781|22247|Karakoram|Pakistan
+Huascarán Sur|6768|22205|Andes|Peru
+Cerro Bonete|6759|22175|Andes|Argentina
+Nevado Tres Cruces|6749|22142|Andes|Argentina/Chile
+Kawagarbo|6740|22113|Himalayas|China
+Llullaillaco|6739|22110|Andes|Argentina/Chile
+Cho Polu|6735|22096|Himalayas|Nepal
+Kangju Kangri|6725|22064|Karakoram|India
+Changla|6721|22051|Himalayas|Nepal/China
+Mount Pandim|6691|21952|Himalayas|India
+Num Ri|6677|21906|Himalayas|Nepal
+Lungser Kangri|6666|21870|Himalayas|India
+Meru Peak|6660|21850|Himalayas|India
+Gul Lasht Zom|6657|21841|Hindu Raj|Pakistan
+Huascarán Norte|6655|21834|Andes|Peru
+Khumbutse|6640|21785|Himalayas|Nepal
+Mount Kailash|6638|21778|Transhimalaya|China
+Yerupajá|6635|21768|Andes|Peru
+Thamserku|6623|21729|Himalayas|Nepal
+Gelaidaindong Peak|6621|21722|Tanggula|China
+Incahuasi|6621|21722|Andes|Argentina/Chile
+Pangpoche|6620|21719|Himalayas|Nepal
+Manirang|6597|21644|Himalayas|India
+Nilkantha|6596|21640|Himalayas|India
+Phuparash Peak|6574|21568|Karakoram|Pakistan
+Sickle Moon Peak|6574|21568|Himalayas|India
+Buni Zom|6551|21493|Hindu Kush|Pakistan
+Nevado Sajama|6542|21463|Andes|Bolivia
+Ghamubar Zom|6518|21385|Hindu Kush|Pakistan
+Singu Chuli|6501|21329|Himalayas|Nepal
+Taboche|6501|21329|Himalayas|Nepal
+Cerro El Muerto|6488|21286|Andes|Argentina/Chile
+Mera Peak|6476|21247|Himalayas|Nepal
+Illimani|6462|21201|Andes|Bolivia
+Hiunchuli|6441|21132|Himalayas|Nepal
+Cholatse|6440|21129|Himalayas|Nepal
+Ancohuma|6427|21086|Andes|Bolivia
+Coropuna|6425|21079|Andes|Peru
+Antofalla|6409|21027|Andes|Argentina
+Kang Yatze|6400|20997|Himalayas|India
+Huandoy|6395|20981|Andes|Peru
+Ausangate|6384|20945|Andes|Peru
+Illampu|6368|20892|Andes|Bolivia
+Kusum Kangguru|6367|20889|Himalayas|Nepal
+Kinnaur Kailash|6349|20830|Himalayas|India
+Parinaquta|6348|20827|Andes|Bolivia/Chile
+Siula Grande|6344|20814|Andes|Peru
+Bamba Dhura|6334|20781|Himalayas|India
+Ampato|6288|20630|Andes|Peru
+Amne Machin|6282|20610|Kunlun Mountains|China
+Pomerape|6282|20610|Andes|Bolivia/Chile
+Salcantay|6271|20574|Andes|Peru
+Chimborazo|6267|20561||Ecuador
+Mount Siguniang|6250|20505|Qionglai Mountains|China
+Grid Nie Mountain|6224|20420|Hengduan Mountains|China
+Yuzhu Peak|6224|20420|Kunlun Mountains|China
+Genyen Massif|6204|20354|Shaluli Range|China
+Kongde Ri|6187|20299|Himalayas|Nepal
+Aucanquilcha|6176|20262|Andes|Chile
+Denali|6168|20236|Alaska Range|USA
+Imja Tse|6160|20210|Himalayas|Nepal
+Stok Kangri|6137|20135|Stok Range|India
+Pisang Peak|6091|19984|Himalayas|Nepal
+Huayna Potosí|6088|19974|Andes|Bolivia
+Aracar|6082|19954|Andes|Argentina
+Chachakumani|6074|19928|Andes|Bolivia
+Chachani|6057|19872|Andes|Peru
+Mianzimu|6054|19862|Yunnan|China
+Acotango|6052|19856|Andes|Bolivia/Chile
+Socompa|6051|19852|Andes|Argentina/Chile
+Acamarachi|6046|19836|Andes|Chile
+Shayaz|6026|19770|Hindu Kush|Pakistan
+Wallqa Wallqa|6025|19767|Andes|Peru
+Uturunku|6020|19751|Andes|Bolivia
+Mitre Peak|6010|19718|Karakoram|Pakistan

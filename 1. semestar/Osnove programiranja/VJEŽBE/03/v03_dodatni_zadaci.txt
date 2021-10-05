@@ -1,0 +1,64 @@
+Za rešavanje ovih zadataka je potrebno savladati petlje i grananja.
+
+
+1. Napiši Python program koji iscrtava sledeće slike:
+    a)
+        *
+        * *
+        * * *
+        * * * *
+        * * * * *
+        * * * *
+        * * *
+        * *
+        *
+    b)
+        *****
+        *
+        *
+        ****
+        *
+        *
+        *****
+    c)
+         ***
+        *   *
+        *   *
+        *****
+        *   *
+        *   *
+        *   *
+
+2. Napiši program koji ispisuje sve brojeve između 1200 i 2500 koji su deljivi
+sa 7 i 11.
+    Proširenje 1: Koristiti naredbu continue.
+    Proširenje 2: Ukoliko se naiđe na broj koji je deljiv sa 1111, prekinuti
+     potragu. Koristiti break naredbu.
+
+3. Napiši program koji od korisnika traži da unosi brojeve sve dok ne unese
+   neparni broj. Kada korisnik unese neparni broj, izvršavanje programa se prekida
+   i korisniku se ispisuje suma prethodno unetih (parnih) brojeva.
+
+4. Implementirati program koji postiže prikazano ponašanje:
+    a) Koliko brojeva zelite >> 3
+       Unesite broj: 2
+       Unesite broj: 3
+       Unesite broj: 4
+       -----------------------
+       Prosek je: 3.0
+
+    b) Unesite broj: 2
+       Još? "Da"
+       Unesite broj: 4
+       Još? "Da"
+       Unesite broj: 3
+       Još? "Ne"
+       ------------------------
+       Prosek je: 3.0
+
+    c) Unesite broj (ili 'x' za kraj): 2
+       Unesite broj (ili 'x' za kraj): 3
+       Unesite broj (ili 'x' za kraj): 4
+       Unesite broj (ili 'x' za kraj): 'x'
+       ------------------------
+       Prosek je: 3.0

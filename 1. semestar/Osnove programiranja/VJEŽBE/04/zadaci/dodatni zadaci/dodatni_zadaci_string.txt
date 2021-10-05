@@ -1,0 +1,6 @@
+1. Proveriti da li je zadati string palindrom.
+2. Implementirati generator lozinke. Dobre lozinke bi trebalo da sadrže velika
+ slova, mala slova, cifre i specijalne znake (npr. zagrade, $, #, &, %, @ itd.).
+  Lozinka bi trebalo da bude sadrži najmanje 8 karaktera. Korisnik sa tastature
+  zadaje dužinu lozinke na osnovu čega mu program ispisuje predlog lozinke koja
+  zadovoljava sve navedene kriterijume. 

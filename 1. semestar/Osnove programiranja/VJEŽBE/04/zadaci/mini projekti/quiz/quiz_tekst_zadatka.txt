@@ -1,0 +1,43 @@
+Kviz
+Implementirajte kviz aplikaciju.
+
+Aplikacija treba da učita pitanja iz fajla i da ih prikaže korisniku u obliku:
+Koji je glavni grad Francuske?
+1. London
+2. Lisabon
+3. Pariz
+4. Marakeš
+5. Lion
+
+U txt fajlu se nalaze pitanja sa ponuđenim odgovorima. Npr.
+Koji je glavni grad Francuske?|London|Lisabon|!Pariz|Marakeš|Lion
+
+Tačan odgovor je naznačen znakom '!'.
+
+U ponuđenim odgovorima tačan odgovor ne sme biti naznačen. Svaki ponuđen odgovor
+ispred ima pridružen redni broj kako bi korisnik lakše izvršio izbor.
+Ponuđenih odgovora može biti neodređeno mnogo.
+Korisnik unosi redni broj odgovora za koji misli da je tačan.
+Ukoliko je uneo ispravan odgovor, korisniku se ukupan broj bodova uvećava za 1
+(ako nije, broj bodova ostaje isti). Zatim se korisniku nudi da nastavi ili da
+prekine kviz. Kada korisnik odluči da izađe, na ekranu mu se ispisuje postignut
+broj bodova. Posle toga se izvršavanje aplikacije zaustavlja.
+
+Ukoliko je korisnik odgovorio na sva dostupna pitanja, aplikacija ga obaveštava
+o tome, a zatim mu ispisuje postignut broj bodova. Posle toga se izvršavanje
+aplikacije takođe zaustavlja.
+
+Pitanja se korisniku mogu prikazivati redom po kom su sačuvani u fajlu ili
+opciono nasumično.
+
+Za testiranje, dostupan je fajl quiz.txt. Rešenje će se testirati upotrebom ovog
+ fajla.
+
+Napomena:
+Da bi se iz tekstualne datoteke učitao sadržaj koji sadrži i ćirilična i
+latinična slova, neophodno je to naglasiti prilikom učitavanja dodatnim parametrom
+'encoding'.
+umesto dosadašnjeg:
+fajl = open("quiz.txt", "r")
+dodajemo i parametar 'encoding' pa treba pisati:
+fajl = open("quiz.txt", "r", encoding="utf-8") 

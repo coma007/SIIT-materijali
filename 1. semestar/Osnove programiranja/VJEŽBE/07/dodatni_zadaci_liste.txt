@@ -1,0 +1,39 @@
+1. Na osnovu zadate liste dužine n formirati novu koja se sastoji od:
+    a.	dva elementa - prvog i poslednjeg elementa osnovne liste.
+    b.	tri elementa - prvog, "srednjeg" i poslednjeg elementa osnovne liste.
+    c.	svakog drugog elementa osnovne liste. 
+
+2. Na osnovu zadate liste brojeva:
+    a.	ispisati sve brojeve veće od 10
+    b.	ispisati sve brojeve deljive sa 3
+    c.	formirati novu listu kvadrata brojeva originalne liste
+    d.	formirati novu listu koja ne sadrži duplikate (svaki broj se pojavljuje tačno jednom) 
+
+3. Ispisati listu svih delilaca zadatog broja.
+
+
+4. Posmatrajte krajnje levo i krajnje desno pojavljivanje iste vrednosti u nizu. Pod udaljenošću se smatra broj elemenata između te dve vrednosti (uključujući oba). Vrednost koja se samo jednom pojavljuje u nizu ima udaljenost 1. Napišite funkciju koja vraća najveću postojeću udaljenost za zadati niz.
+
+	maxUdaljenost([1, 2, 1, 1, 3]) → 4
+	maxUdaljenost([1, 4, 2, 1, 4, 1, 4]) → 6
+	maxUdaljenost([1, 4, 2, 1, 4, 4, 4]) → 6
+
+
+5. Za zadati neprazni niz napisati funkciju koja utvrđuje da li postoji mesto na kome se niz može podeliti na 2 dela tako da suma elemenata u jednom i drugom delu bude ista.
+
+	canBalance([1, 1, 1, 2, 1]) → True
+	canBalance([2, 1, 1, 2, 1]) → False
+	canBalance([10, 10]) → True 
+
+6. Na osnovu dve zadate liste (uzmimo da ne sadrže duplikate) formirati:
+    a.	listu koja odgovara uniji elemenata dve liste (bez duplikata)
+    b.	listu koja odgovara preseku elemenata dve liste (bez duplikata)
+    c.	listu koja odgovara razlici elemenata prve i druge liste (bez duplikata)
+    d.	Obratiti pažnju da liste ne moraju da budu iste dužine.
+    e.	Proširenje 1: Nasumično generisati elemente obe liste.
+
+
+7. Implementirati igru Skočko iz kviza Slagalica. Originalno ime igre je Mastermind.
+
+    Pravila pogledajte na http://www.slagalica.tv/game/skocko.
+    Razmislite kako da u konzoli implementirate interfejs koji bi omogućio sličan način igranja.

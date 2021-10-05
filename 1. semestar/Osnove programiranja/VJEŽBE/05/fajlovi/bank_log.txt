@@ -1,0 +1,15 @@
+milan34 newaccount
+jovan1 newaccount
+milan34 income 23000.0
+slavko2 newaccount
+milan34 income 1950.0
+jovan1 income 31000.0
+slavko2 income 15234.0
+milan34 withdrawal 1200.0
+jovan1 withdrawal 132.0
+jovan1 withdrawal 543.1
+milan34 withdrawal 989.9
+jovan1 withdrawal 32.2
+milan34 withdrawal 920.9
+jovan1 income 1320.0
+milan34 withdrawal 110.0

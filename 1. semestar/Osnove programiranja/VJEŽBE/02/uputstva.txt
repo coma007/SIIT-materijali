@@ -1,0 +1,15 @@
+TODO:
+1. Kreirajte nalog na sajtu codecollab.io.
+    Detalji za registraciju:
+        Email adresa: vaša uns adresa
+        ime: Br.Indeksa Ime Prezime (ili bar tako podesite display name)
+        Kreirajte samo 1 projekat, nazovite ga OP2020 grupa X SVYY/2020,
+        gde X treba zameniti broj vaše grupe, a YY sa rednim brojem upisa.
+
+        Podelite projekat sa svojim predmetnim asistentom (kada otvorite
+        projekat birate opciju Share -> Share through email -> unesete email
+        asistenta i podesite ulogu Editor ili Admin, zatim odaberete opciju Send)
+
+2. Za dodatnu vežbu, registrujte se na sajtu sololearn.com. Odaberite Python3 za
+        jezik. Kroz napomene uz svaki termin vežbi ćemo pokušati da vas usmerimo
+        na to koje zadatke možete da radite na tom nivou znanja.

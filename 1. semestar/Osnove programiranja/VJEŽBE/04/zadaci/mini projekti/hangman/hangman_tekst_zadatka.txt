@@ -1,0 +1,39 @@
+1.	Implementirati igru vešala. Spisak dostupnih reči se nalazi u fajlu 'dictionary.txt'.
+Potrebno je:
+    a) Učitati reči iz fajla.
+    b) Odabrati nasumičnu reč kao zadate reči za pogađanje u aktivnoj partiji.
+    c) Korisniku se ispisuje broj linija koji odgovara broju slova zadate reči.
+        npr. _ _ _ _ _ _ _ _ _
+    d) Kada korisnik predloži slovo, proverava se da li zadata reč sadrži dato slovo.
+        Ukoliko sadrži, slovo se upisuje na odgovarajuće mesto. Ukoliko korisnik promaši slovo,
+        beleži mu se promašaj. Ukoliko korisnik napravi 6 promašaja (1 za glavu,
+        1 za trup, 2 za ruke i 2 za noge), obaveštava se da je izgubio igru. 
+        >> Predlog slova: O
+        >> _ O _ _ _ _ _ O _ 
+    e) Pokušajte da postepeno iscrtavate čovečuljka sa svakom greškom.
+    	npr. za 2 greške iscrtavamo:
+    	O
+    	|
+    	za 5 grešaka iscrtavamo:
+        O
+       /|\
+       /
+
+    f) Pokušajte da postepeno iscrtavate čovečuljka sa vešalima.
+        npr. za 2 greške iscrtavamo:
+         ____
+         |  |
+         |  O
+         |  |
+         |
+         |
+        _|_
+
+        za 5 grešaka iscrtavamo:
+        ____
+        |  |
+        |  O
+        | /|\
+        | /
+        |
+       _|_

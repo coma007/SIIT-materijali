@@ -1,0 +1,21 @@
+Primer kompleksnijeg zadatka. Prethodnih godina je korišćen kao priprema za kolokvijum.
+
+Stanje na računu. Iz log fajla (bank_log.txt) čitati podatke o korisnicima.
+Podaci su dati u obliku: 
+        ime_korisnika tip_akcije [iznos] 
+gde je parametar iznos opcioni.
+
+Tipovi akcija su sledeći:
+newaccount - korisnik kreira nalog
+income     - priliv sredstava na korisnikov račun
+withdrawal - korisnik je podigao novac sa računa
+
+Zadaci:
+	a) Za zadatog korisnika odrediti stanje na računu.
+        b) Pronaći korisnika koji ima najviše novca na računu
+        c) Pronaći korisnika sa najvećim brojem uplata
+        d) Pronaći korisnike čije je stanje na računu manje od unetog iznosa
+        e) Pronaći sve korisnike čije ime počinje zadatim/unetim stringom
+	f) Kreirati izveštaj stanja na računu za sve postojeće korisnike.
+
+Pretpostaviti da su podaci validni.

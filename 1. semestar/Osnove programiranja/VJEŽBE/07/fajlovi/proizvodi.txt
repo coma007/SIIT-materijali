@@ -1,0 +1,5 @@
+brašno 1kg|65.0|200.0
+sir trapist 250g|240.0|50.0
+mleko 1l|85.0|11.0
+hleb beli|40.0|114.0
+voda 2l|45.0|12.0

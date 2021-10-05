@@ -1,0 +1,8 @@
+1. Napisati funkciju za utvrđivanje da li je string palindrom.
+
+2. Napisati funkciju koja prima niz reči, izbacuje duplikate i vraća string sastavljen od preostalih reči odvojenih razmakom. 
+Primer unosa: ['hello', 'world', 'hello', 'and', 'practice', 'and', 'makes', 'perfect', 'and', 'hello', 'world', 'again']
+Rezultat: 'hello world and practice makes perfect again'
+
+3. Digitron. Korisnik unosi sa tastature 2 broja i operaciju (string) i dobija rezultat. Obezbediti reakciju na nevalidne unose.
+
