@@ -28,7 +28,8 @@ Asistent: Dragaš, Bojana
 Profesor: **Vidaković, Milan**  
 Asistent: Ćurčin, Petar
 
-[Snimci predavanja](https://www.youtube.com/watch?v=62ZAba3xkWw&list=PLAt-4oJaUMGzCRPy9_yIB2wjUWf_XVoKK&ab_channel=MilanVidakovic)
+[Snimci predavanja](https://www.youtube.com/watch?v=62ZAba3xkWw&list=PLAt-4oJaUMGzCRPy9_yIB2wjUWf_XVoKK&ab_channel=MilanVidakovic)  
+[Riješeni zadaci sa vježbi](https://github.com/milica-skipina/oop1-2021-siit)
 
 ### Obaveze:
 
