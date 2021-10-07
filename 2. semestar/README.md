@@ -24,7 +24,7 @@ Asistent: Dragaš, Bojana
 
 * Završni ispit obuhvata cjelokupno gradivo i uči se sa prezentacija sa predavanja. Ispit je zaista _usmeni_.
 
-## Objektno orijentisano programiranje (7 ESPB)
+## Objektno orijentisano programiranje 1 (7 ESPB)
 Profesor: **Vidaković, Milan**  
 Asistent: Ćurčin, Petar
 
