@@ -1,0 +1,285 @@
+Big Oh- ogranicavajuca funkcija PR. O(n) za neku f(n), n e N.. Znaci da za svako n iz N, O(n) = cf(n) gdje je c iz R.
+	- kada raste kolicina podataka tada raste i vrijeme izvrsavanja nekog algoritma. 
+
+Rekurzija	- primjer kada funkcija poziva samu sebe, rekurzivno izracunavanje nekih zadataka. (Fibonacci sequences)
+		- svaki rekurzivni poziv treba da napreduje ka baznom slucaju.
+....................................................................................................
+Klasa 		- sablon po kome se predstavlja neki realni pojam. Kuca npr.
+Atributi	- osobine takvog realnog pojma. Boja, br. spratova, garaza, krov, itd..
+Metode		- funkcije koje se mogu izvrsiti nad konkretnim objektom kuce. kucaA = Kuca(), kucaA.zakljucaj(), kucaA.otkljucaj()
+
+Nasljedjivanje  - pojam kada jedna klasa naslijedi sve osobine klase pretka. NPR. klasa Zivotinja (noge, dlaka, odazivajSe())
+		 nju naslijedi klasa Pas(Zivotinja).. Automatski pas dobija atribute noge, dlaka i metodu odazivajSe()
+
+Enkapsulacija	- pojam kada se od spoljasnje implementacije sakriva implementacija same klase. Spolja dostupne samo metode,
+		geteri, seteri, i ostale metode.
+....................................................................................................
+
+STRUKTURE
+
+ Niz 		- jeste struktura koja podatke cuva u sukcesivnim memorijskim lokacijama
+		- dodavanje i uklanjanje u najgorem slucaju su O(n) ako se npr trazi pop(0), mora se pomjeriti sve ulijevo
+		ako se ukloni sa nulte pozicije nesto, slicno za dodavanje
+		- pristup je O(n)
+		- list, tuple, str koriste niz kao implementaciju.
+		- opcije za prosirenje niza - inkrementalno i dupliranje (dupliranje je bolje)
+	.............................................................................................
+ Stek 		- jeste apstraktni tip strukture podataka koji cuva podatke u nekon redoslijedu dospjevanja.
+		- LIFO (Last in first out) posljednji koji se nalazi u nizu je prvi za uklanjanje
+		- top(), pop(), push(), is_empty(), size(),...
+		- sve operacije su O(1), dodavanje na kraj niza, uklanjanje sa kraja niza.. D
+		- impelentacija se vrsi uz pomoc niza
+		- primjena npr, izracunavanje aritmetickih izraza, provjera tacnosti postavljanja arit. zagrada. itd
+		- prosirivanje se vrsi kao i kod nizova
+	.............................................................................................
+ Red		- jeste apstraktni tip strukture podataka realizovan uz pomoc fleksibilnog niza (dodavanje i uklanjanje po
+		modulu duzine niza, omogucuje da se podaci setaju u nizu)
+		- realizovan kroz niz
+		- FIFO (First in first out) prvi koji dospije jer prvi ukoliko se pozove ukloni()
+		- redovi u banci, stampac koristi slicnu logiku (vise listova za stampu, stranice kako dospijevaju 
+		tako se i stampaju)
+		- dodaj() - na kraj, ukloni() - sa pocetka, size(), first() - pozicija prvog ....
+	.............................................................................................
+ Liste (ne Python list)
+		- jeste apstraktni tip strukture podataka koja odrzava vezu izmedju dva ListNode-a, podaci se ne skladiste u 
+		sukcesivnim mem. lokacijama, mogu biti razbacani po memoriji, svaki ListNode sadrzi referencu na sljedeci
+		- ListNode ima element i pokazivac na sljedeci (kod 2List postoji i pokazivac na prethodni element)
+		- prvi kvazi Node - lazni Node je HEAD, posljednji - kvazi Node - lazni Node je TAIL, sadrze u sebi NONE
+		laksi je pristup kada se pamti prvi i posljednji element, pristup je O(n) jer se mora iterirati da bi se
+		pronasao trazeni element
+		- za razliku od steka i reda, implementacija se ne vrsi preko niza.
+	.............................................................................................
+ Stabla	- jeste apstraktni tip strukture podataka, podvrsta GRAFOVA.
+		- u stablu postoji korjen, svi cvorovi (TreeNode) su u vezi roditelj  dijete
+		- svaki TreeNode ima sadrzaj u sebi - element, ima listu djece.
+		- n-arno stablo primjer File System, binarno stablo - BinarySum itd itd..
+		- OBILASCI STABLA 	
+			- po dubini
+				PREORDER 	- prvo CVOR pa onda djeca
+				POSTORDER 	- prvo djeca pa onda CVOR
+			- po sirini - prvo rodjaci u generaciji pa onda djeca. Realizuje se uz pomoc REDA.
+		 pod vrsta 	- BINARNO STABLO.. broj djece je 0-2 D 
+				- binarno stablo je predstavljeno u memoriji preko niza. sa indexa i se moze
+				pristupiti djeci i-tog clana ... LIJEVO - 2i, DESNO - 2i + 1 ako se krece on nule.
+				- kod binarno postoji INORDER obilazak.. Ako ima lijevo - inorder(levo), pa onda 
+				obradi cvor, zatim ako ima desno - inorder(desno).
+
+		- OJLEROV OBILAZAK STABLA - svaki cvor se obidje 3 puta - PRE, IN, POST ORDER )
+	..............................................................................................
+ Red sa prioritetom
+		- jeste apstraktni tip strukture podataka koji cuva par (kljuc, vrijednost)
+		- add(elem) - dodaje element(kljuc, vrijednost) na kraj, min() - pronalazi i vraca koji je posljednji,
+		remove_min() - pronalazi i vraca koji je posljednji i uklanja ga iz reda sa prioritetom.
+		- ako dva elementa imaju iste kljuceve FIFO princip.
+		- za KLJUC se moze uzeti nesto za sta postoji RAT - relacija poretka
+		- postoje sortiran RSP (brze se uklanja) i nesortiran RSP (brze se dodaje)
+		- oba koriste Python list-u kao implementaciju
+	..............................................................................................
+ Heap
+		- jeste ATP koje je binarno stablo u kome su uredjeni parovi (kljuc, vrijednost)
+		- kod heap-a najmanji kljuc se nalazi u korjenu.
+		- POSLJEDNJI CVOR je posljednji cvor sa desne strane na najnizem nivou
+		- pamti se pozicija POSLJEDNJE CVOR-a
+		- za n kljuceva heap ima max dubinu (logn)
+		- upHeap() - metoda koja se pozove nad dodatim elementom, ide se sve do korjena, ili
+		do momenta kada je parent manji od trenutnog cvora.
+		- remove_min() - uklanja najmanji, posto se najmanji nalazi u korjenu, korjenu i posljednji element
+		zamjenu mjesta, ukloni se taj posljednji element, nakon toga iz korjena ide downHeap() -
+		metoda koja iz korjena krece da pravi heap u pravila redoslijed.
+	Heap uz pomoc niza 	
+		- heap sa n kljuceva moze u Python list sa n mjesta
+		- LIJEVO DIJETE - 2i + 1 
+		- DESNO DIJETE  - 2i + 2
+		- BUTTOM-UP heap-a je brze od n dodavanja sa korekcijom uz upHeap()
+	 Adaptivni red sa prioritetom
+		- remove(loc) - ukolni i vrati element reda za lokator loc
+		- update(loc,k,v) - zamjeni kljucvrijednost par(k,v) za lokator loc
+	...........................................................................................
+ Hash mapa(rjecnik, hash tabela, asocijativni niz)
+		- cuva parove (kljuc, vrijednost), kljucevi su jedinstveni, vrijednosti ne moraju biti.
+		- jedna od mogucih implementacija mape je preko dvostruko spregnutih lista(dobro za male kol. podatak,
+		ukoliko se cesto dodaje, a rijetko trazi)
+		- implementacija pomocu niza.. Prethodno smo rekli da za kljuceve mozemo imati svasta, ali za indeks
+		nam trebaju brojevi iz N
+		- uz pomoc HASH funckije kljuc se pretvara u broj iz intervala [0,n], n je duzina niza
+		- duplikate kljuceva cemo rjesiti preko bucket-a, tako sto cemo za iste kljuceve trpati vrijednosti u liste
+		koje se nalaze unutar indeksa koji se dobije hashiranjem kljuca te vrijednosti.
+		- kolizija - kada se pojave dva ista kljuca, nakon hash-iranja - ulacavanje (koriste se kante bucket),
+		linearna mapa (ako se desi kolizija, onda se pokusa taj element ubaciti u kljuc + 1 poziciju ako je prazna,
+		ako nije onda kljuc + 2 i tako dalje.), takodje i duplo hesiranje
+		- HASH funkcija je funkcija koja pretvara kljuc u broj i taj broj skalira (djeljenje po modulu n) 
+		u odredjenu duzinu niza [0,n] 
+	..............................................................................................
+ Skip lista
+		- jeste takav ATP, da za skup S od elementa (kljuc, vrijednost) sadrzi seriju 2lista S1, S2, S3,..., Sk
+		- svaka lista sadrzi -beskonacno i +beskonacno
+		- Sk-ta lista sadrzi samo -beskonacno i +beskonacno
+		- dodavanje u skip listu prvo se napravi cvor -besk i +besk, i onda se dodaje neki element izmedju,
+		bace novcic, ako ne je npr. glava pravi se lvl vise lista sa tim elementom i -besk i +besk,
+		baca se ponovo i pravi dok se ne dobije pismo
+		- uklanjanje ide prvo se nadje i onda se ukloni element iz donje(ona koja sadrzi sve) pa se ide 
+		u gornje dok ima tog elementa
+		- operacije su O(logN)
+		- dropDown - ako je sljedeci element veci od trazenog, suprotno scanForward
+	...............................................................................................
+ Set - skup
+		- to je struktura koja sadrzi elemente, ne poznaje redoslijed i ne sadrzi duplikate
+		- pop() vraca random element iz skupa )
+	...............................................................................................
+ Binarno stablo pretrage
+		- cvor sa kljucem k ima lijevo dijete koje ima kljuc manji od k, a desno djete ima kljuc veci od k
+		- inorder() - obilazak daje rastuci niz brojeva
+		- ukloni(k) - pronadje se element sa kljucem k, onda u njegovom lijevom podstablu se nadje najdesniji elem
+		jer je to najveci u tom podstablu koji je manji od desnog djeteta k-tog elementa
+		- dodaj(k) - pronadje mjesto i samo ga doda
+		- balansirano binarno stablo pretrage ima bolje performanse
+	...............................................................................................
+ AVL stablo
+		- binarno stablo pretrage koje, za svaki cvor visina njegove djece se razlikuje najvise za 1
+		- visina stabla je najveci broj cvorova od cvora koji predstavlja korjen do lista
+		- visina AVL stabla je (logn)
+		- sve operacje O(logn)
+	...............................................................................................
+ Splay stablo 
+		- splay - rasireno
+		- da cesce korisceni elementi budu blize korjenu
+		- restruktuiranje x, y(otac), z(deda) ---- svi su O(1)
+				- zig zig 	- x i y su desno(lijevo) dijete generacijski... NAKON x - y - z
+				- zig zag 	- x i y, prvi je lijevo(desno), a drugi desno(lijevo) dijete generacijski
+					x
+		        NAKON...         
+				     y     z
+				- zig		- x ima oca y, ali nema dedu... NAKON x - y
+	.................................................................................................
+ n-arno stablo
+		- svaki cvor koji ima n djece, u sebi pamti n-1 kljuceva
+		- kljucevi su sortirani
+	.................................................................................................
+ (2,4) stablo
+		- n-arno stablo sa osobinom da svaki cvor ima maksimalno cetvoro (2,3,4) djece i da su svi listovi
+		 na istoj dubini
+		- visina je O(logn)
+		- dodavanje je neuspjesna pretraga, ako dodje do prelivanja (Overflow) mora se odliti vrsi se split
+		- odlivanje se vrsi tako sto se taj kljuc koji se dodao penje u roditelja, ako je roditelj korjen pravi
+		novi cvor i postaje korjen, ostaju dole dva podljena stabla sa podjeljenom djecom D 
+		- dodavanje je O(logn)
+		- uklanjanje je O(logn)
+	.................................................................................................
+ Crveno-crno stablo
+		- reprezentacija (2,4) stabla, iste performanse, laksa implementacija
+		- to je binarno stablo pretrage gdje je korjen crn, djeca crvenog cvora su crna
+		- na svakoj putanji od korjena do lista ima isti broj crnih cvorva
+		- visina stabla je logn
+		- dodavanje, pretraga isto sve kao kod binarnog stabla pretrage
+	.................................................................................................
+ Trie
+		- jeste takva struktura podataka, koja je n-arno stablo, medjutim u svojim cvorovima cuva slova 
+		koja poredstavljaju rijeci kada se krene od korjena ka istu obilaskom po dubini.
+		- znatno olaksava pretragu rijeci u odnosu na KMP i BM ali treba Trie-u treba vrijeme dok se napravi
+	.................................................................................................
+ Graf
+		- jeste uopstenje svih stabala
+		- graf je par (V,E) - V su cvorovi, a E su edges - ili strane kojima su povezani cvorovi -- poveznice
+		- postoje usmjere(zna se koji je cvor origin a koji destination) i neusmjerene grane, 
+		pa po tome i usmjereni i neusmjereni grafovi
+		- stepen cvora moze biti izlazni(ulazni) u zavisnosti koliko grana izlazi(ulazi) iz(u) njega.
+		- kod stabala ne moze se desiti nikakva petlja prilikom obilaska dok je kod grafa to moguce
+		- podgraf grafa S je graf G koji sadrzi podskup cvorova skupa cvorova od S
+		- pokrivajuci podgraf G grafa S jeste podgraf koji sadzi sve cvorove grafa S ali nije isti kao graf S
+		- povezan graf jeste graf ciji su svi cvorovi uvezani
+		- povezana komponenta grafa S jeste podgraf koji je povezan
+		- graf moze biti stablo i suma, kod stabla nema petlji i stablo je povezano, a kod sume postoje
+		povezane komponente koje su stabla i koje nisu uvezane zajedno u jedan graf
+		- OBILASCI
+			- po dubini, rekurzija - parametri su sam graf, cvor koji se obilazi i rjencnik(DISCOVERY)
+			posjecenih cvorova ide se po svakom edge-u cvora koji se salje, i gleda se da li na 
+			suprotnoj strani jeste cvor koji je posjecen ili ne, ako je posjecen dalje, ako nije on
+			se dodaje u DISCOVERY i onda rekurzivno od njega
+			- po sirini, obilazak uz pomoc liste, krece se od nekog cvora, i u listu se dodaju 
+			slicno kao i po dubini samo se ne koristi rekurzija nego DISCOVERY i lista onih koji se trenutno
+			u generaciji sa cvorom koji se obilazi, while petlja 
+			=== oba obilaska traju O(n+m) n-broj cvorova, a m broj grana
+		- jaka povezanost, iz svakog cvora se moze stici do svakog drugog cvora
+		- tranzitivno zatvorenje je ukoliko imamo graf G, postoji drugi graf G koji ima iste cvorove, ali ako neki
+		cvor u grafu G ima putanju d onekog drugog cvora u G, onda G ima ivicu na toj relaciji.
+		- algoritam za racunanje najkrace putanje u tezinskom grafu je Floyd-Warshall alg
+		- TEZINSKI graf je onaj graf koji na ivicama ima neku vrijednost, udaljenost, tezinu ...
+		- Dijkstra algoritam racuna najkrace rastojanje do svih cvorova od zadatog cvora - krene se od jednog cvora,
+		gleda se udaljesnot ka ostalim, upise se u tabelu i krene se najmanjom udaljenoscu i onda u sljedecem
+		cvoru se gleda udljenost do ostalih ako je manja upisuje se, ako nije ide se dalje, ako nema izlaznih grana
+		ide se dalje.. Alg. traje dok se ne posjete svi cvorovi.
+		- Bellman Ford alg radi i sa negativnim vrijednostima na granama dok Dijkstra ne.
+		- minimalno pokrivajuce stablo je pokrivajuce stablo, stablo koje sadrzi sve cvorove grafa, a ujedno je
+		sa najmanjim tezinama, kada se Dijkstra alg pronadju najkrace putanje samo one se i ostave u grafu MPS-a
+		- Prim-Jarnik alg za particije
+		- Kruskal alg za klastere 
+................................................................................................................
+ALGORITMI
+	 Selection sort
+		- Ide se slijeva na desno, postoji current_min promjenljiva. Prolazi se kroz listu
+		for petljom i jos jednom kroz listu range(i,len(list)), dok se u desnom dijelu ne nadje
+		najmanji za tu i-tu poziciju. Kada se nadje swap, ako se ne nadje, znaci da je za tu poziciju 
+		taj element sa najmanjom vrijednscu
+		- O(n^2)
+		- dobar za male ulaze
+	 Insertion sort
+		- Ide se slijeva na desno, ako se naidje na element(broj) koji je manji od
+		elementa sa lijeve strane, pocinje nova petlja j koja taj element smjesta na pravu poziciju,
+		tako sto radi swap, dok se na j poziciji ne nadje element koji je veci od j-1 elementa.
+		- O(n^2)
+		- dobar za male ulaze
+	 Heap sort
+		- koristi se heap struktura(lista). Heap u korjenu ima min(max) vrijednost, na osnovu toga se sortira.
+		- O(nlogn)
+		- dobar za velike ulaze
+	 Merge sort
+		- Devide & Conquer - podjeli se na pola lista brojeva, rekurzivno za desnu i za lijevu stranu, kada se
+		sortiraju lijeva i desna, onda se spajaju u jednu ) Bazni slucaj len(list) = 1, trivijalno sortirano [13]
+		- O(nlogn)
+		- dobar za ogromne ulaze
+	 Quick sort
+		- Randomize Devide & Conquer  - pronadje se pivot, namjesti se da su svi lijevo od pivota manji od njega
+		a desno od pivota veci, za desno i lijevo se primjeni opet quickSort.. Na kraju se sortirane liste spajaju
+		- uz los izbor pivota dobija se O(n^2), inace O(nlogn)
+		- dobar za velike ulaze
+	 Bucket sort
+		- O(n + N)
+		- sortira elemente (kljuc, vrijednost)
+		- LISTA [0, N-1] N je max kljuc, ako je veliki broj onda modul neki za skaliranje
+		- lista sadrzi BUCKET-e
+		- koristi kljuceve da bi spakovao to u listu 
+		- Faza 1 gradi se lista od kljuceva
+		- Faza 2 ide se linearno po listi i kupe se vrijednosti u bucketima
+	 Radix sort
+		- koristi bucket sort algoritam, sluzi za sortiranje k-torki
+......................................................................................................................
+Obrada teksta
+	 Gruba sila
+		- radi u O(nm) vremenu, gdje je n-duzina stringa, a m-duzina pattern-a
+		- tekst i pattern se gledaju slijeva na desno
+	 BM
+		- Booyer Moore algoritam za pretragu stringovapodstringova
+		- zasniva se na tome da se napravi hash mapa pojavljivanja slova, ukoliko imamo aaabbabe, a - 5, b - 6, e - 7
+		- na osnovu posljednjeg pojavljivanja slova, kada se krene metodom poredjenja karaktera, ukoliko se dodje
+		do nepoklapanja gleda se da li postoji to slovo iz teksta u rjecniku pojavljivanja, ako ne postoji onda
+		se pattern pomjeri za duzinu patterna - i(trenutna pozicija u tekstu) + 1, a ukoliko se nalazi u rjecniku to slovo,
+		 i u zavisnosti da li je u Rjecnik[i]  (Rjecnik[i]i) pomjera se pattern za duzinu patterna - min(j,Rjecnik[i]+1)
+		gdje je j trenutna pozicija u patternu
+		- algoritam radi u O(nm+s) vremenu gdje je n duzina teksta, m duzina patterna, a s velicina alfabeta )
+		- znatno brzi za tekstove na prirodnim jezicima
+		- gledaju se pattern i tekst od desne strane patterna
+	 KMP
+		- Knuth Morris Pratt algoritam koristi tabelu koja ukazuje na poklapanje prefiksa i sufiska djela patterna
+		- ukoliko na i-toj poziciji sablona postoji u [0,i] sablona prefiks koji je isti kao i sufiks tog djela sablona
+		onda se preskacu nepotrebna poredjenja tih simetricnih djelova
+		- gledaju se pattern i tekst slijeva na desno
+.................................................................................................................
+Dinamicko programiranje
+		- pristup dizajnu algoritama
+	 Huffman-ovo kodiranje 
+		- je koncept kompresovanja informacija, gleda se ucestalost slova, i onda teze da se
+		zamjene najmanjim brojevima, npr ABRACADABRA.. A - 5puta, B - 2puta, C- 1put, D- 1put, R- 2puta
+		- A se zamjeni jednim bitom, B sa dva bita, R sa dva, C sa jednim i D sa jednim bitom
+		- napravi se tabela u odnosu na postotak ucestalosti tih slova, gradi se stablo od najmanje pojavljivanjih
+		do najvise, onda se na lijeve grane doda 0, a na desne 1 i obilaskom po dubini se ocitavaju kodovi krajnjih
+		slova
