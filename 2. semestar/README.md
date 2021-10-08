@@ -16,13 +16,16 @@ Asistent: Dragaš, Bojana
 | Projekat 1 | 35
 | Projekat 2 | 25
 
-* Domaći zadatak se zadaje obično početkom semestra i nije obavezan. Projekti se zadaju sredinom i krajem semestra i obavezni su da bi se položio predmet, a obuhvataju prvu i drugu polovinu gradiva respektivno.
+* Domaći zadatak se zadaje obično početkom semestra i nije obavezan. 
+* Projekti se objavljuju sredinom i krajem semestra i obavezni su da bi se položio predmet, a obuhvataju prvu i drugu polovinu gradiva respektivno. Mogu se predati i braniti samo u rokovima za koje to predvide asistenti.
 
 | Ispitne | Bodovi
 | ------------- | ------------- | 
-| Usmeni ispit  | 30
+| Završni ispit  | 30
 
-* Završni ispit obuhvata cjelokupno gradivo i uči se sa prezentacija sa predavanja. Ispit je zaista _usmeni_.
+* Završni ispit obuhvata cjelokupno gradivo i uči se sa prezentacija sa predavanja. Ispit je _usmeni_.
+
+
 
 ## Objektno orijentisano programiranje 1 (7 ESPB)
 Profesor: **Vidaković, Milan**  
@@ -43,9 +46,11 @@ Asistent: Ćurčin, Petar
 
 | Ispitne | Bodovi
 | ------------- | ------------- | 
-| Usmeni ispit  | 30
+| Završni ispit  | 30
 
 * Gradivo za završni ispit se uči sa prezentacija i nije zahtjevno. Na ispitu se radi test u kome se na većinu pitanja odgovara sistemom zaokruživanja, a postoje i pitanja gdje treba da se napiše kod za određenu metodu ili klasu.
+
+
 
 ## Matematička analiza (6 ESPB)
 Profesor: **Medić, Slavica**  
@@ -57,13 +62,16 @@ Asistent: Arsić, Dunja
 ### Obaveze:
 | (Pred)ispitne  | Bodovi
 | ------------- | ------------- | 
-| 1. kolokvijum - Prva polovina gradiva | 15+30
-| 2. kolokvijum - Druga polovina gradiva | 15+30
+| 1. kolokvijum | 15+30
+| 2. kolokvijum | 15+30
 | Usmeni ispit - Dokazi | za ocjene 9 i 10
 
-* Prvi kolokvijum se održava sredinom semestra, a drugi krajem semestra ili u januarskom roku. Tokom godine moguće je poništavati rezultate sa pojedinačnih zadataka, te ih raditi iznova.
-* Svaki kolokvijum se sastoji od testa sa pitanjima i malim zadacima (to su predispitne obaveze i ne mogu da se ispravljaju) i tri "velika" zadatka (nalik onima koji se rade na vježbama). Testovi nose 15 bodova, a tri zadatka ukupno 30 bodova (svaki zadatak vrijedi različit broj bodova, u zbiru 30).
-* Usmeni ispit se sastoji od nekoliko dokaza, obavezan je za ocjene 9 i 10, a svi studenti (ukoliko su ostvarili uslov za prolaz) imaju pravo da izađu na usmeni ispit. Ovaj ispit je zaista _usmeni_.
+* Prvi kolokvijum se održava sredinom semestra i obuhvata prvu polovinu gradiva, a drugi krajem semestra ili u januarskom roku i obuhvata drugu polovinu gradiva. Tokom godine moguće je poništavati rezultate sa pojedinačnih zadataka, te ih raditi iznova.
+* Svaki kolokvijum se sastoji od testa sa pitanjima i malim zadacima (to su predispitne obaveze i ne mogu da se ispravljaju naknadno) i tri "velika" zadatka (nalik onima koji se rade na vježbama). Testovi nose 15 bodova, a tri zadatka ukupno 30 bodova (svaki zadatak vrijedi različit broj bodova, u zbiru 30).
+* Usmeni ispit se sastoji od nekoliko dokaza (u obzir dolazi bilo koji od dokaza iz knjige koji su obrađeni, a uz dokaze je potrebno dobro znati i teoriju), obavezan je za ocjene 9 i 10, a svi studenti (ukoliko su ostvarili uslov za prolaz) imaju pravo da izađu na usmeni ispit. Ovaj ispit je zaista _usmeni_.
+* Preporuka je da se prate predavanja, kako bi se što lakše odradile predispitne obaveze. Veliki zadaci su uglavnom šablonski, i nije potrebno mnogo vježbe kako bi se savladali, mada su zadaci u kasnijim rokovima znatno komplikovaniji.
+
+
 
 ## Web dizajn (6 ESPB)
 Profesor: **Zarić, Miroslav**  
@@ -77,15 +85,16 @@ Asistent: Čičković, Anđela
 | Projekat | 70 (25+25+10+10) 
 
 * Projekat se objavljuje početkom semestra, i da bi se došlo do odbrane, potrebno je proći kroz dvije kontrolne tačke, od kojih svaka nosi po 25 bodova. U projektu postoje i dva dodatna zadatka, koja nose po 10 bodova.
-* Projekat predstavlja dizajn i izradu web sajta, gdje se nakon prve kontrolne tačke sajt sastoji od statičkih, a nakon druge kontrolne tačke i od dinamičkih komponenti.
-
+* Projekat obuhvata dizajn i izradu web sajta, gdje se nakon prve kontrolne tačke sajt sastoji od statičkih, a nakon druge kontrolne tačke i od dinamičkih komponenti.
 
 | Ispitne  | Bodovi
 | ------------- | ------------- | 
 | Završni ispit | 30
 
-* Završni ispit se sastoji od nekoliko pitanja na koja se odgovara pismenim ili usmenim putem, u zavisnosti od broja studenata prisutnih na ispitu. Lista pitanja koja dolaze u obzir na usmenom ispitu budu objavljena krajem semestra. Uči se sa prezentacija sa predavanja.
+* Završni ispit se sastoji od nekoliko pitanja na koja se odgovara pismenim ili usmenim putem, u zavisnosti od broja studenata prisutnih na ispitu. Lista pitanja koja dolaze u obzir na usmenom ispitu bude objavljena krajem semestra. Uči se sa prezentacija sa predavanja.
 * Ovaj predmet je u realizaciji tek od 2020/21 godine, te su moguće izmjene.
+
+
 
 ## Internet mreže (4 ESPB)
 Profesor: **Vuković, Željko**  
