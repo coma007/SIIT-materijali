@@ -104,7 +104,7 @@ Profesor: **Nešić, Ana**
 
 | Ispitne  | Bodovi
 | ------------- | ------------- | 
-| Usmeni ispit | 100 (50+50)
+| Završni ispit ispit | 100 (50+50)
 
 * Završni ispit se održava u svakom roku nakon slušanja predmeta i moguće ga je položiti parcijalno (u prva tri roka nakon semestra u kom se predmet sluša) ili odjednom (u svakom od rokova). Ukoliko se polaže parcijalno, gradivo je podijeljeno na dva dijela i svaki dio nosi po 50 bodova.
 Na ispitu se nalazi niz pitanja na koje se odgovara pismeno, a lista pitanja koja dolaze u obzir bude objavljena tokom semestra.
