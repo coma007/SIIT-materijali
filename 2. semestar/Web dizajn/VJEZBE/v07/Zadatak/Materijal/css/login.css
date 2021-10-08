@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html { 
+  background: url(../slike/city.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+#loginWindow {
+	width: 380px;
+	height: 190px;
+	margin: 10% auto 0;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 20px 70px rgba(0, 0, 0, 0.8);
+}
+
+#windowHeader {
+	width: 100%;
+	height: 12%;
+	background-color: #f8f8f8;
+    background: -moz-linear-gradient(center top , #e8e8e8, #bcbbbc);
+    border-bottom: 1px solid #6a6a6a;
+	padding-left: 20px;
+	padding-top: 3px;	
+    
+}
+
+#windowBody {
+	background-color: rgba(0, 0, 0, 0.9);
+    color: #f0f0f0;
+	width: 92%;
+	height: 65%;
+	padding: 40px 15px;	
+}
+
+#loginTable {
+	width: 75%;
+	margin:0 auto;	
+}
+
+button {
+	width: 40%;
+	float: right;
+	background: #de4815;
+	color: #f0f0f0;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+input {
+	float: right;
+}

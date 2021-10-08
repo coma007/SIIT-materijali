@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html { 
+  background: url(../slike/city.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+nav {
+	width: 10%;
+	height: 100%;
+	background-color: rgba(255, 102, 72, 0.8);
+	float: left;
+	/*display: none;*/
+}
+
+#mainNavList {
+	list-style: none;
+}
+
+#mainNavList li {
+	width: 90%;
+	height: 10%;
+	padding: 5%;
+	text-align: center;
+	color: white;	
+	cursor: pointer;
+	font-size: 20px;
+	border-bottom: 1px solid white;
+	-webkit-user-select: none;        
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#mainNavList li:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	cursor: pointer;
+}
+
+#content {
+	width: 84%;
+	height: 83%;
+	float: right;
+	padding: 3% 0;
+	-webkit-user-select: none;        
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#welcomeDiv {
+	background: #000;
+	font-size: 30px;
+	color: #f0f0f0;
+	padding: 5px 50px 5px 10px;
+	float: right;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+    /*display: none;*/
+}
+
+#userSpan {
+	color: #de4815;
+	font-weight: bold;	
+}
+
+#bottomDiv {
+	position: fixed; 
+    bottom: 0;
+	text-align: center;	
+	color: #fff;
+	width: 10%;
+}
+
+#bottomDiv a{
+	text-decoration: none;
+	color: #000;
+}
+
+#clockDiv {
+	border-top: 1px solid #000;
+	padding-top: 10px;	
+}

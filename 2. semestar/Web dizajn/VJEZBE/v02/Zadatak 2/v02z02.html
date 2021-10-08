@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="sr">
+        <title> HTML Forms - Reservation </title>
+        <meta charset="utf-8"> 
+    </head> 
+
+    <body>
+
+        <h1>Courts Reservation Page</h1>
+    
+        <form>
+
+            <fieldset>
+                <legend>Client Data</legend>
+                <p>
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fname" id="fname" pattern="^((\p{L})+(\s(\p{L})+)+)$" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    Are you a Member ?
+                    <input type="radio" name="membership" id="member" value="Member">
+                    <label for="member">Yes</label>
+                    <input type="radio" name="membership" id="non-member" value="Non Member">
+                    <label for="non-member">No</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Data</legend>
+                <p>
+                    <label for="court">Court:</label>
+                    <select name="court" id="court">
+                        <option value="basketball">Basketball</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="rugby">Rugby</option>
+                    </select>
+                </p>
+                <p>
+                    Select a resevation date and time: <br>
+                    <input type="date" required/>
+                    <input type="time" required/>
+                </p>
+                <p>
+                    <label for="players-num">Num of Players</label>
+                    <input type="number" min="1" max="12" name="players-num" id="players-num">
+                </p>
+                <p>
+                    <label for="note">Note: <br></label>
+                    <textarea name="note" id="note" cols="30" rows="4"></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" value="agree" id="policy" name="policy">
+                <label for="policy">I agree to the club's reservation policy</label>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+
+    </body>
+    
+</html>

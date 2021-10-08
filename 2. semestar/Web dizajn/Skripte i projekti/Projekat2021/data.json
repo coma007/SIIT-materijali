@@ -1,0 +1,641 @@
+{
+    "gradovi": {
+        "-MNQgy9N5foEWTmmA_1U": {
+            "naziv": "Barselona",
+            "slika": "https://i.imgur.com/44nfgWJ.jpg",
+            "brojAtrakcija": 8,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW69",
+            "opis": "Barselona (Barcelona) “Dama Mediterana”, se nalazi na severoistoku Španije, na samoj obali Sredozemnog mora, u koje se severno od grada uliva reka Besos i reka Ljobregat na jugu. Udaljena je 120 km od granice sa Francuskom i oko 500 km od Madrida. Grad ima oko 1.600.000 stanovnika u užoj i oko 3.2 miliona u široj gradskoj zoni."
+        },
+        "-MNQftJa4rskH-dBqE9Z": {
+            "naziv": "Beograd",
+            "slika": "https://i.imgur.com/YB15z6b.jpg",
+            "brojAtrakcija": 7,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW61",
+             "opis": "Beograd je jedina prestonica u Evropi koja se nalazi na ušću dve međunarodne reke koje ga dele na dva velika dela – “stari” i Novi Beograd. Počeo je svoju istoriju glavnog grada još u srednjem veku kao prestonica Srbije, bio prestonica tri Jugoslavije i jedne državne zajednice a danas je ponovo glavni i najveći grad Srbije."
+        
+        },
+        "-MNQg8Nd8YPRs-5Kbgqu": {
+            "naziv": "Moskva",
+            "slika": "https://i.imgur.com/GLsNJaF.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Glavni i najveći grad Rusije, na obalama reke Moskve po kojoj je i dobio ime. Ukupno 49 mostova na gradskoj teritoriji povezuje dve obale ove reke. Moskva nosi epitet najzelenije prestonice na svetu, statistički, na svakog stanovnika dolazi po 27 m2 zelenih površina – daleko najviše u poređenju sa ostalim gradovima – Njujork ima 8,6 m2, London 7,5 m2, Pariz 6 m2 po stanovniku. Pisana istorija ovog grada se može pratiti od XII veka..."
+        },
+        "-MNQgI0t2nV3AT1YxNAr": {
+            "naziv": "Rim",
+            "slika": "https://i.imgur.com/5S4X2hF.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Glavni grad Italije, „Večni grad“, „Caput Mundi“, najmoćniji grad u istoriji civilizacije...Grad koji vekovima, milenijumima, ne gubi primat evropskog i svetskog centra umetnosti, kulture, religije, politike, bogatstva. Nalazi se u centralnom delu zapadne obale Apeninskog poluostrva na reci Tibar, razuđen na čuvenih sedam brežuljaka. Šira gradska zona Rima ima oko 3,8 miliona stanovnika. Rim je jedan od najposećenijih gradova na našoj planeti..."
+        },
+        "-MNQgO7Cm756dkG36efQ": {
+            "naziv": "Dubrovnik",
+            "slika": "https://i.imgur.com/f8KcyK1.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Dubrovnik je centralna turistička atrakcija čitavog hrvatskog primorja. Grad izuzetne arhitekture, perfektno očuvanog starog jezgra, zadivljujuće i neverovatno duge istorije. Od Splita je udaljen 237 a od prestonice Hrvatske, Zagreba 624 km."
+        },
+        "-MNQgUTr_lN9O7L8AoUS": {
+            "naziv": "Amsterdam",
+            "slika": "https://i.imgur.com/MDbDA0n.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Bogata istorija ovog grada počinje krajem XII veka, kada je u današnjoj provinciji Severna Holandija na obali reke Amstel sagrađeno ribarsko naselje. Od Amstelerdama, tokom više od osam vekova postojanja, Amsterdam se razvio u jednu od najvažnijih luka Evrope u XVII veku, najveći trgovački i finansijski centar, centar trgovine dijamantima, glavni i najveći grad u današnjoj Holandiji i jednu od vodećih evropskih i svetskih destinacija..."
+        },
+        "-MNQgfzXvQgwB8K-SVfF": {
+            "naziv": "Budimpešta",
+            "slika": "https://i.imgur.com/wS7Ym7I.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis" : "Budimpešta, jedan od najlepših gradova Evrope, najveći grad i prestonica Mađarske, jedna od četiri evropske prestonice na Dunavu. Naselje na mestu današnje Budimpešte postoji još od antičkih vremena i bilo je poznato kao Akvinkum (Aquincum), jedan od glavnih gradova Rimske provincije Panonija. Budimpešta se zapravo sastoji iz dve velike celine - Budima na zapadnoj tj. desnoj obali i Pešte na istočnoj tj. levoj obali reke Dunav..."
+        },
+        "-MNQgnHVDMtvSasYG0C8": {
+            "naziv": "Madrid",
+            "slika": "https://i.imgur.com/sUwH3bh.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Prestonica Španije od 1562. godine (vladavina Filipa II). Smešten je na reci Manzanares u centralnom delu Pirinejskog poluostrva, u istoimenoj pokrajini. Madrid je najveći grad u Španiji, finansijski i politički centar u kojem se nalazi sedište Vlade Španije kao i Rezidencija španskog kralja. U njemu živi preko 3,2 miliona stanovnika u užoj i skoro 6 miliona u široj gradskoj zoni. Zahvaljujući geografskom položaju, Madrid ima kontinentalnu sredozemnu klimu koju karakterišu hladne i suve zime  i veoma topla i suva leta."
+        },
+        "-MNQgskLWMjQvDpJndJO": {
+            "naziv": "Beč",
+            "slika": "https://i.imgur.com/pUInEkT.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Ako bi među evropskim gradovima tražili jedan koji bi bio Kulturna prestonica starog kontinenta, Beč bi se sigurno našao u najužem izboru. Ako bi među svetskim gradovima tražili jedan za muzičku prestonicu cele planete, sigurno bi to bila čuvena Viena. Tu su rođeni Hajdn, Šubert, Štraus, Brukner, Berg...stvarali Mocart i Betoven, kao i ogroman broj velikih imena klasične muzike..."
+        },
+        "-MNQg_nhfUBoPJKBu72e": {
+            "naziv": "Istanbul",
+            "slika": "https://i.imgur.com/F5wiu12.jpg",
+            "brojAtrakcija": 10,
+            "idAtrakcija": "-MNVEu6iMr2EFlQO6TW62",
+            "opis": "Istanbul, najistočnija metropola Zapada i najzapadnija metropola Istoka. Istorija ga poznaje kao Vizantion, Konstantinopolj ili Carigrad. Istanbul je daleko najveći grad u Turskoj, jedan od najvećih u Evropi, finansijski, poslovni i kulturni centar zemlje. Istanbul se prostire na dva kontinenta – zapadni deo u Evropi i istočni u Aziji i jedini je grad na planeti sa ovakvim položajem. Izgrađen je sa obe strane ulaza u Bosfor, moreuza koji razdvaja dva kontinenta..."
+        }
+    },
+    "turistickeAtrakcije": {
+        "-MNVEu6iMr2EFlQO6TW61": {
+            "-MNQftJa4rskH-dBqE9Z0": {
+                "naziv": "\"Beograd vas domacin\"",
+                "kod": "100101",
+                "adresaPolaska": "Bulevar Kralja Aleksandra 2a, Beograd 11000",
+                "kratakOpis": "Tura \"Beograd vaš domaćin\" je tura razgledanja grada iz otvorenog turističkog autobusa za panoramsko razgledanje grada, opremljen audio-vodičem.",
+                "trajanje": "70",
+                "tip": "Panoramsko razgledanje",
+                "opis": "Tura \"Beograd vaš domaćin\" je tura razgledanja grada, kapaciteta 90 mesta (60 na otvorenom i 30 u zatvorenom delu),  iz otvorenog turističkog autobusa za panoramsko razgledanje grada, opremljen audio-vodičem.Tura razgledanja grada otvorenim autobusom traje 70 minuta. Minimalan broj putnika za realizaciju ture je 15. TRASA ZA TURISTIČKI AUTOBUS: Bulevar Kralja Aleksandra (u zoni Pionirskog parka)-Kneza Miloša-Bulevar Kneza Aleksandra Karađorđevića-Dr.Milutina Ivkovića-Trg Oslobođenja-Autokomanda-Bulevar oslobođenja-Trg Slavija–Kralja Milana-Terazije-Kolarčeva-Trg republike-Vasina-Uzun Mirkova-Tadeuša Košćuškog-Cara Dušana-Bulevar Vojvode Bojovića-Pariska-Kneza Sime Markovića-Pop Lukina-Brankov most-Bulevar Nikole Tesle-Ušće-Bulevar Mihaila Pupina-Brankov Most-Brankova-Prizrenska-Terazije- Bulevar Kralja Aleksandra (u zoni Pionirskog parka).",
+                "slika": "https://i.imgur.com/DiHyX4M.jpg",
+                "cena": 1760,
+                "maxOsobe": 90,
+                "ocena": 4.09,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dBqE9Z1": {
+                "naziv": "Lasta open tour",
+                "kod": "100102",
+                "adresaPolaska": "Savski trg 1a, Beograd 11000",
+                "kratakOpis": "Jedinstvena prilika za sve turiste da uživaju u razgledanju grada iz otvorenog autobusa uz audio vodič na osam svetskih jezika",
+                "trajanje": "70",
+                "tip": "Panoramsko razgledanje",
+                "opis": "Tura \"Lasta open tour\" je tura razgledanja grada, kapaciteta 60 mesta,  iz otvorenog turističkog autobusa za panoramsko razgledanje grada, opremljen audio-vodičem na osam svetskih jezika. Trajanje ture je oko 90 minuta u toku koje se preko audio-vodica moze cuti prica o bogatoj istoriji i kulturi glavnog grada Srbije, Beograda.",
+                "slika": "https://i.imgur.com/fszpXAE.jpg",
+                "cena": 1950,
+                "maxOsobe": 60,
+                "ocena": 4.18,
+                "ocene": [
+                    1,
+                    0,
+                    2,
+                    10,
+                    9
+                ]
+            },
+            "-MNQftJa4rskH-dBqE9Z2": {
+                "naziv": "Brod kornjaca",
+                "kod": "100103",
+                "adresaPolaska": "Kneza Mihaila 35, Beograd 11000",
+                "kratakOpis": "Jedinstvena prilika za sve turiste da sa reke uživaju u razgledanju grada slušajući priče naših vodiča o Beogradu i njegovim sadašnjim i nekadašnjim stanovnicima.",
+                "trajanje": "70",
+                "tip": "Krstarenje",
+                "opis": "Ploveći najdužom turom u Beogradu, imaćete priliku da sa reke vidite svih osam beogradskih mostova – šest na Savi i dva na Dunavu, Kalemegdansku tvrđavu, Kulu Nebojša, Malo konjsko i Veliko ratno ostrvo, ušće Save u Dunav, ribarske vikendice na borčanskoj strani Beograda, Zemun sa predivnim pogledom na Milenijumsku kulu, koja dominira predelom, blokove Novog Beograda, bivšu zgradu Centralnog komiteta Komunističke partije Jugoslavije – popularno Ušće, Beton halu, popularne splavove, Savamalu, prve građevine projekta „Beograd na vodi“, „Dragor“ - kraljevski brod koji je plovio rekama Kraljevine Srba, Hrvata i Slovenaca, Beogradski sajam i Adu Ciganliju.  Tokom plovidbe, možete slušati priče o Beogradu i njegovim sadašnjim i nekadašnjim stanovnicima, koje će vam naši vodiči pričati na srpskom, engleskom i španskom jeziku.U ponudi postoje dnevna tura sa zalaskom sunca i noćna tura.",
+                "slika": "https://i.imgur.com/S22h665.jpg",
+                "cena": 3250,
+                "maxOsobe": 45,
+                "ocena": 4.81,
+                "ocene": [
+                    0,
+                    0,
+                    1,
+                    3,
+                    23
+                ]
+            },
+            "-MNQftJa4rskH-dBqE9Z3": {
+                "naziv": "Brod Kej 1",
+                "kod": "100104",
+                "adresaPolaska": "Karađorđeva 2, Beograd 11080",
+                "kratakOpis": "Iskoristite jedinstvenu priliku da upoznate Beograd sa reka. Brod Kej 1 je na dva nivoa, sa otvorenim barom i restoranom, otvorenom palubom , besplatnim internetom i ljubaznim osobljem.",
+                "trajanje": "90",
+                "tip": "Krstarenje",
+                "opis": "U ponudi su dva programa krstarenja: dnevno krstarenje i krstarenje sa zalaskom sunca, oba u trajanju od 90 min.Ruta: Beton hala– Kalemegdan – Nebojšina Kula – Teniski tereni Novaka Đokovića – SC Milan Gale Muškatirović – Ušće Save u Dunav – Pančevački most – Zemun – Veliko ratno ostrvo – Malo konjsko ostrvo – Muzej savremene umetnosti – Beton Hala – Luka Beograd – Patrijaršija SPC – Saborna crkva – Brankov most – Staro sajmište – spomenik stradalih u logoru – Savamala – Stari savski most – Beograd na vodi – Splavovi – Hram Svetog Save – pogled – Most Gazela – Stari železnički most -Novi železnički most – Beogradski sajam – Ada (jezero, ostrvo, most) – povratak na polaznu tačku broda (Beton hala).",
+                "slika": "https://i.imgur.com/KYsiY2c.jpg",
+                "cena": 3250,
+                "maxOsobe": 60,
+                "ocena": 4.81,
+                "ocene": [
+                    0,
+                    0,
+                    1,
+                    3,
+                    23
+                ]
+            },
+            "-MNQftJa4rskH-dBqE9Z4": {
+                "naziv": "Muzej Nikole Tesle",
+                "kod": "100105",
+                "adresaPolaska": "Hol muzeja, Krunska 14, Beograd 11111",
+                "kratakOpis": "Muzej Nikole Tesle je danas po svemu jedinstvena institucija nauke i kulture u Srbiji, a i u svetu. Jedini je muzej koji čuva originalnu i ličnu zaostavštinu Nikole Tesle.",
+                "trajanje": "45",
+                "tip": "Pešačka",
+                "opis": "Muzej poseduje sledeće izuzetno vredne kolekcije: preko 160.000 originalnih dokumenata, preko 2000 knjiga i časopisa , preko 1200 istorijsko-tehničkih eksponata ,preko 1500 fotografija i staklenih fotoploča originalnih tehničkih ,preko 1000 planova i crteža. Ture sa vodičem dostupne su vikendom od 12 do 16 časova. Kreću na početku svakog sata i traju oko 45 minuta. Naši posebno obučeni demonstratori prezentuju lik i delo Nikole Tesle kroz interesantne detalje i priče o našem velikom geniju, ali i kroz puštanje eksponata u rad, koji na autentičan način dočaravaju Teslina brilijantna dostignuća u vremenu u kom je živeo i stvarao. Pored mnogobrojnih ličnih Teslinih predmeta, posetioci imaju priliku i da pogledaju autorski film dr Branimira Jovanovića o Teslinom životu. Ture se organizuju na srpskom i engleskom jeziku. Rezervacija je potrebna za grupne posete. Za individualne posete nije potrebna rezervacija.",
+                "slika": "https://i.imgur.com/r4tTxeo.jpg",
+                "cena": 2250,
+                "maxOsobe": 10,
+                "ocena": 4.39,
+                "ocene": [
+                    0,
+                    0,
+                    2,
+                    7,
+                    17
+                ]
+            },
+            "-MNQftJa4rskH-dBqE9Z5": {
+                "naziv": "Podzemni Beograd",
+                "kod": "100106",
+                "adresaPolaska": "Pariska 14, Beograd 11080",
+                "kratakOpis": "Otkrijte tajne Beograda na savršen način. Podzemni Beograd sadrži na stotine lokaliteta: pećina, laguma, zazidanih reka, tunela, bunkera i drugih građevina koje su uništavali i gradili narodi koji su naseljavali Beograd.",
+                "trajanje": "90",
+                "tip": "Pešačka",
+                "opis": "Spustite se među starije slojeve Beograda u posebnim lokalitetima. Tokom ture imaćete priliku da vidite Rimsku dvoranu u kojoj su temelji kule, glavne kapije rimske tvrđave i cevi rimskog vodovoda koji je vodio čak od Malog mokrog luga. U bunkeru građenom u prvoj polovini 20. veka na Beogradskoj tvrđavi, upoznaćete se sa nekim špijunskim tajnama Jugoslavije i Titovom političkom igrom između velikih sila. Proćićete tunelom koji vodi od Kosančićevog venca do laguma u Karađorđevoj ulici, iz kojeg se može videti još jedan lagum. Na kraju ćete u vinskom lagumu proći kroz vreme, u period oslobođenja Srbije od Turaka i razvoja srpske Sava male, uz obavezno vino. Posetu lokalitetima će oslikati priče o neobičnoj istoriji Beograda, čudnim sudbinama i legendama, kao i odgovori na neke enigme koje vekovima podstiču znatiželju poznavalaca istorije i kulture.",
+                "slika": "https://i.imgur.com/LQvb51X.jpg",
+                "cena": 2250,
+                "maxOsobe": 20,
+                "ocena": 4.39,
+                "ocene": [
+                    0,
+                    0,
+                    2,
+                    7,
+                    17
+                ]
+            },
+            "-MNQftJa4rskH-dBqE9Z6": {
+                "naziv": "Beogradska tvrdjava",
+                "kod": "100107",
+                "adresaPolaska": "Bulevar Vojvode Bojovica, Beograd 11080",
+                "kratakOpis": "Beogradska tvrđava i park Kalemegdan jedno su od najomiljenijih i nezaobilaznih destinacija turističkih razgledanja našeg grada.",
+                "trajanje": "180",
+                "tip": "Pešačka",
+                "opis": "Spustite se među starije slojeve Beograda u posebnim lokalitetima. Tokom ture imaćete priliku da vidite Rimsku dvoranu u kojoj su temelji kule, glavne kapije rimske tvrđave i cevi rimskog vodovoda koji je vodio čak od Malog mokrog luga. U bunkeru građenom u prvoj polovini 20. veka na Beogradskoj tvrđavi, upoznaćete se sa nekim špijunskim tajnama Jugoslavije i Titovom političkom igrom između velikih sila. Proćićete tunelom koji vodi od Kosančićevog venca do laguma u Karađorđevoj ulici, iz kojeg se može videti još jedan lagum. Na kraju ćete u vinskom lagumu proći kroz vreme, u period oslobođenja Srbije od Turaka i razvoja srpske Sava male, uz obavezno vino. Posetu lokalitetima će oslikati priče o neobičnoj istoriji Beograda, čudnim sudbinama i legendama, kao i odgovori na neke enigme koje vekovima podstiču znatiželju poznavalaca istorije i kulture.",
+                "slika": "https://i.imgur.com/DWeV3gj.jpg",
+                "cena": 2250,
+                "maxOsobe": 20,
+                "ocena": 4.27,
+                "ocene": [
+                    0,
+                    2,
+                    0,
+                    4,
+                    15
+                ]
+            }
+        },
+        "-MNVEu6iMr2EFlQO6TW62": {
+            "-MNQftJa4rskH-dAqR9W0": {
+                "naziv": "Lorem ipsum dolor 1",
+                "kod": "200101",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "70",
+                "tip": "Biciklistička",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2565,
+                "maxOsobe": 20,
+                "ocena": 4.15,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W1": {
+                "naziv": "Lorem ipsum dolor 2",
+                "kod": "200102",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "70",
+                "tip": "Pešačka",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2565,
+                "maxOsobe": 20,
+                "ocena": 4.22,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W2": {
+                "naziv": "Lorem ipsum dolor 3",
+                "kod": "200103",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "60",
+                "tip": "Biciklistička",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2565,
+                "maxOsobe": 20,
+                "ocena": 4.56,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W3": {
+                "naziv": "Lorem ipsum dolor 4",
+                "kod": "200104",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "100",
+                "tip": "Biciklistička",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 3165,
+                "maxOsobe": 20,
+                "ocena": 4.57,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W4": {
+                "naziv": "Lorem ipsum dolor 5",
+                "kod": "200105",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "110",
+                "tip": "Pešačka",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2965,
+                "maxOsobe": 10,
+                "ocena": 4.59,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W5": {
+                "naziv": "Lorem ipsum dolor 6",
+                "kod": "200106",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "60",
+                "tip": "Krstarenje",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 7565,
+                "maxOsobe": 20,
+                "ocena": 4.98,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W6": {
+                "naziv": "Lorem ipsum dolor 7",
+                "kod": "200107",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "140",
+                "tip": "Panoramsko razgledanje",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 3920,
+                "maxOsobe": 30,
+                "ocena": 4.18,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W7": {
+                "naziv": "Lorem ipsum dolor 8",
+                "kod": "200108",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "130",
+                "tip": "Pešačka",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 1165,
+                "maxOsobe": 30,
+                "ocena": 4.54,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W8": {
+                "naziv": "Lorem ipsum dolor 9",
+                "kod": "200109",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "110",
+                "tip": "Pešačka",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2965,
+                "maxOsobe": 10,
+                "ocena": 4.58,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dAqR9W9": {
+                "naziv": "Lorem ipsum dolor 10",
+                "kod": "200110",
+                "adresaPolaska": "Lorem ipsum dolor sit amet",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "130",
+                "tip": "Biciklistička",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam .",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 7565,
+                "maxOsobe": 20,
+                "ocena": 4.67,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    7,
+                    10
+                ]
+            }
+        },
+        "-MNVEu6iMr2EFlQO6TW69": {
+            "-MNQftJa4rskH-dBqF9Z0": {
+                "naziv": "Pešačenje \"Ciudad Vieja\" ",
+                "kod": "500101",
+                "adresaPolaska": "Pl. de Catalunya, 19, 08002 Barcelona",
+                "kratakOpis": "Ako od jednog grada tražite šarm i energiju koja se nosi dugo u srcu, onda je Barselona grad koji sve objedinjuje u sebi. Rezervišite vaše mesto za pešačku turu upoznavanja najmističnijeg i najstarijeg dela ovog grada.",
+                "trajanje": "180",
+                "tip": "Pešačka",
+                "opis": "Okupljanje izletničke grupe ispred hotela Olivia Plaza na Katalonskom trgu i polazak na pešačko upoznavanje najstarijeg i najmističnijeg dela Barselone. Izlet obuhvata šetnju kroz tri celine samog srcaBarselone, do slavnog kafea “4 gatos”, katedrale ,,Catedral de la Santa Cruz y Santa Eulalia”, crkve Santa Maria del Pi, Kraljevskog trga, crkve Santa Maria del Mar, Pikasovog muzeja, zelene oaze Parka Citadela sa Trijumfalnom kapijom, do Zamka tri zmaja, Gaudijeve fontane ,, Gran Cascada” i Parlamenta Katalonije. Nastavak šetnje preko tzv. Kolumbovog pasaža, do novog španskog mola a nadomak Kolumbovog spomenika i šetališta Las Ramblas, gde se izlet završava.",
+                "slika": "https://i.imgur.com/alz8ZeM.jpg",
+                "cena": 2760,
+                "maxOsobe": 30,
+                "ocena": 4.23,
+                "ocene": [
+                    0,
+                    2,
+                    4,
+                    3,
+                    13
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z1": {
+                "naziv": "Sagrada Familia ",
+                "kod": "500102",
+                "adresaPolaska": "Carrer de la Marina, 08013 Barcelona",
+                "kratakOpis": "Zaronite duboko u detalje svetski poznate bazilike u Barseloni sa privatnim vodičem. Iskoristite priliku da se divite arhitekturi koja oduzima dah i postavljajte stručnjaku pitanja o životu i radu Gaudija.",
+                "trajanje": "130",
+                "tip": "Pešačka",
+                "opis": " Krenite u obilazak arhitektonskog remek-dela i čujte intrigantne anegdote oko izgradnje čuvene nedovršene katedrale. Dok istražujete svaki dio sa svojim vodičem, zagledajte se u karakteristične delove katedrale koja je na spisku UNESCO-ve svetske baštine. Hodajte ispod svodova spuštenih 70 metara nad zemljom i cenite raskošnu ornamentiku unutrašnjosti. Nakon dovoljnog divljenja, posetite muzej La Sagrada Familia da biste videli gipsane modele, crteže i slike koji prate razvoj katedrale od 19. veka. Otkrijte predviđeni datum završetka katedrale i oprostite se od svog vodiča u muzeju. Slobodno nastavite da pregledate dalje svojim tempom nakon rastanka sa vodičem.",
+                "slika": "https://i.imgur.com/9radkXG.jpg",
+                "cena": 6760,
+                "maxOsobe": 30,
+                "ocena": 4.81,
+                "ocene": [
+                    0,
+                    0,
+                    1,
+                    3,
+                    23
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z2": {
+                "naziv": "Krstarenje - Katamarana ",
+                "kod": "500103",
+                "adresaPolaska": "Moll del Mestral amarre 2854, 08005 Barcelona",
+                "kratakOpis": "Istražite spektakularnu obalu Barselone i divite se pogledu na velelepni grad na tročasovnom krstarenju katamaranom. Uživajte na vodama Sredozemnog mora i nestvarnom pogledu sa ove jedrilice.",
+                "trajanje": "180",
+                "tip": "Krstarenje",
+                "opis": " Krenite u obilazak spektakularnu obalu Barselone i divite se sjaju grada u toku krstarenju katamaranom. Plovite vodama Sredozemnog mora na modernoj jedrilici; pijuckajte besplatne koktele i osvežavajuća pića dok na svojoj koži osećate umirujuće špansko sunce. Ne propustite priliku i da uskočite i okupate se u moru. Opustite se i sunčajte se na palubi i divite se raskošnom prizoru. Plivajte u prelepom Sredozemnom moru. Uživajte u sandvičima i grickalicama. Uživajte u osvežavajućoj gaziranoj vodi, sangriji i pivu",
+                "slika": "https://i.imgur.com/fC38Vb7.jpg",
+                "cena": 3060,
+                "maxOsobe": 50,
+                "ocena": 4.81,
+                "ocene": [
+                    0,
+                    0,
+                    0,
+                    3,
+                    13
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z3": {
+                "naziv": "Park Güell",
+                "kod": "500104",
+                "adresaPolaska": "Carrer d'Olot, Barcelona",
+                "kratakOpis": "Otkrijte jednu od najtrajnijih kreacija Antonija Gaudija. Prošetajte kroz vek umetnosti.",
+                "trajanje": "190",
+                "tip": "Pešačka",
+                "opis": " Tura započinje na Carmel Hill-u. Ovaj park je Gaudi izgradio pre više od jednog veka. Ne propustite da pogledate fantastične mozaične pločice statue daždevnjaka („El Drac“) na ulazu u park kao primer tipičnog Gaudijevog stila. Vodič će vam pokazati kako se glavne arhitektonske karakteristike parka zasnivaju na secesiji, umetničkom pokretu koji je započeo u Glazgovu, a proširio se širom Evrope do Brisela i dalje do Barselone. Saznajte o tome kako su stare građevinske tehnike, kao što su katalonski ili svod od timbrela, napajale viziju pokreta Modernisme u Barseloni. Popnite se na šumovito brdo i pronađite još mozaika, vijugavih klupa, uvijenih kamenih zidova i Sala Hipostila (Dvorana stotinu kolona). Uživajte u panorami grada koja oduzima dah.",
+                "slika": "https://i.imgur.com/bnwVHiM.jpg",
+                "cena": 4260,
+                "maxOsobe": 20,
+                "ocena": 4.31,
+                "ocene": [
+                    1,
+                    0,
+                    3,
+                    3,
+                    12
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z4": {
+                "naziv": "Best of Barcelona",
+                "kod": "500105",
+                "adresaPolaska": " C. del Bisbe, 5, 08002 Barcelona",
+                "kratakOpis": "Otkrijte Barselonu i njene najpoznatije znamenitosti, uključujući nekoliko Gaudijevih arhitektonskih remek-dela, iz perspektive lokalnog stanovništva u pešačkoj turi sa lokalnim vodičem.",
+                "trajanje": "280",
+                "tip": "Pešačka",
+                "opis": " Doživite Barselonu iz drugačije perspektive na turneji sa lokalnim vodičem koji je strastven prema gradu i njegovom bogatom nasleđu. Tokom obilaska otkrijte po čemu je Barselona poznata, uključujući i mnoga mesta koja su pod zaštitom Uneska, i naučite zašto je jedini grad na svetu nagrađen prestižnom Kraljevskom zlatnom medaljom, koja se obično dodeljuje samo pojedincima za istaknute zasluge u arhitekturi. Takođe ćete posetiti čuvenu pijacu La Bokueria radi uzoraka nekih ukusnih lokalnih proizvoda. U društvu svog vodiča saznajte više o istoriji Barselone, kulturi, spomenicima, fantastičnoj arhitekturi, muzejima, galerijama i fascinantnim lokalnim ljudima.",
+                "slika": "https://i.imgur.com/ZddoIgL.jpg",
+                "cena": 7260,
+                "maxOsobe": 20,
+                "ocena": 4.81,
+                "ocene": [
+                    0,
+                    0,
+                    1,
+                    3,
+                    23
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z5": {
+                "naziv": "Barcelona Bike Tour",
+                "kod": "500106",
+                "adresaPolaska": "Carrer de Balmes, 35, 08007 Barcelona,",
+                "kratakOpis": "Za otprilike 4 sata, vodič koji govori engleskim jezikom provešće vas kroz razne četvrti Barselone. Provezaćemo bicikl pored impresivnih modernih zgrada, proći uskim uličicama, kroz parkove i naravno posetiti obalu.",
+                "trajanje": "240",
+                "tip": "Biciklistička",
+                "opis": "Iskusite arhitektonsko i umetničko veličanstvo Barselone na poludnevnom biciklističkom obilasku grada. Energizirajte i uživajte u ovom uzbudljivom izletu sa znanjem i iskusnim vodičem; pogledajte sve značajne znamenitosti grada, kao što su La Catedral i Placa del Rei, dok nežno vozite bicikl između veličanstvenih spomenika. Slikajte fantastične fotografije na svakoj stanici i steknite uvid u fascinantnu istoriju grada uz informativne komentare. Umereni nivo kondicije na ovoj turneji nije potreban zbog nežne prirode rute. Poludnevna biciklistička tura po atrakcijama Barselone uključuje: mogućnost izbora jutarnjeg i popodnevnog obilaska, kišni pončo (ako je potrebno) i dečija sedišta i kacige (na zahtev).",
+                "slika": "https://i.imgur.com/qu3zIEM.jpg",
+                "cena": 3960,
+                "maxOsobe": 20,
+                "ocena": 4.5,
+                "ocene": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    14
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z6": {
+                "naziv": "Barselona iz drugog ugla",
+                "kod": "500107",
+                "adresaPolaska": "Carrer de Balmes, 5, 08007 Barcelona",
+                "kratakOpis": "Uživajte u nesmetanom pogledu na glamurozni delove Barselone iz panoramskog autobusa i ugledajte najpoznatije Gaudijeve moderne domove.",
+                "trajanje": "280",
+                "tip": "Panoramsko razgledanje",
+                "opis": "Ovo panoramsko razgledanje Barselone posebno je dizajniran za kompanije i privatne grupe koje žele da u kratkom vremenskom roku obiđu ovaj velelepni grad. Prva stanica ova panoramske ture jeste prelepi Passeig de Gracia, poznatog po dve kuće Antonija Gaudija, kao i po vrhunskim hotelima i modnim radnjama. Nakon Passeig de Gracia obilazak se nastavlja do Sagrada Familia-e. Verovatno najvažnija građevina u Barseloni i sigurno najposećenija: baziliku svake godine poseti više od 5 miliona ljudi. Od našeg vodiča saznaćete sve činjenice o crkvi: zašto i kada je započeta izgradnja, kada će biti završena i kako se finansira. Panoramska turneja po Barseloni se završava na Montjuicu - jednom od najboljih mesta za pogled na Barselonu: ovde ćete dobiti predivan pogled na grad, videti Olimpijski prsten (izgrađen za Olimpijske igre '92) i videti Placa Espania iz preplavljene Nacionalne palate.",
+                "slika": "https://i.imgur.com/pp5ipjP.png",
+                "cena": 4150,
+                "maxOsobe": 20,
+                "ocena": 3.82,
+                "ocene": [
+                    2,
+                    4,
+                    0,
+                    7,
+                    10
+                ]
+            },
+            "-MNQftJa4rskH-dBqF9Z7": {
+                "naziv": "Camp Nou",
+                "kod": "500108",
+                "adresaPolaska": "Carrer d'Alí Bei, 54, 08013 Barcelona",
+                "kratakOpis": "Zavirite u istoriju FC Barcelona tokom turneje po stadionu Camp Nou. Prođite pored dugih ulaznih linija sa vašom prioritetnom ulaznom kartom i sledite stope fudbalskih legendi iz prošlosti i sadašnjosti.",
+                "trajanje": "180",
+                "tip": "Pešačka",
+                "opis": "Uronite u duh takmičenja i uzbuđenja u igri kada posetite Camp Nou: dom F.C. Barselone od 1957. Vaša poludnevna tura započinje ujutru, kada se ukrcate u klimatizovani autobus u centru grada i uputite direktno na stadion. Po dolasku, posetite nedavno obnovljeni muzej da biste saznali više o istoriji Barse; sledite stope poznatih igrača kada posetite svlačionice, tunel i još mnogo toga; pa čak možete i da napravite pauzu da biste uživali u laganom tapas obroku, i nekom piću. Ova tura uključuje: jednosmerni prevoz iz centralne Barselone klimatizovanim autobusom, mogućnost da istražite Camp Nou i njegov muzej tokom detaljnog obilaska sa vodičem, lagani tapas obrok i piće uz pogledu na stadion.",
+                "slika": "https://i.imgur.com/SAbERiA.jpg",
+                "cena": 4150,
+                "maxOsobe": 20,
+                "ocena": 4.81,
+                "ocene": [
+                    0,
+                    0,
+                    1,
+                    3,
+                    23
+                ]
+            }
+        },
+        "-MNVEu6iMr2EFlQO6TW60": {}
+    },
+    "korisnici": {
+        "-MNQo55Aw0tLdwahMZMK": {
+            "adresa": "Gogoljeva 39, Novi Sad",
+            "datumRodjenja": "1994-10-22",
+            "email": "ppetrovic@webd.com",
+            "ime": "Petar",
+            "password": "petar123",
+            "prezime": "Petrović",
+            "telefon": "061456456",
+            "username": "petar",
+            "pol": "M"
+        },
+        "-MNQoCqEXydVTdCNV47C": {
+            "adresa": "Jug Bogdana 14, Zrenjanin",
+            "datumRodjenja": "1982-05-05",
+            "email": "jjovanovic@webd.com",
+            "ime": "Jovana",
+            "password": "jovana123",
+            "prezime": "Jovanović",
+            "telefon": "062321321",
+            "username": "jovana",
+            "pol": "Ž"
+        },
+        "-MNQoJw2p9rci4Rm_rYY": {
+            "adresa": "Cara Lazara 9a, Kragujevac",
+            "datumRodjenja": "1990-09-17",
+            "email": "mmarkovic@webd.com",
+            "ime": "Marko",
+            "password": "marko123",
+            "prezime": "Marković",
+            "telefon": "063876876",
+            "username": "marko",
+            "pol": "M"
+        },
+        "-MNQoR-5erkWvcm8Hdnk": {
+            "adresa": "Solunska 5, Niš",
+            "datumRodjenja": "1973-03-10",
+            "email": "ffilipovic@webd.com",
+            "ime": "Filip",
+            "password": "filip123",
+            "prezime": "Filipović",
+            "telefon": "064159159",
+            "username": "filip",
+            "pol": "M"
+        },
+        "-MNQoWt_gDudX5W8TLQj": {
+            "adresa": "Ružićeva 32, Beograd",
+            "datumRodjenja": "1998-06-29",
+            "email": "ttijanic@webd.com",
+            "ime": "Tijana",
+            "password": "tijana123",
+            "prezime": "Tijanić",
+            "telefon": "065753753",
+            "username": "tijana",
+            "pol": "Ž"
+        }
+    }
+}
