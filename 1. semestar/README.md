@@ -8,7 +8,7 @@ Asistent: Horvat, Nebojša
 
 [Link ka sajtu predmeta](http://www.acs.uns.ac.rs/sr/arsiit)  
 [Snimci predavanja](https://www.youtube.com/watch?v=0b45tgrycnw&list=PLXJYJOTdIanRyG-nuTiv1pc10ekyQgwQU&ab_channel=Du%C5%A1anGaji%C4%87)  
-[Repozitorijum sa velikim brojem riješenih zadataka za vježbanje](https://github.com/micamaca/ARH-zadaci.git)
+[Repozitorijum sa velikim brojem riješenih zadataka za vježbanje](https://github.com/coma007/ARH-zadaci.git)
   
 ### Obaveze:
 
