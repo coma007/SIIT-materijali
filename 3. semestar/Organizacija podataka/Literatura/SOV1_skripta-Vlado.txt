@@ -1,0 +1,72 @@
+CSV obično čitanje
+-potreban je CSVReader koji prima FileReader (koji radi sa file ili direktno sa putanjom)
+-koristim readnext da dobijem niz stringova
+-mogu iskoristiti StringBuilder kad ispisujem stvari
+
+CSV čitanje sa modifikacijama
+-treba napraviti CSVParser preko CSVParserBuilder-a
+-ne zaboravi build na kraju
+-CSVReader se onda pravi preko CSVReaderBuilder-a, njemu se daje FileReader
+-ostatak kao i obično
+
+CSV obično pisanje
+-potreban je CSVWriter koji prima FileWriter
+-linija (red) koju će writer ispisati mu se daje preko niza Stringova
+-piše se sa writenext
+
+CSV mod pisanje
+-napredni CSVWriter se pravi sa CSVWriterBuilder-om koji prima FileWriter
+-modifikacije se unose sa withxxxxx i onda build
+
+CSV deserijalizacija
+-koristimo CsvToBean<tip klase koju deserializujemo>
+-pravimo ga pomoću njegovog builder-a, isto tipiziran
+-builder prima Reader kao parametar (koristi FileReader al apstraktno Reader)
+- .withType(klasa.class)
+-parse metoda će vratiti listu naših klasa
+-koristi @CsvBindByPosition ili @CsvBindByName kod atributa klase
+
+CSV serijalizacija
+-koristimo StateFulBeanToCsv
+-pravimo ga pomoću njegovog buildera, dajemo mu FileWriter pod apstrakcijom Writer
+-pišemo sa .write
+
+
+
+JSON čitanje
+-koristimo ObjectMapper
+-koritimo metodu .readValue i dajemo mu apstraktnog readera i klasu onoga što očekujemo
+
+JSON pisanje
+-takođe ObjectMapper
+-koristimo metodu .writeValue, dajemo mu apstraktnog writera i šta upisujemo
+
+JSON deserijalizacija
+-isto kao čitanje, unosimo u .readValue metodu da čitamo klasu NekaKlasa.class
+-dobra ideja je uraditi mapper.configureI(MapperFeature.ACCEPT_...PROPERTIES,true)
+-objectmapper gleda setere u klasi
+-ako oni ne odgovaraju jsonovim vrednostima koristi @JsonProperty("imeAtr") kod atributa
+
+JSON serijalizacija
+-isto kao i pisanje
+
+
+
+YAML čitanje
+-koristimo instancu klase Yaml kao: Yaml yaml = new Yaml();
+-yaml.load() vraca objekat, treba kastovati
+-yaml.load prima string ili inputstream
+
+YAML pisanje
+-takođe koristimo Yaml
+-piše se sa yaml.dump(), ovo vraća string, on se može ispisati npr sa bufferedwriter-om
+-dump prima šta pišemo
+-ako bi da podesimo izlaz, koristimo DumperOptions i postavljamo flow na block
+-onda se u konstruktor Yaml-a stavlja taj DumperOptions
+
+YAML deserijalizacija
+-kada pravimo Yaml, u konstruktor mu dajemo novi Constructor(NasaKlasa.class)
+-ostatak je kao i čitanje, metoda load prima inputstream
+
+YAML serijalizacija
+-isto kao pisanje
