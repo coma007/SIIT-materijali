@@ -1,0 +1,49 @@
+*** Naslov stranice: HTML Forms - Reservation
+
+
+Courts Reservation Page
+
+
+Client Data
+
+Full Name: 
+  - tekstualno polje
+  - dozvoljeni sadržaj definiše RegEx: ^((\p{L})+(\s(\p{L})+)+)$
+  - obavezno polje
+
+Email: 
+  - polje za email
+
+Are you a Member?
+Yes
+No
+  - radio grupa
+  - podrazumevano označena opcija No
+
+
+Reservation Data
+
+Court: 
+  - drop-down (padujuća) lista opcija
+  - opcije: Basketball, Tennis, Rugby
+
+Select a reservation date and time:
+  - polja za izbor datuma i vremena
+  - obavezna polja
+
+Num. of Players: 
+  - numeričko polje
+  - minimalna vrednost za unos je 1
+
+Note: 
+  - višelinijsko tekstualno polje
+  - sa 4 reda
+  - sa 30 kolona
+
+I agree to the club’s reservation policy
+  - polje za štikliranje
+  - obavezno polje
+
+
+Submit
+Reset

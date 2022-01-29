@@ -1,0 +1,54 @@
+*** Naslov stranice: CSS - Portfolio
+
+
+*** Font teksta: Open Sans Condensed, Light 300 (preuzeti sa fonts.google.com)
+
+
+*** Navigacioni meni:
+My Photos
+My Songs
+My Videos
+
+
+*** Naslov prvog nivoa:
+Welcome to my online portfolio
+
+
+*** Naslov drugog nivoa
+This is some photo gallery
+
+
+*** Prvi paragraf:
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolor optio veritatis temporibus aspernatur impedit sed suscipit aut error animi dicta voluptatem, totam repellendus nobis. Voluptate nobis sunt commodi rem?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum iusto deserunt sapiente dolorem placeat suscipit alias neque pariatur, ratione error totam aliquam tempore recusandae adipisci nam soluta. Dolorem, deleniti.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium consequuntur ad aperiam officiis nobis itaque temporibus aspernatur architecto incidunt a voluptas hic dolorem, tempora, praesentium inventore repudiandae?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a quo dolore cum eaque, alias nesciunt magni optio sint iure inventore laudantium veritatis doloremque sit, minima reprehenderit ad aliquid hic.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolor optio veritatis temporibus aspernatur impedit sed suscipit aut error animi dicta voluptatem, totam repellendus nobis. Voluptate nobis sunt commodi rem?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum iusto deserunt sapiente dolorem placeat suscipit alias neque pariatur, ratione error totam aliquam tempore recusandae adipisci nam soluta. Dolorem, deleniti.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium consequuntur ad aperiam officiis nobis itaque temporibus aspernatur architecto incidunt a voluptas hic dolorem, tempora, praesentium inventore repudiandae?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a quo dolore cum eaque, alias nesciunt magni optio sint iure inventore laudantium veritatis doloremque sit, minima reprehenderit ad aliquid hic.
+
+
+*** Drugi paragraf
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolor optio veritatis temporibus aspernatur impedit sed suscipit aut error animi dicta voluptatem, totam repellendus nobis. Voluptate nobis sunt commodi rem?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum iusto deserunt sapiente dolorem placeat suscipit alias neque pariatur, ratione error totam aliquam tempore recusandae adipisci nam soluta. Dolorem, deleniti.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium consequuntur ad aperiam officiis nobis itaque temporibus aspernatur architecto incidunt a voluptas hic dolorem, tempora, praesentium inventore repudiandae?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a quo dolore cum eaque, alias nesciunt magni optio sint iure inventore laudantium veritatis doloremque sit, minima reprehenderit ad aliquid hic.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolor optio veritatis temporibus aspernatur impedit sed suscipit aut error animi dicta voluptatem, totam repellendus nobis. Voluptate nobis sunt commodi rem?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum iusto deserunt sapiente dolorem placeat suscipit alias neque pariatur, ratione error totam aliquam tempore recusandae adipisci nam soluta. Dolorem, deleniti.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium consequuntur ad aperiam officiis nobis itaque temporibus aspernatur architecto incidunt a voluptas hic dolorem, tempora, praesentium inventore repudiandae?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a quo dolore cum eaque, alias nesciunt magni optio sint iure inventore laudantium veritatis doloremque sit, minima reprehenderit ad aliquid hic.
+
+
+*** Linkovi:
+Don't read more
+Read more
+
+
+*** BOJE:
+    - Pozadina navigacionog menija: rgba(255, 102, 72, 0.8)
+    - Pozadina naslova prvog nivoa: rgba(0, 0, 0, 0.8)
+    - Pozadina naslova drugog nivoa: rgba(255, 102, 72, 0.8)
+    - Pozadina paragrafa: rgba(0, 0, 0, 0.6)
+
+

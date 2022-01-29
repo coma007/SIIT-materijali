@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html { 
+  background: url(../slike/city.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+nav {
+	width: 10%;
+	height: 100%;
+	background-color: rgba(255, 102, 72, 0.8);
+	float: left;
+}
+
+#mainNavList {
+	list-style: none;
+}
+
+#mainNavList li {
+	width: 90%;
+	height: 10%;
+	padding: 5%;
+	text-align: center;
+	color: white;	
+	cursor: pointer;
+	font-size: 20px;
+	border-bottom: 1px solid white;
+	-webkit-user-select: none;        
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#mainNavList li.selectedItem {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+}
+
+#mainNavList li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#mainNavList li.activeItem {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	cursor: default;
+}
+
+#content {
+	width: 84%;
+	height: 83%;
+	float: right;
+	padding: 3%;
+	-webkit-user-select: none;        
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#mainAudioWindow {
+	width: 40%;
+	background-color: black;
+	padding: 1%;
+	text-align: right;
+	color: white;
+	text-transform: uppercase;
+	float: left;
+}
+
+#mainAudioWindow audio {
+	width: 100%;
+}
+
+.artistSpan {
+	color: red;
+	margin-right: 15px;
+}
+
+.songSpan {
+	font-size: 2em;
+}
+
+#mainVideoWindow p {
+	color: red;
+}
+
+.orderNumber {
+	font-size: 2em;
+	color: grey;
+	margin-right: 15px;
+}
+
+#audioPlaylist {
+	width: 40%;
+	background-color: black;
+	padding: 1%;
+	color: white;
+	text-transform: uppercase;
+	float: left;
+	margin-left: 10px;
+	list-style: none;
+}
+
+#audioPlaylist li{
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+
+.activeSongLi {
+	background-color: white;
+}
+
+.activeSongLi .songSpan {
+	color: black;
+}
+
+#mainVideoWindow {
+	width: 40%;
+	background-color: black;
+	padding: 1%;
+	text-align: right;
+	color: white;
+	text-transform: uppercase;
+	clear: both;
+}
+
+#mainVideoWindow video {
+	width: 100%;
+}
+
+#videoPlaylist {
+	width: 40%;
+	background-color: black;
+	padding: 1%;
+	color: white;
+	text-transform: uppercase;
+	margin-top: 10px;
+	list-style: none;
+}
+
+#videoPlaylist li{
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}

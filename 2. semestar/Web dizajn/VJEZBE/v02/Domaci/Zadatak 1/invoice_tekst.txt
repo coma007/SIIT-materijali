@@ -1,0 +1,57 @@
+*** Naslov stranice: HTML Tables - Invoice
+
+
+*** Napraviti tabelu:
+  - sa okvirom debljine 1 px
+  - sa razmakom ćelija 8 px
+  - širine 500 px
+
+
+*** Zaglavlje:
+Invoice #12345ABC
+18th July 2019
+11:47 a.m.
+
+
+*** Telo:
+
+Pay To:
+The Tech Park
+123 Willow Street
+Los Angeles
+
+Customer:
+John Davis
+456 Main Street
+Los Angeles
+
+
+Name
+Quantity
+MRP
+Amount
+
+
+Wireless Mouse
+4
+$23.50
+$94.00
+
+
+USB 3.0 Hub
+6
+$13.00
+$78.00
+
+
+Subtotal:
+$172.00
+
+
+Tax:
+20.00%
+$34.40
+
+
+Grand Total:
+$206.40

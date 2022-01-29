@@ -1,0 +1,41 @@
+URL: https://jsonplaceholder.typicode.com/users
+-------------------------------------------------
+username: Sincere@april.biz
+password: Bret
+name:     Leanne Graham
+
+username: Shanna@melissa.tv
+password: Antonette
+name:     Ervin Howell
+
+username: Nathan@yesenia.net
+password: Samantha
+name:     Clementine Bauch
+
+username: Julianne.OConner@kory.org
+password: Karianne
+name:     Patricia Lebsack
+
+username: Lucio_Hettinger@annie.ca
+password: Kamren
+name:     Chelsey Dietrich
+
+username: Karley_Dach@jasper.info
+password: Leopoldo_Corkery
+name:     Mrs. Dennis Schulist
+
+username: Telly.Hoeger@billy.biz
+password: Elwyn.Skiles
+name:     Kurtis Weissnat
+
+username: Sherwood@rosamond.me
+password: Maxime_Nienow
+name:     Nicholas Runolfsdottir V
+
+username: Chaim_McDermott@dana.io
+password: Delphine
+name:     Glenna Reichert
+
+username: Rey.Padberg@karina.biz
+password: Moriah.Stanton
+name:     Clementina DuBuque

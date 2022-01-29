@@ -1,0 +1,16 @@
+*** Naslov: Probe formatiranja
+
+Tekst za probu formatiranja
+
+Ovo je tekst u kome ćemo isprobati razna formatiranja teksta.
+
+Po potrebi moguće je tekst podebljati. Međutim ako je potrebno naglasiti i da je tekst po smislu važniji koristio bi se strong tag.
+Moguće je tekst prikazati i zakošeno (kurziv). I ovde ukoliko je tekst bitniji od ostatka koristi se specijalni em tag.
+
+Osim toga je moguće markirati tekst, baš kao što bi to uradili markerom na papiru.
+
+Ponekad se može videti da neko površinu označi sa m^2 što je samo loš način da se pravilno napiše m2.
+
+Isto važi i za indekse koji se često pojavljuju u nekim formulama, npr. Xi, treba ih napisati pravilno.
+
+Ukoliko neko pregleda i rediguje tekst onda je često neophodno neki tekst vidljivo označiti za uklanjanje, a isto tako učiniti novoododati tekst jasnije vidljivim.

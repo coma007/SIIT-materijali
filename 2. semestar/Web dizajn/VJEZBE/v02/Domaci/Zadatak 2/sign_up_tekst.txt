@@ -1,0 +1,43 @@
+*** Naslov stranice: HTML Forms - Registration
+
+
+Create an Account
+
+
+Full Name:
+  - tekstualno polje
+  - dozvoljeni sadržaj definiše RegEx: ^((\p{L})+(\s(\p{L})+)+)$
+  - obavezno polje
+
+Email:
+  - polje za email
+  - obavezno polje
+
+Password:
+  - polje za lozinku
+  - dozvoljeni sadržaj definiše RegEx: ^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+    (najmanje 8 karatktera, od kojih najmanje jedno slovo i najmanje jedan broj)
+  - obavezno polje
+
+Age:
+  - drop-down (padujuća) lista opcija
+  - opcije: -- Select Age --, Under 18, 18 to 30, 31 to 45, 46 to 60, 61+
+
+Gender:
+Male
+Female
+  - radio grupa
+
+Tell us a little about yourself:
+  - višelinijsko tekstualno polje
+  - sa 5 redova
+  - sa 40 kolona
+
+I agree to the Terms & Conditions
+  - polje za štikliranje
+  - obavezno polje
+  - link vodi na stranicu http://www.dumb.com/terms
+  - stranica se otvara u novom tab-u
+
+
+Sign Up

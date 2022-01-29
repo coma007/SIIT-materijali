@@ -1,0 +1,45 @@
+*** Naslov stranice: A Web Design Company
+
+
+*** Font stranice: Open Sans 400 i 700 (preuzeti sa fonts.google.com)
+
+
+*** Navigacioni meni:
+Work
+Services
+About
+Contact
+
+
+*** Naslov prvog nivoa:
+We create a superb, responsive and fast designs for your web and more.
+
+
+*** Naslovi drugog nivoa:
+Web and digital design
+Illustration and graphics
+Animation
+Photography
+
+
+*** Naslov prvog nivoa:
+Contact us
+
+
+*** Naslov drugog nivoa:
+Feel free to contact us about your new project today!
+
+
+*** BOJE: 
+    - Tekst navigacionog menija: #555
+    - Tekst navigacionog menija na prelazak mišem: #72ccc4
+    - Tekst prvog nivoa: #555
+    - Crvena pozadina: #e26868
+    - Ljubičasta pozadina: #4a3f60
+    - Pozadina sličica: #443959
+    - Tekst ispod Contact Us: #a9a9a9
+    - Pozadina forme: #eee
+    - Tekst u poljima forme: #72ccc4
+
+
+*** Maksimalne širine ekrana za responsive: 1350px i 600px

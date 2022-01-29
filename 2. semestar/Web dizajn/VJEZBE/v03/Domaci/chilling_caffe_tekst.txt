@@ -1,0 +1,50 @@
+*** Naslov stranice: CSS - Chilling Caffe
+
+
+*** Naslov prvog nivoa:
+Chilling Caffe
+
+
+*** Navigacioni toolbar:
+Home
+Locations
+Contact
+
+
+*** Naslov drugog nivoa:
+About our caffe
+
+
+*** Paragrafi:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis
+hendrerit dolor. Odio ut sem nulla pharetra. Dignissim diam quis enim
+lobortis scelerisque fermentum dui faucibus.
+
+Gravida arcu ac tortor dignissim convallis aenean et tortor at. Consequat
+nisl vel pretium lectus quam id leo in vitae. Enim facilisis gravida neque
+convallis. Pharetra massa massa ultricies mi quis hendrerit dolor magna.
+
+Id interdum velit laoreet id donec ultrices tincidunt arcu. Ut lectus arcu
+bibendum at varius vel. Dui ut ornare lectus sit amet est placerat in
+egestas. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+
+
+*** Font celokupnog teksta: 
+ - "Trebuchet MS", Helvetica, sans-serif
+
+
+*** BOJE:
+ - Pozadina stranice: #3a4a58
+ - Tekst stranice: #4d4d4d
+ - Naslovi drugog nivoa: #996633
+ - Pozadina navigacionog toolbar-a: #c4cdd6
+ - Tekst navigacionih linkova: #333333
+ - Pozadina navigacionog toolbar-a na prelazak misem: #e5e8ed
+ - Tekst navigacionih linkova na prelazak misem: #000000
+ - Horizonalna linija: #c4cdd6
+
+
+
+
+

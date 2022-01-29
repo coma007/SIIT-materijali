@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My Songs</title>
+		<link rel="stylesheet" type="text/css" href="css/multimedia.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<nav id="mainNavigation">
+	    	<ul id="mainNavList">
+	        	<li id="photos"><a href="photos.html">MY PHOTOS</a></li>
+	            <li id="songs"><a href="songs.html">MY SONGS</a></li>
+	            <li id="videos"><a href="videos.html">MY VIDEOS</a></li>
+	        </ul>
+	    </nav>
+	    <!-- mainNavigation -->
+		<div id="content">
+			<div id="audioPlayer">
+				<div id="mainAudioWindow">
+					<p>
+						<span id="artistElement" class="artistSpan"></span> 
+						<span id="titleElement" class="songSpan"></span>
+					</p>
+					<audio id="player" src="" controls>
+						Sorry, your browser does not support our music player.
+					</audio>
+				</div>
+				<!-- mainAudioWindow -->
+				<ul id="audioPlaylist">
+				</ul>
+				<!-- audioPlaylist -->
+			</div>
+		</div>
+		<!-- content -->
+
+		<script src="js/songs.js"></script>
+
+	</body>
+</html>

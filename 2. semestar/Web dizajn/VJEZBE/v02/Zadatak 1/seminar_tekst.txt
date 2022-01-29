@@ -1,0 +1,48 @@
+*** Naslov stranice: HTML Tables - Schedule
+
+
+*** Napraviti tabelu:
+  - sa okvirom debljine 1 px
+  - sa razmakom ćelija 4 px
+  - sa paddingom ćelija 10 px
+  - centriranu na stranici
+
+
+*** Naslov tabele: My Seminar Schedule
+
+
+*** Zaglavlje:
+Day
+Schedule
+Begin
+End
+Topic
+
+*** Telo:
+
+Monday
+
+8:00
+17:00
+Introduction to XML
+Validity: DTD and Relax NG
+
+
+Tuesday
+
+8:00
+11:00
+XPath
+
+11:00
+14:00
+14:00
+17:00
+XSL transformation
+
+
+Wednesday
+
+8:00
+12:00
+XLS Formatting Objects
