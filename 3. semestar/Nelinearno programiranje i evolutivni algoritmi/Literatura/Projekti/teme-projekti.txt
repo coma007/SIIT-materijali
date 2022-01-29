@@ -1,0 +1,13 @@
+1. Problem putujudeg trgovca - GA
+2. Problem ranca - GA
+3. Problem pravljenja rasporeda - GA
+4. Optimizacija kontinualnih funkcija - GA
+5. Optimizacija kontinualnih funkcija - PSO
+6. "Black-box" optimizacija - GA
+7. "Black-box" optimizacija - PSO
+8. Problem putujuceg trgovca - ACO
+9. Problem najkraceg puta - ACO
+10. Implementirati osnovni algoritam simpleksa i primeniti na konkretan primer
+11. Implementirati revidirani simpleks i primeniti na konkretan primer
+12. Formirati algoritam za resavanje problema rezanja materijala sa ciljem sto manjeg ptpada i rezova (Cutting Stock Problem)
+13. Algoritam za resavanje problema dodele posla u pametnim fabrikama (Job Shop Scheduling)
