@@ -1,0 +1,9 @@
+Najduzi film: !!Cinema.Movie
+  id: '11'
+  length: 120
+  movie: Vratice se rode
+Najprofitabilnija sala: &id001 !!Cinema.Room
+  roomCapacity: 200
+  roomId: '112'
+  roomName: Huawei
+Najveca sala: *id001

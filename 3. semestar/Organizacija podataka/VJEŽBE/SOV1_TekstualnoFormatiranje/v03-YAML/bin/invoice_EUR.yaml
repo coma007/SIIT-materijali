@@ -1,0 +1,20 @@
+!!types.Invoice
+billTo: &id001
+  address:
+    city: Royal Oak
+    lines: |
+      458 Walkman Dr.
+      Suite #292
+    postal: '48046'
+    state: MI
+  family: Dumars
+  given: Chris
+comments: Late afternoon is best. Backup contact is Nancy Billsmer @ 338-4338.
+date: '2001-01-23'
+invoice: '34843'
+product:
+- {description: Basketball, price: 3.75, quantity: 4, sku: BL394D}
+- {description: Super Hoop, price: 19.933333333333334, quantity: 1, sku: BL4438H}
+shipTo: *id001
+tax: 2.0951666666666666
+total: 37.029333333333334

@@ -1,0 +1,131 @@
+[ {
+  "id" : "11",
+  "from" : "Novi Sad",
+  "to" : "Gradiska",
+  "date" : "11.01.2020.",
+  "timeDeparture" : "11:00",
+  "timeArrival" : "04:00",
+  "peron" : 1,
+  "price" : 1030.0,
+  "selled" : 10
+}, {
+  "id" : "11",
+  "from" : "Gradiska",
+  "to" : "Novi Sad",
+  "date" : "11.01.2020.",
+  "timeDeparture" : "05:00",
+  "timeArrival" : "11:00",
+  "peron" : 3,
+  "price" : 1030.0,
+  "selled" : 10
+}, {
+  "id" : "11",
+  "from" : "Gradiska",
+  "to" : "Novi Sad",
+  "date" : "12.01.2020.",
+  "timeDeparture" : "04:00",
+  "timeArrival" : "10:00",
+  "peron" : 3,
+  "price" : 1030.0,
+  "selled" : 23
+}, {
+  "id" : "11",
+  "from" : "Novi Sad",
+  "to" : "Gradiska",
+  "date" : "12.01.2020.",
+  "timeDeparture" : "02:00",
+  "timeArrival" : "09:00",
+  "peron" : 2,
+  "price" : 1030.0,
+  "selled" : 23
+}, {
+  "id" : "11",
+  "from" : "Novi Sad",
+  "to" : "Gradiska",
+  "date" : "13.01.2020.",
+  "timeDeparture" : "11:00",
+  "timeArrival" : "04:00",
+  "peron" : 1,
+  "price" : 1030.0,
+  "selled" : 11
+}, {
+  "id" : "11",
+  "from" : "Gradiska",
+  "to" : "Novi Sad",
+  "date" : "13.01.2020.",
+  "timeDeparture" : "05:00",
+  "timeArrival" : "11:00",
+  "peron" : 3,
+  "price" : 1030.0,
+  "selled" : 22
+}, {
+  "id" : "12",
+  "from" : "Novi Sad",
+  "to" : "Beograd",
+  "date" : "13.01.2020.",
+  "timeDeparture" : "11:00",
+  "timeArrival" : "01:30",
+  "peron" : 5,
+  "price" : 300.0,
+  "selled" : 52
+}, {
+  "id" : "12",
+  "from" : "Novi Sad",
+  "to" : "Beograd",
+  "date" : "13.01.2020.",
+  "timeDeparture" : "12:00",
+  "timeArrival" : "01:10",
+  "peron" : 6,
+  "price" : 300.0,
+  "selled" : 52
+}, {
+  "id" : "13",
+  "from" : "Novi Sad",
+  "to" : "Beograd",
+  "date" : "13.01.2020.",
+  "timeDeparture" : "01:00",
+  "timeArrival" : "02:10",
+  "peron" : 7,
+  "price" : 400.0,
+  "selled" : 12
+}, {
+  "id" : "14",
+  "from" : "Novi Sad",
+  "to" : "Segedin",
+  "date" : "14.01.2020.",
+  "timeDeparture" : "04:00",
+  "timeArrival" : "10:10",
+  "peron" : 3,
+  "price" : 1800.0,
+  "selled" : 30
+}, {
+  "id" : "14",
+  "from" : "Novi Sad",
+  "to" : "Segedin",
+  "date" : "14.01.2020.",
+  "timeDeparture" : "11:00",
+  "timeArrival" : "03:00",
+  "peron" : 3,
+  "price" : 1800.0,
+  "selled" : 50
+}, {
+  "id" : "14",
+  "from" : "Novi Sad",
+  "to" : "Segedin",
+  "date" : "15.01.2020.",
+  "timeDeparture" : "12:00",
+  "timeArrival" : "04:10",
+  "peron" : 3,
+  "price" : 1800.0,
+  "selled" : 10
+}, {
+  "id" : "14",
+  "from" : "Novi Sad",
+  "to" : "Segedin",
+  "date" : "16.01.2020.",
+  "timeDeparture" : "11:00",
+  "timeArrival" : "03:00",
+  "peron" : 3,
+  "price" : 1800.0,
+  "selled" : 40
+} ]

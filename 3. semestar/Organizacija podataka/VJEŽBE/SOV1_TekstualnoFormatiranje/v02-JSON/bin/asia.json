@@ -1,0 +1,323 @@
+{
+  "CountryName" : "Palestine",
+  "CapitalName" : "Jerusalem",
+  "CapitalLatitude" : "31.766666666666666",
+  "CapitalLongitude" : "35.233333",
+  "CountryCode" : "PS",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Afghanistan",
+  "CapitalName" : "Kabul",
+  "CapitalLatitude" : "34.516666666666666",
+  "CapitalLongitude" : "69.183333",
+  "CountryCode" : "AF",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Bahrain",
+  "CapitalName" : "Manama",
+  "CapitalLatitude" : "26.233333333333334",
+  "CapitalLongitude" : "50.566667",
+  "CountryCode" : "BH",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Bangladesh",
+  "CapitalName" : "Dhaka",
+  "CapitalLatitude" : "23.716666666666665",
+  "CapitalLongitude" : "90.400000",
+  "CountryCode" : "BD",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Bhutan",
+  "CapitalName" : "Thimphu",
+  "CapitalLatitude" : "27.466666666666665",
+  "CapitalLongitude" : "89.633333",
+  "CountryCode" : "BT",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Brunei Darussalam",
+  "CapitalName" : "Bandar Seri Begawan",
+  "CapitalLatitude" : "4.883333333333333",
+  "CapitalLongitude" : "114.933333",
+  "CountryCode" : "BN",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Myanmar",
+  "CapitalName" : "Rangoon",
+  "CapitalLatitude" : "16.8",
+  "CapitalLongitude" : "96.150000",
+  "CountryCode" : "MM",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Cambodia",
+  "CapitalName" : "Phnom Penh",
+  "CapitalLatitude" : "11.55",
+  "CapitalLongitude" : "104.916667",
+  "CountryCode" : "KH",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "China",
+  "CapitalName" : "Beijing",
+  "CapitalLatitude" : "39.916666666666664",
+  "CapitalLongitude" : "116.383333",
+  "CountryCode" : "CN",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "India",
+  "CapitalName" : "New Delhi",
+  "CapitalLatitude" : "28.6",
+  "CapitalLongitude" : "77.200000",
+  "CountryCode" : "IN",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Indonesia",
+  "CapitalName" : "Jakarta",
+  "CapitalLatitude" : "-6.166666666666667",
+  "CapitalLongitude" : "106.816667",
+  "CountryCode" : "ID",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Iran",
+  "CapitalName" : "Tehran",
+  "CapitalLatitude" : "35.7",
+  "CapitalLongitude" : "51.416667",
+  "CountryCode" : "IR",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Iraq",
+  "CapitalName" : "Baghdad",
+  "CapitalLatitude" : "33.333333333333336",
+  "CapitalLongitude" : "44.400000",
+  "CountryCode" : "IQ",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Israel",
+  "CapitalName" : "Jerusalem",
+  "CapitalLatitude" : "31.766666666666666",
+  "CapitalLongitude" : "35.233333",
+  "CountryCode" : "IL",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Japan",
+  "CapitalName" : "Tokyo",
+  "CapitalLatitude" : "35.68333333333333",
+  "CapitalLongitude" : "139.750000",
+  "CountryCode" : "JP",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Jordan",
+  "CapitalName" : "Amman",
+  "CapitalLatitude" : "31.95",
+  "CapitalLongitude" : "35.933333",
+  "CountryCode" : "JO",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Kazakhstan",
+  "CapitalName" : "Astana",
+  "CapitalLatitude" : "51.166666666666664",
+  "CapitalLongitude" : "71.416667",
+  "CountryCode" : "KZ",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "North Korea",
+  "CapitalName" : "Pyongyang",
+  "CapitalLatitude" : "39.016666666666666",
+  "CapitalLongitude" : "125.750000",
+  "CountryCode" : "KP",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "South Korea",
+  "CapitalName" : "Seoul",
+  "CapitalLatitude" : "37.55",
+  "CapitalLongitude" : "126.983333",
+  "CountryCode" : "KR",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Kuwait",
+  "CapitalName" : "Kuwait City",
+  "CapitalLatitude" : "29.366666666666667",
+  "CapitalLongitude" : "47.966667",
+  "CountryCode" : "KW",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Kyrgyzstan",
+  "CapitalName" : "Bishkek",
+  "CapitalLatitude" : "42.86666666666667",
+  "CapitalLongitude" : "74.600000",
+  "CountryCode" : "KG",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Laos",
+  "CapitalName" : "Vientiane",
+  "CapitalLatitude" : "17.966666666666665",
+  "CapitalLongitude" : "102.600000",
+  "CountryCode" : "LA",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Lebanon",
+  "CapitalName" : "Beirut",
+  "CapitalLatitude" : "33.86666666666667",
+  "CapitalLongitude" : "35.500000",
+  "CountryCode" : "LB",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Malaysia",
+  "CapitalName" : "Kuala Lumpur",
+  "CapitalLatitude" : "3.1666666666666665",
+  "CapitalLongitude" : "101.700000",
+  "CountryCode" : "MY",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Maldives",
+  "CapitalName" : "Male",
+  "CapitalLatitude" : "4.166666666666667",
+  "CapitalLongitude" : "73.500000",
+  "CountryCode" : "MV",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Mongolia",
+  "CapitalName" : "Ulaanbaatar",
+  "CapitalLatitude" : "47.916666666666664",
+  "CapitalLongitude" : "106.916667",
+  "CountryCode" : "MN",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Nepal",
+  "CapitalName" : "Kathmandu",
+  "CapitalLatitude" : "27.716666666666665",
+  "CapitalLongitude" : "85.316667",
+  "CountryCode" : "NP",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Oman",
+  "CapitalName" : "Muscat",
+  "CapitalLatitude" : "23.616666666666667",
+  "CapitalLongitude" : "58.583333",
+  "CountryCode" : "OM",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Pakistan",
+  "CapitalName" : "Islamabad",
+  "CapitalLatitude" : "33.68333333333333",
+  "CapitalLongitude" : "73.050000",
+  "CountryCode" : "PK",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Philippines",
+  "CapitalName" : "Manila",
+  "CapitalLatitude" : "14.6",
+  "CapitalLongitude" : "120.966667",
+  "CountryCode" : "PH",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Qatar",
+  "CapitalName" : "Doha",
+  "CapitalLatitude" : "25.283333333333335",
+  "CapitalLongitude" : "51.533333",
+  "CountryCode" : "QA",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Saudi Arabia",
+  "CapitalName" : "Riyadh",
+  "CapitalLatitude" : "24.65",
+  "CapitalLongitude" : "46.700000",
+  "CountryCode" : "SA",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Singapore",
+  "CapitalName" : "Singapore",
+  "CapitalLatitude" : "1.2833333333333332",
+  "CapitalLongitude" : "103.850000",
+  "CountryCode" : "SG",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Sri Lanka",
+  "CapitalName" : "Colombo",
+  "CapitalLatitude" : "6.916666666666667",
+  "CapitalLongitude" : "79.833333",
+  "CountryCode" : "LK",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Syria",
+  "CapitalName" : "Damascus",
+  "CapitalLatitude" : "33.5",
+  "CapitalLongitude" : "36.300000",
+  "CountryCode" : "SY",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Taiwan",
+  "CapitalName" : "Taipei",
+  "CapitalLatitude" : "25.033333333333335",
+  "CapitalLongitude" : "121.516667",
+  "CountryCode" : "TW",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Tajikistan",
+  "CapitalName" : "Dushanbe",
+  "CapitalLatitude" : "38.55",
+  "CapitalLongitude" : "68.766667",
+  "CountryCode" : "TJ",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Thailand",
+  "CapitalName" : "Bangkok",
+  "CapitalLatitude" : "13.75",
+  "CapitalLongitude" : "100.516667",
+  "CountryCode" : "TH",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Timor-Leste",
+  "CapitalName" : "Dili",
+  "CapitalLatitude" : "-8.583333333333334",
+  "CapitalLongitude" : "125.600000",
+  "CountryCode" : "TL",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Turkmenistan",
+  "CapitalName" : "Ashgabat",
+  "CapitalLatitude" : "37.95",
+  "CapitalLongitude" : "58.383333",
+  "CountryCode" : "TM",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "United Arab Emirates",
+  "CapitalName" : "Abu Dhabi",
+  "CapitalLatitude" : "24.466666666666665",
+  "CapitalLongitude" : "54.366667",
+  "CountryCode" : "AE",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Uzbekistan",
+  "CapitalName" : "Tashkent",
+  "CapitalLatitude" : "41.31666666666667",
+  "CapitalLongitude" : "69.250000",
+  "CountryCode" : "UZ",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Vietnam",
+  "CapitalName" : "Hanoi",
+  "CapitalLatitude" : "21.033333333333335",
+  "CapitalLongitude" : "105.850000",
+  "CountryCode" : "VN",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Yemen",
+  "CapitalName" : "Sanaa",
+  "CapitalLatitude" : "15.35",
+  "CapitalLongitude" : "44.200000",
+  "CountryCode" : "YE",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Hong Kong",
+  "CapitalName" : "N/A",
+  "CapitalLatitude" : "0",
+  "CapitalLongitude" : "0.000000",
+  "CountryCode" : "HK",
+  "ContinentName" : "Asia"
+} {
+  "CountryName" : "Macau",
+  "CapitalName" : "N/A",
+  "CapitalLatitude" : "0",
+  "CapitalLongitude" : "0.000000",
+  "CountryCode" : "MO",
+  "ContinentName" : "Asia"
+}

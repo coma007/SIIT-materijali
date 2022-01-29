@@ -1,0 +1,54 @@
+- !!RentACar.Car
+  days: 31
+  end: 2021-01-11T00:00:00Z
+  id: '111'
+  km: 1000.0
+  person: {avgDays: 31, fname: Marko, jmbg: '123123123', lname: Mitic, total: 93000.0}
+  place: Novi Sad
+  price: 3000.0
+  start: 2020-12-11T00:00:00Z
+- !!RentACar.Car
+  days: 33
+  end: 2021-01-11T00:00:00Z
+  id: '222'
+  km: 900.0
+  person: {avgDays: 33, fname: Mihailo, jmbg: '392929292', lname: Milosevic, total: 39600.0}
+  place: Novi Sad
+  price: 1200.0
+  start: 2020-12-09T00:00:00Z
+- !!RentACar.Car
+  days: 7
+  end: 2020-12-11T00:00:00Z
+  id: '333'
+  km: 1000.0
+  person: {avgDays: 7, fname: Ivko, jmbg: '654654465', lname: Ivankovic, total: 3500.0}
+  place: Novi Sad
+  price: 500.0
+  start: 2020-12-04T00:00:00Z
+- !!RentACar.Car
+  days: 66
+  end: 2021-02-11T00:00:00Z
+  id: '444'
+  km: 1500.0
+  person: {avgDays: 66, fname: Marko, jmbg: '789879878', lname: Jelica, total: 46200.0}
+  place: Novi Sad
+  price: 700.0
+  start: 2020-12-07T00:00:00Z
+- !!RentACar.Car
+  days: 30
+  end: 2021-01-01T00:00:00Z
+  id: '777'
+  km: 100.0
+  person: {avgDays: 30, fname: Karla, jmbg: '658765155', lname: Vatic, total: 15000.0}
+  place: Novi Sad
+  price: 500.0
+  start: 2020-12-02T00:00:00Z
+- !!RentACar.Car
+  days: 1
+  end: 2020-12-11T00:00:00Z
+  id: '888'
+  km: 1559.0
+  person: {avgDays: 1, fname: Borislav, jmbg: '798651623', lname: Kikic, total: 1565.0}
+  place: Novi Sad
+  price: 1565.0
+  start: 2020-12-10T00:00:00Z

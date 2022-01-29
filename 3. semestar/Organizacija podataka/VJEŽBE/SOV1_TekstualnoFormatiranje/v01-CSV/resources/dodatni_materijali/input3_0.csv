@@ -1,0 +1,16 @@
+Datum:  02.05.2015.     Vreme izmene:12:22   Fakultet: Fakultet Tehnickih nauka  
+
+Stud. Program: Softversko inzenjerstvo  
+Skolska godina: 2015/2016        Semestar:prvi(1)
+
+
+
+Obfuscator: false
+
+br_ind,ime,prezime,nazpr,ocena
+sw1,Milos,Milosevic,org pod,6
+sw2,Nikola,Nikolic,org pod,5
+sw3,Marko,Markovic,org pod,7
+sw3,Marko,Markovic,org pod2,8
+sw3,Marko,Markovic,org pod3,7
+sw3,Marko,Markovic,org pod3,9

@@ -1,0 +1,11 @@
+{
+	"ISBN": "ISBN-0-13-713526-2",
+	"Price": 85,
+	"Edition": 3,
+	"Title": "A First Course in Database Systems",
+	"Author": {
+		"First_Name": "Jeffrey",
+		"Last_Name": "Ullman"
+	},
+	"Tags": ["Computer Science", "Databases"]
+}

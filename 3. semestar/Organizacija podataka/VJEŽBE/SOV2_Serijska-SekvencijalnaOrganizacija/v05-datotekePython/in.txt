@@ -1,0 +1,5 @@
+Ovo je prvi red.
+Drugi red.
+Red 3
+Privodimo datoteku kraju 4. redom.
+5. red za kraj.
