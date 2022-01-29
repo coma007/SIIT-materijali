@@ -1,0 +1,9 @@
+Najveci broj polazaka: !!types.BusStart {date: !!timestamp '2020-01-11T23:00:00Z',
+  from: Novi Sad, id: '11', peron: 1, price: 1030.0, selled: 10, timeArrival: !!timestamp '1970-01-01T04:00:00Z',
+  timeDeparture: !!timestamp '1969-12-31T23:00:00Z', to: Gradiska}
+Najbolja zarada: !!types.BusStart {date: !!timestamp '2020-01-14T23:00:00Z', from: Novi Sad,
+  id: '14', peron: 3, price: 1800.0, selled: 50, timeArrival: !!timestamp '1970-01-01T03:00:00Z',
+  timeDeparture: !!timestamp '1969-12-31T23:00:00Z', to: Segedin}
+Najduze trajanje: !!types.BusStart {date: !!timestamp '2020-01-13T23:00:00Z', from: Novi Sad,
+  id: '12', peron: 5, price: 300.0, selled: 52, timeArrival: !!timestamp '1970-01-01T01:30:00Z',
+  timeDeparture: !!timestamp '1969-12-31T23:00:00Z', to: Beograd}

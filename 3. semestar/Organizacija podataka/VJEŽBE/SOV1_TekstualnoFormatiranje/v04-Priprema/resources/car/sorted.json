@@ -1,0 +1,121 @@
+[ {
+  "id" : "555",
+  "place" : "Novi Sad",
+  "start" : "11.05.2020.",
+  "end" : "11.01.2021.",
+  "km" : 3000.0,
+  "price" : 800.0,
+  "days" : 245,
+  "person" : {
+    "fname" : "Marica",
+    "lname" : "Mihail",
+    "jmbg" : "165895354",
+    "total" : 196000.0,
+    "avgDays" : 245
+  }
+}, {
+  "id" : "888",
+  "place" : "Novi Sad",
+  "start" : "10.12.2020.",
+  "end" : "11.12.2020.",
+  "km" : 1559.0,
+  "price" : 1565.0,
+  "days" : 1,
+  "person" : {
+    "fname" : "Borislav",
+    "lname" : "Kikic",
+    "jmbg" : "798651623",
+    "total" : 1565.0,
+    "avgDays" : 1
+  }
+}, {
+  "id" : "444",
+  "place" : "Novi Sad",
+  "start" : "07.12.2020.",
+  "end" : "11.02.2021.",
+  "km" : 1500.0,
+  "price" : 700.0,
+  "days" : 66,
+  "person" : {
+    "fname" : "Marko",
+    "lname" : "Jelica",
+    "jmbg" : "789879878",
+    "total" : 46200.0,
+    "avgDays" : 66
+  }
+}, {
+  "id" : "111",
+  "place" : "Novi Sad",
+  "start" : "11.12.2020.",
+  "end" : "11.01.2021.",
+  "km" : 1000.0,
+  "price" : 3000.0,
+  "days" : 31,
+  "person" : {
+    "fname" : "Marko",
+    "lname" : "Mitic",
+    "jmbg" : "123123123",
+    "total" : 93000.0,
+    "avgDays" : 31
+  }
+}, {
+  "id" : "333",
+  "place" : "Novi Sad",
+  "start" : "04.12.2020.",
+  "end" : "11.12.2020.",
+  "km" : 1000.0,
+  "price" : 500.0,
+  "days" : 7,
+  "person" : {
+    "fname" : "Ivko",
+    "lname" : "Ivankovic",
+    "jmbg" : "654654465",
+    "total" : 3500.0,
+    "avgDays" : 7
+  }
+}, {
+  "id" : "222",
+  "place" : "Novi Sad",
+  "start" : "09.12.2020.",
+  "end" : "11.01.2021.",
+  "km" : 900.0,
+  "price" : 1200.0,
+  "days" : 33,
+  "person" : {
+    "fname" : "Mihailo",
+    "lname" : "Milosevic",
+    "jmbg" : "392929292",
+    "total" : 39600.0,
+    "avgDays" : 33
+  }
+}, {
+  "id" : "666",
+  "place" : "Novi Sad",
+  "start" : "11.07.2020.",
+  "end" : "12.07.2020.",
+  "km" : 400.0,
+  "price" : 1200.0,
+  "days" : 1,
+  "person" : {
+    "fname" : "Ana",
+    "lname" : "Tanasic",
+    "jmbg" : "687219548",
+    "total" : 1200.0,
+    "avgDays" : 1
+  }
+}, {
+  "id" : "777",
+  "place" : "Novi Sad",
+  "start" : "02.12.2020.",
+  "end" : "01.01.2021.",
+  "km" : 100.0,
+  "price" : 500.0,
+  "days" : 30,
+  "person" : {
+    "fname" : "Karla",
+    "lname" : "Vatic",
+    "jmbg" : "658765155",
+    "total" : 15000.0,
+    "avgDays" : 30
+  }
+} ]

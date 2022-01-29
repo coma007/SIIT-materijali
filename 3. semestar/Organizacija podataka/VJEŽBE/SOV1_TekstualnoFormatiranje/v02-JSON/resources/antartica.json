@@ -1,0 +1,386 @@
+{
+  "CountryName" : "South Georgia and South Sandwich Islands",
+  "CapitalName" : "King Edward Point",
+  "CapitalLatitude" : "-54.283333",
+  "CapitalLongitude" : "-36.500000",
+  "CountryCode" : "GS",
+  "ContinentName" : "Antarctica"
+} {
+  "CountryName" : "French Southern and Antarctic Lands",
+  "CapitalName" : "Port-aux-FranÃ§ais",
+  "CapitalLatitude" : "-49.35",
+  "CapitalLongitude" : "70.216667",
+  "CountryCode" : "TF",
+  "ContinentName" : "Antarctica"
+} {
+  "CountryName" : "Saint Martin",
+  "CapitalName" : "Marigot",
+  "CapitalLatitude" : "18.0731",
+  "CapitalLongitude" : "-63.082200",
+  "CountryCode" : "MF",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Anguilla",
+  "CapitalName" : "The Valley",
+  "CapitalLatitude" : "18.216666666666665",
+  "CapitalLongitude" : "-63.050000",
+  "CountryCode" : "AI",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Antigua and Barbuda",
+  "CapitalName" : "Saint John's",
+  "CapitalLatitude" : "17.116666666666667",
+  "CapitalLongitude" : "-61.850000",
+  "CountryCode" : "AG",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Argentina",
+  "CapitalName" : "Buenos Aires",
+  "CapitalLatitude" : "-34.583333333333336",
+  "CapitalLongitude" : "-58.666667",
+  "CountryCode" : "AR",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Aruba",
+  "CapitalName" : "Oranjestad",
+  "CapitalLatitude" : "12.516666666666667",
+  "CapitalLongitude" : "-70.033333",
+  "CountryCode" : "AW",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Bahamas",
+  "CapitalName" : "Nassau",
+  "CapitalLatitude" : "25.083333333333332",
+  "CapitalLongitude" : "-77.350000",
+  "CountryCode" : "BS",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Barbados",
+  "CapitalName" : "Bridgetown",
+  "CapitalLatitude" : "13.1",
+  "CapitalLongitude" : "-59.616667",
+  "CountryCode" : "BB",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Belize",
+  "CapitalName" : "Belmopan",
+  "CapitalLatitude" : "17.25",
+  "CapitalLongitude" : "-88.766667",
+  "CountryCode" : "BZ",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Bermuda",
+  "CapitalName" : "Hamilton",
+  "CapitalLatitude" : "32.28333333333333",
+  "CapitalLongitude" : "-64.783333",
+  "CountryCode" : "BM",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Bolivia",
+  "CapitalName" : "La Paz",
+  "CapitalLatitude" : "-16.5",
+  "CapitalLongitude" : "-68.150000",
+  "CountryCode" : "BO",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Brazil",
+  "CapitalName" : "Brasilia",
+  "CapitalLatitude" : "-15.783333333333333",
+  "CapitalLongitude" : "-47.916667",
+  "CountryCode" : "BR",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "British Virgin Islands",
+  "CapitalName" : "Road Town",
+  "CapitalLatitude" : "18.416666666666668",
+  "CapitalLongitude" : "-64.616667",
+  "CountryCode" : "VG",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Canada",
+  "CapitalName" : "Ottawa",
+  "CapitalLatitude" : "45.416666666666664",
+  "CapitalLongitude" : "-75.700000",
+  "CountryCode" : "CA",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Cayman Islands",
+  "CapitalName" : "George Town",
+  "CapitalLatitude" : "19.3",
+  "CapitalLongitude" : "-81.383333",
+  "CountryCode" : "KY",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Chile",
+  "CapitalName" : "Santiago",
+  "CapitalLatitude" : "-33.45",
+  "CapitalLongitude" : "-70.666667",
+  "CountryCode" : "CL",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Colombia",
+  "CapitalName" : "Bogota",
+  "CapitalLatitude" : "4.6",
+  "CapitalLongitude" : "-74.083333",
+  "CountryCode" : "CO",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Costa Rica",
+  "CapitalName" : "San Jose",
+  "CapitalLatitude" : "9.933333333333334",
+  "CapitalLongitude" : "-84.083333",
+  "CountryCode" : "CR",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Cuba",
+  "CapitalName" : "Havana",
+  "CapitalLatitude" : "23.116666666666667",
+  "CapitalLongitude" : "-82.350000",
+  "CountryCode" : "CU",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "CuraÃ§ao",
+  "CapitalName" : "Willemstad",
+  "CapitalLatitude" : "12.1",
+  "CapitalLongitude" : "-68.916667",
+  "CountryCode" : "CW",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Dominica",
+  "CapitalName" : "Roseau",
+  "CapitalLatitude" : "15.3",
+  "CapitalLongitude" : "-61.400000",
+  "CountryCode" : "DM",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Dominican Republic",
+  "CapitalName" : "Santo Domingo",
+  "CapitalLatitude" : "18.466666666666665",
+  "CapitalLongitude" : "-69.900000",
+  "CountryCode" : "DO",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Ecuador",
+  "CapitalName" : "Quito",
+  "CapitalLatitude" : "-0.21666666666666667",
+  "CapitalLongitude" : "-78.500000",
+  "CountryCode" : "EC",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "El Salvador",
+  "CapitalName" : "San Salvador",
+  "CapitalLatitude" : "13.7",
+  "CapitalLongitude" : "-89.200000",
+  "CountryCode" : "SV",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Falkland Islands",
+  "CapitalName" : "Stanley",
+  "CapitalLatitude" : "-51.7",
+  "CapitalLongitude" : "-57.850000",
+  "CountryCode" : "FK",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Greenland",
+  "CapitalName" : "Nuuk",
+  "CapitalLatitude" : "64.18333333333334",
+  "CapitalLongitude" : "-51.750000",
+  "CountryCode" : "GL",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Grenada",
+  "CapitalName" : "Saint George's",
+  "CapitalLatitude" : "12.05",
+  "CapitalLongitude" : "-61.750000",
+  "CountryCode" : "GD",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Guatemala",
+  "CapitalName" : "Guatemala City",
+  "CapitalLatitude" : "14.616666666666667",
+  "CapitalLongitude" : "-90.516667",
+  "CountryCode" : "GT",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Guyana",
+  "CapitalName" : "Georgetown",
+  "CapitalLatitude" : "6.8",
+  "CapitalLongitude" : "-58.150000",
+  "CountryCode" : "GY",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Haiti",
+  "CapitalName" : "Port-au-Prince",
+  "CapitalLatitude" : "18.533333333333335",
+  "CapitalLongitude" : "-72.333333",
+  "CountryCode" : "HT",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Honduras",
+  "CapitalName" : "Tegucigalpa",
+  "CapitalLatitude" : "14.1",
+  "CapitalLongitude" : "-87.216667",
+  "CountryCode" : "HN",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Jamaica",
+  "CapitalName" : "Kingston",
+  "CapitalLatitude" : "18",
+  "CapitalLongitude" : "-76.800000",
+  "CountryCode" : "JM",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Mexico",
+  "CapitalName" : "Mexico City",
+  "CapitalLatitude" : "19.433333333333334",
+  "CapitalLongitude" : "-99.133333",
+  "CountryCode" : "MX",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Montserrat",
+  "CapitalName" : "Plymouth",
+  "CapitalLatitude" : "16.7",
+  "CapitalLongitude" : "-62.216667",
+  "CountryCode" : "MS",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Nicaragua",
+  "CapitalName" : "Managua",
+  "CapitalLatitude" : "12.133333333333333",
+  "CapitalLongitude" : "-86.250000",
+  "CountryCode" : "NI",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Panama",
+  "CapitalName" : "Panama City",
+  "CapitalLatitude" : "8.966666666666667",
+  "CapitalLongitude" : "-79.533333",
+  "CountryCode" : "PA",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Paraguay",
+  "CapitalName" : "Asuncion",
+  "CapitalLatitude" : "-25.266666666666666",
+  "CapitalLongitude" : "-57.666667",
+  "CountryCode" : "PY",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Peru",
+  "CapitalName" : "Lima",
+  "CapitalLatitude" : "-12.05",
+  "CapitalLongitude" : "-77.050000",
+  "CountryCode" : "PE",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Puerto Rico",
+  "CapitalName" : "San Juan",
+  "CapitalLatitude" : "18.466666666666665",
+  "CapitalLongitude" : "-66.116667",
+  "CountryCode" : "PR",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Saint Barthelemy",
+  "CapitalName" : "Gustavia",
+  "CapitalLatitude" : "17.883333333333333",
+  "CapitalLongitude" : "-62.850000",
+  "CountryCode" : "BL",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Saint Kitts and Nevis",
+  "CapitalName" : "Basseterre",
+  "CapitalLatitude" : "17.3",
+  "CapitalLongitude" : "-62.716667",
+  "CountryCode" : "KN",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Saint Lucia",
+  "CapitalName" : "Castries",
+  "CapitalLatitude" : "14",
+  "CapitalLongitude" : "-61.000000",
+  "CountryCode" : "LC",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Saint Pierre and Miquelon",
+  "CapitalName" : "Saint-Pierre",
+  "CapitalLatitude" : "46.766666666666666",
+  "CapitalLongitude" : "-56.183333",
+  "CountryCode" : "PM",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Saint Vincent and the Grenadines",
+  "CapitalName" : "Kingstown",
+  "CapitalLatitude" : "13.133333333333333",
+  "CapitalLongitude" : "-61.216667",
+  "CountryCode" : "VC",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Sint Maarten",
+  "CapitalName" : "Philipsburg",
+  "CapitalLatitude" : "18.016666666666666",
+  "CapitalLongitude" : "-63.033333",
+  "CountryCode" : "SX",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Suriname",
+  "CapitalName" : "Paramaribo",
+  "CapitalLatitude" : "5.833333333333333",
+  "CapitalLongitude" : "-55.166667",
+  "CountryCode" : "SR",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Trinidad and Tobago",
+  "CapitalName" : "Port of Spain",
+  "CapitalLatitude" : "10.65",
+  "CapitalLongitude" : "-61.516667",
+  "CountryCode" : "TT",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Turks and Caicos Islands",
+  "CapitalName" : "Grand Turk",
+  "CapitalLatitude" : "21.466666666666665",
+  "CapitalLongitude" : "-71.133333",
+  "CountryCode" : "TC",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "United States",
+  "CapitalName" : "Washington D.C.",
+  "CapitalLatitude" : "38.883333",
+  "CapitalLongitude" : "-77.000000",
+  "CountryCode" : "US",
+  "ContinentName" : "Central America"
+} {
+  "CountryName" : "Uruguay",
+  "CapitalName" : "Montevideo",
+  "CapitalLatitude" : "-34.85",
+  "CapitalLongitude" : "-56.166667",
+  "CountryCode" : "UY",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "Venezuela",
+  "CapitalName" : "Caracas",
+  "CapitalLatitude" : "10.483333333333333",
+  "CapitalLongitude" : "-66.866667",
+  "CountryCode" : "VE",
+  "ContinentName" : "South America"
+} {
+  "CountryName" : "US Virgin Islands",
+  "CapitalName" : "Charlotte Amalie",
+  "CapitalLatitude" : "18.35",
+  "CapitalLongitude" : "-64.933333",
+  "CountryCode" : "VI",
+  "ContinentName" : "North America"
+} {
+  "CountryName" : "Antarctica",
+  "CapitalName" : "N/A",
+  "CapitalLatitude" : "0",
+  "CapitalLongitude" : "0.000000",
+  "CountryCode" : "AQ",
+  "ContinentName" : "Antarctica"
+} {
+  "CountryName" : "Heard Island and McDonald Islands",
+  "CapitalName" : "N/A",
+  "CapitalLatitude" : "0",
+  "CapitalLongitude" : "0.000000",
+  "CountryCode" : "HM",
+  "ContinentName" : "Antarctica"
+}

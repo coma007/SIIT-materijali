@@ -1,0 +1,17 @@
+{
+  "112" : {
+    "roomId" : "112",
+    "roomName" : "Huawei",
+    "roomCapacity" : 200
+  },
+  "222" : {
+    "roomId" : "222",
+    "roomName" : "Room1",
+    "roomCapacity" : 200
+  },
+  "332" : {
+    "roomId" : "332",
+    "roomName" : "Room2",
+    "roomCapacity" : 200
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "title": "Product",
+    "description": "A product from Acme's catalog",
+    "type": "object",
+    "properties": {
+        "ISBN": {
+            "description": "The unique identifier for a book",
+            "type": "string",
+            "pattern" : "ISBN*",
+            "optional": false
+        },
+        "Price": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100000
+        },
+        "Edition": { "type": "integer" },
+        "Title": { "type": "string" },
+        "Author": { 
+        	"type": "object",
+        	"properties": {
+        		"First_name": { "type": "string" },
+        		"Last_name": { "type": "string" }
+        	} 
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    }
+}
+
+
+
