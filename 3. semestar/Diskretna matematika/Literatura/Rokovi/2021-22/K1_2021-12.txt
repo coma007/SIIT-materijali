@@ -1,0 +1,38 @@
+Predispitne (15):
+
+1. U učionici se nalaze redovi sa n sjedišta. U redu treba da sjedi bar jedna osoba, 
+a između svake dvije treba biti bar jedno prazno mjesto. Formirati rekurentnu relaciju
+za broj mogućih razmještaja sjedenja studenata u jednom redu.
+2. Raspisati formulu za uniju četiri skupa ako je presjek svaka tri od njh prazan skup.
+3. Neki izraz sa polinomnim koeficijentima, koji kada se raspiše, čini polinomnu formulu.
+4. Koliko se lozinki može kreirati od zadanog skupa karaktera, ako je kriterijum lozinke 
+da se karakteri ne ponavljaju ?
+5. Dokazati jednakost sa binomnim koeficijentima, gdje kada se brzo dobije desna strana jednakosti
+kada se na lijevu nekoliko puta primijeni Paskalov identitet.
+
+-----------------------------------------------------------------------------------------
+Usmeni (5):
+
+Dat je skup A sa m članova i skup B sa 4 člana.
+- Koliko ima injektivnih preslikavanja A u B za m >= 4 ?
+- S(7, 4) = ?
+- Koliko ima sirjektivnih preslikavanja A u B za m >= 1 ?
+- Koliko ima bijektivnih preslikavanja A u B za m = 4 ?
+- Koliko ima preslikavanja A u B ?
+
+-----------------------------------------------------------------------------------------
+Zadaci (30):
+
+1. Dat je skup A = {1, 2, ..., 20}. Iz A se bira podskup od 8 elemenata. Dokazati da se od tog
+osmočlanog podskupa mogu formirati bar dva tročlana podskupa sa istim zbirom elemenata.
+2. Profesor pravi 4 grupe od 20 studenata, gdje svaka grupa uči neki od programskih jezika.
+Na koliko načina profesor može da rasporedi studente u grupe ?
+3. Dat je pseudo-kod:
+S = 0
+for i in range(1, 20):
+    for j in range(1, 20):
+        for k in range(j, 20):
+            if j<>i:
+                S += 1
+Koliko je S nakon izvršenja koda ?
+4. Linearna homogena rekurentna relacija

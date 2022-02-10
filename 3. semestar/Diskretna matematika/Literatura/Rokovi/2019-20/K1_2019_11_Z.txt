@@ -1,0 +1,11 @@
+Diskretna - prvi kolokvijum 2019
+
+1. Oko okruglog stola je 100 ljudi, broj zena je veci od broja muskaraca.
+Dokazati da barem dve zene sede jedna prekoputa druge.
+
+2. Koliko najvise trouglova moze da se formira od 5 pravih, ako svaka od pravih ima 4 tacke koje mogu biti temena ?
+
+3. Na koliko nacina se na sahovskoj tabli moze postaviti 8 topova koji se ne napadaju,
+tako da nijedan top ne bude na crnoj dijagonali ?
+
+4. f(n) = 3 - 2n * a_n

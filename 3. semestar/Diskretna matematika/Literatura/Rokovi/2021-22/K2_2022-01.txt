@@ -1,0 +1,29 @@
+Predispitne (15):
+
+Dati su grafovi G1 i G2.
+1. Nacrtati graf na osnovu Priferovog niza.
+2. Da li je G2 polu Oljerov, ako jeste, napisati Ojlerov put, ako nije, dokazati.
+3. Da li je G1 Hamiltonov, ako jeste, napisati Hamiltonovu turu, ako nije, dokazati.
+4. Da li je G2 planaran, ako jeste, odrediti broj oblasti koje dijeli graf, ako nije, dokazati.
+5. Da li su G1 i G2 izomorfni, ako jesu, napisati bijektivno preslikavanje, ako nisu, dokazati.
+
+----------------------------------------------------------------------------------------------------
+Usmeni (5):
+
+Neka su G1 i G2 grafovi sa skupom čvorova V1 = V2 = {a, b, c, d}.
+Neka su E1 i E2 skupovi njihovih grana.
+- Odrediti E1 i E2 tako da G1 i G2 budu nepovezani neizomofrni grafovi.
+- Odrediti E1 i E2 tako da G1 i G2 budu izomorfni grafovi.
+- Odrediti E1 i E2 tako da G1 i G2 budu neizomorfna stabla.
+- Odrediti E1 i E2 tako da G1 bude podgraf G2.
+- Odrediti E1 i E2 tako da G1 bude pokrivajuće stablo G2.
+
+----------------------------------------------------------------------------------------------------
+Zadaci (30):
+
+1. Graf je samokomplementaran ako je izomorfan svom komplementu. Dokazati da kod samokomplementarnog 
+grafa važi n ≡ 0 (mod 4) ili n ≡ 1 (mod 4), gdje je n broj čvorova grafa.
+2. Dokazati da stablo T koje sa najmanje tri čvora ima dijametar 2 akko je zvijezda.
+3. Dokazati da je za svako n >= 5, komplement grafa Cn Hamiltonov graf.
+4. Neka je G povezan planaran graf. Ako je svaka oblast r u G sa n čvorova ograničena sa najmanje 5
+ivica, pokazati da 3r <= 2n - 4.
