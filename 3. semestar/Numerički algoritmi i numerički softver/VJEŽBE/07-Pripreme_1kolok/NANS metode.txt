@@ -1,0 +1,5 @@
+Sve metode koje su korišćene na vežbama se nalaze u nans_lib_1.py datoteci. Potrebno je da se pomenuta datoteka nalazi u direktorijumu gde se nalaze i skripte za zadatke.
+
+Poziv metode ide npr. nans_lib_1.gauss(A, b)
+
+Napomena: metode za rešavanje nelinearnih jednačina ne sadrže parametre za simulaciju rada (npr. plot_speed).
