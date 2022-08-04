@@ -1,0 +1,27 @@
+
+insert into radproj values (30, 50, 5);
+insert into radproj values (40, 50, 2);
+insert into radproj values (20, 70, 8);
+insert into radproj values (50, 70, 1);
+insert into radproj values (10,100, 9);
+insert into radproj values (60,100,11);
+insert into radproj values (10, 10,10);
+insert into radproj values (10, 50,11);
+insert into radproj values (10,130, 2);
+insert into radproj values (20,120, 7);
+insert into radproj values (20,110, 8);
+insert into radproj values (20, 20,13);
+insert into radproj values (30, 30, 3);
+insert into radproj values (30, 10, 4);
+insert into radproj values (30, 60, 4);
+insert into radproj values (30, 80, 9);
+insert into radproj values (40, 90, 1);
+insert into radproj values (40, 30, 1);
+insert into radproj values (40,110, 8);
+insert into radproj values (40,120, 4);
+insert into radproj values (50,120, 1);
+insert into radproj values (50, 60, 3);
+insert into radproj values (60, 40, 1);
+insert into radproj values (60,140, 1);
+insert into radproj values (60,150, 1);
+commit;
