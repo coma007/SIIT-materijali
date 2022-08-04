@@ -1,0 +1,3 @@
+wal_size: 10
+memtable_size: 10
+threshold: 70
