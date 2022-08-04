@@ -3,7 +3,7 @@
     
 
 ## Algoritmi i strukture podataka (7 ESPB)
-Profesor: **Sladić, Goran**  
+Profesor: **Dragaš, Bojana**  
 Asistent: Dragaš, Bojana  
 
 [Snimci predavanja](https://www.youtube.com/watch?v=9SXlrYBA-EM&list=PLZtTMexk_VEYAKC6u14UIxjw8w1bxEh0v&ab_channel=BrankoMilosavljevi%C4%87)
