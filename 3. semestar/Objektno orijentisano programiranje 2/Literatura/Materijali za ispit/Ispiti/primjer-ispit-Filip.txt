@@ -1,0 +1,98 @@
+Filip Ivkovic 
+Najbolje sam zapamtio one prve dve-tri recenice koje su glasile: 
+"Jedna ili vise gresaka na eliminacionom delu donosi 0 bodova na celom ispitu. 
+U potpunosti tacno uradjen eliminacioni deo donosi 10 poena. 
+Tacne odgovore zaokruziti a netacne obavezno precrtati."
+
+
+1. Data je klasa A koja implementira virtuelnu metodu foo() i klasa B koja nasledjuje A
+ i implementira istu tu metodu.
+Kako treba kreirati promenljivu tipa B da bi mogli da pozovemo bas metodu klase B. 
+(Bilo je ponudjeno par odgovora)
+
+2. Zaokruziti ispravne pozive funkcija u primeru (pa je bilo par nabrojanih,
+ nesto osnovno)
+
+3. Kada dodamo element u vektor v:
+a) Mozemo biti sigurni da se adrese postojecih elemenata nece promeniti  --ne
+b) Mozemo biti sigurni da se indeksi postojecih elemenata nece promeniti --da ako je pushback
+c) Mozemo biti sigurni da niz zauzima prostor kao i pre, uvecan za velicinu 
+ dodatog elementa u bajtovima --ne, jer moze doci do zauzimanja jos memorije
+d) Mozemo biti sigurni da su svi elementi u nizu istog tipa ---da
+
+
+4. C++ je:
+a) U potpunosti staticki tipski bezbedan jezik --ne
+b) U potpunosti dinamicki tipski bezbedan jezik --ne 
+c) Objekat je deo memorije koji moze sadrzati neki tip resursa // ne resurs nego vrednost nekog tipa
+d) Promenljiva je objekat koji ima resurs --ne resurs nego IME
+
+
+5. Ako je A slozeni tip, kako se zove funkcija koja se poziva u primeru ispod
+
+A x(5,10);
+
+a) Operator
+b) Inicijalizator
+c) Konstruktor --da
+d) Destruktor
+
+c
+
+
+6. Napisati:
+a) Deklaraciju vektora kapaciteta 50 elemenata koji kao tip sadrzi pokazivace 
+na double vrednosti
+	std::vector<double*> vec(50);
+	
+b) Deklaraciju string promenljive koja ce biti inicijalizovana na vrednost DJURA
+	string s("DJURA");
+
+c) Deklaraciju slozenog tipa koji ce imati 2 privatna atributa tipa 
+int i jednu javnu funkciju koja kao parametre prima reference na int 
+i vraca float vrednost.
+	class Tip{
+		int i;
+		int i2;
+	public:
+		float foo(int& i1, int& i2);	
+	};
+
+Ostatak ispita je imao 10 zadataka, svaki je nosio po 4 boda i nema negativnih bodova.
+Bilo je koliko se secam 2 teorijska pitanja, 
+ne secam se kakva ali je bilo da se pise. 
+Svaki od ostalih 8 zadataka je imao neki "lagan" 
+isecak koda koji je trebao da se dopuni, ili je bio dat 
+neki tekstualni zadatak pa nesto "kratko" da se implementira... 
+
+Secam se polovicno samo 2 zadatka. 
+Jedan je u ovom fazonu bio:
+ "Za dati primer napraviti konstruktor, konstruktor kopije, destruktor 
+ (i jos nesto). Potrebno je kreirati duboku kopiju, potrebno spreciti curenje memorije 
+ (i jos nesto)."
+Drugi je ovako nesto isao:
+
+Dopuniti kod iskljucivo na oznacenom mestu tako da program daje izlaz 2,5.
+Zabranjeno menjanje koda ili definisanje novih funkcija sa istim nazivom.
+
+namespace prvo {
+
+foo() {cout << "1" << endl;};
+bar() {cout << "5" << endl;};
+}
+
+namespace drugo {
+
+foo() {cout << "2," << endl;};
+}
+
+// Ovde dodati kod
+
+using drugo::foo;
+using prvo::bar;
+
+int main() {
+
+foo();
+bar();
+}

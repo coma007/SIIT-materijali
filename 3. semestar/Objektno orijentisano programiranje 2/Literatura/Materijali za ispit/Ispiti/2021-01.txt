@@ -1,0 +1,75 @@
+1. klasa A ima virtuelnu fju foo() i klasa B je nasledjuje i overriduje tu fju. Kako treba inicijalizovati y da bi se pozvalo foo iz B? 
+
+y->foo() ??
+
+a) B* y = new B() //OVO
+B) A* y = new B() //OVO
+C) B y; B& x = y;
+D) A y; B* x = &y;
+
+2. Data je funkcija foo(std::string a, const double& b)
+
+std::string x;
+double y;
+
+Koji su validni pozivi?
+a) foo(x, const& y);
+b) foo(std::string a = x; const double& b = y);
+c) foo(x,y);  //OVO
+d) foo(x, &y);
+
+3. Napisati parametrizovani konstruktor za Date(dd,mm,yyy);
+(vec je deklarisan, samo treba da ga implementiras)
+
+5. Sta je djura?  - funkcija, funktor, operator, sablon(DA), lambda?
+template(Typedef..... djura()....
+
+5. Nesto kao imas klasu A i imas 
+A x;
+A y(x);
+ sta se poziva u drugom redu? - KONSTRUKTOR KOPIJE TU
+konstruktor kopije (DA), operator dodele, podrazumevani konstruktor, funkcija dodele, MOZDA JE BIO PONUDJEN I FUNKTOR
+
+6. 3 da se iterira kroz const vektor / lista (ili const_iterator ili for each sa const referencom)
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Eliminacije
+
+1 Ono sa pokazivacem i pozivanjem funkcije iz naslednicke klase,
+Bukvalno isti zad kao iz primera ovde
+
+2Ono sa pozivanjem funkcije, Bukvalno isti zad kao iz primera ovde
+
+3 da se iterira kroz const vektor / lista (ili const_iterator ili for each sa const referencom)
+
+4 da se napise konstruktor sa parametrima (mora initializer list(O B A V E Z N O))
+
+5 DJURA! <3 (napisan je templejt funkcije koja se zove djura i pitanje glasi "sta je djura?" 
+ponudjeno je funktor, funkcija, sablon, operator, lambda. Treba da se stavi sablon (mada ima vise smisla da je djura *IME* FUNKCIJE ali ajde djuko you do you)
+
+6 Ay; Ax(y); sta se poziva? pa je ponudjeno sad tu vise stvari jelte...ali pravi odgovor je konstruktor kopije(ponudjeni su i operator dodele, muv konstruktor, konstruktor s parametrima... ako se ne prekrizi sve netacno ne priznaje se pitanje)
+
+------------------------------------------------
+Ispit
+
+1Kako se polimorfizam pravi u c++?(kljucnu rec virtual sam ja opisivao kako radi)
+
+2 nesto sa izuzecima, vise ponudjenih odgovora, samo je tacno bilo da se moze uhvatiti vise puta mislim.
+
+3 std::list<char> l1; std::list<char> l2; l1.insert('Z'); l1.insert('V');l1.insert('E');
+l2.insert('Z');l2.insert('D');l2.insert('A'); Dodati kod tako da ocekivani ispis ovoga std::cout << l1 + l2; bude 'ZVEZDA'
+
+4 bilo je nesto kako pozivati funkcije iz 2 zaglavlja koje se isto zovu, tako da ispis bude odgovarajuci
+
+5Razlika izmedju protected i private
+
+6 dat je kod za pozivanje funkcije, ti treba da napises kako bi je deklarisao da bi se mogla tako pozvati (jedno 5-6 primera ima da se pise dosta)
+
+7 dat kod sa klasama koje nasledjuju jedna drugu, i ponudjeni primeri koda da napises sta ce se ispisati na ekranu
+
+8 std::set dat i ima brojeve; napisati program tako da izmeni dati skup i da sadrzi samo parne brojeve
+
+9 da se preklopi operator dodele i da se napise destruktor (slicno kao onaj sa primera), bukvalno su isti kod dali (ima primer u .pdf kako se radi)
+
+10

@@ -1,0 +1,105 @@
+1.
+#include <iostream>
+
+using namespace std;
+void f(int &r)
+{
+    r=5;
+}
+void f(int *p)
+{
+    *p=9;
+}
+int main()
+{
+   int a=3;
+   cout<<a;
+   f(a);
+   cout<<a;
+   f(&a);
+   cout<<a;
+   return 0;
+}
+Sta ce biti ispisano ? (359)
+==========================================================================
+2.
+#include<iostream>
+using namespace std;
+    class K {
+    private:
+        int x,y;
+    public:
+        K() {x=2;y=9;}
+        void f() {
+        for(int i=0;i<10;i++)
+            x++;y++;
+            cout<<x<<y<<endl;
+        }
+    };
+int main()
+{
+   K k;
+   k.f();
+   return 0;
+}
+Sta ce biti ispisano? (1210)
+============================================================================
+3.#include <iostream>
+
+using namespace std;
+class A
+{
+public:
+    A() {cout<<"A1";}
+    ~A() {cout<<"A2";}
+};
+class B:public A
+{
+public:
+    B() {cout<<"B1";}
+    ~B() {cout<<"B2";}
+};
+int main()
+{
+   A a;
+   B b;
+   return 0;
+}
+Sta ce biti ispisano ? (A1A1B1B2A2A2)
+============================================================================
+4. 
+	1.Konstruktr sluzi da napravi objekat.
+	2.Destruktor se poziva automatski.
+	3.Kompozicija je veza izmedju klasa.
+	4.Public clanovima se moze pristupiti iz unutrasnjosti klase.
+	5.Apstraktna klasa je klasa koja sadrzi bar jednu apstraktnu metodu.
+ Koji iskazi su tacni?  (Svi iskazi su tacni)
+============================================================================
+5.
+#include <iostream>
+
+using namespace std;
+class C
+{
+public:
+    virtual void f() {cout<<"C";}
+};
+class D:public C
+{
+public:
+        void f() {cout<<"D";}
+};
+int main()
+{
+   C c;
+   D d;
+   c.f();
+   d.f();
+   C *p;
+   p=&d;
+   p->f();
+
+   return 0;
+}
+Sta ce biti ispisano ? (CDD)
+=============================================================================

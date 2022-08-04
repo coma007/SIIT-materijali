@@ -1,0 +1,12 @@
+513		Benjamin	Franklin
+331		Marie 		Curie
+120		Pierre 		Curie
+899		James 		Watt
+635		Albert 		Einstein
+123		Nikola		Tesla
+554		Isaac		Newton
+784		Alan		Turing
+635		Albert 		Einstein
+440		Heinrich	Hertz
+513		Benjamin	Franklin
+635		Albert 		Einstein

@@ -1,0 +1,61 @@
+ 1) A je nadklasa sa foo, B je nasledjuje i treba da se pozove ovako ta iz B:
+x.foo();
+
+a) A x; 
+b) B x; //ovo
+c) A* x = new B();
+d) B y; A& x = y; //ovo?
+
+2) int x; std::vector<int> y;
+void foo(int a, std::vector<int>& b)
+
+a) foo(x, &y);
+b) foo(int x, std::vector<int>& b);
+c) foo(a:x, b:y);
+d) foo(x,y); //OVO
+
+3) Kada se uradi pushbek, tada:
+a) memorijsko zauzece se poveca za jedno //ne
+b) indexi prethodnih elemenata ostaju isti //da
+c) adrese ostaju iste //ne
+d) tip elemenata ostaje isti //da
+
+4) Templejt foo(int)
+int a,b;
+foo(4); foo(a);
+Biće kreirana jedna/dve fje sa jednim/dva poziva?
+
+// mislim da ce se generisati jedna funkcija sa dva poziva
+
+5) Napraviti vektor pokazivaca na double, string "djura", i tip sa dva privatna inta i jednom javnom fjom koja vraca float a prima dva inta;
+
+6) A) C++ je skroy staticki //ne
+B) C++ je skroz dinamicki //ne
+c) Objekat je parce resursa(memorije) koji sadrzi vrednost nekog tipa... //DA
+d) Promenljiva je objekat koji ima resurs // NE (ima iME)
+
+
+////////////////////// ISPIT
+1. Kako je moguce definisati korisnicke tipove? - strukture, klase, enumi
+2. 
+3. Ono sa izuzetke stalno isto
+4. 
+5. Ispis 2,5 tako da se pozove foo iz prvog namespacea a bar iz drugog (using prvi::foo)
+
+7. Da se redefinise operator+ za vector i da se ispise x = y + z (u januaru je bilo da se uradi cout za listu)
+
+9. Da s ucita iz fajla stringovi i ispisu na konzoli bez razmaka
+
+11. Da se napravi fja koja prima listu i u njoj treba da ostane samo prva polovina elemenata. Da se prokomentarise kako bi se isto to uradilo s vektorom
+
+7. Da se za neku klasu napise konsturktor kopije sa dubokom kopijom inta i char*-a i takodje destruktor bez curenja memorije
+
+8. Imas templejt T foo(T a, T b) i u njemu return a+a+b+b, Koji su validni pozivi i koji nisu i zasto
+
+a) int a, int b //da valjda
+b) string a, string b; //da valjda
+c) int a, float b //  NETACNO
+d) list a, list b //ne, nije redefinisan operator+
+
+9. Da napises kojim redosledom ce se ispisati sta na konzoli
+10. Da napises adekvatne pozive fje za svaku fju

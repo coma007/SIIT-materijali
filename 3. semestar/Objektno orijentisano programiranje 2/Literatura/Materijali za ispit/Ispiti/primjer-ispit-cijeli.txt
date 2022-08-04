@@ -1,0 +1,179 @@
+﻿---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ELIMINACIJE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Date dve klase, klasa A roditeljska, klasa B naslednica, u njima metoda void foo(), B preklapa metodu iz A. 
+Ponuđena 4 odgovora za to kako napraviti x->foo() tako da foo() bude pozvano iz B.
+
+Tačno je nešto na fazon:
+B y;
+A* x = &y;
+
+ili
+
+A* x = new B;
+
+Postoji primer u pdf-ovima.
+
+2. Dato:
+
+int x;
+vector<double> y;
+
+foo(int a, vector<double>* b)
+
+Kako pozvati foo(), 4 ponuđena odgovora, tipa:
+	A) foo(x, y) --NE, y mora da bude pokazivac na vektor a ne sam vektor
+	B) foo(x, &y) --DA, prosledjuje se adresa vektora a to je pokazivac
+	C) foo(x, *y) --NE, 
+	D) foo(int x, vector<double>* y) --NE
+
+Tačan pod B
+
+3. U C++, ako u *LISTU* dodajemu *na KRAJU* novi element, za nju vazi:
+
+	A) Tipovi prethodno dodatih elemenata ostaju isti --DA
+	B) Memorijske lokacije prethondo dodatih elemenata ostaju iste --DA
+	C) Dužina u memoriji koja lista zauzima je linearno zavisna od broja elemenata u njoj --DA
+	D) Redosled elemenata ostaje isti --DA valjda? proveri
+
+4. C++ je:
+	
+	A) U potpunosti statički tipski bezbedan jezik --ne
+	B) U potpunosti dinamički tipski bezbedan jezik --ne
+	C) Ekskluzivno podrzava samo OOP                --ne
+	D) std::string je vec definisan tip, nesto tako --ne
+
+5. Dato je:
+
+	namespace Djura {
+		void foo()
+	}
+
+	foo() {
+		
+	}
+
+
+	void main() {
+		Djura::foo();
+	}
+
+Kako pozvati funkciju foo iz Djura namespace-a?
+
+6. Napisati deklaracije:
+	A) Listu čiji su članovi pointeri na vektor intova, std::list<vector<int>*> lista;
+	B) Korisnički navedenog tipa MojTip, MojTip mt;
+	C) Složeni tip sa 2 public atributa, int i double, privatnim konstruktorom kopije /////ima reseno negde u folderu vec mrzi me
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ISPIT |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Šta je ideal tipske bezbednosti, teorijsko pitanje.
+
+
+2. Zaokruži tačno
+
+	A) Preduslove funkcija ne treba pisati u komentarima, dokumenatciji //ne, treba ih pisati
+	B) Preduslove funkcije treba proveriti pri pokretanju funkciju //valjda da!
+	C) Preduslovi funkcije moraju proći da bi se funkcija pokrenula //valjda ne
+	D) Postuslovi funkcije moraju biti tačni pri zavrsetku funkcije //valjda da!
+	E) Postuslovi funkcije moraju biti tačni pri pocetku funkcije //valjda ne?
+	F) Preduslovi ...
+
+3. Data klasa A, napisati konstruktor kopije i destruktor tako da bude duboka kopija + nema memory leak-a
+
+//IMA RESENO! POGLEDAJ FOLDER! 
+
+Class A {
+	private:
+		int size;
+		char* buff;
+	public:
+		...
+		...
+}
+
+Postoji primer za ovo u predavanjima.
+
+4. Dato:
+
+prvo.h
+namespace A{
+	
+	void foo();
+
+}
+
+drugo.h
+namespace B{
+	void foo();
+}
+	
+
+#include "prvo.h" //resenje
+#include "drugo.h" //resenje
+void main() {
+	A::foo();
+	B::foo();
+}
+
+Dodati kod u headerima/mainu tako da se prvo pozove foo iz prve a nakon toga iz druge. 
+
+Radi se dodavanjem namespace-a na sve ovo, pa se onda preko toga sve poziva.
+
+
+
+
+
+5. Dat je vektor nekih prostih tipova, int ili float u main-u i poziva se std::cout << vektor, omogućiti ispis svih članova vektora.
+
+Preklapanje operatora za ispis, unutra neka for petlja koja će ispisati svaku vrednost elementa.
+
+
+
+6. Čitanje iz fajla, potom ispis reč po reč.
+
+Neka while petlja, sve dok ima šta isčitati, moglo je liniju po liniju, pa u StringStream, ili ići reč po reč pa sve samo
+ štamapati kako se dobije.
+
+#include <fstream>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+ifstream in(path);
+if (!in)
+	cout << "nema fjla!" << endl;
+while (!in.eof())
+	string word;
+	in >> word;
+	cout << word;
+
+7. Dato:
+
+int i;
+const int j;
+vector<int> k;
+
+Ponuđeno 8 različitih funkcija koja ih koriste kao parametre, razlikuju se po tome jer negde stoji const, negde pointer ili referenca.
+Napisati kako se pravilno pozivaju
+
+8. ...
+
+
+9. Template funkcija foo koja prima 2 istovetna tipa kao parametre, povratna vrednost je jedna od tih tipova, date opcije za njeno 
+pravilno pozivanje, sa kombinacijom intova i floatova.
+Treba zaokružiti tačan način njenog povezivanja, više primera dato.
+
+Nepravilni odgovori su oni sa lošom sintaksom, mešanjem jednog inta i jednog floata.!!!!!!!!!!!!!!!
+Pravilno je bilo sa dva floata, i mozda jedan gde vraca intove a koristi oba floata jer implicitno konverzija odradi svoje.!!
+
+10. Dato je void foo, dopisati tako da prima mapu<double, int> a cilj je da rezultat bude obrnuta mapa<int, double>
+(zameni se kljuc-vrednost par).
+Na kraju kratak komentar šta bi se menjalo da se koristi i smenjuje <string, char>.
+
+Pošto je funkcija void, prosledi se još i izlazni parametar ili u vidu pokazivača na njega ili reference.
+Po meni glupa postavka, jer je precizno pisalo šta funkcija treba da prima za argumente ali hajde.

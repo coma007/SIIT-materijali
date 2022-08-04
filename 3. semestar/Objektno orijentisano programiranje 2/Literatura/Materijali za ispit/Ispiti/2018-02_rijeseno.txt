@@ -1,0 +1,257 @@
+OOP2 - SIIT - ISPIT 11.02.2018.
+ 
+=======================================================================
+ELIMINACIONI DEO
+=======================================================================
+ 
+ 
+ 
+1. Ako je data klasa A koja implementira virtualnu metodu foo() i klasa B koja nasledjuje A i implementira istu tu metodu, kako treba kreirati promenljivu tipa B da bi mogli da pozovemo bas tu metodu foo iz klase B na nacin x->foo() ?
+ 
+a)  B* x = new A()
+ 
+b)  B y;  OVO JE TACNO
+    B* x = &y;
+ 
+c)  B y;
+    A* x = &y; OVO JE TACNO
+ 
+d)  A* x = new B(); OVO JE TACNO
+ 
+2. Zaokruziti ispravne pozive funkcija.
+   
+    int i;
+    std::vector<int> v;
+    void foo(int i, std::vector<int>* v);
+ 
+    a) foo(int i, std::vector<int> v);
+    b) foo(x,&y);    OVO JE TACNO
+    c) ...
+    d) ...
+ 
+3. Dodavanjem novog elementa u listu L mozemo sa sigurnoscu tvrditi da
+    a) Kolicina memorije koju zauzima lista L ostaje linearno zavisna od broja elemenata te liste TACNO
+    b) Svi postojeci elementi ostaju na istim memorijskim lokacijama TACNO
+    c) Svi elementi unutar liste ce biti istog tipa TACNO
+    d) Svi postojeci elementi ostaju na istim pozicijama u listi NIJE
+ 
+4. Za C++ mozemo tvrditi da je to NISTA NIJE TACNO
+    a) U potpunosti staticki tipski bezbedan jezik 
+    b) U potpunosti dinamicki tipski bezbedan jezik
+    c) std::string je ugradjeni tip
+    d) Podrzava iskljucivo objektno orijentisanu paradigmu
+ 
+5. Za dati isecak koda na odgovarajucem mestu dodati kod tako da se na standardnom izlazu ispise x
+ 
+    namespace Djura
+    {
+        int x;
+    }
+ 
+    #include <iostream>
+    void main()
+    {
+        // ovde dodati kod
+ 	std::cout << Djura::x;
+    }
+ 
+6. Napisati deklaraciju:
+ 
+    a) PROMENLJIVE tipa std::list koja sadrzi elemente tipa pokazivac na vektor int brojeva
+	std::list<vector<int>*> lista;
+    b) PROMENLJIVE korisnicki definisanog tipa MojTip
+	MojTip mt;
+    c) Slozenog tipa koji sadrzi dve javne promenljive tipa int i privatni konstruktor kopije
+	class SlozeniTip {
+	    public:
+	        int x1, x2;
+	    private:
+		SlozeniTip(const SlozeniTip& st) : x1(st.x1), x2(st.x2) { };
+	} 
+
+=====================================================================
+GLAVNI DEO
+=====================================================================
+ 
+1. Objasniti ideal staticke tipske bezbednosti
+	Program koji nebezbedno rukuje objektima sa stanovista njegovog tipa, nece se ni prevesti.	
+ 
+2. Sta su preduslovi i kada se proveravaju? Sta su postuslovi i kada se proveravaju?
+	Preduslovi su ogranicenja, tj pretpostavke funkcije, odnose se uglavnom na proveru da li argumenti funkcije ispunjavaju ocekivanja i pozeljno je preduslove pisati u komentarima i/ili dokumentaciji.
+	Postuslovi su garancija funkcije, funkcija garantuje da je njena povratna vrednost uvek istog tipa i bude validna (na primer ako funkcija treba da vrati povrsinu, proverava se da li je ona validna, tj da li je veca od nule).
+
+3. Za dati isecak koda i svaki zadati prototip funkcije, napisati njen ispravan poziv
+ 
+    int i;
+    const int& j = i;
+    std::map<string, void*> q;
+ 
+    a) void foo(int a, std::map<string, void*> b, int& c) 
+		foo(i, q, i)
+    b) void foo(const int a, int *b, std::map<string, void*> c) 
+		foo(i, &i, q)
+    c) void* foo(int a, int b, const std::map<string, void*> &c) 
+		foo(i, i, q)
+    d) ... i tako dalje, razne moguce kombinacije 
+    e) ...
+    f) ...
+ 
+4. Data su 2 header fajla i jedan cpp fajl. Dodati kod tako da se prvo vrsi poziv metode foo() iz prvog zaglavlja, a zatim iz drugog. Nije dozvoljeno menjanje koda. Dozvoljeno je dodati kod u header fajlove ako je to potrebno.
+ 
+<prvi.h>
+namespace Djura {
+void foo() { /*...*/ }
+}
+ 
+<drugi.h>
+namespace Pera { 
+void foo() { /*...*/ }
+}
+ 
+<main.cpp>
+#include "prvi.h"
+#include "drugi.h"
+ 
+void main()
+{
+    Djura::foo();
+    Pera::foo();   
+}
+ 
+ 
+5. Na naznaceno mesto u datom isecku koda dodati kod koji ce omoguciti ocekivani ispis na standardni izlaz
+
+std::vector<int> operator+(const std::vector<int>& x, const std::vector<int>& y) {
+	std::vector<int> novi;
+	for (int i = 0; i < x.size(); i++) {
+		novi.push_back(x[i]);
+	}
+	for (int i = 0; i < y.size(); i++) {
+		novi.push_back(y[i]);
+	}
+	return novi;
+}
+ 
+void main()
+{
+ 
+    std::vector<int> x = {1, 2};
+    std::vector<int> y = {3, 4};
+    std::vector<int> z = x + y;
+ 
+    for(int i = 0; i < z.size(); ++i)
+    {
+        cout << z[i] << " ";
+    }  
+ 
+    // ocekivani ispis je 1 2 3 4
+ 
+}
+ 
+6. Napisati kod koji ce iz fajla "noviFajl" ucitavati stringove sa preskakanjem razmaka i ispisivati ih na standardni izlaz
+	#include <fstream>
+	#include <string>
+
+	void ispis() {
+		ifstream ist("noviFajl.txt");
+		if (!ist) {
+			cout << "ne postoji";
+		}
+		string str;
+		while (!ist.eof()) {
+			ist >> str;
+			cout << str << " ";
+		}
+} 
+
+7. Za dati kod napisati ocekivani izlaz
+ 
+    struct a
+    {
+        void foo(int i) { cout << "0";};
+    };
+ 
+    struct b: a
+    {
+        void foo(int i) { cout << "1";};
+    };
+ 
+    struct c: b
+    {
+        void foo(int i) { cout << "2";};
+    };
+ 
+    // nakon ovoga je bilo dato jos 6-7 linija koda sa 4 deklarisana objekta, nekim pokazivacima i referencama, na najrazlicitije moguce nacine i kombinacije, i pozivale su se funkcije foo
+ 
+    nesto u fazonu:
+ 
+	c x;
+	a* y = &x;
+	y->foo();   ISPISACE 0
+	b* z = &x;
+	z->foo();	1
+	a& w = x;
+	w.foo();	0
+	b& wb = x;
+	wb.foo();	1
+	a* m = new c();
+	m->foo();	0
+ 
+ 
+8. Za datu klasu napisati konstruktor kopije, i destruktor. Kopija koja se kreira mora biti duboka kopija. Obezbediti da ne 
+dolazi do curenja memorije. Ispod napisati primer poziva konstruktora kopije.
+ 
+class MyType
+{
+    int size;
+    char* buff;
+public:
+    MyType(const MyType& mt): size(mt.size), buff(new char[mt.size]){
+		for (int i = 0; i < mt.size; ++i) {
+			buff[i] = mt.buff[i];
+		}
+    };
+    
+    ~MyType() {
+		delete[] buff;
+    }
+}
+ 
+MyType mt;
+MyType kopija(mt);
+ 
+9. Za dati sablon zaokruziti ispravne pozive funkcija, a neispravne precrtati.
+ 
+template<class T>
+T saberi(T x, T y)
+{
+    return x + x + y + y;
+}
+ 
+int a;
+int b;
+float c;
+float d;
+ 
+a) saberi(a,b); OVO JE DOBRO
+b) template<int> saberi(a,b); 
+c) <int> saberi(c,d); 
+d) saberi(c,d) <int>; 
+e) saberi(b,c);
+ 
+10. Zapoceta je funkcija foo. Ona treba da prima mapu koja preslikava int na float, i da vraca invertovanu mapu, koja preslikava float na int. Na primer, ako mapa koja je argument preslikava 5 na 7.3 i 8 na 13.4, invertovana mapa treba da preslikava 7.3 na 5 i 13.4 n 8.
+ 
+Dodatno objasniti kako biste istu stvar uradili sa std::string i char?
+ISTO JE 
+
+void foo(std::map<float, int>& mapa, std::map<int, float>& mapa2) {
+	std::map<float, int>::iterator it;
+	for (it = mapa.begin(); it != mapa.end(); ++it) {
+		mapa2[it->second] = it->first;
+	}
+	std::map<int, float>::iterator it2;
+	for (it2 = mapa2.begin(); it2 != mapa2.end(); ++it2) {
+		cout << it2->first << endl;
+		cout << it2->second << endl;
+	}	
+}

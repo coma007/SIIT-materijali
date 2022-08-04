@@ -1,0 +1,345 @@
+﻿operatori koji se ne mogu overloadovati su ::, .*, . i ?:
+
+
+
+
+1 programiranje:
+	-programske paradigme
+		oop
+		generičko programiranje
+		funkcionalno programiranje
+	-apstrakcija
+	-lingvistički nivoi
+		proširenje
+		prevođenje, tj kompajliranje
+		interpretacija
+	-etape razvoja programa
+		analiza
+		dizajn
+		programiranje **implementacija**
+		ispitivanje   **implementacija**
+	-linkovanje, tj povezivanje
+	
+2 objekti, tipovi, bezbednost
+	-tip promenljive
+	-ključne reči ne mogu biti imena
+	-ugrađeni i korisnički tipovi
+	-literali(neposredni operandi)
+	-objekti
+	-promenljiva
+	-deklaracija
+	-definicija
+	-inicijalizacija
+	-dodela
+	-inkrementiranje
+	-tipska bezbednost
+		statička
+		dinamička
+	-narušavanje tipske bezbednosti
+		implicitno sužavanje
+		neinicijalizovane promenljive
+	-efikasnost
+	-idealni zahtevi
+	-c++11(14)
+	
+3 računanje
+	-glavni alati računanja
+		podeli pa vladaj
+		apstrakcija
+	-programiranje
+	-izrazi
+		operandi
+		operacije
+		   sažeti operatori
+	-iskaz
+	-petlje
+		upravljačka promenljiva
+		njena inicijalizacija
+		kriterijum za prekid petlje
+		izmena upraljačke promenljive
+		telo petlje
+		iteracija
+	-funkcije
+		naziv
+		parametri
+		telo
+		povratna vrednost
+	-skupovi podataka
+		vector
+	-sve su zapravo jezički elementi
+
+4 greške
+	-greške u kompajliranju
+		sintaksne
+		semantičke
+	-greške u povezivanju
+	-greške u izvršavanju
+		računar
+		biblioteka
+		korisnični kod
+	-logičke greške
+	-testiranje
+		verifikacija
+		validacija
+	-očekivanja od programa
+	-izuzetak
+		definisani u standardnoj biblioteci
+		korisnicki definisani
+	-preduslovi
+		*ograničenja,očekivanja, pretpostavke
+		uzak i širok ugovor
+	-postuslovi
+		*garancije
+
+5 pisanje programa - uvod
+	-nacin organizacije programa
+	-postepeno pravljenje i otklanjanje grešaka
+	
+6 pisanje programa kalkulator
+	-apstraktni tip
+	-konstruktor
+		podrazumevani
+		kopije
+		dodele vrednosti
+	-destruktor
+	
+7 promenljive i funkcije
+	-deklaracija
+	-definicija
+	-zaglavlje
+	-pretprocesor
+		"std_lib_facilities.h"
+	-doseg
+		globalni
+		klasni
+		blokovski
+		iskazni
+	-prosleđivanje parametara
+		po vrednosti
+		po referenci
+		po konstantnoj referenci
+	-potpis funkcije
+		naziv
+		broj i tip parametara
+		const
+	-imenski prostori
+	-using declaration i using directive
+
+8 klase
+	-klasa(korisnicki definisan tip)
+		atributi
+		metode
+	-private,public i protected
+	-struct
+	-enumeracija
+	-const
+	-friend
+	-notacije
+		prefiksna
+		infiksna
+		postfiksna
+	-pomoćne funkcije
+	-preklapanje operacija
+		
+9 ulazno-izlazni tokovi
+	-ostream
+	-istream
+	-model toka
+	-datoteke
+		za čitanje
+		za pisanje
+	-nailazak na kraj datoteke
+	-greške
+		ljudske
+		neodgovarajuće datoteke
+		programske
+	-good,eof,fail,bad
+	-MILION PRIMERA
+	-preklapanje operator>>
+
+10 upravljanje u/i tokovima
+	-lepljivi manipulatori
+		dec
+		oct
+		hex
+	-ostali manipulatori
+		general
+		fixed
+		scientific
+	-širina izlaznog polja
+	-MILION PRIMERA
+	-ifstream
+	-ofstream
+	-fstream
+	- ios_base::(app,ate,binary,in,out,trunc)
+	-tekstualno i binarno
+	-pozicioniranje(fseek)
+	-(i/o)stringstream
+	-getline(stream,string)
+	-<cctype>
+	
+11 model grafičkog prikaza
+	-sprežna i grafička biblioteka
+	-sprežne klase
+
+12 organizacija grafičkih klasa
+	-ideali
+	-oop
+	   nasleđivanje
+	   polimorfizam
+	   enkapsulacija
+	-bazne i izvedene klase
+	-virtualne funkcije
+	-pure interface(čista sprega)
+	-preklapanje funkcije
+		pokazivač
+		referenca
+	-operator dodele kopije
+	-const iza parametara f-je
+	
+12a c++ ispod haube
+	SVE VEOMA BITNO 
+	-metode nose veću težinu od atributa
+	-virtualne metode još više
+	
+13 iscrtavanje funkcija
+	-Function klasa
+	-grafički prikaz funkcija
+	-typedef
+	-standardne matematičke funkcije
+	-greške pri zaokruživanju
+	
+14 grafička korisnička sprega gui
+	-oop
+	-događaji
+	-Widget, Button, Callback
+	
+15 pokazivači, nizovi i vektor
+	-vektor
+	-kontejneri
+	-trajnost promenljive
+		počinje na početku završava se na kraju
+		kompajler(automatski) odredi
+		programer odlučuje o životu i smrti
+			*curenje memorije
+		   ~void*
+		    pokazivac na neki objekat ciji tip se ne zna 
+			nema implicitnog konvertovanja
+			nema dereferenciranja 
+			nema indeksiranja
+			nema uvecavanja
+			MOZE eksplicitna konverzija
+		programer o životu, runtime o smrti
+			*garbage collector
+		nitska trajnost
+	-pokazivači
+	-operator new
+	-operator delete
+	-nullptr
+	
+16 vektor
+	-operator dodele
+	-konstruktori i destruktor
+	-duboka i plitka kopija
+	-preklapanje operatora[]
+	-pokazivači
+		menjaju se pokazivaci, ne na sta pokazuju
+		za dodelu pokazivacu & i new
+		za pristup *, [], ->
+		nullptr
+	-reference
+		menja se sta referenciraju, ne reference
+		samo prilikom inicijalizacije
+		nema posebne sintakse za pristup
+		uvek mora nesto da referencira
+	-prednost korišćenja jednog i drugog
+	
+17 nastavak vektora
+	-promena veličine vektora
+		direktno
+		dodavanjem elementa
+		dodelom
+	-reserve()
+	-resize()
+	-push_back()
+	-explicit
+	-this pokazivač
+	-optimizovana dodela 
+		kopiraj i zameni
+	-šabloni
+		osnova generičkog programiranja
+		definicijia
+		specijalizacija(instanciranje)
+	-pojmovnik
+		šablon klase
+		class template
+		templejt klase 
+		klasni šablon
+		vektor je šablon klase
+		šablon funkcije
+	-provera opsega
+	-rukovanje izuzecima
+	-pristup const vektoru
+	-string izgrađen kao vektor
+
+18 biblioteka standardnih šablona STL
+	-MILION PRIMERA
+	-algoritmi
+		barataju podacima
+	-kontejneri
+		skladište podatke
+	-veza su iteratori
+		begin() pokazuje na prvi
+		end() pokazuje iza poslednjeg
+			~ne može se dereferencirati
+		== i !=
+		* dereferenciranje
+		++ prelazak na sledeći element 
+		mogu podržati još neke operacije
+	-vector serijska
+	-list dvostruko povezana
+	-set binarno stablo
+	-find()
+	-find_if()
+		predikat
+		funktori - funkcijski objekat
+	-lambda funkcije - funkcijski literal
+	-vector insert()
+	-vector erase()
+	-list insert()
+	-list erase()
+	-prolazak kroz vektor PRIMERI
+	-korisna standardna zaglavlja
+	
+19 STL mape i algoritmi
+	-MILION PRIMERA
+	-map
+		first, second
+		rastući poredak
+		balansirano binarno stablo pretrage
+	-set
+		rastući poredak
+		balansirano binarno stablo pretrage
+	-standardni funktori
+		binarni
+		unarni
+	-copy_if()
+	
+20 Numeričke karakteristike osnovnih tipova i klasa matrice
+	-prekoračenje i odsecanje
+	-narrow_cast
+	-kompleksni brojevi
+	-matrice
+		regularna promenljiva
+		slice()
+	-implementacija klase matrix
+	-move semantika &&
+		preuzima se reprezentacija
+	-move konstruktor i move operator dodele
+	-pokazivači
+	-pametni pokazivači
+		unique_ptr
+BITNO!!		shared_ptr   
+		weak_ptr
+		lock()
+		expired()

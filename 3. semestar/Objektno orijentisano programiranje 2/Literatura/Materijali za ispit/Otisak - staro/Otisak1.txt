@@ -1,0 +1,143 @@
+/* 
+Void f(MyClass  rmc) {
+
+} 
+*/
+/*
+void f(const MyClass  *rmc){
+}
+
+int main() {
+    MyClass x; 
+    f(x); 
+}
+
+-	Bilo je pitanje da li mozemo obe pozvati istovremeno – odgovor: ne moze, javio bi gresku. 
+-	Da li bi doslo do konstruktora kopije – odgovor: u prvom bi konst kopije napravio kopiju, u drugom ne bi doslo do konst kopije. 
+
+2. 
+* prava pristpa: 
+Private-samo iz unutrasnjosti klase, iz spoljasnjosti ne. 
+Public-potpuno otvoreno 
+Protected-iz unutrasnjosti da, iz spoljasnjosti ne, izuzetak je izvedena klasa.
+
+class A{
+    protected: 
+        int x; 
+}; 
+
+class B:private A{    //to moze!
+void m() { x=5; }
+}; 
+
+class C:public B{    // ne moze!
+void n() { x=10; }
+}; 
+
+class A1{
+    public: 
+        void m() { ..... }
+}; 
+
+class A2:public A1{                 //sustina je da smo n puta radili nasledjivanje, ako samo 1 uradimo protected ili private, gotovo je, ne moze se vratiti na public!
+}; 
+...
+clasa An:public An-1{
+}; 
+
+int main() {
+    obj.m(); 
+
+class A{
+    public ili private(svejedno je): 
+        void m() const; 
+}; 
+cpp fajl: 
+void A:: m() const {.....} //bitno da se ne zaboravi A:: i const!
+
+class A{
+    public: 
+        A() {}; 
+        A(int x) {}; 
+        A(int x, double y){}; 
+        A(const A &ra) {}; 
+}; 
+main: 
+A a1, a2(3), a3(3, 5.4),);  a4(a1) //sustina, u zavisnosti od vrste parametra, odgovarajuci konstruktor ce biti pozvan!
+
+int IntArray::operator[](int i) const {
+    cout<<"Prva verzija"; 
+    return el[i]; 
+}; 
+int& IntArray::operator[](int i){
+    cout<<"Druga verzija"; 
+    return el[i]; 
+}; 
+
+u main-u: 
+obj[i]; //ne znamo koja ce biti pozvana.
+IntArray ia; 
+ia[5]=10; 
+cout<<ia[5]; //pozove drugu verziju zbog optimalnosti kompajlera, vise mu odgovara da referencira nego da kopira!
+void f (const IntArray &ria){ // zbog const pozvace prvu verziju!
+    cout<<ria[6]; 
+}; 
+}
+
+* preklapanje operatora ne ugrozava prioritete operatora; Primer: x=y+z; => prvo se izvrsava +, pa =
+
+class B{
+A a; 
+void m() { a.x=10; }
+}; // nije nasledjivanje, da jeste moglo bi. Spoljasnjost ( protected se ponasa kao private, osim za izvedenu klasu)!
+
+
+class A{
+A(){}; 
+A(int x) {}; //drugi konstruktor
+A(const A &ra){}; //treci konstruktor
+}; 
+
+class B
+A a; 
+B():A(6){} //TRIK! nemam, roditeljski deo kod nasledjivanja
+p
+    a(6){} //ISKLJUCIVO TREBA DA BUDE OVDE, TAKO TREBA!
+ ***KOD NASLEDJIVANJA INICIJALIZUJEMO RODITELJSKI DEO!
+
+B(int y):a(y) {} //drugi konstruktor ce biti pozvan
+B(const B &rb):a(rb.a) {} //treci konstruktor ce biti pozvan
+
+***Bitno da se zna sta se kojim redom poziva, tj. da destruktor ide od nazad. 
+
+int main(){
+A a1, a2, a3; 
+B b1, b2, b3; 
+return 0; 
+} //* Destruktori su metode koje se AUTOMATSKI UKLJUCUJU(pozivaju)!
+
+
+aps i virt klase: 
+
+class A{
+    int x; 
+    public: 
+        virtual void m(){} //stara verzija
+        int getX() { return x; }
+}; 
+
+class B:public A{
+void m(){}   //nova verzija
+};
+
+A a; 
+a.m();   stara
+B b; 
+b.m();   nova
+A *pa; //pokazivac na roditeljski deo 
+pa=&b; 
+pa -> m();   nova
+
+-------
+A a;  *****NE MOZEMO NAPRAVITI OBJEKAT APSTRAKTNE KLASE!
+a.getX();
