@@ -1,0 +1,116 @@
+1. Sta je uzajamno blokiranje? 
+- Trajno blokiranje skupa procesa koji se nadmecu za isti skup resursa.
+
+2. Kakav model sistema moze omoguciti dolazak do uzajamnog blokiranja?
+- Sistemi koji koriste resurse na nacin Zahtev -> Upotreba -> Otpustanje.
+
+3. Koji su uslovi za uzajamno blokiranje?
+- Uzajamno iskljucivanje - u jednom tren moze jedan proces koristiti resurs
+- Drzanje i cekanje - drzi resurs dok ceka dodeljivanje ostalih resursa
+- Bez prekida - nasilno oduzimanje resursa
+- Kruzno cekanje - potenc uslov prva 3 uslova, stvara se zatvoren krug procesa koji drze resurse potrebne ostalima.
+
+4. Koji su pristupi resavanja problema uzajamnog blokiranja?
+- Sprecavanje - mehanizmi koji eliminisu uslove koji dovode do u.b.
+- Izbegavanje - dinamicka raspodela resursa takva da ne dolazi do u.b.
+- Otkrivanje - mehanizmi za oporavak od u.b.
+
+5. Koje su mane sprecavanja uslova drzanja i cekanja?
+- Ukoliko proces trazi sve potrebne resurse od jednom -> neefikasno jer ih zakljucava iako neke ne koristi, on ceka da svi ti potrebni resursi budu oslobodjeni, moze doci do gladovanja 
+
+6. Kako funkcionise odbacivanje uslova bez prekidanja?
+- a) Vrsi se naredba procesu da otpusti resurse ukoliko mu je odbijen zahtev za zauzimanje.
+- b) Proces koji drzi resurse zakljucanim se prekida i oslobadjaju se resursi.
+* Primenljivo je samo kod resursa cije se stanje moze sacuvati (npr. proc registri).
+
+7. Kako funckionise sprecavanje kruznog cekanja?
+- Ukoliko se uradi linearno slaganje tipova resursa, svaki resurs dobija indeks. Resursu Rj moze pristupiti proces koji je zauzeo Ri samo ako je j>i.
+- Moze biti neefikasno jer se procesu mozda nepotrebno zabranjuje zauzimanje resursa.
+- Ako programer ne postuje predvidjeni redosled opet moze doci do uslovnog blokiranja.
+
+8. Koje su karakteristike pristupa izbegavanja uzajamnog blokiranja?
+- Dozvoljeno je postojanje tri neophodna uslova u.b.
+- Prave se razumni izbori tako da nikad ne dodje do u.b.
+- Dinamicki se donosi odluka o tome da li ce tekuci zahtev dodele resursa dovesti do u.b.
+- Omogucuje vise konkurentnosti i manje je restriktivan u odnosu na sprecavanje u.b.
+
+9. Koje su varijante u pristupu izbegavanja uzajamnog blokiranja?
+- Ne pokretati proces ukoliko njegovi zahtevi mogu dovesti do u.b.
+- Ne obradjivati zahtev procesa za resurskom ako moze dovesti do u.b.
+
+10. Sta sve stanje sistema dinamicke raspodele resursa sadrzi?
+- Matricu zahteva
+- Matricu dodele
+- Ogranicenja:
+Rj = Vj + Sum(i=1, n)Aji
+Cij <= Rj - resurs ne moze zahtevati vise od ukupne kolicine R
+Aij <= Cij - resursu ne moze biti dodeljeno vise od zahtevanog
+
+11. Uslov za pokretanje novog pocesa.
+Rj >= C(n+1)k + Sum(i=1, n)Cj
+- Pokreni proces samo ako se mogu zadovoljiti maksimalni zahtevi tekucih procesa uvecani za zahteve novog
+- Suvise je restriktivno
+
+12. Na cemu se zasniva odluka o dodeli resursa?
+- Na osnovu toga da li je sistem u bezbednom ili nebezbednom stanju.
+
+13. Kada je sistem u bezbednom stanju?
+- Sistem je u bezbednom stanju ako moze ispuniti zahteve za resursima svakog procesa u nekom redosledu koji ne dovodi do u.b. To znaci da postoji sekvenca u kojoj bi zahtevi trebali biti obradjivani, odnosno resursi dodeljivani.
+- Kada je stanje nebezbedno moze, ali ne mora doci do u.b.
+
+14. Kako se proverava da li je sistem u bezbednom stanju?
+- Stanje sistema je bezbedno ako postoji sekvenca procesa u kojoj vazi da za svaki Pi, resursi koje zahteva Pi mogu biti ispunjeni sa trenutnim raspolozivim resursima plus resursima koje koriste procesi prethodni u odnosu na njena(Pj gde je j<i).
+
+15. Koje su karakteristike algoritma za izbegavanje uzajamnog blokiranja?
+- Utvrdjuje da li postoji sekvenca u kojoj procesi zauzimaju i osl resurse tako da su zahtevi svih ispunjeni, a da sistem bude u bezbednom stanju.
+- Simulira se da je zahtev odobren i proverava se stanje sistema. Ukoliko je sistem u bezbednom stanju zahtev je odobren, u suprotnom proces se blokira.
+
+16. Opisati korake bankarevog algoritma.
+	1. Kreiramo vektor W koji predstavlja simulaciju stanja raspolozivih resursa u nekom buducem trenutku. Inicijalno je jednak V(trenutno stanje).
+	2. Pronalazimo proces ciji se zahtevi trenutno mogu ispuniti. Cij - Aij <= Wj za svako j=1, ..., m    Ako ne uspemo algoritam se prekida
+	3. Simuliramo da je proces zauzeo resurse, zavrsio rad i oslobodio ih
+	4. Vratimo se na 2. i ukoliko uspemo da prodjemo kroz sve procese i za sve simuliramo dodelu resursa, onda je stanje bezbedno.
+
+17. Navesti prednosti izbegavanja uzajamnog blokiranja.
+- Manje je restriktivno od sprecavanja
+- Nije neophodno prekinuti i vratiti unazad procese kao kod otkrivanja uzajamnog blok
+
+18. Navesti mane izbegavanja uzajamnog blokiranja.
+- Maksimalni zahtevi za resursima svakog procesa se moraju unapred definisati
+- Proces koji se razmatra mora biti nezavisan (redosled izvrsavanja nije sinhronizovan)
+- Mora postojati fiksan broj resursa za dodelu
+- Proces ne moze da otpusti resurs
+
+19. Koje su karakteristike pristupa otkrivanja uzajamnog blokiranja?
+- Kada se uzajamno blokiranje desi, vrse se mehanizmi za oporavak.
+- Ne ogranicava se pristup resursima.
+- Procesima se dodeljuju zahtevani resursi.
+- Povremeno se vrsi provera da li je doslo do kruznog cekanja
+
+20. Opisati korake algoritma za otkrivanje uzajamnog blokiranja.
+- Cilj je da oznacimo procese koji nisu uzajamno blokirani, ostali jesu.
+	1. Inicijalizujemo W = V
+	2. Proveravamo da li postoji P koji ima sve nule u matrici zahteva, on nije u u.b. i oznacavamo ga
+	3. Pokusavamo da nadjemo P koji je manji ili jednak sa W, ako ga ne nadjemo kraj alg.
+	4. Ukoliko smo ga pronasli, oznacavamo ga i W = W + Pi
+	5. Vracamo se na korak 3
+
+21. Opisati strategije za oporavak od uzajamnog blokiranja.
+	1. Prekini sve u.b. procese - najjednostavnije, velika je cena ovoga jer ponistava sve sto je proces uradio do tad
+	2. Vrati sve u.b. procese na neku raniju kontrolnu tacku i ponovo ih pokreni - moze opet doci do u.b., ali zbog nedeterminisanosti u ponovnom izvrsavanju mozda ne bude u.b.
+	3. Redom prekidaj sve u.b. procese dok vise ne bude blokiranja - treba uspostaviti kriterijum po kom ce se vrsiti redosled prekidanja (prioritet, utrosak proc vrem, predivdjeno preostalo vremen izvr, tip koriscenog resursa, kolicina resursa potrebna za zavrsetak)
+	4. Redom oduzimaj resurse od procesa i dodeljuj ih drugim proc dok vise ne bude blokiranja - treba izabrati res i proc tako da se minimizuju troskovi. Proces kojem je oduzet resurs mora se vratiti na neko prethodno stanje u kom je bio pre zauzimanja tog resursa. Mora se spreciti potencijalno gladovanje(ne smeju se resursi oduzimati uvek istom procesu).
+
+22. Kakve su strategije za uzajamno blokiranje koriscene u savremenim os?
+- Tipicno ne pruzaju zastitu od u.b.
+- Ignorise se mogucnost pojave u.b.
+- OS se implementira sa namerom da ne ulazi u deadlock, a korisnicki programi su odgovornost programera
+
+
+
+
+
+
+
+
+

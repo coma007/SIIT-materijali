@@ -1,0 +1,90 @@
+1. Sta podrazumeva upravljanje memorijom? 
+- Prebacivanje blokova podataka izmedju masovne i glavne memorije.
+- Potrebno je optimizovati trenutke i kolicinu podataka koji se razmenjuju jer je kapacitet RAM memorije ogranicen i memorijski U/I uredjaji su spori.
+
+2. Sta racunarski hardver i OS moraju da podrze?
+- Relokaciju
+- Deljenje
+- Zastitu
+
+3. Sta je relokacija?
+- Ubacivanje i izbacivanje procesa, ili njegovih delova, u/iz glavne memorije iz/u masovne memorije.
+
+4. Sta se podrazumeva pod deljenjem memorije?
+- Vise procesa pristupaju istim delovima memorije. Npr. vise instanci istog programa dele programski kod. Sistem za upravljanje memorijeom treba da omoguci kontrolisani pristup deljenim podrucijma u memoriji bez ugrozavanja zastite.
+
+5. Sta se podrazumeva pod zastitom memorije?
+- Proces ne sme da pristupa, bez dozvole, lokacijama u koje su smesteni drugi procesi. Zastita mora biti sprovedena tokom run time jer zbog relokacije nisu unapred poznate lokacije procesa i promenljive su. 
+
+6. Objasni kako funkcionise hardverska podrska za relokaciju i zastitu.
+- Svaki proces mora da ima odvojen svoj memorijski prostor, odnosno skup adresa kojima on moze da pristupa. Postoje dva procesorska registra - base(prva lok u koju je proces smesten) i limit(poslednja adresa pocevsi od 0 kojoj proces pristupa).
+- Ukoliko adresa koju proces pokusava da re ferencira nije izmedju base i base+limit, desava se adressing error.
+
+7. Navedi tri nacina definisanja adresa u programu.
+- adrese poznate u compile time
+- adrese poznate tokom ucitavanja - nije upotrebljivo ako program moze biti pomeran tokom izvrsavanja
+- adrese poznate tokom izvrsavanja - jedina varijanta koja podrzava relokaciju
+
+8. Opisati razliku izmedju logickih i fizickih adresa.
+znamo
+
+9. Navedi 3 nacina upravljanja memorijom:
+1. Alociranje susednih mem lokacija - deljenje mem na particije i partnerski sistem
+2. Stranicenje
+3. Segmentacija
+
+10. Koji su problemi fiksnog deljenja na particije sa jednakim velicinama particija?
+- Program moze biti prevelik za particiju.
+- Neefikasno koriscenje memorije jer se zauzima cela particija(interna fragmentacija).
+- Ogranicen broj aktivnih procesa (jednak broju predefinisanih particija)
+- Veliki broj malih procesa nece efikasno koristiti memoriju
+
+11. Koje probleme fisknog deljenja na particije prevazilazi dinamicko del na part?
+- Promenljiv je broj particija - ukida se ogranicenje broja procesa
+- Particije su promenljive velicine - procesu se dodeljuje tacno onoliko koliko mu treba
+
+12. Objasniti pojavu eksterne fragmentacije:
+- Vremenom se javlja mnogo malih rupa u memoriji. Postoji dovoljno slobodne memorije ali niije u sukcesivnim lokacijama.
+- Moze se resiti sazimanjem.
+
+13. Objasniti sazimanje:
+- Povremeno se procesi pomeraju tako da se nalaze u sukcesivnim lokacijama na jednom kraju a sva slobodna lokacija na drugom kraju.
+
+14. Koja su 3 algoritma za smestanje:
+1. najbolji odgovarajuci - trazi se blok koji najbolje odgovara zahtevu - sporo
+2. prvi odgovarajuci - od pocetka mem trazi se prvi blok koji odgovara zahtevu - rezultuje u puno malih fragmenta na pocetku koji se ponovo moraju pretrazivati
+3. sledeci odgovarajuci - od proslog smestanja se trazi prvi odgovarajuci blok koji odgovara zahtevu - cesto se smestaju na kraj memorije gde je najveci slobodan blok, on ce biti izdeljen na male fragmente i javlja se potreba za cestim sazimanjem
+
+15. Navesti prednosti i mane partnerskog sistema:
+- Prednosti: zauzima najb odg blok zahteva i sazimanje je jednostavno izm dva susedna bloka
+- Mane: interna fragmentacija
+
+16. Objasniti ideju iza stranicenja:
+- Memorija se deli na male jednake delove koji se nazivaju okviri
+- Procesi se dele na stranice koje su jednake velicine kao i okviri
+- Stranice se mogu dodeljivati okvirima koji ne moraju biti susedni
+
+17. Navesti prednosti stranicenja:
+- Nema eksterne fragmentacije kao i potrebe za sazimanjem
+- Interna fragmentacija samo u poslednjim stranicama procesa
+
+18. Koja je uloga tabele stranica?
+- Mapira stranicu procesa na okvir memorije u kojem je ona smestena.
+- Logicka adresa se na osnovu broja stranice i relativnog pomeraja pretvara u apsolutnu
+
+19. Navesti karakteristike segmentacije:
+- Nacin upravljanja memorijom koji se bazira na posmatranju memorije iz ugla programera.
+- Logicki adr prostor se deli u segmente prom velicine.
+- Nema interne fragmentacije.
+
+
+
+
+
+
+
+
+
+
+
+

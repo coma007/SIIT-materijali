@@ -1,0 +1,139 @@
+1. Koje su kategorije U/I uredjaja?
+- Za komunikaciju sa korisnikom - mis tastatura
+- Za komunikaciju sa hardverom - diskovi senzori kartice
+- Za komunikaciju sa udaljenim uredjajem - modemi, mrezne kartice
+
+2. U cemu se ogledaju razlike izmedju U/I uredjaja?
+- brzina prenosa pod
+- uloga u sistemu - utice na podrsku OS za uredjaj
+- slozenost upravljanja - jednostavno (mis) ili slozeno (disk)
+- redinica prenosa podataka - orjentisani na blokove ili tokove
+- nacin predstavljanja podataka - nacin kodiranja
+- upravljanje greskama - razlicit nacin reakcije na gresku i skup kodova gresaka
+- nacin pristupa - sekvencijalni (salje prima pod u fiksnom redosledu - ruter, stampac..) ili proizvoljan (moguce je reci uredjaju da se pozicionira na bilo koju lokaciju na kojoj su podaci - disk)
+- podrska za upis i citanje - upis i citanje sa diska, samo upis stampac, samo citanje tastatura/mis
+
+3. Kako uredjaj razmenjuje podatke sa racunarom?
+- Preko prenosnog medijuma kao sto su kabel ili vazduh.
+
+4. Kako uredjaj moze biti povezan sa racunarom?
+- Preko porta - kada jedan uredjaj koristi komunikacione kanale
+- Preko magistrale - kada vise uredjaja deli isti skup kanala.
+
+5. Sta je kontroler?
+- Hardver koji upravlja portom, magistralom ili uredjajem (Device controller).
+
+6. Sta je host adapter?
+- Kontroler u racunaru zaduzen za komunikaciju sa uredjajem.
+
+7. Koje su dve varijante komunikacije procesora sa U/I hardverom?
+- Procesor izvrsava specijalnu U/I instr koja adresira registre kontrolera i upisuje/cita u njih.
+- Memory mapped I/O - adrese u radnoj memoriji su namapirane na registre kontrolera U/I uredjaja. Procesor izvrsava standardnu instr koja pristupa tim adresama u radnoj memoriji.
+
+8. Koji tipovi U/I registra postoje?
+- Data-in - procesor preuzima podatke
+- Data-out - procesor upisuje podatke 
+- Statusni reg - info o statusu operacije za procesor (da li je gotova, kod greske...)
+- Upravljacki registar - procesor upisuje komandu za U/I
+
+9. Koji su tipovi organizacija U/I funkcije?
+- Programirani U/I - procesor na zahtev procesa zadaje U/I komandu. Proces aktivno proverava da li je U/I operacija zavrsena.
+- U/I pokretan prekidom - procesor na zahtev procesa izdaje U/I komandu. Ukoliko je instr blokirajuca, proces prelazi u stanje blokiran, a u suprotnom procesor nastavlja izvrsavanje instrukcija procesa. Rutina za obradu prekida se izvrsava kao reakcija na zavrsenu U/I operaciju.
+
+10. Kada je potrebno izvrsiti iskljucivanje prekida?
+- Dok traje kriticna operacija koja ne sme biti prekinuta. Procesor ima bit koji oznacava da li su prekidi ukljuceni. Privilegovanom instr se moze postaviti vrednost ovog bita. Taj bit se odnosi samo na standardne (maskable) prekide, dok se specijalni(non maskable) prekidi ne mogu iskljuciti(osim u slucaju fatalnih gresaka).
+
+11. Sta je vektor prekida?
+- Niz adresa koje ukazuju na obradjivace prekida, odnosno listu obradjivaca prekida. Kada uredjaj postavi prekid, on salje adresu koja govori koji je tip prekida i na osnovu te adrese se preko vektora prekida poziva odredjeni obradjivac.
+
+12. Objasniti kako funkcionise DMA prenos:.
+- Procesor salje DMA modulu zahtev za prenos bloka podataka, src dest i broj bytes.
+- DMA kontroler vrsi prebacivanje podataka 
+- kada se DMA prenos zavrsi DMA kontroler postavlja prekid i procesor tako zna da je zavrsen 
+
+13. Koje su razvojne faze U/I funkcije?
+1. procesor direktno upravlja U/I uredjajem
+2. uvodi se kontroler
+3. uvode se prekidi
+4. ui modul direktno upravlja memorijom preko dma
+5. ui modul postaje poseban procesor
+6. ui modul dobija i sopstvenu memoriju
+
+14. Koji su ciljevi projektovanja U/I podsistema?
+- Efikasnost - ui uredjaji su spori u odnosu na glavnu mem i procesor, multiprog dozvoljava izvrsavanje drugog procesa dok prethodni ceka na obradu ui, procesi se razmenjuju izmedju glavne i sek memorije preko ui
+- Opstost - radi jednostavnosti pozeljno je da se upravlja svim ui urejdajima na jedinstven nacin. to se postize apstrakovanjem zajednickih operacija poput citaj pisi otvori i zatvori. drajveri implementiraju te operacije zasebno za svaki uredjaj. Zato se uvodi hijerarhijska sturkura realizovana slojevima, svaki sloj se oslanja na onaj sledeci u hijerarhiji. izmena u jednom sloju ne bi trebala da izazove potrebu menjanja drugog. zato se ne treba menjati OS kada se dodaje novi uredjaj vec samo napisati drajver
+
+15. Objasniti korisne karakteristike U/I baferovanja:
+- Bafer je prostor u memoriji sa u koji se pise ili sa kojeg se cita. Proces podatke koje upisuje u U/I smesta u bafer i ostavlja na kontroleru zadatak da ih on dalje upise. Ne mora cekati na to izvrsenje. Takodje ne mora cekati na ucitavanje podataka, vec proces potrebnim podacima pose pristupiti tek nakon sto su one ucitane u bafer. Stranica cak ne mora biti ni u glavnoj mem, moze biti zamenjena na disk.
+
+16. Zasto se uvodi dvostruki bafer?
+- Da bi proces mogao da cita iz jednog dok OS pise u drugi i obrnuto.
+
+17. Sta je kruzni bafer?
+- Prosirenje dvostrukog bafera u kojem se uvodi N bafera. U/I redom cita i pise u te bafere dok os pise/cita.
+
+18. Koji su parametri performanse diska?
+- cekanje na uredjaj
+- cekanje na u/i kanal
+- vreme pozicioniranja
+- rotaciono kasnjenje
+- vreme prenosa
+
+19. Koje su politike rasporedjivanja diska?
+- FIFO
+- SSTF - bira se zahtev koji se najbrze izvrsi
+* ova dva mogu dovesti do gladovanja
+- SCAN - pomera rucicu u samo jednom smeru, kada dodje do kraja menja smer
+* dovodi do dugog cekanja staze na periferiji
+- C-SCAN - ogranicava skeniranje na jedan smer, kada se dodje do kraja vraca se na pocetak
+
+20. Koji su tipovi formatiranja diska?
+- Fizicko formatiranje - deljenje diska u sektore (zaglavlje podaci kod za ispravku greske)
+- Particionisanje - disk se deli na particije, svaka particija je logicki disk
+- Logicko formatiranje - OS inicijalizuje fajl sistem na disku
+- Raw disk - particija bez fajl sistema - omogucava kontrolu niskog nivoa i moze biti efikasnije u spec slucajevima jer nema fajl sistema kao sloja izmedju
+
+21. Sta je boot particija?
+- Particija koja sadrzi kod OS-a.
+
+22. Kako se pokrece sistem?
+- Racunar iz ROM memorije pokrece program koji trazi boot particiju. Startuje se kod za ucitavanje OS sa predef lokacije.
+
+23. Sta je prostor za razmenu?
+- Prostor na disku namenjen za VM.
+- Izdeljen je na slotove za menjanje stranica.
+
+24. Koje su 2 varijante implementacije prostora za razmenu?
+- Nalazi se kompletna slika procesa - kod i podaci
+- Samo podaci koji se menjaju prilikom izvrsavanja - stack i heap, a kod i static podaci su svakako na disku
+
+25. Gde moze biti smesten prostor za razmenu?
+- Moze biti u fajlu - koristi funkcije file sistema, jednostavno je ali manje efikasno
+- U posebnoj Raw particiji - ne koristi funckije file sistema, tezi je za upravljanje i nefleksibilan za promenu velicine - ali efikasniji
+
+26. Karakteristike ssd:
+- Brzi i pouzdaniji od HDD jer nema pokretnih delova 
+- Manjeg kapac i skuplji od HDD
+- Isto je vreme pristupa za sve delove pa se najcesce rasporedjuje politikom FCFS
+
+27. Sta je RAID?
+- Redundant Array of Independent Disks
+- To je skup odvojenih i nezavisnih fizickih diskova koje OS vidi kao jednu celinu, odnosno jedan uredjaj.
+
+28. Sta je kes diska?
+- Kopija nekih sektora diska u glavnoj memoriji.
+
+29. Koje su politike za popunjavanje kesa diska prisutne?
+- Zamena najmanje skoro koriscenog - novi blok se ubacuje na mesto onog koji je najranije koriscen (koristi mehanizam steka)
+- Zamena najredje koriscenog - novi blok ide na mesto onog koji je najmanje puta koriscen (uvodi se potreba za brojacem koriscenja svakog bloka) - problem je sto vrednost brojaca moze da zavara ako se blok ref malo puta ali se tada zbog lokalnosti njemu cesto pristupa
+- Zamena na bazi ucestalosti koriscenja - uvode se dve sekcije, brojac se uvecava samo ako se blok pomera iz jedne sekcije u drugu - brojac ostaje isti ako se blok u kratkom periodu cesto ref sto prevazilazi prethodno navedeni problem sa lokalnoscu
+
+
+
+
+
+
+
+
+
+

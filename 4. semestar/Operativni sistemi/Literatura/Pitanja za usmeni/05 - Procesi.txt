@@ -1,0 +1,159 @@
+1. Koji su zahtevi OS pri upravljanju procesima?
+- Preplitanje izvrsavanja vise procesa
+- Dodela resursa procesima i zastita dodeljenih res od nekontr pristupa
+- Komunikacija izm procesa
+- Sinhronizacija
+
+2. Koji su elementi procesa?
+- Programski kod - sta treba da radi
+- Skup podataka nad kojima se izvrsava posao
+- Atributi procesa - dodatne info 
+
+3. Koji su atributi procesa?
+- id
+- stanje
+- prioritet
+- progr brojac - adr sl instr u kodu
+- pokazivaci na mem blokove
+- kontekstni podaci - reg
+- U/I statusne info
+- Racunovodstvene informacije - korisceno proc vreme...
+
+4. Opisati UBP (Upravljacki Blok Procesa):
+- On sadrzi atribute procesa i omogucuje multiprogramiranje tako sto sadrzi info koje omogucavaju da se proces prekine i kasnije nastavi svoje izvrsavanje. 
+
+5. Sta je trag procesa?
+- Niz instrukcija koje proces izvrsava.
+
+6. Kako se ponasanje procesa moze predstaviti?
+- Kao niz isprepletanih tragova razlicitih procesa.
+
+7. Sta je rasporedjivac?
+- Program koji prebacuje procesor sa jednog na drugi proces.
+
+8. Kako se stvara proces?
+- OS kreira strukture podataka za upravljanje procesom i ucitava ga u radnu memoriju, ceo proces ili deo njega. Proces se kreira prilikom pokretanja programa ili ako program roditelj zatrazi od OS kreiranje novog procesa.
+
+9. Koji tipovi indikatora za zavrsavanje procesa postoje?
+- korisnicka akcija - npr izlazak iz apl
+- greska u programu
+- instrukcija roditeljskog procesa za zavrsetak procesa potomka
+- zavrsavanje roditeljskog procesa
+
+10. Sta OS treba da zna o procesu da bi mogao da upravlja njime? 
+- lokaciju procesa
+- atribute procesa
+
+11. Od cega je sacinjena fizicka slika procesa?
+- Upravljacki blok
+- Stack - lokalne prom, povr vrednosti fje...
+- Heap - dinamicki alocirane prom
+- Podaci - globalne promenljive
+- Programski kod - instrukcije koje proces izvrsava
+
+12. Koji tipovi id procesa postoje?
+- Jedinstveni id procesa - OS referencira proces pomocu njega
+- id roditeljskog procesa - koji je stvorio proces
+- korisnicki id - id korisnika koji je odgovoran za proces
+
+13. Sta se nalazi u info o stanju procesa?
+- Sadrzaj registara procesa - upravljacki i statusni reg, pokazivaci na stack..
+
+14. Sta se nalazi u info za upravljanje procesom?
+- Informacije za rasporedjivanje - stanje proc, prioritet, dodatne info za rasp, dogadjaj na koji se ceka
+- Strukturiranje podataka - struktura koja medjusobno povezuje procese, npr red cekanja procesa istog prioriteta
+- Medjuprocesna komunikacija - markeri signali i poruke 
+- Privilegije procesa - kojim del mem moze da pristupi i koje instr moze da izvrsi
+- Upravljanje memorijom - pokazivaci na tabelu stranica za VM
+- Vlasnistvo nad resursima - koje resurse proces kontrolise
+
+15. Koji su rezimi izvrsenja procesora? 
+- Korisnicki i Rezim kernela
+
+16. Kako se vrsi promena rezima izvrsavanja?
+- Menja se bit u statusnom reg koji ukazuje na to da li je korisnicki rezim ili rezim kernela. Sistemski pozivi prevode iz korisnickog u rezim kernela.
+
+17. Opisati korake stvaranja novog procesa:
+1. Dodeljuje mu se ID
+2. Dodeljuje se prostor za sliku procesa
+3. Inicijalizuje se upravljacki blok
+4. Azuriraju se strukture sa vezama procesa (npr uvezuje se u listu spremnih)
+5. Kreiraju se ili azuriraju druge strukture pod (npr kreira se fajl sa pod o akt procesa)
+
+18. Sta je komutiranje procesa?
+- Promena trenutno aktivnog procesa koji se izvrsava na procesoru.
+
+19. Kada moze doci do komutacije procesa?
+- Kada se desi prekid
+	- prekid generatora takta - isteklo dozv vreme
+	- U/I prekid
+	- Greska memorije - ref se stranica koja nije u glavnoj mem
+- Kada dodje do greske u izvr programa
+- Kada se desi sistemski poziv - ne podrazumeva nuzno prelazak na izvr drugog procesa, ali se moraju sacuvati stanja registara
+
+20. Opisi korake promene stanja procesa:
+1. cuva se sadrzaj procesora - progr br i reg
+2. azurira se upravljacki blok procesa - prom stanja iz Spreman u Blokiran
+3. prebacivanje upravljackog bloka u odg red - u red spremnih ili blokiranih
+4. izbor narednog proc za izvr
+5. azurira se upr blok izabranog procesa - prom stanja na Izvrsavanje
+6. azurira se struk pod za upravljanje mem - potencijalno ucitavanje stranica ili izmene
+7. postavljanje sadrzaja reg u skladu sa sacuvanim stanjem u upr bloku izabranog proc
+
+21. Kada je proces nezavisan?
+- Ako na njegovo izvrsavanje ne utice izvrsavanje drugog procesa i on ne deli podatke ni sa jednim drugim procesom.
+
+22. Kada je proces zavistan?
+- Kada njegovo izvrsavanje zavisi od ishoda zavrsavanja drugog procesa i/ili deli podatke sa njim.
+
+23. Koji su razlozi za medjuprocesnu komunikaciju?
+- Deljenje info
+- Ubrzanje izracunavanja - npr izracunavanje matrice
+- Modularnost - logicki tokovi izvrsavanja koji pristupaju istim podacima
+
+24. Koja su dva nacina medjuprocesne komunikazije?
+- Deljena memorija - uspostavlja se prostor deljene memorije. Dva procesa komuniciraju upisom i citanjem iz tog prostora. Format podataka, iskljucivanje i sinhronizacija su odgovornost procesa.
+- Razmena poruka 
+
+25. Koji su nacini razmene poruka?
+- Blokirana (ceka na poruku) ili neblokirana(nastavlja izvrsavanje) komunikacija
+- direktno (direktno preko id-a procesa, samo dva proc komuniciraju)ili indirektno (indirektno se komunicira pomocu sanducica, vise procesa mogu medjusobno komunicirati) adresiranje
+- baferovani (u sanduce moze stati 0..N ili neogr broj poruka) ili nebaferovani zapis
+
+26. Koja su dva slucaja vlasnistva nad sanducicem indirektne medjuproc komunikacije?
+- Vlasnik je proces - na kraju procesa se sanduce unistava, moraju se drugi procesi obavestiti
+- Vlasnik je OS - pruza mehanizam za kreiranje/brisanje sanduceta kao i primanje i slanje poruka
+
+27. Uporedi dva tipa medjuproc komunikacije:
+- Deljena mem je brza jer ne zahteva sistemse pozive
+- Razmena poruka je pogodnija za distribuirane sisteme u kojima nema deljene memorije
+
+28. Sta omogucuje Pipes mehanizam?
+- Komunikaciju izmedju dva procesa po principu proizvodjac-potrosac. Proizvodjac upisuje na jedan kraj a potrosac cita sa drugog.
+
+29. Koji tipovi pipes mehanizma postoje?
+- jednosmerna ili dvosmerna komunikacija
+- full duplex(u isto vreme mogu u oba smera da teku podaci) ili half duplex (u jednom trenutku samo jedan smer)
+- relacioni roditelj-potomak
+- da li je lokalna komunikacija ili moze preko mreze
+
+30. Koja su 3 pristupa izvrsavanja OS-a?
+1. Jezgro OS nije proces ono se izvrsava u privilegovanom rezimu, a procesi su samo korisnicki procesi.
+2. Softver OS se izvrsava unutar korisnickih procesa, kada je potrebno da se izvrsi sistemski poziv, proces se samo prebaci u rezim kernela.
+3. OS zasnovan na procesima, funkcije jezgra su organizovane u procese i izvrsavaju se u rezimu kernela.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,292 @@
+1. Koje dve karakteristike moraju biti prisutne da ne bi bilo neophodno da svi delovi procesa budu ucitani u glavnu memoriju?
+- Proces mora biti izdeljen na manje celine koje ne moraju zauzimati sukcesivne memorijske lokacije.
+- Memorijske reference su logicke adrese koje se dinamicki prevode u fizicke u run time
+
+2. Koje su prednosti nove strategije upravljanja memorijom?
+- Vise procesa se moze naci u glavnoj memoriji
+- Proces moze biti veci od glavne memorije
+- Korisnik vidi virt adr prostor sa kontinualnim log adresama koe idu od 0
+- Heap i Stack memorija dodeljena procesu se dinamicki menja
+- Procesi mogu deliti deo memorije tako sto se ista stranica mapira u virtuelni adr prostor vise procesa (sistemske lib koje deli vise procesa npr)
+
+3. Sta cini rezidentni skup procesa?
+- Njega cine delovi procesa koji su smesteni u glavnoj memoriji. Mora postojati indikator koji ukazuje na to da li je deo smesten u glavnu memoriju ili ne.
+
+4. Kako se izvrsava proces?
+- Ukoliko se referencirani deo procesa nalazi unutar glavne memorije on se izvrsava, a ukoliko nije ucitan to je greska stranice odnosno page fault. Signalizira se OS-u da dobavi referenciranu stranicu u glavnu memoriju i onda nastavlja izvrsavanje.
+
+5. Opisi proceduru za obradu greske stranice:
+- Salje se zahtev OS-u da ucita nedostajucu stranicu u glavnu memoriju. Procesor generise prekid i proces prelazi u stanje blokiran. OS salje zahtev disku odnosno ceka u redu na uredjaj diska. Drugi proces se rasporedjuje procesoru. Kada se stranica prebaci u glavnu memoriju disk postavlja prekid. Nakon toga se azuriraju info o stranici i proces prelazi u stanje spreman, odnosno ceka da mu se dodeli procesor.
+
+6. Kakva je efikasnost virtuelne memorije?
+- Efikasnost VM zavisi od ucestalosti page fault-a. Ako zelimo dobre performanse, trebala bi nam ucestalost od 1/400.000 referenciranja po greski stranice.
+
+7. Sta je pojava brbljanja(thrashing)?
+- Kada sistem provodi najveci deo bremena razmenjujuci delove izmedju stvarne i VM umesto da izvrsava instrukcije.
+
+8. Kako se izbegava brbljanje?
+- Tako sto OS izbacuje stranicu iz glavne memorije za koju smatra da je najmanja verovatnoca da ce biti referencirana. To se odredjuje na osnovu nedavne istorije.
+
+9. Sta je princip lokalnosti?
+- Pojava da program i reference podataka u njemu traze da se grupisu. U kratkom intervalu procesor uglavnom radi sa malim i ogranicenim skupom podataka.
+
+10. Navedi 4 razloga zbog kojih postoji princip lokalnosti:
+1. Izvrsavanje programa je skoro uvek sekvencijalno, izuzeci su grananja i pozivi fja
+2. U kratkom periodu program radi sa lokalnim promenljivima ili malim podskupom globalnih
+3. Postoje iterativni blokovi sa malim brojem instrukcija koji se izvrsavaju vise puta
+4. Podaci se cesto cuvaju u strukturi koja cuva podatke u sukc lokacijama (npr niz)
+
+11. Zbog cega je princip lokalnosti dobar za VM?
+- Zbog prisustva njega mozemo lako odrediti koje stranice, odnosno delovi, procesa ce biti potrebni u daljem toku izvrsavanja. 
+
+12. Koja su 2 tipa podrske za VM?
+1. Hardverska - podrzano adresiranje stranica/segmenata
+2. Softverska - OS mora da pomera stranice/segmente iz glavne u sek memoriju i obratno
+
+13. Sta se nalazi u tabeli stranica?
+- Svaki porces ima svoju tabelu stranica koja vodi evidenciju o tome koja se stranica procesa nalazi u kom okviru memorije.
+
+14. Sta sadrzi svaka stavka tabele stranica?
+- P - da li je stranica prisutna u mem
+- M - da li je stranica menjana od kako je ucitana (ako jeste treba upisati izmenu na disk)
+- Broj okvira stranice ukoliko se nalazi u glavnoj mem
+
+15. Gde se skladisti pocetna adresa tabele stranica?
+- Skladisti se u upravljackom bloku procesa i upisuje se u procesorski registar prilikom komutacije.
+
+16. Kako se vrsi konverzija log adrese stranice u fizicku adresu?
+- Broj stranice iz virtualne adrese se koristi za indeksiranje tabele stranica i dobavljanje broja okvira memorije. Nakon toga se broj okvira mem kombinuje sa brojem pomeraja i dobija se fizicka adresa.
+
+17. Sta je TLB?
+- Translation Lookaside Buffer
+- Sadrzi stavke tabele stranica koje su najskorije koriscene
+- U vidu brze kes memorije
+- U savremenim procesorima je organizovan u vise hijerarhijskih nivoa, svaki nivo je veci ali sporiji
+- obicno postoje odvojeni TLB za adrese instrukcija i podataka
+
+18. Kako se odvija referenciranje stranice uz TLB?
+- Procesor pokusava da referencira stranicu, ukoliko se nalazi u TLB formira se fizicka adresa, u suprotnom se gleda tabela stranica. Ako se stranica ne nalazi u mem, os je duzan da je ubaci. TLB se azurira tako da sadrzi info o najskorije referenciranim stranicama.
+
+19. Koja je razlika izmedju direktnog i asocijativnog preslikavanja stranice u TLB?
+- Direktno se u TLB indeksiranjem dobavlja stranica na osnovu broja stranice
+- Asocijativno se iterira kroz TLB i proveravaju se vise stavki da bi se pronasla stranica, mana toga je sto je kompleksnost O(n)
+
+20. Koja su dva moguca scenarija stavki TLB?
+- Stavke TLB se mogu odnositi na vise razlicitih procesa - tada je bitno da stavka sadrzi info o tome kojem procesu stranica pripada
+- Stavke TLB se mogu odnositi samo na jedan proces - tada je obavezno isprazniti TLB prilikom komutacije
+
+21. Koji je cilj TLB?
+- da se ostvari sto veci broj pogotka, odnosno sto manja potreba za pirstup tabeli stranica
+
+22. Sta se ubraja u vreme pristupa memoriji?
+- Ukupno vreme potrebno za upis/citanje iz memorije. U to spada i pristup tabeli stranica ukoliko se ne pronadje u TLB. Prosecno efektivno vreme pristupa se odnosi na to koliki je procenat pogotka u TLB.
+
+23. Sta ako je tabela stranica prevelika da bi se cuvala u glavnoj mem?
+- Jedno resenje je da se ona smesti u VM i da se ona podeli u stranice
+- Drugo resenje je Hijerarhijska Tabela Stranica
+
+24. Koje su karakteristike hijerarhijske tabele stranica?
+- Tabela stranica je realizovana u vise nivoa
+- svaki nivo ukazuje na referenciranu stranicu na sledecem nivou
+- najcesce ima 3 nivoa
+- tabele stranica na svim nivoima se cuvaju u RAM
+- OS ne kreira delove tabele stranica za stranice iz heap memorije koje se ne koriste i time stedi RAM 
+
+25. Kako se odvija ref stranice koriscenjem hijerarhijske tabele stranica?
+- Referencira se osnovni nivo tabele stranica koji ukazuje na dalje nivoe koji su veci i u sebi skladiste info o okvirima stranica koje se ref.
+
+26. Koja je mana klasicne tabele stranica u kontekstu velicine memorije?
+- Proporcionalna je velicini virtuelnog adresnog prostora. 
+
+27. Koja je alternativa tabele stranica koja prevazilazi manu velicine mem?
+- Invertovana tabela stranica koja ima jednu stavku za svaki okvir. Svaka stavka govori koja je stranica kog procesora trenutno smestena u odredjeni okvir.
+- Mana ovoga je sto se linearno pronalazi okvir u kojem je ref stranica, to je sporo.
+
+28. Koja je alternativa invertovane tabele stranica koja prevazilazi manu linearnog trazenja?
+- Hesirana invertovana tabela stranice. 
+
+29. Kako je implementirana zastita pristupa memoriji u VM?
+- Implicitno je implementirana jer proces pristupa samo stavkama u VM, a hardver ih mapira na fizicke adrese. Proces nema mehanizam da pristupi drugim mem lok.
+
+30. Objasniti parametre koji uticu na ucestalost gresaka stranice:
+- velicina stranice - broj gresaka ce biti mali sto je manja stranica
+- broj dodeljenih okvira - sto se vise stranica procesa ubaci u glavnu mem, to je manja verovatnoca greske, ali sto se vise mem zauzme stranicama jednog procesa to je veca verovatnoca greske stranica za druge procese.
+
+31. Sta sadrzi stavka tabele stranica za svaki segment?
+- Adresa pocetka segmenta
+- Duzina segmenta
+- P 
+- M
+
+32. Koje su prednosti segmentacije a koje stranicenja?
+- Segmentacija je vidljiva za programera, podrzava modularnost, deljenje i zastitu i eliminise unutrasnju fragmentaciju
+- Stranicenje je transparentno za programera, omogucava lako upravljanje mem jer su svi delovi iste velicine i uklanja spoljasnju fragmentaciju 
+
+33. Objasni karakteristike kombinovanog pristupa stranicenja i segmentacije:
+- Adresni prostor se deli u odr broj segmenata
+- Svaki segment podeljen u stranice
+- Adresa sadrzi broj segmenata i broj stranice unutar segmenta
+- Svaki proces zahteva tabelu segmenta a svaki segment tabelu stranica
+
+34. Koji su preduslovi OS podrske za upr mem?
+- Da harver koristi tehnike VM i podrzava segmentaciju i/ili stranicenje
+
+35. Koje su 3 politike za koje OS mora da vodi racuna?
+- Politika donosenja - kada ucitati stranicu u glavnu mem
+- Politika smestanja - gde u glavnoj mem smestiti stranicu
+- Politika zamene - koju stranicu izbaciti iz glavne mem da bi se mogla smestiti nova
+
+36. Koja su dva pristupa politike donosenja?
+- Stranicenje po zahtevu
+	- stranica se donosi u glavnu mem samo kada se napravi referenca na lokaciju u toj stranici
+	- rezultuje u puno page fault na pocetku rada programa ali taj broj opada vremenom
+- Predstranicenje
+	- stranice se unapred donose u glavnu mem cak i ako nisu ref
+	- efikasnije je odjednom ucitati vise stranica iz sek mem ako su u sukc mem lokacijama
+	- nepotrebno donosi stranicu koja se nece koristiti
+
+37. Koji je cilj politike zamene stranica?
+- Da se minimizuje broj page fault tako sto ce se izbaciti stranice za koje je najmanja verovatnoca da ce biti referencirane.
+
+38. Zasto se uvodi zakljucavanje okvira?
+- Okvir koji je zakljucan je nemoguce zameniti. U zakljucanim okvirima se cuvaju kernel OS, glavne upr strukture U/I bufferi. Takodje se tek donesene stranice mogu zakljucati kako ne bi doslo do njihove zamene pre prvog koriscenja. Potreba za indikatorom na to da li je okvir zakljucan ili ne.
+
+39. Koje su politike za izbor stranice za zamenu?
+- Optimalna
+- LRU - last recently used
+- FIFO
+- Casovnik
+
+40. Kako se porede politike za izbor stranice za zamenu?
+- Po broju page fault u nizu referenci.
+
+41. Koje su karakteristike optimalne politike?
+- Bira se ona stranica za koju je vreme do sledece reference najduze.
+- Nije moguce implementirati je jer zahteva od OS da savrseno poznaje dalji splet dogadjaja. 
+- Samo predstavlja standard za dalje algoritme.
+
+42. Koje su karakteristike najmanje skoro koriscene politike?
+- Bazira se na evidenciji proslih dogagjaja i referenciranja. Zamenjuje stranicu koja je najduze bila ne koriscena pod pretpostavkom da ni uskoro nece biti.
+- Po principu lokalnosti trebala bi da bude zamenjena stranica za koju je najmanje vrv da ce biti ref u bliskoj buducnosti. 
+- Radi skoro jednako kao optimalna politika.
+- Teska je za impl
+- Dve varijante impl: brojac i stek
+
+43. Objasniti dve varijante implementacije LRU politike:
+- Brojac - procesor vodi racuna o taktu i na osnovu toga upisuje trenutni takt prilikom svakog ref stranice. Zamenjuje se stranica sa najmanjim trenutkom vremena.
+- Stek - stranice se prilikom ref smestaju na vrh steka, ukoliko se vec nalaze unutar steka, brisu se sa tog mesta i smestaju na vrh
+
+44. Koje su mane LRU politike?
+- Ne moze se implementirati u realnim sistemima.
+- Bilo koja impl usporava sistem jer se prilikom svakog referenciranja mora azurirati takt ili stek
+
+45. Objasniti karakteristike FIFO politike zamene:
+- Tretira okvire kao kruzni bafer, pokazivac na sledeci okvir koji treba izbaciti
+- Najjednostavnija za impl
+- Bice zamenjena stranica koja je najduze u memoriji sto je cesto pogresno
+- Losije performanse od LRU
+
+46. Koja je alternativa LRU?
+- Ideja je da OS evidentira 8bitnu rec za svaku stranicu.
+- U regularnim intervalima OS smesta bit upotrebe na najvisu poziciju reci, a ostale bitove pomera u desno.
+- Na taj nacin dobijamo info o tome koja stranica je odavno bila referencirana
+
+47. Koje su karakteristike politike casovnika?
+- Slicno kao alternativni LRU samo sto se evidentira samo jedan bit upotrebe za svaku stranicu
+- Kada je potrebno pronaci stranicu za zamenu, kruznim kretanjem kroz okvire se svaki okvir sa bitom upotrebe 1 postavlja na 0 sve dok se ne naidje na okvir sa bitom 0, njega menjamo. Naredno pretrazivanje ce krenuti od okvira koji je poslednji zamenjen.
+
+48. Koje se unapredjenje uvodi na politiku casovnika?
+- Povecava se broj bitova koje alg koristi. Svaka stranica ima bit promene i algoritam moze i njega uzeti u obzir. Prednost u zameni daje ona stranica koja nije menjana jer se rezultati izmene te stranice ne moraju smestati nazad u sek memoriju.
+
+49. Zasto se uvodi baferovanje stranica?
+- Jer se zamenjene stranice nalaze u baferu i ako se nadje potreba za njima mogu se brzo ucitati
+- Postojanje liste izmenjenih stranica implicira to da se izmenjene stranice mogu grupno upisati nazad u sek memoriju sto je dosta brze
+
+50. Koji su parametri odredjivanja minimalne velicine rezidentnog skupa?
+- Procesu dodeliti bar onoliko okvira koliko svaka pojedinacna instrukcija moze da ref
+- Procesu dodeliti onoliko okvira da ne bude previse gresaka stranica
+
+51. Koje su politike velicine rezidentnog skupa?
+- Fiksno dodeljivanje - proces dobija fiksan broj okvira za smestanje stranica, moze biti jednak ili proporcionalni
+- Promenljivo dodeljivanje - procesi sa velikim brojem page fault-ova dobijaju vise okvira dok se procesima sa manjim brojem smanjuje
+
+52. Koji su opsezi zamene?
+- Lokalni - stranice procesa koji je izazvao page fault
+- Globalni - bilo koja nezakljucana stranica
+
+53. Sta je radni skup W?
+W(t, A)
+- U trenutku vremena t skup stranica koje su bile ref u poslednjih A jedinica vremena cine radni skup
+- jedno referenciranje predstavlja jednu jedinicu vremena A
+
+54. Opisati strategiju radnog skupa:
+- Nadgledati radni skup svakog procesa
+- Periodicno uklanjati stranice koje nisu u radnom skupu
+Problem: merenje radnog skupa je zahtevno sa stanovista performansi
+
+55. Sta je PFF?
+- Page Fault Frequency
+
+56. Opisati algoritam ucestalosti greske stranice:
+- Umesto nadgledanja radnog skupa nadgleda se ucestalost greske
+- Svaka stranica ima bit upotrebe
+- Brojac ref broji koliko se ref desilo od prosle greske
+- Nakon svakog referenciranja vrednost brojaca se poredi sa F
+- ukoliko je manja od F rez skup se prosiruje novom stranicom
+- ukoliko je veca od F rez skup se smanjuje za stranice sa bitom upotrebe 0
+- pri svakoj gresci resetuju se bitovi upotrebe na 0 svakoj stranici u rez skupu
+
+57. Koja je mana algoritma ucestalosti greske stranice?
+- Ne radi dobro u toku prelaznih perioda kada se prelazi na novu lokalnost.
+- Pri prelasku u novu lokalnost veliki broj gresaka ce povecavati rez skup ne izbacujuci odmah stranice stare lokalnosti
+- Kasnije ce se opet smanjivati jer se stranice stare lokalnosti nece ref
+- Da bi se str izbacila iz radnog skupa potrebno je da prodje F jedinica virt vremena
+
+58. Sta je VSWS?
+- Variable-interval Samplet Working Set
+- definise se interval uzrokovanja
+- u toku intervala stranice koje prouzrokuju page fault se smestaju u rez skup
+- nakon intervala se izbacuju stranice sa bitom upotrebe 0
+- Tokom izvrsavanja proces meri virt vreme. Ako je prosao maks period od poslednjeg usrokovanja, suspenduje se proces i skeniraju bitovi upotrebe.
+- Ukoliko je u toku int broj gresaka stranice presao neki prag: 
+	- ako je prosao min period uzrokovanja, vrsi se uzrokovanje
+	- ako nije prosao ceka se da istekne i tek onda se vrsi uzrokovanje
+59. Opisati politiku ciscenja:
+- Odlucuje kada se izmenjena stranica upisuje nazad u sek mem
+- Ciscenje po zahtevu - stranica se upisuje odmah prilikom zamene
+- Predciscenje - stranice se upisuju grupno
+- Najbolji pristup je baferovanje stranica - lista izmenjenih i neizmenjenih
+
+60. Koji su problemi premalo procesa u glavnoj mem, a koji problemi sa previse?
+- Premalo procesa u glavnoj mem uzrokuje to da ce vecina proc biti blokirani a procesor besposlen
+- Previse procesa u glavnoj mem uzrokuje to da je rez skup premali i da ce biti puno page fault-ova
+
+61. Koje su varijante izbora procesa koji ce biti suspendovan?
+- Proces najnizeg prioriteta
+- Proces koji je izazvao gresku
+- Proces koji najduze nije bio aktivan
+- Proces sa najmanjim rez skupom
+- Najeci proces (dobija se najvise slobodnih okvira)
+- Proces za koji je najmanje hitno da bude zavrsen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

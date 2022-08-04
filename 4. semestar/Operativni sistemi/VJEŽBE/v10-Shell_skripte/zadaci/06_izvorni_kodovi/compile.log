@@ -1,0 +1,18 @@
+In file included from /usr/include/c++/5/thread:35:0,
+                 from 06_primer2_kompajlira.cpp:5:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+06_primer2_kompajlira.cpp:8:17: error: ‘thread’ is not a namespace-name
+ using namespace thread;
+                 ^
+06_primer2_kompajlira.cpp:8:23: error: expected namespace-name before ‘;’ token
+ using namespace thread;
+                       ^
+06_primer2_kompajlira.cpp: In function ‘int main()’:
+06_primer2_kompajlira.cpp:14:2: error: ‘thread’ was not declared in this scope
+  thread t(kod_niti);         /*Stvaranje objekta niti (t) od funkcije kod_niti(), i pokretanje niti. 
+  ^
+06_primer2_kompajlira.cpp:17:2: error: ‘t’ was not declared in this scope
+  t.join();                   //Poziv operacije join() na niti t. Nit main ceka da se nit t zavrsi.
+  ^

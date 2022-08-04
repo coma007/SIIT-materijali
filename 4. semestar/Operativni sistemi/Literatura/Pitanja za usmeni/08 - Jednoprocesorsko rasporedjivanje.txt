@@ -1,0 +1,147 @@
+1. Koji su ciljevi procesorskog rasporedjivanja?
+- Obezbedjivanje fer deljenja vremena medju procesima
+- Sprecavanje gladovanja procesa
+- Obezbedjivanje efikasnog koriscenja procesora
+- Uspostavljanje privilegija medju procesima
+- Pomenute ciljeve sprovede uz sto manje dodatnog opterecenja
+
+2. Koji su tipoci procesorskog rasporedjivanja?
+- Dugorocno 
+	- stvaranje novog procesa
+	- odlucuje se da li da se proces doda skupu proc koji konkurisu izvrsavanje (na osnovu FIFO ili nekog kriterijuma)
+	- upravlja stepenom multiprog
+	- sto je vise procesa, manji je procenat vremena u kojem procesa moze da se izvrsava
+- Srednjerocno
+	- deo fje razmene
+	- odlucuje da se proces doda broju procesa koji su del ili potp u glavnoj mem
+	- odredjuje kada proces treba da bude zamenjen
+	- rasporedjivanje zadovoljava ciljni stepen multiprog
+- Kratkorocno (dispecer)
+	- najcesce se izvrsava
+	- odlucuje koji proces ce procesor da izvrsava
+	- aktivira se kada se desi dogadjaj (prekid gen takta, U/I, poziv os....)
+
+* ukratko dugorocno rasp odredjuje da li novi proces ide u red spremnih ili suspendovanih
+srednjerocno odlucuje koji proces iz suspendovanih ide u spremni i koji iz suspendovanih ide u blokiran
+kratkorocno odlucuje koji spreman ide u izvrsavanje
+
+3. Koji su kriterijumi kratkorocnog rasporedjivanja?
+- Korisnicki orjentisani - ponasanje programa kako ga vidi korisnik npr. vreme odziva
+- Sistemski orjentisani - usresredjeni na efikasno koriscenje procesora npr. propusna moc
+
+4. Razlike izmedju kriterijuma koji su povezani, i onih koji nisu, povezani sa performansom:
+- Oni koji su povezani sa performansom su kvantitativni i merljivi (vreme odziva, propusna moc...)
+- Oni koji nisu povezani sa pervormansom su kvalitativni i teze merljivi (predvidljivost)
+
+5. Navedi karakteristike korisnicki orj krit vezanih sa performansom, i ostalih:
+- Vezani sa perf:
+	- vreme prolaska zadatka
+	- vreme cekanja 
+	- vreme odziva
+	- rokovi - proces se mora zavrsiti u zadatom roku
+- Ostali:
+	- predvidljivost - posao se treba zavrsiti priblizno istim vremenom i troskovima bez obzira na opterecenje sistema
+
+6. Navedi karakteristike sistemski orj krit vezanih sa performansom, i ostalih:
+- Vezani za perf:
+	- propusna moc
+	- iskoriscenje proc
+- Ostali:
+	- pravicnost
+	- primena prioriteta - proc sa visim prior imaju prednost 
+	- uravnotezenje resursa - optimizuje upotrebu resursa (prednsot ide onima koji manje koriste opterecene resurse)
+
+7. Kako moze biti definisan prioritet procesa?
+- Interno - prioritet proistice iz podataka procesa
+- Eksterno - prioritet je definisan u procesu izvan OS (npr. vaznost procesa)
+
+8. Sta je CPU-burst?
+- Vreme proteklo od trenutka dobijanja procesora do gubljenja procesora.
+
+9. Navedi politike rasporedjivanja procesa:
+	1. Po redosledu dolaska
+	2. Kruzno dodeljivanje
+	3. Najkraci proces sledeci
+	4. Najkrace preostalo vreme
+	5. Sledeci sa najvecim odnosom odziva
+	6. Povratna sprega
+
+10. Koji su parametri da testiranje politika?
+- trenutak dolaska - kad je postao spreman
+- trenutak zavrsetka - kad je izvrsavanje instr kompletirano
+- vreme usluge Ts - vreme potrebno proc da izvrsi instr procesa
+- vreme prolaska Tr - vreme koje proces provodi u sistemu
+- normalizovano vreme prolaska Tr/Ts - relativno kasnjenje procesa u najb sluc je 1.0
+
+11. Koje su mane FCFS (Firs Come Firs Served) politike?
+- Kratki procesi dugo cekaju na izvrsavanje
+- los odnos vremena Tr i Ts
+- procesi koji imaju dosta U/I dugo cekaju na ponovno izvrsavanje nakon U/I
+- efektivna samo u kombinaciji sa prioritetima
+
+12. Mane RR (Round Robin) politike?
+- procesi sa U/I kratko koriste vremenski isecak i nakon U/I se smestaju u red spremnih
+
+13. Kakva bi trebala da bude velicina isecka u RR politici?
+- ne treba biti premali jer ce biti puno komutacije
+- ne treba biti preveliki jer prelazi u FCFS
+- Neznatno veca od prosecnog vremena za interakciju sa procesorom. Na ovaj nacin proces ugl obavi posao ili se blokira zbog U/I pre isteka isecka.
+- U vecini modernih sistema izmedju 10 i 100 ms
+
+14. Kako VRR (Virtual RR) unapredjuje klasican RR?
+- Nakon U/I procesi se ubacuju u poseban FCFS red cekanja koji ima prioritet na regularni red cekanja. Procesu se vreme isecka umanjuje za onoliko koliko je pre U/I prekida bio izvrsavan. 
+
+15. Koje su mane SPN (Shortest Process Next) politike?
+- Smanjuje se predvidljivost vremena prolaska
+- Duzim procesima preti potencijalno gladovanje
+- Nije pozeljna za sisteme sa deljenjem vremena jer ne podrzava prekide
+
+16. Koje su dve varijante procene ocekivanog CPU-burst-a?
+- Prva je da se nadje prosek trajanja svih prethodnih CPU-bursts-a procesa.
+- Druga varijanta je da se veca tezina da skorijim instancama tako sto ce se raditi eksponencijalno usrednjavanje. Sto je posmatranje starije to manji uticaj ima u proracunu srednje vrednosti.
+
+17. Koje prednosti uvodi SRT (Shortest Remaining Time) politika?
+- Prekid se desava jedino pojavom novog procesa koji ima kraci CPU-burst u odnosu na onaj koji se trenutno izvrsava.
+- Samo novi proces moze ispuniti taj uslov.
+- Radi veoma dobro ukoliko se dobro predvidja CPU-burst.
+
+18. Navesti karakteristike HRRN (Highest Response Ratio Next) politike:
+- Politika bez prekidanja
+- Za svaki proces se racuna proporcija R = (w+s)/s 
+	- w je vreme koje je proces proveo u cekanju na procesor
+	- s je CPU-burst
+- Kada se tekuci proces zavrsi ili blokira, bira se sledeci sa najvecim R
+
+19. Koje su prednosti HRRN politike?
+- Dobar je tretman za procese sa malim CPU-burstom jer je s malo i R onda veliko
+- Dobar je tretman za procese koji dugo cekaju jer w je veliko i R je onda veliko
+- Izbegava gladovanje
+- Priblizno isto ce se tretirati duzi i kraci procesi
+
+20. Koje su karakteristike politike povratne sprege?
+- Prekidna politika
+- svaki put kada se proces prekine stavlja se u FCFS red cekanja nizeg prioriteta
+- rezultat toga je da novi procesi brze dobijaju procesor i kraci procesi brze prolaze
+
+21. Koje su karakteristike FSS (Fair-Share Scheduler) politike?
+- procesi se klasifikuju u grupe (npr procesi iste aplikacije)
+- rasporedjivanje uzima u obzir i grupu procesa kojoj pripada
+- prioritet se racuna na osnovu prioriteta samog procesa, dotadasnjeg vrem korisc procesora od strane procesa i dotadasnjeg vrem koriscenja procesora od strane grupe kojoj proces pripada.
+
+22. Karakteristike linux rasporedjivaca su:
+- completely fair scheduler
+- procesima se dodeljuje procenat procesorskog vremena zavisno od trenutnog broja procesa u sistemu i prioriteta procesa
+- vrem isecak se dinamicki dodeljuje kako bi se postigla planirana proporcija u koriscenju ukupnog porcesorskog vremena
+- nice vrednost definise prioritet od -20 do 19(default je 0)
+- definise maksimalno kasnjenje - konfigurabilna vrednost koja odredjuje duzinu vrem intervala u kojem svaki proces mora dobiti procesor bar jednom (npr dva procesa odnosa prioriteta 4:1 sa maks dozv kasnjenjem od 10ms, prvi dobija proc 8ms a drugi 2ms)
+- definise minimalnu granularnost - brednost koja odredjuje minimalnu duzinu isecka bez obzira na broj procesa (ovim se za veliki broj procesa gubi ravnopravnost po ceni upotrebljivosti sistema)
+- virtuelna vremena izvrsavanja se org u binarno stablo pretrage, sledeci proces je onaj sa najmanjim virt vremenom odnosno onaj najlevlji
+
+
+
+
+
+
+
+
+

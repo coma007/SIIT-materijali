@@ -1,0 +1,27 @@
+03 - Uzajamno blokiranje 
+https://youtu.be/azJql40KvCU
+
+04 - Pregled OS
+https://youtu.be/LQmKgwbct4g
+
+05 - Procesi
+https://youtu.be/CqiW-h-KazQ
+
+06 - Upravljanje memorijom
+https://youtu.be/gUm8dWCZdIs
+
+07 - Virtuelna memorija
+https://youtu.be/Gn7f-7Izqrg
+https://youtu.be/FdgUxAJzJVw
+
+08 - Jednoprocesorsko rasporedjivanje
+https://youtu.be/t0vP5ufKh5I
+
+09 - Multiprocesorsko rasporedjivanje
+https://youtu.be/oiKTah_1xnY
+
+10 - U/I upravljanje
+https://youtu.be/CNrZzfmr9dI
+
+11 - Upravljanje fajl sistemom
+https://youtu.be/Jdz9jjdlTC4

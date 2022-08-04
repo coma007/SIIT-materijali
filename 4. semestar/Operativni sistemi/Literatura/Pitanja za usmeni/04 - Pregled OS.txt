@@ -1,0 +1,208 @@
+1. Sta je operativni sistem?
+- Program koji upravlja izvrsavanjem aplikacionih programa i sluzi kao interfejs izmedju programa i hardvera racunara.
+
+2. Koji su ciljevi OS?
+- Treba da obezbedi pogodnost, efikasnost i mogucnost izvrsavanja novih korisnickih aplikacija.
+
+3. Opisi ideju iza toga da je OS interfejs izmedju korisnika i racunara?
+- Korisnik vidi racunarski sistem kao skup aplikacija. One mogu biti impl kao skup masinskih instr koje su u potpunosti odgovorne za upravljanje hardverom racunara, ali to bi bilo pretesko za impl. Zato se obezbedjuje skup sistemskih programa, poput OS, koji obavljaju interakciju sa hardverom.
+
+4. Koji sve tipovi interfejsa postoje u rac sistemu?
+- API - servisi koje aplikacija moze pozivati (skup funkcija i klasa u nekoj lib)
+- ABI - API nizeg nivoa (veza sa OS). Definise format komunikacije sa OS (sist pozivi, nacin predstavljanja tipova podataka, konvencija poziva fja...)
+- ISA (Instruction Set Architecture) - skup instrukcija masinskog jezika koje hardver podrzava
+
+5. Koja su dva osnovna nacina komunikacije izmedju korisnika i racunara?
+- Komandna linija
+- GUI
+
+6. U okviru cega se interpreter komandi moze nalaziti?
+- Moze biti ugradjen u kernel
+- Moze biti implementiran kao poseban program u okviru OS(shell)
+
+7. Koja su dva nacina za interpretiranje komandi?
+- Interpreter komandi sadrzi u sebi kod za izvrsavanje
+- Komande se izvrsavaju pozivom sistemskih programa (ls test - poziva se ls program)
+
+8. Nabroj standardne usluge OS:
+- Izvrsavanje programa
+- Pristup U/I uredjajima
+- Pristup fajlovima
+- Deljeni pristup sistemu
+- Upravljanje greskama
+- Nadzor sistema
+
+9. Koji pristupi su postojali kroz istoriju?
+- Serijska obrada
+- Jednostavni sistem paketne obrade
+- Multiprogramirani sistemi paketne obrade
+- Sistemi sa deljenjem vremena
+
+10. Koji su problemi serijske obrade?
+- Korisnici se upisuju na spisak za rezervisanje racunara i tesko je org raspored.
+- Postavljanje programa je uzimalo znacajan deo vremena.
+- Direktno se upravlja hardverskim resursima.
+- Nema istovremenog izvrsavanja vise programa.
+
+11. Sta je monitor u jedn sistemu paketne obrade?
+- Program sa posebnom namenom da upravlja izvrsavanjem drugih programa. Izvrsava jedan po jedan program, a oni se nakon izvrsavanja vracaju na njega da bi se mogao ucitati naredni program.
+
+12. Koje su funkcije procesora u jedn sistemu paketne obrade?
+- Inicijalno izvrsava instrukcije iz dela memorije gde je monitor smesten. Kada monitor ucita program procesor ce izvr instr grananja i krenuti u njegovo izvrsavanje sve dok ne dodje do kraja programa ili greske.
+
+13. Koji su tipovi hardverske podrske za monitor?
+- Zastita memorije - program ne sme pristupati delu memorije gde je monitor
+- Vrem brojac - program se ne sme izvrsavati predugo
+- Privilegovane instrukcije - deo instrukcija moze da izvrsi samo monitor
+- Prekidi - daju vise fleksibilnosti jer omogucavaju predaju i oduzimanje upravljanja programu
+
+14. Koji su rezimi izvrsavanja u jedn sist paketne obrade?
+- Korisnicki rezim - za programe, ogranicen pristup memoriji
+- rezim Kernela - za monitor, privilegovane instr + neogr pristup memoriji
+
+15. Koja ideja stoji iza multiprogr sist paketne obrade?
+- Da se programi vise ne delegiraju monitoru sekvencijalno, vec je vise programa istovremeno postavljeno za izvrsavanje, ali i dalje u jednom trenutku procesor moze izvrsavati samo jedan program.
+
+16. Koji se problemi javljaju iz toga sto je procesor posvecen samo jednom programu?
+- Slabo iskoriscenje procesora. Npr dok se ceka izvrsenje U/I operacije, U/I uredjaji su dosta sporiji od procesora.
+
+17. Sta je multiprogramiranje?
+- Viseprocesna obrada podataka. Pored OS u mem se smesta vise korisnickih programa. Dok jedan program ceka U/I, procesor moze izvrsavati neki drugi program iz mem.
+
+18. Koji su tipovi hardverske podrske za multiprogramiranje?
+- U/I prekidi
+- DMA
+- Procesor izdaje naredbu za U/I operaciju i nastavlja izvrsavanje drugog posla. Kontroler za U/I obradjuje U/I operaciju i nakon izvrsavanja postavlja prekid i predaje kontrolu programu za obradu prekida OS. OS ce predati kontrolu drugom poslu.
+
+19. Sta OS treba omoguciti da bi se moglo razviti multiprogramiranje?
+- Upravljanje memorijom
+- Rasporedjivanje posla - alg rasporedjivanja koji odlucuje koji se posao sl izvrsava
+
+20. Koja je ideja u sistemima sa deljenjem vremena?
+- Procesor se deli izmedju vise korisnika. Posto je vreme reakcije ljudskog oka relativno sporo, gotovo je neprimetna razlika u odnosu na sisteme sa jednokorisn rezimom.
+
+21. Navedi primer realizacije sistema sa deljenjem vremena:
+- CTSS (Compatible Time Sharing System)
+- Ucitava i izvrsava jedan po jedan kor program
+- Na svakih 0.2 sekunde se pravi prekid
+- Pri svakom prekidu OS preuzima upravljanje i moze dodeliti procesor drugom korisniku
+
+22. Koji su zahtevi za savremene OS?
+- Multiprogramiranje
+- Deljenje vremena
+
+23. Koja su glavna dostignuca savremenih OS?
+- Procesi
+- Upravljanje memorijom
+- Zastita informacija i bezbednost
+- Rasporedjivanje i upravljanje resursima
+
+24. Sta je proces?
+- Jedinica aktivnosti koju karakterisu naredbe za izvrsavanje, tekuce stanje i dodeljeni skup sistemskih resursa. 
+- Program u izvrsavanju.
+
+25. Navedi tri dela koja cine proces:
+- Izvrsni program - instr koje procesor treba da izvrsi
+- Podaci - pridruzeni podaci koji su potrebni programu za izvr
+- Kontekst izvrsavanja (stanje procesa) - stanje registara, prioritet procesa, info o tome da li ceka na U/I ...
+
+26. Koje su odgovornosti OS pri upravljanju memorijom?
+- izolacija procesa - ne sme pristupiti mem koja je rez za drugi proces
+- automatsko dodeljivanje i upravljanje - aplikacija ne mora direktno da vodi racuna o um
+- zastitia i kontrola pristupa - razl korisnici mogu na razl nacine da pristupe odr delovima mem 
+- dugotrajna memorija - OS mora da omoguci programima da trajno skladiste info (fajl sistem)
+
+27. Sta je virtuelno adresiranje?
+- Mehanizam koji omogucuje da programi vrse adresiranje sa logicke tacke gledista.
+- Program ne vodi racuna o kolicini fiz memorije.
+- Program ne vodi racuna o stvarnoj adresi vec se ona odredjuje tokom prevodjenja.
+
+28. Sta omogucuje sistem stranicenja?
+- Dinamicko mapiranje virtuelne adrese koja se koristi u programu u fizisku realnu adr.
+
+29. Kako se vrsi adresiranje virtuelne mem?
+- Ako je referencirajuca stranica na disku, ucitava se u glavnu mem. Ukoliko je glavna mem puna, mora se izbaciti neka stranica. OS pruza mehanizme za ovo.
+
+30. Sta zastita informacija i bezbednost moraju obezbediti?
+- Raspolozivost - zastita sistema od prekida rada.
+- Poverljivost - pravo pristupa odr podacima
+- Integritet podataka - zastita od nedozvoljene izmene
+- Autenticnost - provera identiteta i validanosti poruka
+
+31. Sta OS treba da obezbedi u kontekstu upravljanja resursima i rasporedjivanja?
+- Nepristrasnost - poslovi slicnog tipa koji se takmice za resurs trebaju da dobiju isti i fer pristup tom resursu
+- Razlicitost odziva
+- Efikasnost - pokusava da uveca propusnu moc, a smanji vreme odziva
+
+32. Koji su elementi OS za rasporedjivanje?
+- Kratkorocni red procesa - red procesa spremnih za izvrsavanje, dodeljivanje se moze vrsiti kruzno ili prema prioritetu
+- Dugorocni red procesa - red procesa koji cekaju da udju u kratkorocni red
+- Za svaki U/I uredjaj postoji red procesa koji cekaju na upotrebu uredjaja
+
+33. Sta je SMP (Symmetric Multiprocessing)?
+- Simetricna viceprocesna obrada. 
+- Vise procesora deli istu memoriju i U/I uredjaje.
+- Svi procesori mogu da obalvjaju istu funkciju.
+- OS vodi racuna o rasporedjivanju niti ili procesa na procesore i sinhronizaciju izm njih
+
+34. Koje su prednosti SMP?
+- Performanse - paralelno obavljanje posla
+- Raspolozivost - Otkaz jednog procesora nece zaustaviti sistem 
+- Postepeno poboljsanje sistema - moguce je poboljsati perf sistema dodavanjem procesora
+- Skaliranje - cena racunara bazirana na broju procesora i performansi
+
+35. Opisati dizajn OS za SMP?
+- simultani konkurentni procesi ili niti - kernel treba da podrzi konk pristup od str vise procesa
+- rasporedjivanje - svaki procesor moze da sprovodi rasporedjivanje sto znatno komplikuje stvari
+- sinhronizacija
+- upravljanje memorijom - iskoristiti paralelizam hardvera za bolju performansu
+- pouzdanost i otpornost na greske - os treba da reaguje na gubitak procesora smanjenjem performanse i ponovnim rasporedjivanjem
+
+36. Sta su sistemski pozivi?
+- API servisi koje OS pruza i pomocu kojih se izvrsavaju odredjene funkcije OS. Mogu se pozvati direktno ili koriscenjem sistemske biblioteke.
+
+37. Koji su tipovi sistemskih poziva?
+- Upravljanje procesima - zavrsi, prekini, ucitaj, izvrsi, kreiraj......
+- Upravljanje fajlovima - kreiraj i obrisi, otvori i zatvori.......
+- Upravljanje uredjajima - zatrazi i otpusti uredjaj, procitaj i upisi....
+- Evidencija informacia - preuzmi i postavi sistemsko vreme i datum
+- Komunikacija - kreiraj i obrisi komunikacionu vezu, primi i posalji poruku
+
+38. Koji su tipovi strukture kernela OS?
+- Monolitno jezgro
+- Slojevita struktura - funkcionalnosti su podeljene u hijerarhijski org slojeve. idu top down. Problemi: bidirekciona komunikacija i sporo je jer se prolazi kroz nis sist poziva
+- Mikrokernel - jezgro sadrzi samo osnovne funkcije, a ostali servisi su implementirani u korisnickom rezimu. Pojednostavljena implementacija i pruzena fleksibilnost, ali smanjene performanse.
+- Modularna struktura - funkcionalnosti su podeljene u module koji se dinamicki ucitavaju. Kernel uvek sadrzi kljucne funkcije. Sistem podeljen u nezavisne celine koje mogu medjusobno komunicirati.
+- Hibridna struktura - kombinacija prethodno navedenih
+
+39. Kako se vrsi pokretanje OS?
+- Jednostavni bootsrap loader zapisan u ROM mem koji se prvi pokrece (BIOS, UEFI) i on je odgovoran za ucitavanje kompleksnijeg loadera koju ucitava OS.
+
+40. Sta omogucuje virtuelizacija?
+- Da se na jednom racunaru istovremeno izvrsava vise razlicitih OS ili instanci istog.
+
+41. Objasniti ideju VM:
+- Host OS moze da podrzi izvrsavanje vise instanci OS-a preko VM koriscenjem VMM - Virtual Machine Monitor koji preko host OS-a obezbedjuje komunikaciju VM -> Host OS -> Hardver
+
+42. Pojmovi masine:
+- Iz persp aplikacije - svojstva jezika visokog nivoa i sistemski biblioteticki pozivi - definise je API
+- Iz persp Procesa - virtuelni mem prostor, registri, skup mas instr.. - definise je ABI
+- Iz persp OS - fajl sistem i U/I resursi, stvarna mem.. - ISA predstavlja interfejs izm OS i masine
+
+43. Koji su tipovi VM? 
+- Procesna VM - Java VM, .NET Fw - kreira se kad i proces i ukida kad se zavrsi, portabilnost
+- Sistemska VM - VMware - virtualni softver je host odredjenom broju gostujucih OS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

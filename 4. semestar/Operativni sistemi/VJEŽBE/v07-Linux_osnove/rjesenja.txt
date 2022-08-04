@@ -1,0 +1,6 @@
+ls
+mkdir os os/vezba6
+mv os/vezba6 os/v6
+ls os/v6 -a
+cd Desktop; ln ~/os/v6 os-v6 -s
+

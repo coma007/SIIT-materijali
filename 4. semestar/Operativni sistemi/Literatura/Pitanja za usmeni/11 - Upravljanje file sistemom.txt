@@ -1,0 +1,169 @@
+1. Sta je fajl?
+- Resurs koji sadrzi grupe podataka.
+*- Skup logicki povezanih zapisa koji se tretira kao jedan entitet. Referencira se po imenu.
+
+2. Sta je sistem za upravljanje fajlovima?
+- Sistemski softver zaduzen za rad sa fajlovima.
+- Obezbedjuje apstr resursa uskladistenih u sek memoriji.
+
+3. Sta je fajl sistem?
+- Skup metoda i struktura podataka koje OS koristi za upravljanje fajlovima.
+
+4. Navedi neke od tipova fajl sistema:
+- ext2,3,4
+- NFS
+- FAT
+- NTFS
+
+5. Koje su pozeljne osobine fajlova?
+- Dugorocno postojanje
+- Deljivost izmedju procesa
+- Struktura - interna struktura takva da je aplikacijama pogodna za koriscenje
+
+6. Navedi operacije nad fajlovima:
+- Kreiranje/Brisanje
+- Otvaranje/Zatvaranje
+- Citanje/Upisivanje
+
+7. Sta je polje a sta zapis podatka?
+- Polje je osnovni element podatka koji sadrzi pojedinacnu vrednost definisanu duzinom i vrstom podataka.
+- Zapis je skup logicki povezanih polja koje aplikacija vidi kao celinu.
+
+8. Navedi komponente sistema za upravljanje fajlovima:
+- Drajveri - direktno upravljanje sa najnizim nivoom
+- Osnovni FS - bavi se blokovima podataka koji se razmenjuju sa uredjajem
+- Osnovni U/I Supervizor - generalna org U/I zahteva za sve uredjaje
+- Logicki U/I - pruza std interfejs izmedju aplikacija preko FS do uredjaja
+
+9. Koji su kriterijumi izbora organizacije fajlova?
+- Vreme pristupa
+- Jednostavnost azuriranja
+- Ekonomicnost skladista
+- Jednostavnost odrzavanja
+- Pouzdanost
+
+10. Navedi tipove organizacije fajlova:
+- Gomila
+- Sekvencijalni fajl
+- Index sekvencijalni fajl
+- Indeksni fajl - razliciti indeksi za razlicita polja
+- Direktni/Hesirani fajl
+
+11. Sta sve sadrzi upravljacki blok fajla?
+- Osnovne info - ime i tip
+- Adresne informacije - volumen, pocetna adresa i velicina
+- Upravljanje pristupom - vlasnik i prava pristupa
+- Info o upotrebi - vreme kreiranja, koji korisnik je kreirao, vreme poslednjeg citanja, korisnik koji je poslednji izvrsio citanje, vreme posl modif, korisnik koji je izvr posl modif, info o trenutnoj upotrebi(koji procesi ga koriste, da li je zakljucan, da li je izmenjen u mem)
+
+12. Sta je direktorijum?
+- Fajl koji obezbedjuje mapiranje imena fajlova na fajl resurse na disku.
+
+13. Navedi operacije nad direktorijumom:
+- Pretrazivanje fajla
+- Kreiranje/Brisanje fajla
+- Listanje direkt
+- Azuriranje direkt
+
+14. Koje strukture direktorijuma postoje?
+- Lista stavki - najjednostavnija, svaki fajl mora imati unique name
+- U dva nivoa - svaki korisnik dobija svoj direktorijum, fajlovi moraju biti unikatni na nivou korisnika
+- Hijerarhijska struktura - opste prihvacena - svaki direkt moze sadrzati poddirekt i fajlove
+
+15. Koja su prava pristupa fajlu moguca?
+- Niakvo - korisnik nije svestan ni postojanja fajla
+- Znanje - korisnik moze da utvrdi da fajl postoji i ko je vlasnik
+- Izvrsavanje - korisnik moze da ucita i izvrsi program, ne moze kopirati fajl
+- Citanje - cesto ukljucuje i pravo kopiranja
+- Dodavanje podataka - korisnik moze samo da dodaje pod u fajl, ali ne da menja prethodne i brise
+- Azuriranje - ima pravo potpune izmene/brisanja/dodavanja pod u fajl
+- Promena prava pristupa - moze menjati pravo pristupa nad fajlom
+- Brisanje - moze obrisati fajl
+
+16. Kome se mogu dodeliti prava pristupa fajlu?
+- Individualnom korisniku
+- Grupi korisnika
+- Svima
+
+17. Koja su dva pristupa u dodeljivanju prostora fajlu.
+- Dodeljivanje unapred - potrebno je unapred znati maks velicinu fajla sto je tesko
+- Dinamicko dodeljivanje - delovi se dodeljuju prema potrebi
+
+18. Navedi prednosti i mane velikih i malih velicina delova fajla:
+- Mali
+	+ rasipanje prostora je minimalno i lakse je rasporedjivanje prostora
+	- komplikovanija evidencija dodeljivanja (potrebna je tabela)
+- Veliki
+	+ performansa pri pristupu je dobra jer su pod u susdenim lok
+	- teska relokacija pri dodeljivanju novih fajlova
+
+19. Koje su tri najcesce koriscene metode dodeljivanja fajlova?
+- Susedno dodeljivanje
+- Ulancano dodeljivanje
+- Indeksno dodeljivanje
+
+20. Karakteristike susednog dodeljivanja:
+- Jedan skup susednih blokova se dodeljuje fajlu u trenutku stvaranja - dodeljivanje unapred delova promenljive velicine
+- Samo jedna stavka po fajlu ide u tabelu dodeljivanja - poc blok i duzina
+- Jednostavan pristup - poc blok + i
+- Problem je eksterna fragmentacija
+
+21. Karakteristike ulancanog dodeljivanja:
+- Dodeljivanje se vrsi na bazi pojedinacnog bloka fiksne velicine
+- Svaki blok ima referencu na sledeci u lancu
+- Nema eksterne fragmentacije
+- Samo jedna stavka po falju u tabeli dodeljivanja - poc blok i duzina
+- Problem je sto ne omogucava direktan pristup fajlu i nije u saglasnosti sa principom lokalnosti
+
+22. Karakteristike indeksnog dodeljivanja:
+- Dodeljeni delovi ne moraju biti susedni i ne pokazuju na sledeci deo
+- Tabela Dodeljivanja za svaki fajl sadrzi indeks delova. 
+- Indeks sadrzi jednu stavku za svaki dodeljeni deo i cuva se u posebnom bloku.
+- Stavka u tab dod sadrzi adresu bloka u kojem je indeks.
+- Najpopularniji oblik dodeljivanja fajlova.
+- Dve varijante - blokovi fiksne velicine(nema spoljne fragmentacije) i blokovi prom velicine(poboljsana lokalnost)
+
+23. Koje su varijante realizacije tabele dodeljivanja diska?
+- Tabela bitova - za svaki blok ima bit koji ukazuje na to da li je blok slobodan ili zauzet. Problem je velicina tabele za velike diskove i sporo pornalazenje slobodnog bloka.
+- Ulancani slobodni delovi - svaki slob deo pokazuje na sledeci i sadrzi info o duzini. Problem je spoljna fragm.
+- Indeksiranje - kao i kod indeksnog dodeljivanja fajla
+- Lista slob delova - svaki blok ima svoj broj, odrzava se lista brojeva slob blokova, posto je velika vecinski se skladisti na disku a mali deo u glavnoj mem zbog brzeg pristupa
+
+24. Navedi varijante evidencije prava pristupa:
+- Matrica pristupa - za svakog subj se definise skup operacija nad odr objektom
+- Lista kontrole pristupa - dekompozicija matrice po kolonama - za svaki fajl se navode korisnici i njihova prava pristupa
+- Lista sposobnosti - dekomp matrice po vrstama - za svakog korisnika se navode prava pristupa nad fajlovima
+
+25. Kako je kontrola pristupa realizovana u UNIX-based sistemima?
+- Prava pristupa se definisu za 3 subjekta - vlasnik fajla, korisnici koji pripadaju grupi kojoj fajl pripada i ostali korisnici
+- Moguca prava pristupa su citanje pisanje i izvrsavanje
+
+26. Koje su strukture za upravljanje fajlovima na disku?
+- Boot control block - info potrebne za start OS
+- Volume control block - generalne ingo o volumenu - broj i velicina blokova, lista slob..
+- Struktura direktorijuma - definise spisak i org fajlova
+- Upravljacki blok fajla - info o fajlu
+
+27. Koje su strukture za upravljanje fajlovima u mem?
+- Info o svakom volumenu u FS
+- Globalna tabela otvorenih fajlova - sadrzi kopije upr blokova otvorenih fajlova
+- Lokala tabela otvorenih fajlova - po jedna za svaki proces, info o tekucoj poziciji unutar fajla, mod pristupa itd..
+- Baferi - blokovi fajla koji se citaju/upisuju na disk
+- Kes direktorijuma - info o direktorijumima kojima je nedavno pristupano
+
+28. Kako OS implementira FS?
+- Sadrzi genericke funkcije za rad sa fajl sistemom
+- Konkretan FS implementira te funkcije
+
+
+
+
+
+
+
+
+
+
+
+
+
+

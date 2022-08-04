@@ -1,0 +1,68 @@
+1. Kako se klasifikuju multiproc sistemi?
+- Labavo spregnuti - autonomni, svaki ima svoju mem i U/I
+- Funkcionalno specijalizovani - asimetricni multiproc, jedan glavni proc opste namene koji rukuje skupom procesa koji imaju posebnu ulogu
+- Cvrsto specijalizovani multiprocesor - simetricni multiprocesor, skup ravnopravnih procesora koji dele memoriju, njima upravlja OS
+
+2. Na koja 3 vazna pitanja se mora dati odgovor u kontekstu rasporedjivanja za multiproc?
+- Dodeljivanje procesa procesima
+- Upotreba multiprogramiranja na pojedinim procesorima - da li da vise procesa konkurise za izvr na procesoru
+- Stvarno rasporedjivanje procesa - nacin izbora sledeceg proc za izvr
+
+3. Koje su karakteristike statickog dodeljivanja procesa procesorima?
+- proces se predefinisano dodeli nekom procesoru
+- manja je rezija oko rasporedjivanja
+- moguce je rasporediti grupu procesa na isti namenski procesor
+- mana je sto jedan procesor moze biti besposlen dok je drugi preopterecen
+
+4. Koje su karakteristike dinamickog dodeljivanja procesa procesorima?
+- Proces se u razl trenucima moze izvrsavati na razl procesorima
+- Jedno resenje je zajednicki red cekanja na bilo koji rasp procesor
+- Drugo resenje je odvojen red cekanja za svaki proc *cesce je ovo resenje
+
+5. Koje su tri varijante pristupa raspodele pocesa na procesore?
+- Glavni-pomocni
+- Jednaka ravnopravnost (Peer)
+- Pristupi koji kombinuju prethodna 2
+
+6. Opisati glavni-pomocni pristup:
+- Kernel se izvrsava na jednom glavnom procesoru i vrsi rasporedjivanje procesa na pomocne procesore
+- Pomocni procesori se mogu obratiti glavnom kada im recimo zatreba U/I 
+- Mane su to sto je glavni procesor preopterecen ako on rikne riknjava sistem 
+
+7. Opisati pristup jednake ravnopravnosti:
+- Kernel se izvrsava na bilo kom procesoru
+- Svaki procesor vrsi rasporedjivanje
+- Veci je pritisak na OS jer se mora voditi racuna o tome da dva procesora ne uzmu isti p
+
+8. Zasto se nastoji na tome da proces ne menja procesor na kojem se prethodno izvrsavao?
+- Jer se podaci o izvrsavanom procesu cuvaju u kes memoriji procesa. Pozeljno je da se dalji segmenti/slike procesa mogu posluziti tim podacima iz kesa.
+
+9. Kako se realizuje raspodela opterecenja?
+- operacije push i pull
+- push - poseban deo OS gleda opterecenje na procesorima i shodno tome prebacuje procese iz reda cekanja jednog u drugi
+- pull - nezaposleni procesor povlaci proces iz reda cekanja opterecenog procesora kod sebe
+- problem je sto se push i pull strategije medjusobno iskljucuju
+
+10. Sta su hardverske niti procesorskog jezgra?
+- Hardverska nit se ponasa kao logicki procesor. Obzirom da proces provodi dosta vremena cekajuci ucitavanje iz mem ako se neki podatak ne nadje u kes memoriji, procesor za to vreme moze izvrsavati drugi proces. OS vidi procesor sa 2 fizicka i 2 logicka jezgra kao procesor sa 4 jezgra i rasporedjivanje vrsi na osnovu toga.
+
+11. Navedi 4 pristupa za multiproc rasp niti:
+- deljenje opterecenja - preko centralizovanog rasporedjivaca se niti ravnomerno rasporedjuju procesorima (mana- malo je vrv da ce prekinuta nit nastaviti izvrsavanje na istom procesu kao i to da ce niti jedne aplikacije istovremeno dobiti pristup procesorima)
+- grupno rasporedjivanje - grupe povezanih niti se rasporedjuje na skup procesa - poboljsava performanse jer su komutacije redje
+- dodeljivanje namenskog procesora - u startu se za svaku nit odredi procesor na kojem ce se izvrsavati do kraja - smanjeno je iskoriscenje procesora ali se mogu drasticno ubrzati performanse pogotovo kod paralelnih sistema
+- dinamicko rasporedjivanje - aplikacija dinamicki menja broj niti zavisno od broja procesora koji su joj trenutno dodeljeni - nije zazivela u savr sistemima
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

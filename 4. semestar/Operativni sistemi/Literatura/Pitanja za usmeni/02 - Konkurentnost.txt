@@ -1,0 +1,89 @@
+1. Sta sve moze da omoguci OS prilikom upravljanja procesima?
+- Multiprogramiranje - vise proc u jednorpoc sistemu
+- Multiprocesiranje - vise proc unutar multiproc
+- Distribuiranu obradu - vise proc na vise distr racunara
+
+2. Sta je konkurentnost?
+- Pitanje medjusobne interakcije i zavisnosti procesa.
+
+3. Gde se javlja konkurentnost?
+- Svuda gde se vrsi preplitanje procesa (vise aplikacija, unutar aplikacije niti, OS).
+
+4. Koje probleme donosi konkurentnost?
+- Deljenje globalnih resursa.
+- Komplikovanija dodela resursa.
+- Detekcija gresaka.
+
+5. Kako se prevazilaze problemi konkurentnosti?
+- Medjusobna iskljucivost. - obavljanje akcije brz negativnog uticaja drugih proc
+- Sinhronizacija. - uskladjivanje ponasanja procesa sa aktivnoscu drugih proc
+
+6. Sta je data race?
+- Rezultat programa zavisi od scenarija preplitanja i redosleda izvrsavanja instrukcija izmedju procesa. Postoji deljeni resurs i pristup njemu nije sinhronizovan.
+
+7. Kada dolazi do uzajamne iskljucivosti procesa?
+- Kada vise procesa treba da koristi isti resurs. Za ispravan rad je potrebno da u jednom trenutku jedan proces pristupa *kriticnom resursu.
+
+8. Sta je kriticna sekcija?
+- Deo programa u kojem se pristupa kriticnom resursu. Samo jedan proces u jednom trenutku moze biti u kriticnoj sekciji.
+
+9. Sta je busy waiting?
+- Proces koji ne moze da udje u kriticnu sekciju ostaje aktivan i konstantno proverava da li moze da udje. Ovo resava problem, ali nije efikasno jer konstantno trosi procesorsko vreme cak i kada ne mora da radi.
+
+10. Sta je blokiranje procesa?
+- Proces koji ne moze da udje u kriticnu sekciju odlazi u stanje blokiran. Sistem ga obavestava o tome kada moze da udje. Znatno efikasniji pristup.
+
+11. Sta je propusnica?
+- Predstavlja kljuc deljenih resursa. Process koji pokusavju da udju u k.s. pokusavju da zakljucju deljene resurse. Prvi koji uspe ulazi u k.s. a ostali prelaze u stanje blokiran. Kada proces zavrsi otkljucava resurs i neki od blokiranih pokusava da ga zakljuca...
+
+12. Koji su moguci pristupi hardverske podrske za uzajamnu iskljucivost?
+- Onemogucavanje prekida - proces se izvrsava do prekida
+	ne moze doci do preplitanja ali je neefikasno i ne radi na multiproc arh
+- Specijalne masinske instrukcije koje obavljaju atomicne operacije. Proces u jednom nedeljivom koraku proverava da li moze da zauzme propusnicu i ako moze postavlja fleg da je zauzeo. Primeri su instrukcije Compare&Swap i Exchange
+
+13. Sta je deadlock?
+- Svi procesi uzajamno cekaju da drugi procesi oslobode deljeni resurs. Jedni druge blokiraju.
+
+14. Sta je livelock?
+- Situacija u kojoj dva ili vise procesa nisu blokirani ali menjaju stanja tako da se medjusobno "blokiraju", odnosno onemogucavaju napredak izvrsavanja.
+
+15. Sta je gladovanje? 
+- Situacija u kojoj proces, iako je spreman, nikad ne dobija procesor od rasporedjivaca.
+
+16. Sta je sinhronizacija?
+- Uvodjenje eksplicitnog redosleda izvrsavanja odredjenih procesa u cilju pravilnog izvrsavanja programa.
+
+17. Koji su koncepti viseg nivoa za sinhronizaciju?
+- Semafori
+- Uslovne promenljive
+- Monitori
+
+18. Koje su varijante semafora po tipu brojaca?
+- Brojacki/Opsti semafor - brojac moze dobiti proizvoljnu celobrojnu vrednost
+- Binarni - brojac moze imati vrednost 0 ili 1 (ponasa se kao mutex)
+
+19. Koje su varijante semafora po nacinu rasporedjivanja?
+- Jak semafor - FIFO princip, garantuje da nece doci do gladovanja
+- Slab semafor - nema odredjenog redosleda, ne garantuje da nece doci do gladovanja
+
+20. Koji su problemi sa Semaforom?
+- Cesto je potrebno vise semafora
+- Neispravan rad ako redosled operacija wait i signal nije odgovarajuci
+- Tesko je debagovati takve greske
+- Koristi se istovremeno za obezbedjivanje medjusobne iskljucivosti i sinhronizacije, sto je pozeljno da bude odvojeno.
+
+21. Sta je uslovna promenljiva?
+- Mehanizam za sinhronizaciju putem signalizacije izmedju niti. Niti imaju uslov na koji mogu cekati da bude ispunjen i za koji nit moze obavestiti druge niti da je ispunjen.
+
+22. Koje operacije ima mehanizam uslovne promenljive?
+- Wait - cekaj na uslov
+- Signal - obavesti jednu nit da je uslov ispunjen
+- Broadcast - obavesti sve niti da je uslov ispunjen
+
+23. Sta je monitor?
+- Softverski sablon koji enkapsulira podatke, propusnicu, operacije nad podacima i uslovne promenljive za sinhronizaciju. Ponasa se kao black-box koji pomocu metoda za pristup podacima obezbedjuje interfejs za rad sa njima. Monitor garantuje ispravan rad i sinhronizaciju metoda.
+
+24. Koji su tipovi monitora?
+- Hoare monitori - signal odmah aktivira nit, a nit koja je izvrsila signalizaciju se blok
+- Mesa monitori - signal samo prevodi nit u stanje spreman, a nit koja je izvrsila signalizaciju nastavlja izvrsavanje. signalizirana nit ceka propusnicu i kada se aktivira mora ponovo proveriti uslov.
+

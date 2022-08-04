@@ -1,0 +1,71 @@
+1. Sta je proces?
+- jedinica izvrsavanja i rasporedjivanja (procesor izvrsava instr procesa isprepletano sa drugim procesima, a OS rasporedjuje procese)
+- jedinica kojoj se dodeljuje resurs (sadrzi virt adr prostor sa slikom procesa, i moze imati vlasnistvo nad ui resursom ili fajlom)
+
+2. Koja su stanja procesa?
+- novi, spreman, izvrsavanje, blokiran, izlaz
+
+3. Sta je visenitna obrada?
+- sposobnost OS da podrzi vise konkurentnih putanja izvrsavanja unutar procesa
+- nit je jedan tok izvrsavanja u okviru procesa
+
+4. Sta je proces u visenitnoj obradi?
+- jedinica dodele resursa (virt adr prostor sa slikom proc)
+- jedinica zastite resursa (zasticen pristup procesoru, drugim proc, fajlovima i U/I)
+
+5. Od cega je nit sacinjena?
+- stanje izvrsavanja
+- kontekst niti (sacuvano stanje proc registara)
+- stek izvrsavanja niti
+- pristup memoriji i resursima svog procesa
+
+6. Koje su koristi visenitne obrade?
+- pozadinski posao se izvrsava u posebnim nitima
+- asinhrona obrada
+- brzina izvrsavanja 
+- deljenje resursa unutar apl
+- ekonomicnost (brze napraviti nit od procesa)
+- iskoriscenje viseproc arh
+- modularna strukt programa
+
+7. Koja su moguca stanja niti?
+- spreman, izvrsavanje i blokiran
+
+8. Kojim se akcijama menja stanje niti?
+- kreiranje, blokiranje, deblokiranje i zavrsavanje
+
+9. Zasto je bitno sinhronizovati niti?
+- zbog potencijalnih data race i nepravilnog rada programa
+
+10. Koji su tipovi niti?
+- User Level Threads
+	sav posao upravljanja vrsi aplikacija
+	kernel nije svestan postojanja niti
+	biblioteka sadrzi koda za: pravljenje/unistavanje niti, prosl poruka i rasporedjivanje
+	sve aktivnosti su unutar jednog procesa i kada je on blokiran sve niti su blokirane sto onemogucava multiprocesiranje
+	prednosti u tome sto ne zahteva prelazak u rezim kernela i aplikacija ima potpunu kontrolu nad nitima. mogu se izvrsavati na bilo kom os
+
+- Kernel Level Threads
+	apl inicira kreiranje niti dok ih kernel kreira, upravlja njima i rasporedjuje ih
+	prednost u tome sto se moze iskoristiti multiprocesiranje i prevazilazi mane ULT
+	mane su sto se zahteva prelazak u rezim kernela da bi se preslo sa jedne na drugu nit, kao i to sto je komutacija za jedan red velicine sporija
+
+*Kombinovani pristup jeste da se veci deo upravljanja i rasporedjivanja odvija u korisnickom prostoru, a preslikane su samo na deo njih u kernelu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
