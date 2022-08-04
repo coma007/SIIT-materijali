@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Serial", "Serial\Serial.vcxproj", "{5472A4B0-2C90-4B4B-AF4F-EAD63B4D8926}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parallel", "Parallel\Parallel.vcxproj", "{804DAD84-13E2-47DE-A4F1-A5EF6EB6A094}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5472A4B0-2C90-4B4B-AF4F-EAD63B4D8926}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5472A4B0-2C90-4B4B-AF4F-EAD63B4D8926}.Debug|Win32.Build.0 = Debug|Win32
+		{5472A4B0-2C90-4B4B-AF4F-EAD63B4D8926}.Release|Win32.ActiveCfg = Release|Win32
+		{5472A4B0-2C90-4B4B-AF4F-EAD63B4D8926}.Release|Win32.Build.0 = Release|Win32
+		{804DAD84-13E2-47DE-A4F1-A5EF6EB6A094}.Debug|Win32.ActiveCfg = Debug|Win32
+		{804DAD84-13E2-47DE-A4F1-A5EF6EB6A094}.Debug|Win32.Build.0 = Debug|Win32
+		{804DAD84-13E2-47DE-A4F1-A5EF6EB6A094}.Release|Win32.ActiveCfg = Release|Win32
+		{804DAD84-13E2-47DE-A4F1-A5EF6EB6A094}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

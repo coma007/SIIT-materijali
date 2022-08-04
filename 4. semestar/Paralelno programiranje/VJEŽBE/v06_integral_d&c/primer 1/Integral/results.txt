@@ -1,0 +1,76 @@
+CutOff = 1
+delta = 0.01
+
+Serial integral function...
+Serial result: -0.499304
+Calcualtions took 8.34e-05 seconds.
+
+Paralel integral function...
+Paralel result: -0.496972
+Calcualtions took 0.0064642 seconds.
+
+=========================================
+CutOff = 0.5
+delta = 0.01
+
+Serial integral function...
+Serial result: -0.499304
+Calcualtions took 7.67e-05 seconds.
+
+Paralel integral function...
+Paralel result: -0.499304
+Calcualtions took 0.0052767 seconds.
+
+==========================================
+CutOff = 0.5
+delta = 0.001
+
+Serial integral function...
+Serial result: -0.49603
+Calcualtions took 0.0004607 seconds.
+
+Paralel integral function...
+Paralel result: -0.496116
+Calcualtions took 0.0046221 seconds.
+
+==========================================
+CutOff = 0.5
+delta = 0.00001
+
+Serial integral function...
+Serial result: -0.495663
+Calcualtions took 0.029215 seconds.
+
+Paralel integral function...
+Paralel result: -0.495661
+Calcualtions took 0.020867 seconds.
+
+// Vidljiva promjena vremena, ubrzanje malo.
+===========================================
+CutOff = 0.1
+delta = 0.00001
+
+Serial integral function...
+Serial result: -0.495663
+Calcualtions took 0.0384765 seconds.
+
+Paralel integral function...
+Paralel result: -0.49569
+Calcualtions took 0.0217702 seconds.
+
+===========================================
+CutOff = 0.01
+delta = 0.000001
+
+Serial integral function...
+Serial result: -0.495666
+Calcualtions took 0.196699 seconds.
+
+Paralel integral function...
+Paralel result: -0.495681
+Calcualtions took 0.0349753 seconds.
+
+// Vrijeme u paralelizovanom rezimu je 6 puta manje
+// od vremena u serijskom rezimu.
+===========================================
+

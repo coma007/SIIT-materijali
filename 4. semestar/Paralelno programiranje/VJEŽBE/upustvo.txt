@@ -1,0 +1,25 @@
+Uputstvo za instalaciju i podešavanje Intel OneTBB-a
+
+- Windows potrebno je imati kod sebe instaliran Visual Studio 2019, verzija 16.11 ili starija
+	* Ukoliko neko nema kod sebe VS2019, može ga preuzeti sa sledećeg link-a:
+		https://my.visualstudio.com/Downloads?q=visual%20studio%202019&wt.mc_id=o~msft~vscom~older-downloads
+		još jednom hvala kolegi Urošu Počeku
+	* Moguće je da će Microsoft rešiti konflikte i probleme vezano za najnoviji kompajler pa da će raditi i na VS2022 ali najsigurnije je da se ne uzdamo u to
+- Kada instalirate VS2019, treba preuzeti oneAPI sa zvaničnog sajta:
+	https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html
+	* Preporuka je da uzmene Offline installer (meni online installer nije radio na 2 računara, moguće da će kod vas raditi)
+	* Kada pokrenete installer, prihvatite uslove korišćenja i izaberete Custom instalaciju (dakle ne preporučenu)
+	* Prilikom custom instalacije dovoljno je odabrati samo OneTBB (Thread Building Blocks)
+	* Ukoliko želite, možete preuzeti i ostale mogućnosti koje nudi OneAPI ali one nisu neophodne za potrebe predmeta
+	* Odaberite opciju Yes da se oneAPI integriše u VS2019
+- Da biste koristili TBB u svojim projektima, potrebno je da na projekat kliknete desnim klikom, odete na properties - Intel Libraries for oneAPI i odaberete Yes za use oneTBB
+
+
+- Linux, potrebno je imati verziju Ubuntu 18.04 (mada će verovatno raditi i na ostalim verzijama)
+- Sa sajta katedre, preuzemete PP_Toolkit.zip
+- Pokretene skiprtu install.sh
+- Kada se installer pokrene, pratite iste korake kao i za windows (dovoljno je samo OneTBB)
+- Za linux će biti okačeti posebni projekti koji se pokreću na sledeći način:
+	* Pozicionirate se u direktorijum gde se nalazi projekat
+	* Otvorite terminal i kucate komantu ./waf configure (ova komanda će konfigurisati okruženje i obavestiti vas da imate instalirano sve šta treba)
+	* Kucate komandu ./waf build run --app=ime_datoteke (prilikom navođenja imena ne treba kucati .c ili .cpp)
