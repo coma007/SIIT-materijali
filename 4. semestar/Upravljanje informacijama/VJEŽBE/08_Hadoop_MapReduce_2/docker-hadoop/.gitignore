@@ -1,0 +1,6 @@
+data/
+.bash_history
+.*.swp
+.DS_Store
+*.class
+res/
