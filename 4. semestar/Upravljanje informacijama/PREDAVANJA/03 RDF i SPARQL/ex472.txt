@@ -1,0 +1,37 @@
+--------------------------------------------------------
+| creator                                          
+| propertyName  | propertyValue                        |
+========================================================
+| <http://vocab.deri.ie/void#Michael%20Hausenblas> 
+| foaf:mbox     | <mailto:michael.hausenblas@deri.xyz> |
+| <http://vocab.deri.ie/void#Michael%20Hausenblas> 
+| foaf:homepage | <http://sw-app.org/about.html>       |
+| <http://vocab.deri.ie/void#Michael%20Hausenblas> 
+| foaf:name     | "Michael Hausenblas"                 |
+| <http://vocab.deri.ie/void#Michael%20Hausenblas> 
+| rdf:type      | foaf:Person                          |
+| void:keiale                                      
+| foaf:mbox     | <mailto:Keith.Alexander@talis.xyz>   |
+| void:keiale                                      
+| foaf:homepage | <http://kwijibo.talis.com/>          |
+| void:keiale                                      
+| foaf:name     | "Keith Alexander"                    |
+| void:keiale                                      
+| rdf:type      | foaf:Person                          |
+| void:junzha                                      
+| foaf:mbox     | <mailto:jun.zhao@zoo.ox.ac.xyz>      |
+| void:junzha                                      
+| foaf:homepage | <http://users.ox.ac.uk/~zool0770/>   |
+| void:junzha                                      
+| foaf:name     | "Jun Zhao"                           |
+| void:junzha                                      
+| rdf:type      | foaf:Person                          |
+| void:cygri                                       
+| foaf:mbox     | <mailto:richard.cyganiak@deri.xyz>   |
+| void:cygri                                       
+| foaf:homepage | <http://richard.cyganiak.de/>        |
+| void:cygri                                       
+| foaf:name     | "Richard Cyganiak"                   |
+| void:cygri                                       
+| rdf:type      | foaf:Person                          |
+--------------------------------------------------------

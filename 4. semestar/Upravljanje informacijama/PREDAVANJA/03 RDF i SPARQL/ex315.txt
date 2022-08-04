@@ -1,0 +1,15 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:i9771
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+                    ab:Person .
+
+d:i0432
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+                    ab:Person .
+
+d:i8301
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+                    ab:Person .
+

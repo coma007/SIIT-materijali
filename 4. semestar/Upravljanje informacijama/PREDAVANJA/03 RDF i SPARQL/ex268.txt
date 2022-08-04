@@ -1,0 +1,25 @@
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM sparql --query queryfile.ext --data=datafile.ext 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM set version=2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM note that ARQ-snapshot-2.7.4 is more recent than 2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>set version=snapshot-2.7.4 
+
+C:\bob\writing\sparqlbk\svnexp\examples>echo off 
+
+C:\bob\writing\sparqlbk\svnexp\examples>call C:\bin\javalib\apache-jena-2.7.4-SNAPSHOT\bat\arq.bat -query ex267.rq -data ex266.ttl 
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix u:       <http://learningsparql.com/ns/units#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix im:      <http://learningsparql.com/ns/importedData#> .
+
+d:item2
+      dm:amount     "10"^^u:squareMeters .
+
+d:item1
+      dm:amount     "14"^^u:liters .
+
+d:item3
+      dm:amount     "30"^^u:centimeters .

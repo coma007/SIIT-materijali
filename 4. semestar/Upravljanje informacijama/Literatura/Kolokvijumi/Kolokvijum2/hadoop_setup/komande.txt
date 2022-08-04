@@ -1,0 +1,40 @@
+0) Ukucajte u terminali:
+	docker ps
+Ako postoje kontejneri koji su pokrenuti (njihovi nazivi, portovi itd ce biti ispisani na terminalu) kucajte sledece dve komante
+  
+docker kill $(docker ps -q)
+docker container prune
+docker volume prune
+
+Pozicionirajte se unutar foldera docker-hadoop, i u terminalu ukucajte:
+	docker-compose up --build -d
+	
+mapper.py i reducer.py skripte koje ste pisali kopirajte u folder docker-hadoop/jobs/jars
+Input fajl sa nazivom 'data' kopirajte u folder docker-hadoop/jobs/data/input
+
+U terminalu kucajte:
+	docker exec -it namenode bash
+
+-- Brisemo rezultate koji su ovde upisani od prethodnih map-reduce funkcija
+
+hadoop fs -rm -r -f /test
+rm -rf /app/data/output/*
+
+--Prebacivanje data dokumenata iz lokalnog fajl sistema u hadoop distribuirani fajl sistem
+
+hadoop fs -mkdir -p /test/
+hadoop fs -copyFromLocal -f /app/data/input /test/
+
+cd ~/jars
+
+(ovo ispod je sve jedna komanda)
+mapred streaming \
+-files mapper.py,reducer.py \
+-input /test/input \
+-output /test/output \
+-mapper "/usr/bin/python mapper.py" \
+-reducer "/usr/bin/python reducer.py"
+
+--Prebacujemo rezultate iz hdfs-a u lokalni fajl sistem
+
+hadoop fs -get /test/output/ /app/data/

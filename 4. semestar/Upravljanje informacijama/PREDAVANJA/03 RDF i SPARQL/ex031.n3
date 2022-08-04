@@ -1,0 +1,12 @@
+# The hash symbol is the comment delimiter in n3. 
+# filename: ex031.n3
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix v:  <http://www.w3.org/2006/vcard/> .
+
+<http://www.w3.org/People/Berners-Lee/card#i>
+      v:title "Director" .
+
+<urn:isbn:006251587X>
+      dc:creator <http://www.w3.org/People/Berners-Lee/card#i> ;
+      dc:title "Weaving the Web" .

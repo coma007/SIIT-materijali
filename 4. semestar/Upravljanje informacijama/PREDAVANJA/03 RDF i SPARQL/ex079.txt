@@ -1,0 +1,12 @@
+-----------
+| s       |
+===========
+| :paperE |
+| :paperG |
+| :paperI |
+| :paperF |
+| :paperD |
+| :paperH |
+| :paperC |
+| :paperB |
+-----------

@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------
+| bf                          | label
+| comment                                                                       =========================================================================
+
+| gr:Dispose                  | "Dispose (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or
+  seeks) the acceptance of the specified gr:ProductOrService for proper
+  disposal, recycling, or any other kind of allowed usages, freeing the
+  current owner from all rights and obligations of ownership."@en
+
+| gr:Sell                     | "Sell (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers to
+  permanently transfer all property rights on the specified
+  gr:ProductOrService."@en
+
+| gr:Repair                   | "Repair (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or
+  seeks) the evaluation of the chances for repairing, and, if positive, repair
+  of the specified gr:ProductOrService. Repairing means actions that restore
+  the originally intended function of a product that suffers from outage or
+  malfunction."@en
+
+| gr:Maintain                 | "Maintain (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or
+  seeks) typical maintenance tasks for the specified
+  gr:ProductOrService. Maintenance tasks are actions that undo or compensate
+  for wear or other deterioriation caused by regular usage, in order to
+  restore the originally intended function of the product, or to prevent
+  outage or malfunction."@en
+
+| gr:ProvideService           | "Provide service (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or
+  seeks) the respective type of service.\n\nNote: Maintain and Repair are also
+  types of Services. However, products and services ontologies often provide
+  classes for tangible products as well as for types of services. The business
+  function gr:ProvideService is to be used with such goods that are services,
+  while gr:Maintain and gr:Repair can be used with goods for which only the
+  class of product exists in the ontology, but not the respective type of
+  service.\n\nExample: Car maintenance could be expressed both as \"provide
+  the service car maintenance\" or \"maintain cars\"."@en
+
+| gr:ConstructionInstallation | "Construction / installation (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or
+  seeks) the construction and/or installation of the specified
+  gr:ProductOrService at the customer's location."@en
+                                                                                
+| gr:Buy                      | "Buy (business function, DEPRECATED)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity is in general
+  interested in purchasing the specified gr:ProductOrService.\nDEPRECATED. Use
+  gr:seeks instead."@en
+
+| gr:LeaseOut                 | "Lease Out (business function)"@en
+| "This gr:BusinessFunction indicates that the gr:BusinessEntity offers (or
+  seeks) the temporary right to use the specified gr:ProductOrService."@en

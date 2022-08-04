@@ -1,0 +1,26 @@
+Servis 'Zahtev za termin' periodično na topic sa nazivom "zahtevi_za_termine" šalje poruku za zauzimanje jedne od bolničkih sala. Zahtev se šalje u vidu JSON-a sa sledećim poljima:
+    {
+        id_zahteva: string,
+        broj_sale: integer
+    }
+Može da zauzme salu tek kada svi servisi koji postoje u bolnici odobre zahtev. Servis koji šalje zahteve za zauzimanje sale ne zna koji sve servisi treba da odobre salu, i očekuje da se na topic-u sa nazivom "odgovori_na_zahteve" pojavi poruka u formatu:
+    {
+        id_zahteva: string,
+        zahtev_odobren: boolean
+    }
+
+Svaki od 3 servisa unutar bolnice (uprava bolnice, hirurski departman, odrzavanje) primaju zahteve za salu i nakon određene pauze (između 1 i 5 sekundi) vraćaju svoj odgovor u formatu:
+    {
+        id_zahteva: string,
+        zahtev_odobren: boolean
+    }
+na topic sa nazivom "odgovori_na_zahteve".
+
+Zadatak faust aplikacije je da:
+    1) akumulira odgovore koje salju svaki od 3 bolnička servisa, i nakon toga pošalje konačni odgovor servisu (taj odgovor ne morate da primate uopše nigde, samo je bitno da se pošalje). Zahtev je odobren jedino ako ga sva tri bolnička servisa odobre.
+2) Sve dok traje odobravanje zahteva za salu sa određenim brojem, faust aplikacija treba automatski da odbije svaki zahtev koji traži salu sa istim brojem.
+
+NAPOMENA: Servisi koje ste dobili (cetiri .py skripte) koriste 2 kafka topic-a ("zahtevi_za_termine" i "odgovori_na_zahteve"). Ako je potrebno za resenje zadatka, možete kreirati nove topic-e, ili brisati postojece.
+
+Skripta "primljeni_odgovori.py" sluša na topic-u "odgovori_na_zahteve" i samo ispisuje odgovore na std.out. Ona je tu samo da vam olakša validiraciju vašeg rešenja. Ako vidite potrebu, mozete promeniti i u ovoj skriptni koji topic sluša za odgovore.
+

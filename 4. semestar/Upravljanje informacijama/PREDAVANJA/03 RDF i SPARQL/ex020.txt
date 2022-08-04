@@ -1,0 +1,8 @@
+-------------------------------------
+| propertyName | propertyValue      |
+=====================================
+| a:email      | "cindym@gmail.com" |
+| a:homeTel    | "(245) 646-5488"   |
+| a:lastName   | "Marshall"         |
+| a:firstName  | "Cindy"            |
+-------------------------------------

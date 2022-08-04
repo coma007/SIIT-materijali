@@ -1,0 +1,25 @@
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM sparql --query queryfile.ext --data=datafile.ext 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM set version=2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM note that ARQ-snapshot-2.7.4 is more recent than 2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>set version=snapshot-2.7.4 
+
+C:\bob\writing\sparqlbk\svnexp\examples>echo off 
+
+C:\bob\writing\sparqlbk\svnexp\examples>call C:\bin\javalib\apache-jena-2.7.4-SNAPSHOT\bat\arq.bat -query ex494.rq -data ex145.ttl 
+---------------------------------------
+| description | date         | amount |
+=======================================
+| "dinner"    | "2011-10-16" | 25.05  |
+| "lunch"     | "2011-10-16" | 10.00  |
+| "breakfast" | "2011-10-16" | 6.65   |
+| "dinner"    | "2011-10-15" | 31.45  |
+| "lunch"     | "2011-10-15" | 9.45   |
+| "breakfast" | "2011-10-15" | 4.32   |
+| "dinner"    | "2011-10-14" | 28.30  |
+| "lunch"     | "2011-10-14" | 11.13  |
+| "breakfast" | "2011-10-14" | 6.53   |
+---------------------------------------

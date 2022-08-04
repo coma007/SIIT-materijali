@@ -1,0 +1,5 @@
+Lucine query analyzer: https://lucene.apache.org/core/5_5_0/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#package_description
+
+Lucine docs: https://lucene.apache.org/core/8_11_1/index.html
+
+

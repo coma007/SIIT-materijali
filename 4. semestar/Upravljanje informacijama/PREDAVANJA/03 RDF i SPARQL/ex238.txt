@@ -1,0 +1,16 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://dbpedia.org/resource/Boston>
+      rdf:type      dm:Place .
+
+d:Heidelberg
+      rdf:type      dm:Place .
+
+<http://dbpedia.org/resource/Montreal>
+      rdf:type      dm:Place .
+
+<http://dbpedia.org/resource/Lisbon>
+      rdf:type      dm:Place .
+

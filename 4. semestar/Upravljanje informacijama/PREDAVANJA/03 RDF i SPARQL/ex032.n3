@@ -1,0 +1,7 @@
+#filename: ex032.n3
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<urn:isbn:0123735564> dc:creator 
+  <http://www.topquadrant.com/people/dallemang/foaf.rdf#me> ,
+  <http://www.cs.umd.edu/~hendler/2003/foaf.rdf#jhendler> . 

@@ -1,0 +1,11 @@
+-------------------------------------------------------------
+| o            | datatype                                   |
+=============================================================
+| 3            | <http://www.w3.org/2001/XMLSchema#integer> |
+| _:b0         |                                            |
+| "5 bucks"    | <http://www.w3.org/2001/XMLSchema#string>  |
+| 4            | <http://www.w3.org/2001/XMLSchema#integer> |
+| dbr:Montréal |                                            |
+| true         | <http://www.w3.org/2001/XMLSchema#boolean> |
+| 1.0e5        | <http://www.w3.org/2001/XMLSchema#double>  |
+-------------------------------------------------------------

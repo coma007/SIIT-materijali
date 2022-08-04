@@ -1,0 +1,12 @@
+------------------------------------------------------------------------------------
+| person  | first     | last       | course     | courseName                       |
+====================================================================================
+| d:i8301 | "Craig"   | "Ellis"    |            |                                  |
+| d:i9771 | "Cindy"   | "Marshall" |            |                                  |
+| d:i0432 | "Richard" | "Mutt"     |            |                                  |
+|         |           |            | d:course85 | "Updating Data with SPARQL"      |
+|         |           |            | d:course59 | "Using SPARQL with non-RDF Data" |
+|         |           |            | d:course71 | "Enhancing Websites with RDFa"   |
+|         |           |            | d:course34 | "Modeling Data with OWL"         |
+------------------------------------------------------------------------------------
+

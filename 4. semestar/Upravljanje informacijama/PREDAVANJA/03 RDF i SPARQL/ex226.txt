@@ -1,0 +1,11 @@
+-------------------------------------------------------------------
+| s       | o                                                     |
+===================================================================
+| d:item3 | "These quotes are \"ironic\" quotes."                 |
+| d:item1 | "sample string 1"                                     |
+| d:item6 | "this\r\n\r\nhas two carriage returns in the middle." |
+| d:item4 | "These too are \"ironic\" quotes."                    |
+| d:item2 | "sample string 2"                                     |
+| d:item5 | "McDonald's is not my kind of place."                 |
+-------------------------------------------------------------------
+

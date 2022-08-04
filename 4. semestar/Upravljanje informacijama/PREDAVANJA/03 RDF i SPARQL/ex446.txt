@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+| propClass              | property                                           |
+===============================================================================
+| owl:OntologyProperty   | owl:versionIRI                                     |
+| owl:OntologyProperty   | owl:priorVersion                                   |
+| owl:OntologyProperty   | owl:incompatibleWith                               |
+| owl:OntologyProperty   | owl:imports                                        |
+| owl:OntologyProperty   | owl:backwardCompatibleWith                         |
+| owl:AnnotationProperty | <http://purl.org/goodrelations/v1#displayPosition> |
+| owl:AnnotationProperty | owl:incompatibleWith                               |
+

@@ -1,0 +1,17 @@
+<!-- Being XML, RDF/XML uses regular XML comment delimiters. -->
+<!-- filename: ex029.rdf -->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:v="http://www.w3.org/2006/vcard/">
+
+  <rdf:Description rdf:about="urn:isbn:006251587X">
+    <dc:title>Weaving the Web</dc:title>
+    <dc:creator rdf:resource="http://www.w3.org/People/Berners-Lee/card#i"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/People/Berners-Lee/card#i">
+    <v:title>Director</v:title>
+  </rdf:Description>
+
+</rdf:RDF>

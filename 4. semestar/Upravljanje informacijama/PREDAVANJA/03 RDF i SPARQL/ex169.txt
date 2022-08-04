@@ -1,0 +1,16 @@
+-----------------------------------------------------------------|
+| p            | o                                               |
+=================================================================|
+| owl:sameAs   | <http://rdf.freebase.com/ns/guid.9202a8c...>    |
+| rdfs:comment | "Joseph Hocking (November 7, 1860–March ..."@en |
+| skos:subject | cat:Cornish_writers                             |
+| skos:subject | cat:English_Methodist_clergy                    |
+| skos:subject | cat:19th-century_Methodist_clergy               |
+| skos:subject | cat:People_from_St_Stephen-in-Brannel           |
+| skos:subject | cat:1860_births                                 |
+| skos:subject | cat:1937_deaths                                 |
+| skos:subject | cat:English_novelists                           |
+| rdfs:label   | "Joseph Hocking"@en                             |
+| foaf:page    | <http://en.wikipedia.org/wiki/Joseph_Hocking>   |
+------------------------------------------------------------------
+

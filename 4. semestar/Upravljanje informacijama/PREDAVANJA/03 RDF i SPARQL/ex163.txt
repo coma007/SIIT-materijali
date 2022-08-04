@@ -1,0 +1,8 @@
+----------------------------------------------------------------
+| p                                                   | pTotal |
+================================================================
+| <http://learningsparql.com/ns/expenses#date>        | 9      |
+| <http://learningsparql.com/ns/expenses#description> | 9      |
+| <http://learningsparql.com/ns/expenses#amount>      | 9      |
+----------------------------------------------------------------
+

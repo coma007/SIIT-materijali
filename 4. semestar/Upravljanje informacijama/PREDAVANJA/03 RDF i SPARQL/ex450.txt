@@ -1,0 +1,18 @@
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM sparql --query queryfile.ext --data=datafile.ext 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM set version=2.8.7 
+
+C:\bob\writing\sparqlbk\svnexp\examples>set version=2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>echo off 
+
+C:\bob\writing\sparqlbk\svnexp\examples>c:\bin\javalib\arq-2.8.8\bat\arq.bat --query ex449.rq --data ex012.ttl 
+--------------------------------------------------------
+| property                                             |
+========================================================
+| <http://learningsparql.com/ns/addressbook#email>     |
+| <http://learningsparql.com/ns/addressbook#homeTel>   |
+| <http://learningsparql.com/ns/addressbook#lastName>  |
+| <http://learningsparql.com/ns/addressbook#firstName> |
+--------------------------------------------------------

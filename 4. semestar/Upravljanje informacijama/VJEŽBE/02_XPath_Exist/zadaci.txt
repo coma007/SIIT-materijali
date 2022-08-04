@@ -1,0 +1,15 @@
+Upisati books.xml fajl u bazu podataka
+
+Kreirati XPath upite tako da svaki upit:
+1) Vraća "title" čvorove sa bilo kog nivoa hijerarhije.
+2) Vraća sve "title" čvorove koji su podelementi "book" čvora.
+3) Vraća sve "title" čvorove napisane na engleskom jeziku.
+4) Vraća sve knjige čiji naslov je napisan na engleskom jeziku.
+5) Vraća naslov prve knjige u dokumentu.
+6) Vraća autora pretposlednje knjige.
+7) Vraća sve autore knjiga o WEB-u.
+8) Vraća samo naziv (ne čitav xml-element) knjiga koje su skuplje od 35 evra
+9) Vraća sve knjige iz WEB kategorije koje su skuplje od 40 evra.
+
+BONUS:
+Sve XPath upite zapisati u zaseban XML dokument. Napisati skriptu koja će izparsirati dati xml dokument i izvršiti XPath upite koji se nalaze u njemu

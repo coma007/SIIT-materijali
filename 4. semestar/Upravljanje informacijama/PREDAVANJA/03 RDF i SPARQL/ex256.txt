@@ -1,0 +1,24 @@
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+
+d:id5
+      dm:amount     <http://learningsparql.com/ns/1.0e5> .
+
+d:id3
+      dm:amount     <http://learningsparql.com/ns/3> .
+
+d:id2
+      dm:location   <http://dbpedia.org/resource/Montr&#233;al> .
+
+d:id4
+      dm:amount     <http://learningsparql.com/ns/4> .
+
+d:id6
+      rdfs:label    <http://learningsparql.com/ns/5%20bucks> .
+
+d:id7
+      dm:shipped    <http://learningsparql.com/ns/true> .
+

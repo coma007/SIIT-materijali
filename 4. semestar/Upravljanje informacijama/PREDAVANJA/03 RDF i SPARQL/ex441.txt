@@ -1,0 +1,20 @@
+-------------------------------------------------------------
+| class                                        | classType  |
+=============================================================
+| <http://rdfs.org/ns/void#DatasetDescription> | owl:Class  |
+| <http://rdfs.org/ns/void#DatasetDescription> | rdfs:Class |
+| <http://rdfs.org/ns/void#TechnicalFeature>   | owl:Class  |
+| <http://rdfs.org/ns/void#TechnicalFeature>   | rdfs:Class |
+| <http://rdfs.org/ns/void#Linkset>            | owl:Class  |
+| <http://rdfs.org/ns/void#Linkset>            | rdfs:Class |
+| <http://rdfs.org/ns/void#Dataset>            | owl:Class  |
+| <http://rdfs.org/ns/void#Dataset>            | rdfs:Class |
+| <http://rdfs.org/ns/void#DatasetDescription> | owl:Class  |
+| <http://rdfs.org/ns/void#DatasetDescription> | rdfs:Class |
+| <http://rdfs.org/ns/void#TechnicalFeature>   | owl:Class  |
+| <http://rdfs.org/ns/void#TechnicalFeature>   | rdfs:Class |
+| <http://rdfs.org/ns/void#Linkset>            | owl:Class  |
+| <http://rdfs.org/ns/void#Linkset>            | rdfs:Class |
+| <http://rdfs.org/ns/void#Dataset>            | owl:Class  |
+| <http://rdfs.org/ns/void#Dataset>            | rdfs:Class |
+-------------------------------------------------------------

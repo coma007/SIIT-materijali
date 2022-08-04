@@ -1,0 +1,856 @@
+celery,vegetable
+corn,vegetable
+cucumber,vegetable
+horseradish,vegetable
+vegetable,vegetable
+potato,vegetable
+tomato,vegetable
+caraway,herbaceous
+clove,herbaceous
+fennel,herbaceous
+herbaceous,herbaceous
+sage,herbaceous
+butter,fatty
+cheese,fatty
+creamy,fatty
+hop_oil,fatty
+oily,fatty
+fatty,fatty
+sour,fatty
+coumarin,spicy
+spicy,spicy
+blossom,floral
+carnation,floral
+gardenia,floral
+geranium,floral
+hawthorne,floral
+hyacinth,floral
+iris,floral
+jasmine,floral
+lavender,floral
+lily,floral
+marigold,floral
+floral,floral
+rose,floral
+violet,floral
+anise,balsamic
+balsam,balsamic
+butterscotch,balsamic
+caramel,balsamic
+chocolate,balsamic
+cinnamon,balsamic
+honey,balsamic
+others,balsamic
+sweet,balsamic
+vanilla,balsamic
+lemon,citrus
+lime,citrus
+melon,citrus
+orange,citrus
+citrus,citrus
+cedar,woody
+maple,woody
+mesquite,woody
+woody,woody
+bacon,meaty
+beef,meaty
+meaty,meaty
+leafy,green
+green,green
+wintergreen,green
+beer,alcohol
+brandy,alcohol
+wine_like,alcohol
+rum,alcohol
+whiskey,alcohol
+mushroom,earthy
+musty,earthy
+earthy,earthy
+apple,fruity
+apricot,fruity
+banana,fruity
+berry,fruity
+cantaloupe,fruity
+cherry,fruity
+coconut,fruity
+cranberry,fruity
+grape,fruity
+grapefruit,fruity
+jam,fruity
+mango,fruity
+fruity,fruity
+papaya,fruity
+peach,fruity
+pear,fruity
+pineapple,fruity
+plum,fruity
+quince,fruity
+raspberry,fruity
+strawberry,fruity
+tart,fruity
+tropica,fruity
+watermelon,fruity
+alcohol,chemical
+plastic,chemical
+sulfurous,chemical
+almond,nutty
+hazelnut,nutty
+nutty,nutty
+peanut,nutty
+walnut,nutty
+camphoraceous,camphoraceous
+tobacco,tobacco
+minty,minty
+pepper,pepper
+medicinal,medicinal
+mossy,mossy
+fishy,fishy
+smoky,smoky
+musky,musky
+soapy,soapy
+seedy,seedy
+animal,animal
+alkaline,NULL
+alkane,NULL
+almond shell,NULL
+amine,NULL
+apple peel,NULL
+baked,NULL
+balsamic,NULL
+basil,NULL
+beet,NULL
+biscuit,NULL
+bitter,NULL
+bitter almond,NULL
+black currant,NULL
+boiled vegetable,NULL
+box tree,NULL
+bread,NULL
+broccoli,NULL
+brown sugar,NULL
+burnt,NULL
+burnt sugar,NULL
+cabbage,vegetable
+camomile,NULL
+camphor,NULL
+cardboard,NULL
+carrot,NULL
+cat,NULL
+chemical,NULL
+cocoa,NULL
+coffee,NULL
+cognac,NULL
+cologne,NULL
+cooked meat,NULL
+cooked potato,NULL
+cooked vegetable,NULL
+coriander,NULL
+cotton candy,NULL
+cream,NULL
+crushed bug,NULL
+curry,NULL
+dill,NULL
+dust,NULL
+earth,NULL
+ester,NULL
+ether,NULL
+fat,NULL
+fecal,NULL
+fish,NULL
+flower,NULL
+foxy,NULL
+fresh,NULL
+fried,NULL
+fruit,NULL
+garlic,NULL
+gasoline,NULL
+grass,NULL
+green bean,NULL
+green leaf,NULL
+green pepper,NULL
+green tea,NULL
+herb,NULL
+hot milk,NULL
+hummus,NULL
+lactone,NULL
+leaf,NULL
+lettuce,NULL
+licorice,NULL
+lilac,NULL
+magnolia,NULL
+malt,NULL
+mandarin,NULL
+marshmallow,NULL
+meat,NULL
+meat broth,NULL
+medicine,NULL
+menthol,NULL
+metal,NULL
+mildew,NULL
+mint,NULL
+mold,NULL
+moss,NULL
+mothball,NULL
+muguet,NULL
+must,NULL
+mustard,NULL
+nut,NULL
+nutmeg,NULL
+oil,NULL
+onion,NULL
+orange peel,NULL
+orris,NULL
+paint,NULL
+paper,NULL
+pea,NULL
+peanut butter,NULL
+peppermint,NULL
+pesticide,NULL
+phenol,NULL
+pine,NULL
+popcorn,NULL
+prune,NULL
+pungent,NULL
+putrid,NULL
+rancid,NULL
+resin,NULL
+roast,NULL
+roast beef,NULL
+roasted meat,NULL
+roasted nut,NULL
+rubber,NULL
+seaweed,NULL
+sharp,NULL
+smoke,NULL
+soap,NULL
+solvent,NULL
+soy,NULL
+spearmint,NULL
+spice,NULL
+straw,NULL
+sulfur,NULL
+sweat,NULL
+tallow,NULL
+tar,NULL
+tart lime,NULL
+tea,NULL
+terpentine,NULL
+thiamin,NULL
+thyme,NULL
+tomato leaf,NULL
+truffle,NULL
+turpentine,NULL
+urine,NULL
+vinyl,NULL
+warm,NULL
+wax,NULL
+weak spice,NULL
+wet cloth,NULL
+wine,NULL
+wood,NULL
+yeast,NULL
+acid,NULL
+4-t-butyl cyclohexyl acetate,NULL
+absinthe,NULL
+absolute,NULL
+acacia,NULL
+acetate,NULL
+acetic,NULL
+acetoin,NULL
+acetone,NULL
+acetophenone,NULL
+acidic,NULL
+acorn,NULL
+acrid,NULL
+acrylate,NULL
+acrylic,NULL
+adoxal,NULL
+air marine,NULL
+alcoholic,NULL
+aldehyde,NULL
+aldehydic,NULL
+algae,NULL
+alliaceous,NULL
+allo-ocimenol,NULL
+allspice,NULL
+almost odorless,NULL
+amber,NULL
+ambergris,NULL
+ambrette,NULL
+ambrette seed,NULL
+ambrette seed effect,NULL
+ammonia,NULL
+ammoniacal,NULL
+amyl butyl ester,NULL
+amyris,NULL
+angelic,NULL
+angelica,NULL
+aniseed,NULL
+anisic,NULL
+anisyl acetate,NULL
+apple juice,NULL
+apple skin,NULL
+armoise,NULL
+aromatic,NULL
+arrack,NULL
+artichoke,NULL
+asprin,NULL
+astringent,NULL
+autumn,NULL
+azalea,NULL
+banana peel,NULL
+banana skin,NULL
+bark,NULL
+barley,NULL
+bay oil,NULL
+bean,NULL
+beany,NULL
+beef gravey,NULL
+beef juice,NULL
+beefy,NULL
+beeswax,NULL
+bell,NULL
+benzaldehyde,NULL
+benzophenone,NULL
+benzyl acetate,NULL
+benzyl propionate,NULL
+bergamot,NULL
+bilberry,NULL
+bisabolene,NULL
+black tea,NULL
+blackberry,NULL
+blackcurrant,NULL
+bland,NULL
+bloody,NULL
+bloomy,NULL
+blue cheese,NULL
+bluebell,NULL
+blueberry,NULL
+boiled beef,NULL
+boiled egg,NULL
+boiled meat,NULL
+boiled shrimp,NULL
+bois de rose,NULL
+borneol,NULL
+boronia,NULL
+bouillon,NULL
+bourbon,NULL
+brassylate,NULL
+bread crust,NULL
+bready,NULL
+broom,NULL
+broth,NULL
+brothy,NULL
+brown,NULL
+brussel sprouts,NULL
+buchu,NULL
+burnt almonds,NULL
+buttered,NULL
+buttermilk,NULL
+buttery,NULL
+butyrate,NULL
+butyric,NULL
+cacao,NULL
+caco,NULL
+cadaverous,NULL
+cake,NULL
+camphoreous,NULL
+cananga,NULL
+candy,NULL
+cantaloupe rind,NULL
+capers,NULL
+caramellic,NULL
+carao,NULL
+cardamom,NULL
+carvone,NULL
+cashew,NULL
+casky,NULL
+cassia,NULL
+cassie,NULL
+cassis,NULL
+castoreum,NULL
+cat-urine,NULL
+catty,NULL
+cauliflower,NULL
+cayloxol,NULL
+cedarleaf,NULL
+cedarwood,NULL
+celery seed,NULL
+cereal,NULL
+chamomile,NULL
+cheesy,NULL
+cherry-pit,NULL
+chicken,NULL
+chicken coop,NULL
+chip,NULL
+chlorine,NULL
+chloroform,NULL
+chrysanthemum,NULL
+cigar box,NULL
+cinnamate,NULL
+cinnamic,NULL
+cinnamyl,NULL
+cistus,NULL
+citral,NULL
+citralva,NULL
+citric,NULL
+citronella,NULL
+citronellol,NULL
+citronellyl acetate,NULL
+citrus peel,NULL
+civet,NULL
+clam,NULL
+clary,NULL
+clean,NULL
+clean cloth,NULL
+clean clothes,NULL
+clean cloths,NULL
+clover,NULL
+concord grape,NULL
+cooked,NULL
+cooked beef juice,NULL
+cookies,NULL
+cool,NULL
+cooling,NULL
+cortex,NULL
+costus,NULL
+cotton,NULL
+coumarinic,NULL
+crab,NULL
+creosote,NULL
+cresol,NULL
+crispy,NULL
+cucumber seed,NULL
+cucumber skin,NULL
+cultured dairy,NULL
+cumin,NULL
+cuminic acetate,NULL
+cuminseed,NULL
+custard,NULL
+cut grass,NULL
+cut privet,NULL
+cyclamen,NULL
+cypress,NULL
+dairy,NULL
+damascone,NULL
+damp,NULL
+dank,NULL
+dark,NULL
+date,NULL
+decomposing cabbage,NULL
+deep,NULL
+delicate,NULL
+dewy,NULL
+diffusive,NULL
+dihydrolinalool,NULL
+diphenyl oxide,NULL
+dirt,NULL
+dirty,NULL
+diterpene,NULL
+dried berry,NULL
+dried fruit,NULL
+dried raspberry,NULL
+dry,NULL
+durian,NULL
+dusty,NULL
+egg,NULL
+elderflower,NULL
+elemi,NULL
+estery,NULL
+ethereal,NULL
+ethyl benzoate,NULL
+ethyl safranate,NULL
+eucalyptus,NULL
+eugenol,NULL
+everlasting,NULL
+extremely sweet,NULL
+faint,NULL
+farnesol,NULL
+feet,NULL
+fenchyl,NULL
+fenugreek,NULL
+fermented,NULL
+fern,NULL
+feta cheese,NULL
+fig,NULL
+filbert,NULL
+fine,NULL
+fir,NULL
+fir needle,NULL
+flat,NULL
+fleafy,NULL
+fleshy,NULL
+flower shop,NULL
+foliage,NULL
+forest,NULL
+formyl,NULL
+fragrant,NULL
+freesia,NULL
+fresh air,NULL
+fresh outdoors,NULL
+freshly bruised dock leaves,NULL
+freshly bruised mallow leaves,NULL
+freshly bruised sage leaves,NULL
+freshly plowed soil,NULL
+fungal,NULL
+furfural,NULL
+fusel,NULL
+galbanum,NULL
+gassy,NULL
+genet,NULL
+genista,NULL
+genuine,NULL
+gin,NULL
+ginger,NULL
+ginger root oil,NULL
+glue,NULL
+gooseberry,NULL
+grain,NULL
+grape skin,NULL
+grapefruit peel,NULL
+grapefruit skin,NULL
+grassy,NULL
+gravy,NULL
+greasy,NULL
+green onions,NULL
+grilled,NULL
+grocery store,NULL
+ground,NULL
+guaiacol,NULL
+guaiacwood,NULL
+hairy,NULL
+ham,NULL
+hard yolk,NULL
+harsh,NULL
+hawthorn,NULL
+hay,NULL
+heather,NULL
+heavy,NULL
+heliotrope,NULL
+heliotropin,NULL
+herbal,NULL
+honeydew,NULL
+honeysuckle,NULL
+hot,NULL
+humid,NULL
+humus,NULL
+hydroxycitronellal,NULL
+iactonic,NULL
+immortelle,NULL
+incense,NULL
+indole,NULL
+intense,NULL
+intensely,NULL
+iodine,NULL
+ionone,NULL
+irone,NULL
+isoeugenol,NULL
+isojasmone,NULL
+jam preserves,NULL
+jammy,NULL
+jasmin,NULL
+jasmone,NULL
+juicy,NULL
+juniper,NULL
+juniper berry,NULL
+ketone,NULL
+ketonic,NULL
+kiwi,NULL
+labdanum,NULL
+lactonic,NULL
+lamb,NULL
+lard,NULL
+laundered cloths,NULL
+laundry,NULL
+lavandin,NULL
+leather,NULL
+leathery,NULL
+leaves,NULL
+leek,NULL
+lemon peel,NULL
+lemon rind,NULL
+lemongrass,NULL
+liatrix,NULL
+light,NULL
+lily of the valley,NULL
+lime blossom,NULL
+linalool,NULL
+linalyl acetate,NULL
+linden,NULL
+linen,NULL
+linseed,NULL
+liquor,NULL
+logenberry,NULL
+longifolone,NULL
+lovage,NULL
+low,NULL
+lychee,NULL
+mace,NULL
+macrocyclic,NULL
+mahogany,NULL
+mallow,NULL
+maltol,NULL
+malty,NULL
+mandarin skin,NULL
+maple syrup,NULL
+marine,NULL
+matches,NULL
+may blossom,NULL
+meadow,NULL
+medical,NULL
+mellow,NULL
+melon rind,NULL
+mentholic,NULL
+mercaptan,NULL
+metallic,NULL
+methyl acetophenone,NULL
+methyl dihydrojasmonate,NULL
+methyl ionone,NULL
+mignonette,NULL
+mild,NULL
+mild cooling,NULL
+milk,NULL
+milky,NULL
+mimosa,NULL
+moist,NULL
+molasses,NULL
+moldy,NULL
+moscato,NULL
+moth ball,NULL
+mouldy,NULL
+mousy,NULL
+musk,NULL
+mutton,NULL
+myrcene,NULL
+myrrh,NULL
+naphtha,NULL
+naphthalic,NULL
+naphthelene,NULL
+naphthyl,NULL
+narcissus,NULL
+nasturtium,NULL
+natural,NULL
+neroli,NULL
+new car,NULL
+new mown hay,NULL
+niobe,NULL
+nitrile,NULL
+nopyl acetate,NULL
+nut skin,NULL
+oak,NULL
+oakmoss,NULL
+ocimene,NULL
+odorless,NULL
+old paper,NULL
+old wood,NULL
+olibanum,NULL
+opoponax,NULL
+orange blossom,NULL
+orange flower,NULL
+orange juice,NULL
+orchid,NULL
+oriental,NULL
+outdoor,NULL
+overripe fruit,NULL
+oxyacetaldehyde,NULL
+ozone,NULL
+painty,NULL
+palmarosa,NULL
+parmesan,NULL
+parsley,NULL
+passion fruit,NULL
+pastry,NULL
+patchouli,NULL
+peach-pit,NULL
+pear skin,NULL
+peely,NULL
+pencil,NULL
+penetrating,NULL
+peony,NULL
+peppery,NULL
+peptone,NULL
+petal,NULL
+petitgrain,NULL
+petroleum,NULL
+phenolic,NULL
+pine needle,NULL
+pistachio,NULL
+plant,NULL
+pleasant,NULL
+plum skin,NULL
+pollen,NULL
+pork,NULL
+powderful,NULL
+powdery,NULL
+powerful,NULL
+privet,NULL
+privet blossom,NULL
+profarnesal,NULL
+propionic,NULL
+pulpy,NULL
+pumpkin,NULL
+pyrazine,NULL
+pyridine,NULL
+radiant,NULL
+radish,NULL
+raisin,NULL
+raw,NULL
+red cedar,NULL
+red fruit,NULL
+red hots,NULL
+red rose,NULL
+repulsive,NULL
+reseda,NULL
+resinous,NULL
+rhodinol,NULL
+rhubarb,NULL
+rich,NULL
+ricotta,NULL
+ripe,NULL
+ripe apricot,NULL
+roasted,NULL
+roasted almonds,NULL
+roasted in sugar syrup,NULL
+roasted nuts,NULL
+roasted peanut,NULL
+roasted peanuts,NULL
+romano,NULL
+root,NULL
+rootbeer,NULL
+rooty,NULL
+roquefort cheese,NULL
+rose acetate,NULL
+rose bud,NULL
+rose de mai,NULL
+rose dried,NULL
+rose flower,NULL
+rose oxide,NULL
+rose petals,NULL
+rose water,NULL
+rosemary,NULL
+rosy,NULL
+rotten,NULL
+rotting,NULL
+rubbery,NULL
+rue,NULL
+rummy,NULL
+russian,NULL
+rye,NULL
+saffron,NULL
+salicylate,NULL
+salmon,NULL
+salt,NULL
+sandal,NULL
+sandalwood,NULL
+sandy,NULL
+sap,NULL
+sappy,NULL
+sarsaparilla,NULL
+sassafrass,NULL
+sausage,NULL
+savory,NULL
+sawdust,NULL
+sawen,NULL
+scallion,NULL
+sea,NULL
+sea breeze,NULL
+seafood,NULL
+seashell,NULL
+seashore,NULL
+seaside,NULL
+sensual,NULL
+shellfish,NULL
+shrimp,NULL
+sick,NULL
+sickening,NULL
+skunk,NULL
+skunky,NULL
+slight,NULL
+slightly ethereal,NULL
+slightly fruity,NULL
+slightly metallic,NULL
+slightly roasted nut,NULL
+slightly rose,NULL
+slightly waxy,NULL
+smoked,NULL
+soft,NULL
+soil,NULL
+soup,NULL
+soupy,NULL
+soybean,NULL
+spring,NULL
+stem,NULL
+stinky,NULL
+storax,NULL
+strong,NULL
+styrax,NULL
+styrene,NULL
+sugar,NULL
+sulfide,NULL
+sulfury,NULL
+sweaty,NULL
+sweet corn,NULL
+syrup,NULL
+taco,NULL
+tagette,NULL
+tangerine,NULL
+tangy,NULL
+tarragon,NULL
+tarry,NULL
+terpene,NULL
+terpenic,NULL
+terpineol,NULL
+thiamine,NULL
+thuja,NULL
+thujone,NULL
+thymol,NULL
+toasted,NULL
+tobacco-leaf,NULL
+toffee,NULL
+tolu,NULL
+toluene,NULL
+tonka,NULL
+tree,NULL
+tropical,NULL
+tropical fruit,NULL
+tuberose,NULL
+turnup,NULL
+tutti frutti,NULL
+umami,NULL
+undecatriene,NULL
+undecylenic,NULL
+undergrowth,NULL
+unpleasant,NULL
+unripe banana,NULL
+unripe fruit,NULL
+unripe plum,NULL
+valerian,NULL
+valeric,NULL
+vanillin,NULL
+vegetable skin,NULL
+velvety,NULL
+verbena,NULL
+very faint,NULL
+very intense,NULL
+very mild,NULL
+very slight,NULL
+very strong,NULL
+very sweet,NULL
+vetiver,NULL
+vetiver acetate,NULL
+vine,NULL
+vinegar,NULL
+vinous,NULL
+violet-leaf,NULL
+wasabi,NULL
+watercress,NULL
+watery,NULL
+waxy,NULL
+weak,NULL
+weedy,NULL
+wet,NULL
+wild,NULL
+wine-lee,NULL
+winey,NULL
+yeasty,NULL
+ylang,NULL

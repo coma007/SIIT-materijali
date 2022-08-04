@@ -1,0 +1,24 @@
+
+-----------------------------------------------------------
+| p                                                       |
+===========================================================
+| <http://learningsparql.com/ns/addressbook#courseTitle>  |
+| <http://learningsparql.com/ns/addressbook#courseTitle>  |
+| <http://learningsparql.com/ns/addressbook#courseTitle>  |
+| <http://learningsparql.com/ns/addressbook#takingCourse> |
+| <http://learningsparql.com/ns/addressbook#email>        |
+| <http://learningsparql.com/ns/addressbook#lastName>     |
+| <http://learningsparql.com/ns/addressbook#firstName>    |
+| <http://learningsparql.com/ns/addressbook#takingCourse> |
+| <http://learningsparql.com/ns/addressbook#takingCourse> |
+| <http://learningsparql.com/ns/addressbook#email>        |
+| <http://learningsparql.com/ns/addressbook#lastName>     |
+| <http://learningsparql.com/ns/addressbook#firstName>    |
+| <http://learningsparql.com/ns/addressbook#takingCourse> |
+| <http://learningsparql.com/ns/addressbook#takingCourse> |
+| <http://learningsparql.com/ns/addressbook#email>        |
+| <http://learningsparql.com/ns/addressbook#lastName>     |
+| <http://learningsparql.com/ns/addressbook#firstName>    |
+| <http://learningsparql.com/ns/addressbook#courseTitle>  |
+-----------------------------------------------------------
+

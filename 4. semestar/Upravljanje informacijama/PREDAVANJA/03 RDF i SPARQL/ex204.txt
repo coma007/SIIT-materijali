@@ -1,0 +1,10 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+
+dm:prob29
+      rdfs:label    "Location value must be a URI." .
+
+d:item693
+      dm:problem    dm:prob29 .
+

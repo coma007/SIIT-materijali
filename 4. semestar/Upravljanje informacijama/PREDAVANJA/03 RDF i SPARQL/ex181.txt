@@ -1,0 +1,8 @@
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+ab:course24
+      ab:courseTitle  "Using Named Graphs" .
+
+ab:course42
+      ab:courseTitle  "Combining Public and Private RDF Data" .
+

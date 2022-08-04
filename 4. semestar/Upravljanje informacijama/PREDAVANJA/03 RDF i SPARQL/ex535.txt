@@ -1,0 +1,9 @@
+----------------------------
+| property                 |
+============================
+| gr:hasMaxCurrencyValue   |
+| gr:valueAddedTaxIncluded |
+| gr:hasCurrency           |
+| gr:hasCurrencyValue      |
+| gr:hasMinCurrencyValue   |
+----------------------------

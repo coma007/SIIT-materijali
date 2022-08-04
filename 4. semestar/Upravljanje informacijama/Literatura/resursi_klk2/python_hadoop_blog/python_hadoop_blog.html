@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Writing An Hadoop MapReduce Program In Python</title>
+  <meta name="description" content="I am a software engineer turned product manager based in Switzerland. Currently focusing on product &amp;amp; technology strategy and competitive analysis at Con...">
+
+  <link href="https://www.michael-noll.com/favicon.png?v=2" rel="icon">
+  <link rel="stylesheet" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/main.css">
+  <link rel="canonical" href="https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/">
+  <link rel="alternate" type="application/rss+xml" title="Michael G. Noll" href="https://www.michael-noll.com/feed.xml">
+
+  <script src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/MathJax.js" id=""></script>
+
+  <meta name="twitter:site" content="@miguno">
+<meta name="twitter:creator" content="@miguno">
+<meta name="twitter:title" content="Writing An Hadoop MapReduce Program In Python">
+
+
+<meta name="twitter:description" content="In this tutorial I&nbsp;will describe how to write a simple
+[MapReduce](http://wiki.apache.org/hadoop/HadoopMapReduce)&nbsp;program for&nbsp;[Hadoop](http://hadoop.apache.org/) in the
+[Python](http://www.python.o...">
+
+
+
+
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/js.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-548617-1');
+</script>
+
+  
+<script src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/embed.js" data-timestamp="1654716878598"></script><link rel="prefetch" as="style" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_004/lounge.css"><link rel="prefetch" as="script" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_004/common.js"><link rel="prefetch" as="script" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_004/lounge.js"><link rel="prefetch" as="script" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_004/config.js"><script async="" id="dsq_recs_scr" src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/recommendations.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><link rel="prefetch" as="style" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_003/recommendations.css"><link rel="prefetch" as="script" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_003/common.js"><link rel="prefetch" as="script" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_003/recommendations.js"><link rel="prefetch" as="script" href="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_data_004/config.js"><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+
+  <body><div id="MathJax_Message" style="display: none;"></div>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="https://www.michael-noll.com/">Michael G. Noll</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="https://www.michael-noll.com/">Home</a>
+          <a class="page-link" href="https://www.michael-noll.com/about/">About</a>
+          <a class="page-link" href="https://www.michael-noll.com/blog/archives/">Blog</a>
+          <a class="page-link" href="https://www.michael-noll.com/publications/">Talks &amp; Publications</a>
+          <a class="page-link" href="https://www.michael-noll.com/tutorials/">Tutorials</a>
+          <a class="page-link" href="https://www.michael-noll.com/projects/">Projects</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Writing An Hadoop MapReduce Program In Python</h1>
+  </header>
+
+  <div class="post-content">
+    <p>In this tutorial I&nbsp;will describe how to write a simple
+<a href="http://wiki.apache.org/hadoop/HadoopMapReduce">MapReduce</a>&nbsp;program for&nbsp;<a href="http://hadoop.apache.org/">Hadoop</a> in the
+<a href="http://www.python.org/">Python</a>&nbsp;programming language.</p>
+
+<!-- more -->
+
+<ul id="markdown-toc">
+  <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
+  <li><a href="#what-we-want-to-do" id="markdown-toc-what-we-want-to-do">What we want to do</a></li>
+  <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+  <li><a href="#python-mapreduce-code" id="markdown-toc-python-mapreduce-code">Python MapReduce Code</a>    <ul>
+      <li><a href="#map-step-mapperpy" id="markdown-toc-map-step-mapperpy">Map step: mapper.py</a></li>
+      <li><a href="#reduce-step-reducerpy" id="markdown-toc-reduce-step-reducerpy">Reduce step: reducer.py</a></li>
+      <li><a href="#test-your-code-cat-data--map--sort--reduce" id="markdown-toc-test-your-code-cat-data--map--sort--reduce">Test your code (cat data | map | sort | reduce)</a></li>
+    </ul>
+  </li>
+  <li><a href="#running-the-python-code-on-hadoop" id="markdown-toc-running-the-python-code-on-hadoop">Running the Python Code on Hadoop</a>    <ul>
+      <li><a href="#download-example-input-data" id="markdown-toc-download-example-input-data">Download example input data</a></li>
+      <li><a href="#copy-local-example-data-to-hdfs" id="markdown-toc-copy-local-example-data-to-hdfs">Copy local example data to HDFS</a></li>
+      <li><a href="#run-the-mapreduce-job" id="markdown-toc-run-the-mapreduce-job">Run the MapReduce job</a></li>
+    </ul>
+  </li>
+  <li><a href="#improved-mapper-and-reducer-code-using-python-iterators-and-generators" id="markdown-toc-improved-mapper-and-reducer-code-using-python-iterators-and-generators">Improved Mapper and Reducer code: using Python iterators and generators</a>    <ul>
+      <li><a href="#mapperpy" id="markdown-toc-mapperpy">mapper.py</a></li>
+      <li><a href="#reducerpy" id="markdown-toc-reducerpy">reducer.py</a></li>
+    </ul>
+  </li>
+  <li><a href="#related-links" id="markdown-toc-related-links">Related Links</a></li>
+</ul>
+
+<h1 id="motivation">Motivation</h1>
+
+<p>Even though the Hadoop framework is written in Java, programs for Hadoop need not to be coded in Java but can also be
+developed in other languages like Python or C++ (the latter since version 0.14.1).  However,
+<a href="http://hadoop.apache.org/">Hadoop’s documentation</a> and the most prominent
+<a href="http://wiki.apache.org/hadoop/PythonWordCount">Python example</a> on the Hadoop website could make you think that you
+<em>must</em> translate your Python code using <a href="http://www.jython.org/">Jython</a>&nbsp;into a Java jar file.  Obviously, this is not
+very convenient and can even be problematic if you depend on Python features not provided by&nbsp;Jython.  Another issue of
+the Jython approach is the overhead of writing your Python program in such a way that it can interact with Hadoop –
+just have a look at the example in <code class="language-plaintext highlighter-rouge">$HADOOP_HOME/src/examples/python/WordCount.py</code> and you see what I mean.</p>
+
+<p>That said, the ground is now prepared for the purpose of this tutorial: writing a Hadoop MapReduce program in a more
+Pythonic way, i.e. in a way you should be familiar with.</p>
+
+<h1 id="what-we-want-to-do">What we want to do</h1>
+
+<p>We will write a simple&nbsp;<a href="http://wiki.apache.org/hadoop/HadoopMapReduce">MapReduce</a> program (see also&nbsp;the
+<a href="http://en.wikipedia.org/wiki/MapReduce">MapReduce article on Wikipedia</a>) for Hadoop in&nbsp;Python but <em>without</em> using
+Jython to translate our code to Java jar files.</p>
+
+<p>Our program will mimick the <a href="http://wiki.apache.org/hadoop/PythonWordCount">WordCount</a>, i.e. it reads text files and
+counts how often words occur.  The input is text files and the output is text files, each line of which contains a
+word and the count of how often it occured, separated by a tab.</p>
+
+<div class="note">
+Note: You can also use programming languages other than Python such as 
+Perl or Ruby with the "technique" described in this tutorial.
+</div>
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<p>You should have an Hadoop cluster up and running because we will get our hands dirty.  If you don’t have a cluster
+yet, my following tutorials might help you to build one.  The tutorials are tailored to Ubuntu Linux but the information
+does also apply to other Linux/Unix variants.</p>
+
+<ul>
+  <li><a href="https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/">Running Hadoop On Ubuntu Linux (Single-Node Cluster)</a>
+– How to set up a&nbsp;<em>pseudo-distributed</em>, <em>single-node</em> Hadoop cluster backed by the Hadoop Distributed File System
+(HDFS)</li>
+  <li><a href="https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-multi-node-cluster/">Running Hadoop On Ubuntu Linux (Multi-Node Cluster)</a>
+– How to set up a&nbsp;<em>distributed</em>, <em>multi-node</em> Hadoop cluster backed by the Hadoop Distributed File System
+(HDFS)</li>
+</ul>
+
+<h1 id="python-mapreduce-code">Python MapReduce Code</h1>
+
+<p>The “trick” behind the following Python code is that we will use&nbsp;the
+<a href="http://hadoop.apache.org/docs/r1.1.2/streaming.html#Hadoop+Streaming">Hadoop Streaming API</a> (see also the corresponding
+<a href="http://wiki.apache.org/hadoop/HadoopStreaming">wiki entry</a>) for helping us passing data between our Map and Reduce
+code via <code class="language-plaintext highlighter-rouge">STDIN</code> (standard input) and <code class="language-plaintext highlighter-rouge">STDOUT</code> (standard output).  We will simply use Python’s&nbsp;<code class="language-plaintext highlighter-rouge">sys.stdin</code> to
+read input data and print our own output to&nbsp;<code class="language-plaintext highlighter-rouge">sys.stdout</code>.  That’s all we need to do because Hadoop Streaming will
+take care of everything else!</p>
+
+<h2 id="map-step-mapperpy">Map step: mapper.py</h2>
+
+<p>Save the following code in the file&nbsp;<code class="language-plaintext highlighter-rouge">/home/hduser/mapper.py</code>. It will read data from <code class="language-plaintext highlighter-rouge">STDIN</code>, split it into words
+and output a list of lines mapping words to their (intermediate) counts to <code class="language-plaintext highlighter-rouge">STDOUT</code>.  The Map script will not
+compute an (intermediate) sum of a word’s occurrences though. Instead, it will output <code class="language-plaintext highlighter-rouge">&lt;word&gt; 1</code> tuples immediately
+– even though a specific word might occur multiple times in the input.  In our case we let the subsequent Reduce
+step do the final sum count.  Of course, you can change this behavior in your own scripts as you please, but we will
+keep it like that in this tutorial because of didactic reasons.&nbsp;:-)</p>
+
+<p>Make sure the file has execution permission (<code class="language-plaintext highlighter-rouge">chmod +x /home/hduser/mapper.py</code> should do the trick) or you will run
+into problems.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span><span class="s">"""mapper.py"""</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1"># input comes from STDIN (standard input)
+</span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">:</span>
+    <span class="c1"># remove leading and trailing whitespace
+</span>    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="c1"># split the line into words
+</span>    <span class="n">words</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="c1"># increase counters
+</span>    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="c1"># write the results to STDOUT (standard output);
+</span>        <span class="c1"># what we output here will be the input for the
+</span>        <span class="c1"># Reduce step, i.e. the input for reducer.py
+</span>        <span class="c1">#
+</span>        <span class="c1"># tab-delimited; the trivial word count is 1
+</span>        <span class="k">print</span> <span class="s">'%s</span><span class="se">\t</span><span class="s">%s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="reduce-step-reducerpy">Reduce step: reducer.py</h2>
+
+<p>Save the following code in the file&nbsp;<code class="language-plaintext highlighter-rouge">/home/hduser/reducer.py</code>.  It will read the results of&nbsp;<code class="language-plaintext highlighter-rouge">mapper.py</code> from
+<code class="language-plaintext highlighter-rouge">STDIN</code> (so the output format of <code class="language-plaintext highlighter-rouge">mapper.py</code> and the expected input format of <code class="language-plaintext highlighter-rouge">reducer.py</code> must match) and sum the
+occurrences of each word to a final count, and then output its results to <code class="language-plaintext highlighter-rouge">STDOUT</code>.</p>
+
+<p>Make sure the file has execution permission (<code class="language-plaintext highlighter-rouge">chmod +x /home/hduser/reducer.py</code> should do the trick) or you will run
+into problems.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span><span class="s">"""reducer.py"""</span>
+
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">current_word</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">current_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">word</span> <span class="o">=</span> <span class="bp">None</span>
+
+<span class="c1"># input comes from STDIN
+</span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">:</span>
+    <span class="c1"># remove leading and trailing whitespace
+</span>    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># parse the input we got from mapper.py
+</span>    <span class="n">word</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># convert count (currently a string) to int
+</span>    <span class="k">try</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+        <span class="c1"># count was not a number, so silently
+</span>        <span class="c1"># ignore/discard this line
+</span>        <span class="k">continue</span>
+
+    <span class="c1"># this IF-switch only works because Hadoop sorts map output
+</span>    <span class="c1"># by key (here: word) before it is passed to the reducer
+</span>    <span class="k">if</span> <span class="n">current_word</span> <span class="o">==</span> <span class="n">word</span><span class="p">:</span>
+        <span class="n">current_count</span> <span class="o">+=</span> <span class="n">count</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">current_word</span><span class="p">:</span>
+            <span class="c1"># write result to STDOUT
+</span>            <span class="k">print</span> <span class="s">'%s</span><span class="se">\t</span><span class="s">%s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_word</span><span class="p">,</span> <span class="n">current_count</span><span class="p">)</span>
+        <span class="n">current_count</span> <span class="o">=</span> <span class="n">count</span>
+        <span class="n">current_word</span> <span class="o">=</span> <span class="n">word</span>
+
+<span class="c1"># do not forget to output the last word if needed!
+</span><span class="k">if</span> <span class="n">current_word</span> <span class="o">==</span> <span class="n">word</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">'%s</span><span class="se">\t</span><span class="s">%s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_word</span><span class="p">,</span> <span class="n">current_count</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="test-your-code-cat-data--map--sort--reduce">Test your code (cat data | map | sort | reduce)</h2>
+
+<p>I recommend to test your&nbsp;<code class="language-plaintext highlighter-rouge">mapper.py</code> and&nbsp;<code class="language-plaintext highlighter-rouge">reducer.py</code> scripts locally before using them in a MapReduce job.
+Otherwise your jobs might successfully complete but there will be no job result data at all or not the results
+you would have expected. If that happens, most likely it was you (or me) who screwed up.</p>
+
+<p>Here are some ideas on how to test the functionality of the Map and Reduce scripts.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test mapper.py and reducer.py locally first</span>
+
+<span class="c"># very basic test</span>
+hduser@ubuntu:~<span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"foo foo quux labs foo bar quux"</span> | /home/hduser/mapper.py
+foo     1
+foo     1
+quux    1
+labs    1
+foo     1
+bar     1
+quux    1
+
+hduser@ubuntu:~<span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"foo foo quux labs foo bar quux"</span> | /home/hduser/mapper.py | <span class="nb">sort</span> <span class="nt">-k1</span>,1 | /home/hduser/reducer.py
+bar     1
+foo     3
+labs    1
+quux    2
+
+<span class="c"># using one of the ebooks as example input</span>
+<span class="c"># (see below on where to get the ebooks)</span>
+hduser@ubuntu:~<span class="nv">$ </span><span class="nb">cat</span> /tmp/gutenberg/20417-8.txt | /home/hduser/mapper.py
+ The     1
+ Project 1
+ Gutenberg       1
+ EBook   1
+ of      1
+ <span class="o">[</span>...]
+ <span class="o">(</span>you get the idea<span class="o">)</span>
+</code></pre></div></div>
+
+<h1 id="running-the-python-code-on-hadoop">Running the Python Code on Hadoop</h1>
+
+<h2 id="download-example-input-data">Download example input data</h2>
+
+<p>We will use three ebooks from Project Gutenberg for this example:</p>
+
+<ul>
+  <li><a href="http://www.gutenberg.org/etext/20417">The Outline of Science, Vol. 1 (of 4) by J. Arthur Thomson</a></li>
+  <li><a href="http://www.gutenberg.org/etext/5000">The Notebooks of Leonardo Da Vinci</a></li>
+  <li><a href="http://www.gutenberg.org/etext/4300">Ulysses by James Joyce</a></li>
+</ul>
+
+<p>Download each ebook as text files in <code class="language-plaintext highlighter-rouge">Plain Text UTF-8</code> encoding and store the files in a local temporary directory of
+choice, for example <code class="language-plaintext highlighter-rouge">/tmp/gutenberg</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:~<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> /tmp/gutenberg/
+total 3604
+<span class="nt">-rw-r--r--</span> 1 hduser hadoop  674566 Feb  3 10:17 pg20417.txt
+<span class="nt">-rw-r--r--</span> 1 hduser hadoop 1573112 Feb  3 10:18 pg4300.txt
+<span class="nt">-rw-r--r--</span> 1 hduser hadoop 1423801 Feb  3 10:18 pg5000.txt
+hduser@ubuntu:~<span class="err">$</span>
+</code></pre></div></div>
+
+<h2 id="copy-local-example-data-to-hdfs">Copy local example data to HDFS</h2>
+
+<p>Before we run the actual MapReduce job, we <a href="http://wiki.apache.org/hadoop/ImportantConcepts">must first copy</a> the files
+from our local file system to Hadoop’s <a href="http://hadoop.apache.org/docs/r1.1.2/hdfs_design.html">HDFS</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop dfs <span class="nt">-copyFromLocal</span> /tmp/gutenberg /user/hduser/gutenberg
+hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop dfs <span class="nt">-ls</span>
+Found 1 items
+drwxr-xr-x   - hduser supergroup          0 2010-05-08 17:40 /user/hduser/gutenberg
+hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop dfs <span class="nt">-ls</span> /user/hduser/gutenberg
+Found 3 items
+<span class="nt">-rw-r--r--</span>   3 hduser supergroup     674566 2011-03-10 11:38 /user/hduser/gutenberg/pg20417.txt
+<span class="nt">-rw-r--r--</span>   3 hduser supergroup    1573112 2011-03-10 11:38 /user/hduser/gutenberg/pg4300.txt
+<span class="nt">-rw-r--r--</span>   3 hduser supergroup    1423801 2011-03-10 11:38 /user/hduser/gutenberg/pg5000.txt
+hduser@ubuntu:/usr/local/hadoop<span class="err">$</span>
+</code></pre></div></div>
+
+<h2 id="run-the-mapreduce-job">Run the MapReduce job</h2>
+
+<p>Now that everything is prepared, we can finally run our Python MapReduce job on the Hadoop cluster.  As I said above,
+we leverage the Hadoop Streaming API for helping us passing data between our Map and Reduce code via <code class="language-plaintext highlighter-rouge">STDIN</code> and
+<code class="language-plaintext highlighter-rouge">STDOUT</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop jar contrib/streaming/hadoop-<span class="k">*</span>streaming<span class="k">*</span>.jar <span class="se">\</span>
+<span class="nt">-file</span> /home/hduser/mapper.py    <span class="nt">-mapper</span> /home/hduser/mapper.py <span class="se">\</span>
+<span class="nt">-file</span> /home/hduser/reducer.py   <span class="nt">-reducer</span> /home/hduser/reducer.py <span class="se">\</span>
+<span class="nt">-input</span> /user/hduser/gutenberg/<span class="k">*</span> <span class="nt">-output</span> /user/hduser/gutenberg-output
+</code></pre></div></div>
+
+<p>If you want to modify some Hadoop settings on the fly like increasing the number of Reduce tasks, you can use the
+<code class="language-plaintext highlighter-rouge">-D</code> option:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop jar contrib/streaming/hadoop-<span class="k">*</span>streaming<span class="k">*</span>.jar <span class="nt">-D</span> mapred.reduce.tasks<span class="o">=</span>16 ...
+</code></pre></div></div>
+
+<div class="note">
+Note about&nbsp;<tt>mapred.map.tasks</tt>:&nbsp;<a href="http://markmail.org/message/k32nrcb2ncsq67ef?q=mapred%2Emap%2Etasks+">Hadoop does not honor mapred.map.tasks</a> beyond considering it a hint. But it accepts the user specified&nbsp;<tt>mapred.reduce.tasks</tt> and doesn't manipulate that. You cannot force <tt>mapred.map.tasks</tt> but can specify&nbsp;<tt>mapred.reduce.tasks</tt>.
+</div>
+
+<p>The job will read all the files in the HDFS directory&nbsp;<code class="language-plaintext highlighter-rouge">/user/hduser/gutenberg</code>, process it, and store the results in
+the HDFS directory&nbsp;<code class="language-plaintext highlighter-rouge">/user/hduser/gutenberg-output</code>.  In general Hadoop will create one output file per reducer; in
+our case however it will only create a single file because the input files are very small.</p>
+
+<p>Example output of the previous command in the console:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop jar contrib/streaming/hadoop-<span class="k">*</span>streaming<span class="k">*</span>.jar <span class="nt">-mapper</span> /home/hduser/mapper.py <span class="nt">-reducer</span> /home/hduser/reducer.py <span class="nt">-input</span> /user/hduser/gutenberg/<span class="k">*</span> <span class="nt">-output</span> /user/hduser/gutenberg-output
+ additionalConfSpec_:null
+ <span class="nv">null</span><span class="o">=</span>@@@userJobConfProps_.get<span class="o">(</span>stream.shipped.hadoopstreaming
+ packageJobJar: <span class="o">[</span>/app/hadoop/tmp/hadoop-unjar54543/]
+ <span class="o">[]</span> /tmp/streamjob54544.jar <span class="nv">tmpDir</span><span class="o">=</span>null
+ <span class="o">[</span>...] INFO mapred.FileInputFormat: Total input paths to process&nbsp;: 7
+ <span class="o">[</span>...] INFO streaming.StreamJob: getLocalDirs<span class="o">()</span>: <span class="o">[</span>/app/hadoop/tmp/mapred/local]
+ <span class="o">[</span>...] INFO streaming.StreamJob: Running job: job_200803031615_0021
+ <span class="o">[</span>...]
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 0%  reduce 0%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 43%  reduce 0%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 86%  reduce 0%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 100%  reduce 0%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 100%  reduce 33%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 100%  reduce 70%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 100%  reduce 77%
+ <span class="o">[</span>...] INFO streaming.StreamJob:  map 100%  reduce 100%
+ <span class="o">[</span>...] INFO streaming.StreamJob: Job <span class="nb">complete</span>: job_200803031615_0021
+ <span class="o">[</span>...] INFO streaming.StreamJob: Output: /user/hduser/gutenberg-output
+hduser@ubuntu:/usr/local/hadoop<span class="err">$</span>
+</code></pre></div></div>
+
+<p>As you can see in the output above, Hadoop also provides a basic web interface for statistics and information.  When
+the Hadoop cluster is running, open <a href="http://localhost:50030/">http://localhost:50030/</a> in a browser and have a look
+around.  Here’s a screenshot of the Hadoop web interface for the job we just ran.</p>
+
+<p><img src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/Hadoop-web-interface-screenshot.png" title="A screenshot of Hadoop's JobTracker web interface" width="518" height="600"></p>
+
+<div class="caption">
+Figure 1: A screenshot of Hadoop's JobTracker web interface, showing the details of the MapReduce job we just ran
+</div>
+
+<p>Check if the result is successfully stored in HDFS directory&nbsp;<code class="language-plaintext highlighter-rouge">/user/hduser/gutenberg-output</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop dfs <span class="nt">-ls</span> /user/hduser/gutenberg-output
+Found 1 items
+/user/hduser/gutenberg-output/part-00000     &amp;lt<span class="p">;</span>r 1&amp;gt<span class="p">;</span>   903193  2007-09-21 13:00
+hduser@ubuntu:/usr/local/hadoop<span class="err">$</span>
+</code></pre></div></div>
+
+<p>You can then inspect the contents of the file with the&nbsp;<code class="language-plaintext highlighter-rouge">dfs -cat</code> command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hduser@ubuntu:/usr/local/hadoop<span class="nv">$ </span>bin/hadoop dfs <span class="nt">-cat</span> /user/hduser/gutenberg-output/part-00000
+<span class="s2">"(Lo)cra"</span>       1
+<span class="s2">"1490   1
+"</span>1498,<span class="s2">" 1
+"</span>35<span class="s2">"    1
+"</span>40,<span class="s2">"   1
+"</span>A      2
+<span class="s2">"AS-IS"</span><span class="nb">.</span>        2
+<span class="s2">"A_     1
+"</span>Absoluti       1
+<span class="o">[</span>...]
+hduser@ubuntu:/usr/local/hadoop<span class="err">$</span>
+</code></pre></div></div>
+
+<p>Note that in this specific output above the quote signs (<code class="language-plaintext highlighter-rouge">"</code>) enclosing the words have not been inserted by Hadoop.
+They are the result of how our Python code splits words, and in this case it matched the beginning of a quote in the
+ebook texts.  Just inspect the&nbsp;<code class="language-plaintext highlighter-rouge">part-00000</code> file further to see it for yourself.</p>
+
+<h1 id="improved-mapper-and-reducer-code-using-python-iterators-and-generators">Improved Mapper and Reducer code: using Python iterators and generators</h1>
+
+<p>The Mapper and Reducer examples above should have given you an idea of how to create your first MapReduce application.
+The focus was code simplicity and ease of understanding, particularly for beginners of the Python programming language.
+In a real-world application however, you might want to optimize your code by using
+<a href="http://www.ibm.com/developerworks/library/l-pycon.html">Python iterators and generators</a> (an even
+<a href="http://sage.math.washington.edu/home/wstein/www/home/agc/lit/python/PyIterGen.pdf">better introduction in PDF</a>).</p>
+
+<p>Generally speaking, iterators and generators (functions that create iterators, for example with Python’s&nbsp;<code class="language-plaintext highlighter-rouge">yield</code>
+statement) have the advantage that an element of a sequence is not produced until you actually need it.  This can help
+a lot in terms of computational expensiveness or memory consumption depending on the task at hand.</p>
+
+<div class="note">
+Note: The following Map and Reduce scripts will only work "correctly" 
+when being run in the Hadoop context, i.e. as Mapper and Reducer in a 
+MapReduce job. This means that running the naive test command "cat DATA |
+ ./mapper.py | sort -k1,1 | ./reducer.py" will not work correctly 
+anymore because some functionality is intentionally outsourced to 
+Hadoop.
+</div>
+
+<p>Precisely, we compute the sum of a word’s occurrences, e.g. <code class="language-plaintext highlighter-rouge">("foo", 4)</code>, only if by chance the same word (<code class="language-plaintext highlighter-rouge">foo</code>)
+appears multiple times in succession.  In the majority of cases, however, we let the Hadoop group the (key, value) pairs
+between the Map and the Reduce step because Hadoop is more efficient in this regard than our simple Python scripts.</p>
+
+<h2 id="mapperpy">mapper.py</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span><span class="s">"""A more advanced Mapper, using Python iterators and generators."""</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">read_input</span><span class="p">(</span><span class="nb">file</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+        <span class="c1"># split the line into words
+</span>        <span class="k">yield</span> <span class="n">line</span><span class="p">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">separator</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">):</span>
+    <span class="c1"># input comes from STDIN (standard input)
+</span>    <span class="n">data</span> <span class="o">=</span> <span class="n">read_input</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="c1"># write the results to STDOUT (standard output);
+</span>        <span class="c1"># what we output here will be the input for the
+</span>        <span class="c1"># Reduce step, i.e. the input for reducer.py
+</span>        <span class="c1">#
+</span>        <span class="c1"># tab-delimited; the trivial word count is 1
+</span>        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">'%s%s%d'</span> <span class="o">%</span> <span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">separator</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="reducerpy">reducer.py</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span><span class="s">"""A more advanced Reducer, using Python iterators and generators."""</span>
+
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">groupby</span>
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">read_mapper_output</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="n">separator</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">separator</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">):</span>
+    <span class="c1"># input comes from STDIN (standard input)
+</span>    <span class="n">data</span> <span class="o">=</span> <span class="n">read_mapper_output</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="n">separator</span><span class="p">)</span>
+    <span class="c1"># groupby groups multiple word-count pairs by word,
+</span>    <span class="c1"># and creates an iterator that returns consecutive keys and their group:
+</span>    <span class="c1">#   current_word - string containing a word (the key)
+</span>    <span class="c1">#   group - iterator yielding all ["&amp;lt;current_word&amp;gt;", "&amp;lt;count&amp;gt;"] items
+</span>    <span class="k">for</span> <span class="n">current_word</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">itemgetter</span><span class="p">(</span><span class="mi">0</span><span class="p">)):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">total_count</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="k">for</span> <span class="n">current_word</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">group</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s">"%s%s%d"</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_word</span><span class="p">,</span> <span class="n">separator</span><span class="p">,</span> <span class="n">total_count</span><span class="p">)</span>
+        <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+            <span class="c1"># count was not a number, so silently discard this item
+</span>            <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h1 id="related-links">Related Links</h1>
+
+<p>From yours truly:</p>
+
+<ul>
+  <li><a href="https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/">Running Hadoop On Ubuntu Linux (Single-Node Cluster)</a></li>
+  <li><a href="https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-multi-node-cluster/">Running Hadoop On Ubuntu Linux (Multi-Node Cluster)</a></li>
+</ul>
+
+  </div>
+
+  
+    
+
+  <div id="disqus_recommendations" style="margin-bottom: 12px;"><iframe id="dsq-app37" name="dsq-app37" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 100% !important; border: medium none !important; overflow: hidden !important; height: 269px !important; display: inline !important; box-sizing: border-box !important;" src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_003.html" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div><div id="disqus_thread"><iframe id="dsq-app7733" name="dsq-app7733" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px !important; min-width: 100% !important; border: medium none !important; overflow: hidden !important; height: 10677px !important;" src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/a_004.html" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/';
+      this.page.identifier = 'https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/';
+
+			// Adds the onNewComment callback to the disqus_config of the embed code
+			// that sends 'New Comment' events over to Google Analytics.
+			// The callback can also be used for any other analytics service like Parse.ly, Chartbeat, Mixpanel
+      // https://blog.disqus.com/how-to-track-disqus-activity-in-google-analytics
+			this.callbacks.onNewComment = [function(comment) {
+				ga('send', {
+					'hitType': 'event',            // Required.
+					'eventCategory': 'Comments',   // Required.
+					'eventAction': 'New Comment',  // Required.
+					'eventLabel': 'New Comment'
+				});
+			}];
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://miguno.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Michael G. Noll</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <div>
+          <a href="https://www.michael-noll.com/about/"><img src="Writing%20An%20Hadoop%20MapReduce%20Program%20In%20Python_files/miguno-portrait.png" style="float:left; padding: 0; margin: 0 1em 1em 0" width="80"></a>
+          <p>
+            Product manager. Computer science PhD. Writer. Open source software committer.
+            Currently focusing on product &amp; technology strategy and competitive analysis
+            in the Office of the CTO at <a href="https://confluent.io/">Confluent</a>.
+            <a href="https://www.michael-noll.com/about/">Read more »</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li><a href="mailto:michael@michael-noll.com">michael@michael-noll.com</a></li>
+          
+          
+          <li>
+            <a href="https://twitter.com/miguno"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path></svg>
+</span><span class="username">miguno</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/miguno"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path></svg>
+</span><span class="username">miguno</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-copyright">
+      © 2004-2022 Michael G. Noll. All rights reserved. Views expressed here are my own.
+      <a href="https://www.michael-noll.com/privacy/">Privacy</a>.
+    </div>
+
+  </div>
+
+</footer>
+
+
+  
+
+
+<iframe style="display: none;"></iframe><iframe style="display: none;"></iframe></body></html>

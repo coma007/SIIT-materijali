@@ -1,0 +1,20 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+<http://learningsparql.com/ns/terms#t1>
+      rdfs:type     skos:Concept ;
+      skos:prefLabel  "truck"@en-US ;
+      skos:prefLabel  "lorry"@en-GB .
+
+<http://learningsparql.com/ns/terms#t2>
+      rdfs:type     skos:Concept ;
+      skos:prefLabel  "flat"@en-GB ;
+      skos:prefLabel  "apartment"@en-US .
+
+<http://learningsparql.com/ns/terms#t3>
+      rdfs:type     skos:Concept ;
+      skos:prefLabel  "elevator"@en-US ;
+      skos:prefLabel  "lift"@en-GB .
+

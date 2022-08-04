@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries>
+
+	<expression>//title</expression>
+	<expression>//book/title</expression>
+	<expression>//title[@lang='en']</expression>
+	<expression>//book/title[@lang='en']/..</expression>
+	<expression>//book[position()=1]/title</expression>
+	<expression>//book[last()-1]/author</expression>
+	<expression>//book[@category='WEB']/author</expression>
+	<expression>//book[price>35]/title</expression>
+	<expression>//book[price>35][@category='WEB']/title</expression>
+
+</queries>

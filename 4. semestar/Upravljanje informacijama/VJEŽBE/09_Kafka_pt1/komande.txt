@@ -1,0 +1,7 @@
+1) ulazimo u kafka container
+
+docker exec -it broker bash
+
+2) izlistavanje postojecih 'topic'-a
+
+/bin/kafka-topics --list --bootstrap-server localhost:9092

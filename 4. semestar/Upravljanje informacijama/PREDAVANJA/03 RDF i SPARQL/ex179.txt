@@ -1,0 +1,25 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cat:     <http://dbpedia.org/resource/Category:> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix gp:      <http://www4.wiwiss.fu-berlin.de/gutendata/resource/people/> .
+
+<http://dbpedia.org/resource/Joseph_Hocking>
+  rdfs:comment  "Joseph Hocking (November 7, 1860–March 4, 1937) was ..."@en ;
+  rdfs:label    "Joseph Hocking"@en ;
+  owl:sameAs    <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000ab14b75> ;
+  skos:subject  <http://dbpedia.org/resource/Category:People_from_St_Stephen-in-Brannel> ;
+  skos:subject  <http://dbpedia.org/resource/Category:1860_births> ;
+  skos:subject  <http://dbpedia.org/resource/Category:English_novelists> ;
+  skos:subject  <http://dbpedia.org/resource/Category:Cornish_writers> ;
+  skos:subject  <http://dbpedia.org/resource/Category:19th-century_Methodist_clergy> ;
+  skos:subject  <http://dbpedia.org/resource/Category:1937_deaths> ;
+  skos:subject  <http://dbpedia.org/resource/Category:English_Methodist_clergy> ;
+  foaf:page     <http://en.wikipedia.org/wiki/Joseph_Hocking> .
+
+gp:Hocking_Joseph
+  rdf:type      foaf:Person ;
+  rdfs:label    "Hocking, Joseph" ;
+  foaf:name     "Hocking, Joseph" .

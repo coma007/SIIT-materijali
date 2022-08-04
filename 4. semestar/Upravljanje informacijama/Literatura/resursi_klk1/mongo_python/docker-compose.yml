@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    container_name: mongodb
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: football
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo_express
+    ports:
+      - 8081:8081
+    restart: always
+    depends_on:
+      - mongodb
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: root
+      ME_CONFIG_MONGODB_URL: mongodb://root:root@mongodb:27017/
+
+volumes:
+  mongo_data:

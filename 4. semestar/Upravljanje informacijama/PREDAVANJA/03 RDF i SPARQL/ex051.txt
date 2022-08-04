@@ -1,0 +1,2 @@
+arq --data ex050.ttl --data index.rdf --query ex052.rq
+

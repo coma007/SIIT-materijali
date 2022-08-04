@@ -1,0 +1,6 @@
+1 Dobaviti osobe zajedno sa hobijem, profesijom i lokacijom te osobe
+2 Dobaviti sve osobe koje zive u londonu i medjusobno su u odnosu roditelj-dete
+3 Dobaviti sve osobe sa njihovim hobijem i omiljenim timom (ako osoba nema omiljeni tim i dalje treba hobi da se ispise)
+4 Isto kao prvi upit, ali samo za gradove koji se zavrsavaju na "on"
+5 isto kao prvo, ali napraviti filter za datum rodjenja (samo oni koji su rodjeni pre 90ih)
+6 Isto kao 4. samo dodati sortiranje po datumu

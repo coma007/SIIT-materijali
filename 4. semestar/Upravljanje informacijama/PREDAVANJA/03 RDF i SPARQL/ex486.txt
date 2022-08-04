@@ -1,0 +1,29 @@
+---------------------------------------------------------
+| p                                                     |
+=========================================================
+| <http://purl.org/dc/elements/1.1/creator>             |
+| <http://purl.org/dc/terms/FileFormat>                 |
+| <http://purl.org/dc/terms/created>                    |
+| <http://purl.org/dc/terms/description>                |
+| <http://purl.org/dc/terms/modified>                   |
+| <http://purl.org/dc/terms/partOf>                     |
+| <http://purl.org/dc/terms/publisher>                  |
+| <http://purl.org/dc/terms/status>                     |
+| <http://purl.org/dc/terms/title>                      |
+| <http://purl.org/dc/terms/type>                       |
+| <http://purl.org/vocab/vann/preferredNamespacePrefix> |
+| <http://purl.org/vocab/vann/preferredNamespaceUri>    |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>     |
+| <http://www.w3.org/2000/01/rdf-schema#comment>        |
+| <http://www.w3.org/2000/01/rdf-schema#domain>         |
+| <http://www.w3.org/2000/01/rdf-schema#label>          |
+| <http://www.w3.org/2000/01/rdf-schema#range>          |
+| <http://www.w3.org/2000/01/rdf-schema#subClassOf>     |
+| <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>  |
+| <http://www.w3.org/ns/adms#accessURL>                 |
+| <http://www.w3.org/ns/adms#status>                    |
+| <http://xmlns.com/foaf/0.1/homepage>                  |
+| <http://xmlns.com/foaf/0.1/mbox>                      |
+| <http://xmlns.com/foaf/0.1/member>                    |
+| <http://xmlns.com/foaf/0.1/name>                      |
+---------------------------------------------------------

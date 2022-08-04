@@ -1,0 +1,4 @@
+Napraviti Faust filter koji ce da u realnom vremenu broji:
+    - Broj majica svake od velicina (XL, L, M, S)
+    - Broj majica svakog od brendova (Adidas, Nike, Polo, Uniqlo)
+    

@@ -1,0 +1,12 @@
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+dm:prob32
+      rdfs:label    "Amount must be an integer." .
+
+d:item693
+      dm:problem    dm:prob32 .
+

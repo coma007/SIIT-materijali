@@ -1,0 +1,10 @@
+----------------------------------------------------------
+| p                                                      |
+==========================================================
+| <http://www.w3.org/2000/01/rdf-schema#label>           |
+| <http://learningsparql.com/ns/addressbook#takingClass> |
+| <http://learningsparql.com/ns/addressbook#email>       |
+| <http://learningsparql.com/ns/addressbook#lastName>    |
+| <http://learningsparql.com/ns/addressbook#firstName>   |
+----------------------------------------------------------
+

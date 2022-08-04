@@ -1,0 +1,16 @@
+APSOLUTNA PUTANJA : pocinje sa /
+RELATIVNA PUTANJA : ne pocinje sa /
+
+osnovni oblik izraza - osa::test[predikat]
+
+ose:
+	self .
+	parent ..
+	descendant //
+	attribute @
+	following-sibling ../
+
+test cvora:
+	html - ime cvora /html/p
+	text() - tip cvora  /html/comment()
+	* - bilo koji cvor  /html/∗

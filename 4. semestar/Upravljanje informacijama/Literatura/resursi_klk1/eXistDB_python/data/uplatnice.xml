@@ -1,0 +1,113 @@
+<uplatnice>
+    <uplatnica mesto="Novi Sad">
+        <duznik>
+            <naziv>Fakultet Tehnickih Nauka</naziv>
+            <adresa>
+                <ulica>Trg Dositeja Obradovica 6</ulica>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <racun>840-1710660-30</racun>
+            <broj_modela>97</broj_modela>
+            <poziv_na_broj>123-456</poziv_na_broj>
+        </duznik>
+        <primalac>
+            <naziv>Telekom Srbija</naziv>
+            <adresa>
+                <ulica>Sutjeska 2</ulica>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <racun>380-3569852365147-42</racun>
+            <broj_modela>97</broj_modela>
+            <poziv_na_broj>12345-67</poziv_na_broj>
+        </primalac>
+        <uplata>
+            <sifra>153</sifra>
+            <valuta>RSD</valuta>
+            <iznos>8000</iznos>
+        </uplata>
+    </uplatnica>
+
+    <uplatnica mesto="Novi Sad">
+        <duznik>
+            <naziv>Ivan Jovanovic</naziv>
+            <adresa>
+                <ulica>Jovana Mikica 6</ulica>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <racun>840-8960660-30</racun>
+            <broj_modela>00</broj_modela>
+            <poziv_na_broj>123-456</poziv_na_broj>
+        </duznik>
+        <primalac>
+            <naziv>Telekom Srbija</naziv>
+            <adresa>
+                <ulica>Sutjeska 2</ulica>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <racun>380-3569852365147-42</racun>
+            <broj_modela>97</broj_modela>
+            <poziv_na_broj>12345-67</poziv_na_broj>
+        </primalac>
+        <uplata>
+            <sifra>153</sifra>
+            <valuta>RSD</valuta>
+            <iznos>3300</iznos>
+        </uplata>
+    </uplatnica>
+
+    <uplatnica mesto="Beograd">
+        <duznik>
+            <naziv>Ministarstvo Prosvete</naziv>
+            <adresa>
+                <ulica>Savska 36</ulica>
+                <grad>Beograd</grad>
+            </adresa>
+            <racun>840-3569875-41</racun>
+            <broj_modela>97</broj_modela>
+            <poziv_na_broj>023-568</poziv_na_broj>
+        </duznik>
+        <primalac>
+            <naziv>VTS Subotica</naziv>
+            <adresa>
+                <ulica>Milana Stanojevica 4</ulica>
+                <grad>Subotica</grad>
+            </adresa>
+            <racun>456-45621876-42</racun>
+            <broj_modela>00</broj_modela>
+            <poziv_na_broj>196325-78</poziv_na_broj>
+        </primalac>
+        <uplata>
+            <sifra>12</sifra>
+            <valuta>EUR</valuta>
+            <iznos>14258</iznos>
+        </uplata>
+    </uplatnica>
+
+    <uplatnica mesto="Subotica">
+        <duznik>
+            <naziv>Fakultet Tehnickih Nauka</naziv>
+            <adresa>
+                <ulica>Trg Dositeja Obradovica 6</ulica>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <racun>840-1710660-30</racun>
+            <broj_modela>97</broj_modela>
+            <poziv_na_broj>123-456</poziv_na_broj>
+        </duznik>
+        <primalac>
+            <naziv>Telekom Srbija</naziv>
+            <adresa>
+                <ulica>Sutjeska 2</ulica>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <racun>380-3569852365147-42</racun>
+            <broj_modela>97</broj_modela>
+            <poziv_na_broj>12345-67</poziv_na_broj>
+        </primalac>
+        <uplata>
+            <sifra>153</sifra>
+            <valuta>RSD</valuta>
+            <iznos>8000</iznos>
+        </uplata>
+    </uplatnica>
+</uplatnice>

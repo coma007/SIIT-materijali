@@ -1,0 +1,12 @@
+-------------------------------------------------
+| subproperty           | parentProperty        |
+=================================================
+| foaf:isPrimaryTopicOf | foaf:page             |
+| foaf:openid           | foaf:isPrimaryTopicOf |
+| foaf:homepage         | foaf:page             |
+| foaf:homepage         | foaf:isPrimaryTopicOf |
+| foaf:tipjar           | foaf:page             |
+| foaf:weblog           | foaf:page             |
+| foaf:homepage         | foaf:page             |
+| foaf:homepage         | foaf:isPrimaryTopicOf |
+-------------------------------------------------

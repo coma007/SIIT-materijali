@@ -1,0 +1,20 @@
+----------------------------------------------------------------
+| class                                                        |
+================================================================
+| <http://purl.org/goodrelations/v1#BusinessEntityType>        |
+| <http://purl.org/goodrelations/v1#BusinessFunction>          |
+| <http://purl.org/goodrelations/v1#DayOfWeek>                 |
+| <http://purl.org/goodrelations/v1#DeliveryMethod>            |
+| <http://purl.org/goodrelations/v1#DeliveryModeParcelService> |
+| <http://purl.org/goodrelations/v1#Offering>                  |
+| <http://purl.org/goodrelations/v1#PaymentMethod>             |
+| <http://purl.org/goodrelations/v1#PaymentMethodCreditCard>   |
+| <http://purl.org/goodrelations/v1#WarrantyScope>             |
+| <http://www.w3.org/2002/07/owl#AnnotationProperty>           |
+| <http://www.w3.org/2002/07/owl#Class>                        |
+| <http://www.w3.org/2002/07/owl#DatatypeProperty>             |
+| <http://www.w3.org/2002/07/owl#ObjectProperty>               |
+| <http://www.w3.org/2002/07/owl#Ontology>                     |
+| <http://www.w3.org/2002/07/owl#SymmetricProperty>            |
+| <http://www.w3.org/2002/07/owl#TransitiveProperty>           |
+----------------------------------------------------------------

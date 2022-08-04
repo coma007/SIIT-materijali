@@ -1,0 +1,4 @@
+first     | last
+===================
+"Richard" | "Mutt"
+"Craig"   | "Ellis"

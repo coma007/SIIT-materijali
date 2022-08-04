@@ -1,0 +1,6 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:course59
+      ab:courseTitle  "Using SPARQL with non-RDF Data" .
+

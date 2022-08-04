@@ -1,0 +1,121 @@
+<article title="XML" link="https://en.wikipedia.org/wiki/XML">
+	
+	<section title="Key terminology" link="#Key_terminology">
+	
+		<paragraph>
+			The material in this section is based on the XML
+			Specification. This is
+			not an exhaustive list of all the
+			constructs
+			that appear in XML; it provides an introduction to the key
+			constructs
+			most often encountered in
+			daytoday
+			use.
+		</paragraph>
+
+		<heading>(Unicode) character</heading>
+		<paragraph>
+			By definition, an XML document is a string of characters. Almost
+			every
+			legal
+			<link ref="https:/en.wikipedia.org/wiki/Unicode">Unicode
+			</link>
+			character may
+			appear in an XML document.
+		</paragraph>
+
+		<heading>Processor and application</heading>
+		<paragraph>
+			The <highlight>processor</highlight> analyzes the markup and passes 
+			structured information to an <highlight>application</highlight>. 
+			The specification places requirements on what an XML processor must
+			do and not do, but the application is outside its scope. The processor
+			(as the specification calls it) is often referred to colloquially as
+			an <highlight>XML parser</highlight>.
+		</paragraph>
+
+		<heading>Markup and content</heading>
+		<paragraph>
+			The characters making up an XML document are divided into
+			<highlight>markup</highlight> and <highlight>content</highlight>, 
+			which may be distinguished by the application of simple syntactic 
+			rules. Generally, strings that constitute markup either begin
+			with the character <code>&lt;</code> and end with a <code>&gt;</code>, 
+			or they	begin with the character <code>&amp;</code> and end with
+			a <code>;</code>. Strings of characters that are not markup 
+			are content. However, in a <link ref="https:/en.wikipedia.org/wiki/CDATA">CDATA</link> 
+			section, the delimiters <code>&lt;![CDATA[</code> and <code>]]&gt;</code>
+			are classified as markup, while the text between them is classified as
+			content. In addition, whitespace before and after the outermost element 
+			is classified as markup.
+		</paragraph>
+
+		<heading>Tag</heading>
+		<paragraph>
+			A markup construct that begins with	<code><![CDATA[<]]></code> and ends with
+			<code><![CDATA[>]]></code>. Tags come in three flavors:
+			<list>
+				<item><highlight>start-tags</highlight>; for example: <code><![CDATA[<section>]]></code></item>
+				<item><highlight>end-tags</highlight>; for example: <code><![CDATA[</section>]]></code></item>
+				<item><highlight>empty-element tags</highlight>; for example: <code><![CDATA[<line-break />]]></code></item>
+			</list>
+		</paragraph>
+	
+		<heading>Element</heading>
+		<paragraph>
+			A logical document component which either begins with a start-tag
+			and ends with a matching end-tag or consists only of an empty-element
+			tag. The characters between the startand endtags, if any, are
+			the element's <highlight>content</highlight>, and may contain markup, 
+			including other elements, which are called <highlight>child elements</highlight>. 
+			An example of an element is <code><![CDATA[<Greeting>Hello, world.</Greeting>]]></code>.
+			Another one is <code><![CDATA[<line-break/>]]></code>.
+		</paragraph>
+
+		<heading>Attribute</heading>
+		<paragraph>
+			A markup construct consisting of a name/value pair that exists within
+			a starttag or emptyelement tag.
+			In the example (below) the element img has two attributes, src and alt:
+			<code><![CDATA[<img src="madonna.jpg" alt='Foligno Madonna, by Raphael'/>]]></code>
+			Another example would be <code><![CDATA[<step number="3">Connect A to B.</step>]]></code>
+			where the name of the attribute is "number" and the value is "3".
+			An XML attribute can only have a single value and each attribute can
+			appear at most once on each	element. In the common situation where a list 
+			of multiple values is desired, this must be done by
+			encoding the list into a well-formed XML attribute
+			<link id_ref="note1">[note 1]</link>
+			with some format beyond what XML defines
+			itself. Usually this is either a comma or semicolon
+			delimited list or, if the individual values are known
+			not to contain spaces <link id_ref="note2">[note 2]</link>
+			, a space-delimited	list can be used.
+			<code><![CDATA[<div class="inner greeting‐box">Hello!</div>]]></code>
+			where the attribute "class" has both the value "inner greeting-box"
+			and also indicates the two <link ref="https:/en.wikipedia.org/wiki/CSS">CSS</link>
+			class names "inner" and "greeting-box".
+		</paragraph>
+		
+		<heading>XML declaration</heading>
+		<paragraph>
+			XML documents may begin by declaring some information about
+			themselves, as in the following	example: 
+			<code><![CDATA[<?xml version="1.0" encoding="UTF‐8"?>]]></code>
+		</paragraph>
+		
+	</section>
+	
+	<section title="Notes">
+	
+		<list>
+			<item id="note1" label="i">i.e., embedded quote characters would be
+				a problem
+			</item>
+			<item id="note2" label="ii">A common example of this would be for CSS
+				class or identifier names.
+			</item>
+		</list>
+		
+	</section>
+</article>

@@ -1,0 +1,17 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:i9771
+      ab:areaCode   "245" ;
+      ab:email      "cindym@gmail.com" ;
+      ab:firstName  "Cindy" ;
+      ab:homeTel    "(245) 646-5488" ;
+      ab:lastName   "Marshall" .
+
+d:i0432
+      ab:areaCode   "229" ;
+      ab:email      "richard49@hotmail.com" ;
+      ab:firstName  "Richard" ;
+      ab:homeTel    "(229) 276-5135" ;
+      ab:lastName   "Mutt" .
+

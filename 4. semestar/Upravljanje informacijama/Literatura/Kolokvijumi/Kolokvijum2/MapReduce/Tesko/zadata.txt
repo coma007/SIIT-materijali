@@ -1,0 +1,5 @@
+U “data” fajlu se nalaze informacije o cenama deonica za ordeđen datum. Pored datuma imate naziv deonice, i njenu cebu tog dana. Na izlazu map-reduce algoritma treba da za svaku deonicu napišete najveći “day-to-day” skok i najveći “day-to-day” pad. 
+Za LMT deonicu treba da imate uspis LMT:  62, -25
+Obratite pažnju da je moguće da se desi da deonica samo raste, ili samo pada. U tom slučaju treba naznačiti sa bilo kojim specijalnim karakterom da ne postoji najveći skok
+Ili najveći pad.
+

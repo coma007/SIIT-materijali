@@ -1,0 +1,147 @@
+[
+{
+	"_id": "0001",
+	"type": "electrical_appliances",
+	"name": "Refrigerator",
+	"price": 250,
+	"image":
+		{
+			"url": "images/0001.jpg",
+			"width": 200,
+			"height": 200
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0001.jpg",
+			"width": 18,
+			"height": 18
+		}
+},
+{
+	"_id": "0002",
+	"type": "electrical_appliances",
+	"name": "Owen",
+	"price": 220,
+	"image":
+		{
+			"url": "images/0002.jpg",
+			"width": 200,
+			"height": 200
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0002.jpg",
+			"width": 32,
+			"height": 32
+		}
+},
+{
+	"_id": "0003",
+	"type": "sports_equipment",
+	"name": "Football shoes",
+	"price": 43,
+	"image":
+		{
+			"url": "images/0012.jpg",
+			"width": 200,
+			"height": 200
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0012.jpg",
+			"width": 32,
+			"height": 32
+		}
+},
+{
+	"_id": "0004",
+	"type": "sports_equipment",
+	"name": "Bicycle",
+	"price": 323,
+	"image":
+		{
+			"url": "images/0004.jpg",
+			"width": 300,
+			"height": 350
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0004.jpg",
+			"width": 32,
+			"height": 32
+		}
+},
+{
+	"_id": "0005",
+	"type": "computers",
+	"name": "ThinkPad",
+	"price": 550,
+	"image":
+		{
+			"url": "images/0005.jpg",
+			"width": 200,
+			"height": 200
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0005.jpg",
+			"width": 20,
+			"height": 20
+		}
+},
+{
+	"_id": "0006",
+	"type": "electrical_appliances",
+	"name": "Stove",
+	"price": 125,
+	"image":
+		{
+			"url": "images/0007.jpg",
+			"width": 200,
+			"height": 150
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0007.jpg",
+			"width": 32,
+			"height": 22
+		}
+},
+{
+	"_id": "0007",
+	"type": "computers",
+	"name": "Keyboard",
+	"price": 24,
+	"image":
+		{
+			"url": "images/0007.jpg",
+			"width": 100,
+			"height": 100
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0007.jpg",
+			"width": 32,
+			"height": 32
+		}
+},
+{
+	"_id": "0008",
+	"type": "others",
+	"name": "Soda",
+	"price": 2,
+	"image":
+		{
+			"url": "images/0008.jpg",
+			"width": 200,
+			"height": 200
+		},
+	"thumbnail":
+		{
+			"url": "images/thumbnails/0008.jpg",
+			"width": 32,
+			"height": 32
+		}
+}
+]
+

@@ -1,0 +1,12 @@
+
+Na slici su prikazana 3 servisa koja komuniciraju pomocu kafke.
+Implementirati kontrolu za 'mikroservisne transakcije':
+Ako je zapocet upit (query) nad datim entitetom, nad tim entitetom
+ne moze da se vrsi ni jedan drugi upit dok zapocet upit ne bude gotov
+
+gen - val :topic1
+val - kaf :topic2
+kaf - exe :topic3
+exe - kaf :topic4
+?
+exe - gen :topic5

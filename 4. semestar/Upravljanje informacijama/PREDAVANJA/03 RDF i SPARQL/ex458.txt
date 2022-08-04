@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------
+| class                                                 | instanceTotal |
+=========================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> | 27            |
+| <http://www.w3.org/2002/07/owl#DatatypeProperty>      | 8             |
+| <http://purl.org/dc/terms/Agent>                      | 4             |
+| <http://www.w3.org/2000/01/rdf-schema#Class>          | 4             |
+| <http://www.w3.org/2002/07/owl#Class>                 | 4             |
+| <http://www.w3.org/2002/07/owl#FunctionalProperty>    | 4             |
+| <http://xmlns.com/foaf/0.1/Person>                    | 4             |
+| <http://www.w3.org/ns/adms#SemanticDistribution>      | 2             |
+| <http://www.w3.org/2002/07/owl#Ontology>              | 1             |
+| <http://www.w3.org/ns/adms#SemanticAsset>             | 1             |
+-------------------------------------------------------------------------

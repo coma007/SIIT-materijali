@@ -1,0 +1,21 @@
+@prefix v:       <http://www.w3.org/2006/vcard/ns#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:i9771
+      v:email       "cindym@gmail.com" ;
+      v:family-name  "Marshall" ;
+      v:given-name  "Cindy" ;
+      v:homeTel     "(245) 646-5488" .
+
+d:i0432
+      v:email       "richard49@hotmail.com" ;
+      v:family-name  "Mutt" ;
+      v:given-name  "Richard" ;
+      v:homeTel     "(229) 276-5135" .
+
+d:i8301
+      v:email       "c.ellis@usairwaysgroup.com" ;
+      v:email       "craigellis@yahoo.com" ;
+      v:family-name  "Ellis" ;
+      v:given-name  "Craig" .

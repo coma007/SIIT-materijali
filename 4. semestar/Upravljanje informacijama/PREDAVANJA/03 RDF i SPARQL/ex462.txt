@@ -1,0 +1,29 @@
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM sparql --query queryfile.ext --data=datafile.ext 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM set version=2.8.7 
+
+C:\bob\writing\sparqlbk\svnexp\examples>set version=2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>echo off 
+
+C:\bob\writing\sparqlbk\svnexp\examples>c:\bin\javalib\arq-2.8.8\bat\arq.bat -query ex461.rq --data goodrelations-v1.owl 
+----------------------------------------------------------------
+| class                                                        |
+================================================================
+| <http://www.w3.org/2002/07/owl#ObjectProperty>               |
+| <http://www.w3.org/2002/07/owl#SymmetricProperty>            |
+| <http://www.w3.org/2002/07/owl#TransitiveProperty>           |
+| <http://purl.org/goodrelations/v1#PaymentMethod>             |
+| <http://www.w3.org/2002/07/owl#DatatypeProperty>             |
+| <http://purl.org/goodrelations/v1#BusinessFunction>          |
+| <http://purl.org/goodrelations/v1#PaymentMethodCreditCard>   |
+| <http://purl.org/goodrelations/v1#BusinessEntityType>        |
+| <http://www.w3.org/2002/07/owl#Class>                        |
+| <http://purl.org/goodrelations/v1#DeliveryModeParcelService> |
+| <http://purl.org/goodrelations/v1#DayOfWeek>                 |
+| <http://purl.org/goodrelations/v1#DeliveryMethod>            |
+| <http://purl.org/goodrelations/v1#WarrantyScope>             |
+| <http://www.w3.org/2002/07/owl#Ontology>                     |
+| <http://www.w3.org/2002/07/owl#AnnotationProperty>           |
+----------------------------------------------------------------

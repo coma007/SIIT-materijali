@@ -1,0 +1,9 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:i8301
+      ab:email      "c.ellis@usairwaysgroup.com" ;
+      ab:email      "craigellis@yahoo.com" ;
+      ab:firstName  "Craig" ;
+      ab:lastName   "Ellis" .
+

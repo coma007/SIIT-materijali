@@ -1,0 +1,10 @@
+-------------------------------------------------------------
+| last       | first     | courseName                       |
+=============================================================
+| "Ellis"    | "Craig"   | "Using SPARQL with non-RDF Data" |
+| "Marshall" | "Cindy"   | "Using SPARQL with non-RDF Data" |
+| "Marshall" | "Cindy"   | "Modeling Data with OWL"         |
+| "Mutt"     | "Richard" | "Using SPARQL with non-RDF Data" |
+| "Mutt"     | "Richard" | "Updating Data with SPARQL"      |
+-------------------------------------------------------------
+

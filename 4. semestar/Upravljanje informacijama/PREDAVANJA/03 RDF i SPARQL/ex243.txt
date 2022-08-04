@@ -1,0 +1,11 @@
+----------------------------------------------------------------------------
+| o            | blankTest | literalTest | numericTest | IRITest | URITest |
+============================================================================
+| 3            | false     | true        | true        | false   | false   |
+| _:b0         | true      | false       | false       | false   | false   |
+| "5 bucks"    | false     | true        | false       | false   | false   |
+| 4            | false     | true        | true        | false   | false   |
+| dbr:Montr&#233;al | false     | false       | false       | true    | true    |
+| true         | false     | true        | false       | false   | false   |
+| 1.0e5        | false     | true        | true        | false   | false   |
+----------------------------------------------------------------------------

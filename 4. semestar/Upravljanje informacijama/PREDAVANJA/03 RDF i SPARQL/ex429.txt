@@ -1,0 +1,21 @@
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM sparql --query queryfile.ext --data=datafile.ext 
+
+C:\bob\writing\sparqlbk\svnexp\examples>REM set version=2.8.7 
+
+C:\bob\writing\sparqlbk\svnexp\examples>set version=2.8.8 
+
+C:\bob\writing\sparqlbk\svnexp\examples>echo off 
+
+C:\bob\writing\sparqlbk\svnexp\examples>c:\bin\javalib\arq-2.8.8\bat\arq.bat -query ex428.rq -data ex424.ttl 
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+d:m2
+      rdf:type      dm:TexasGuitarPlayer .
+
+d:m6
+      rdf:type      dm:TexasGuitarPlayer .

@@ -1,0 +1,20 @@
+--------------------------
+| property               |
+==========================
+| foaf:schoolHomepage    |
+| foaf:plan              |
+| foaf:myersBriggs       |
+| foaf:workplaceHomepage |
+| foaf:family_name       |
+| foaf:lastName          |
+| foaf:geekcode          |
+| foaf:workInfoHomepage  |
+| foaf:firstName         |
+| foaf:surname           |
+| foaf:familyName        |
+| foaf:knows             |
+| foaf:pastProject       |
+| foaf:publications      |
+| foaf:currentProject    |
+| foaf:img               |
+--------------------------

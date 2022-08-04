@@ -1,0 +1,11 @@
+--------------------------------------------------------
+| propertyLabel        | value                         |
+========================================================
+| "personal mailbox"   | "richard49@hotmail.com"       |
+| "nickname"           | "Dick"                        |
+| "Surname"            | "Mutt"                        |
+| "Given name"         | "Richard"                     |
+| "workplace homepage" | <http://www.philamuseum.org/> |
+| "AIM chat ID"        | "bridesbachelor"              |
+--------------------------------------------------------
+

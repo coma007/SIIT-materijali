@@ -1,0 +1,4 @@
+Napraviti Faust filter koji ce da u realnom vremenu nadgleda sve porudzbine i:
+    - Ako je velicina majice XXL (koju prodavnica ne prodaje vise), porudzbina treba da se preusmeri na
+    consumer_non_fulfilled_orders servis
+    - Ako je bilo koja druga velicina porudzbina ide do consumer_shipping_shirts servisa

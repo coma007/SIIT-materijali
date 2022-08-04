@@ -1,0 +1,7 @@
+U data datoteci se nalazi informacije o razlicitim 'ukusima' i 
+grupi kojoj oni pripadaju. Zadatak je da na kraju za svaku grupu ispisete broje
+ukusa koji joj pripada, kao i ukus sa najduzim i najkracim nazivom (ako ih ima vise
+sa istim nazivom napisite bilo koji).
+
+Ako se u datasetu nalaze 'prljavi' podaci, drugim recima jedna od 2 informacije ne postoji
+ ili ima NULL vrednost, takvi podaci treba da se zanemare.

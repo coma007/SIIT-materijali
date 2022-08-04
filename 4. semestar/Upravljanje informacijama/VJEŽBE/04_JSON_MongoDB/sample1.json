@@ -1,0 +1,74 @@
+[
+   {
+      "_id": "1",
+      "firstName": "Joe",
+      "lastName": "Jackson",
+      "from": "Los Angeles",
+      "gender": "male",
+      "age": 28,
+      "number": "7349282382"
+   },
+   {
+      "_id": "2",
+      "firstName": "James",
+      "lastName": "Smith",
+      "gender": "male",
+      "from": "Los Angeles",
+      "age": 32,
+      "number": "5678568567"
+   },
+   {
+      "_id": "3",
+      "firstName": "Emily",
+      "lastName": "Jones",
+      "from": "Tokyo",
+      "gender": "female",
+      "age": 24,
+      "number": "456754675"
+   },
+   {
+      "_id": "4",
+      "firstName": "Ivan",
+      "lastName": "Ivanovic",
+      "from": "Subotica",
+      "gender": "male",
+      "age": 17,
+      "number": "326877675"
+   },
+   {
+      "_id": "5",
+      "firstName": "Jovana",
+      "lastName": "Jovic",
+      "from": "Novi Sad",
+      "gender": "female",
+      "age": 48,
+      "number": "056004678"
+   },
+   {
+      "_id": "6",
+      "firstName": "John",
+      "lastName": "Doe",
+      "from": "London",
+      "gender": "male",
+      "age": 19,
+      "number": "056104678"
+   },
+   {
+      "_id": "7",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "from": "London",
+      "gender": "female",
+      "age": 79,
+      "number": "116004678"
+   },
+   {
+      "_id": "8",
+      "firstName": "Marina",
+      "lastName": "Indjic",
+      "from": "Subotica",
+      "gender": "female",
+      "age": 52,
+      "number": "136004631"
+   }
+]

@@ -1,0 +1,16 @@
+1 Upit za sve dokumente koji sadrze rec 'king' ali ne i rec 'nelson'
+king AND NOT nelson
+
+2 Upit za sve dokumente koji imaju reci koje u sebi sadrze rec king.
+(ako dokument sadrzi rec kings, na primer, treba da bude prikazan)
+"*king*"
+
+3 Upit za sve dokumente koji sadrze frazu 'king of united states', ali
+ako se nadju jos 3 reci unutar te fraze, takodje treba da vrati dokument.
+"king of united states"~3
+
+4 Promeniti IndexFiles.java klasu tako da se sada kreiraju 2 odvojena indeksa,
+jedan sa naslovom artikla (prva linija svakog dokumenta), i drugi sa sadrzajem artikla 
+(ostatak dokumenta). Zatim napraviti upit koji trazi sve dokumente koji sadrze rec
+'deceased' i u naslovu i u sadrzaju.
+articleTitle:deceased AND articleContents:deceased

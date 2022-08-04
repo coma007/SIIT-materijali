@@ -1,0 +1,33 @@
+-----------------------------------------------------------------
+| p                                                    | pTotal |
+=================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    | 267    |
+| <http://www.w3.org/2002/07/owl#disjointWith>         | 256    |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>   | 213    |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>    | 213    |
+| <http://www.w3.org/2000/01/rdf-schema#comment>       | 177    |
+| <http://www.w3.org/2000/01/rdf-schema#label>         | 177    |
+| <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>   | 176    |
+| <http://www.w3.org/2000/01/rdf-schema#domain>        | 96     |
+| <http://www.w3.org/2000/01/rdf-schema#range>         | 96     |
+| <http://www.w3.org/2002/07/owl#unionOf>              | 61     |
+| <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> | 22     |
+| <http://www.w3.org/2000/01/rdf-schema#subClassOf>    | 19     |
+| <http://www.w3.org/2002/07/owl#inverseOf>            | 10     |
+| <http://www.w3.org/2002/07/owl#equivalentClass>      | 9      |
+| <http://purl.org/goodrelations/v1#displayPosition>   | 8      |
+| <http://purl.org/goodrelations/v1#hasNext>           | 7      |
+| <http://purl.org/goodrelations/v1#hasPrevious>       | 7      |
+| <http://www.w3.org/2002/07/owl#deprecated>           | 6      |
+| <http://www.w3.org/2002/07/owl#equivalentProperty>   | 4      |
+| <http://purl.org/dc/elements/1.1/contributor>        | 1      |
+| <http://purl.org/dc/elements/1.1/creator>            | 1      |
+| <http://purl.org/dc/elements/1.1/rights>             | 1      |
+| <http://purl.org/dc/elements/1.1/subject>            | 1      |
+| <http://purl.org/dc/elements/1.1/title>              | 1      |
+| <http://purl.org/dc/terms/license>                   | 1      |
+| <http://purl.org/goodrelations/v1#category>          | 1      |
+| <http://purl.org/goodrelations/v1#description>       | 1      |
+| <http://www.w3.org/2002/07/owl#versionInfo>          | 1      |
+| <http://xmlns.com/foaf/0.1/homepage>                 | 1      |
+-----------------------------------------------------------------

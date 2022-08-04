@@ -1,0 +1,11 @@
+  (project (?first ?last ?homeTel)
+    (order (?last)
+      (filter (contains ?last "M")
+        (join
+          (leftjoin
+            (table unit)
+            (bgp (triple ?s <http://example.org/ab#homeTel> ?homeTel)))
+          (bgp
+            (triple ?s <http://example.org/ab#firstName> ?first)
+            (triple ?s <http://example.org/ab#lastName> ?last)
+          )))))

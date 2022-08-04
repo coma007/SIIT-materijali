@@ -1,0 +1,6 @@
+Pomocu faust aplikacije napraviti filter koji ce da prima od producera
+informacije o transakcijama {broj_kartice i kolicina}, i da vrsi 'fraud detection'
+
+Ako ista kartica izvrsi vise od 5 transakcija u minut, karticu treba oznaciti kao ukradenu,
+i consumeru (koji simulira servis za izvrsavanje transakcije) ne treba u buduce slati transakcije
+te kartice 

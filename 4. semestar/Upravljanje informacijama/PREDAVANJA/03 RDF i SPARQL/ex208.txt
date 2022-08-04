@@ -1,0 +1,13 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+
+dm:prob44
+      rdfs:label    "Expenditures over 100 require grade 5 approval." .
+
+d:item857
+      dm:problem    dm:prob44 .
+
+d:item201
+      dm:problem    dm:prob44 .
+

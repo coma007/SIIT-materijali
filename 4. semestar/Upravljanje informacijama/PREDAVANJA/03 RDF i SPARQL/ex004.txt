@@ -1,0 +1,1 @@
+arq --data ex002.ttl --query ex003.rq

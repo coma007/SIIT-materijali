@@ -1,0 +1,11 @@
+-------------------------------------------
+| courseName                              |
+===========================================
+| "Updating Data with SPARQL"             |
+| "Using SPARQL with non-RDF Data"        |
+| "Enhancing Websites with RDFa"          |
+| "Modeling Data with OWL"                |
+| "Using Named Graphs"                    |
+| "Combining Public and Private RDF Data" |
+-------------------------------------------
+

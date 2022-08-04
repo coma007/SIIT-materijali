@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:pred="http://www.ftn.uns.ac.rs/rdf/examples/predicate/">
+
+  <!-- Subject is defined with rdf:about attribute -->
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith">
+    <pred:livesIn>London</pred:livesIn>
+    <pred:profession>university professor</pred:profession>
+    <pred:hobby>chess</pred:hobby>
+    <!-- Property elements can also be defined as resources -->
+    <pred:parentTo rdf:resource="http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith">
+    <pred:livesIn>London</pred:livesIn>
+    <pred:profession>dietician</pred:profession>
+    <pred:hobby>gardening</pred:hobby>
+    <!-- Property elements can also be defined as resources -->
+    <pred:childOf rdf:resource="http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/rdf/examples/person/Jack_Smith">
+    <pred:livesIn>Glasgow</pred:livesIn>
+    <pred:profession>programmer</pred:profession>
+    <pred:hobby>skydiving</pred:hobby>
+  </rdf:Description>
+
+</rdf:RDF>

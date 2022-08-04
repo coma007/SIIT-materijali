@@ -1,0 +1,11 @@
+----------------
+| value        |
+================
+| gr:Saturday  |
+| gr:Sunday    |
+| gr:Tuesday   |
+| gr:Monday    |
+| gr:Wednesday |
+| gr:Friday    |
+| gr:Thursday  |
+----------------

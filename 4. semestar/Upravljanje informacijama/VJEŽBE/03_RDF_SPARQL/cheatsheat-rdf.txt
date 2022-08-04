@@ -1,0 +1,23 @@
+<subject> <predicate> <object> . - tackaaaaa !! (za .nt fajlove)
+
+primjer SPARQL upita:
+1 #prefix declarations
+2 PREFIX f o o : <h t t p : / / example . com/ r e s o u r c e s />
+3 . . .
+4 # datasource definition
+5 FROM <h t t p : / / example . com/ r e s o u r c e s />
+6 . . .
+7 # result clausile
+8 SELECT . . .
+9 # graph pattern
+10 WHERE {
+11 . . .
+12 }
+13 # query modifiers
+14 ORDER BY . . .
+
+
+SELECT - tabele
+ASK - bool za select
+CONSTRUCT - rezultati u obliku grafa
+DESCRIBE - rdf graf koji opisuje resurs

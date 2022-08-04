@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  existdb:
+    image: existdb/existdb:release
+    container_name: existDB
+    ports:
+      - 8090:8080
+    volumes:
+      - exist_data:/exist
+
+volumes:
+  exist_data:

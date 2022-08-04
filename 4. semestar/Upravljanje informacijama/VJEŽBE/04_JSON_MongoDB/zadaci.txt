@@ -1,0 +1,12 @@
+0. Dobaviti sve dokumente iz kolekcije
+1. Dobaviti sve muškarce
+2. Dobaviti sve muškarce iz Subotice
+3. Dobaviti sve žene koje imaju više od 30 godina
+4. Dobaviti sve žene koje imaju više od 30 godina i manje od 50 godina
+5. Dobaviti sve osobe čiji broj počinje sa cifrom 1 i završava se sa cifrom 1
+6. Dobaviti sve osobe koje žive ili u Subotici ili u Novom Sad-u
+----------------------------------------------------------------
+7. Koliko ima ljudi koji žive u Subotici
+8. Prosečan broj godina u zavisnosti od pola osobe
+9. Za svai grad ispisati koliko godina ima najstarija osoba
+10. Za svaki grad ispisati ime i prezime najstarije osobe

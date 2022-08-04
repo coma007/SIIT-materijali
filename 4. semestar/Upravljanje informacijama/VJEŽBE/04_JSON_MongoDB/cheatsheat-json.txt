@@ -1,0 +1,5 @@
+link za agregacije
+https://www.digitalocean.com/community/tutorials/how-to-use-aggregations-in-mongodb
+
+link za regex-e
+https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285

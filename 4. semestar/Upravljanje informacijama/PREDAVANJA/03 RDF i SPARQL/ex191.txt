@@ -1,0 +1,9 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:mike
+      ab:hasAunt    d:gene .
+
+d:jane
+      ab:hasAunt    d:joan .
+

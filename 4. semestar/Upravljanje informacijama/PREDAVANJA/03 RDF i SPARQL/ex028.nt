@@ -1,0 +1,8 @@
+# The hash symbol is the comment delimiter in N-Triples.
+# filename: ex028.nt
+
+<urn:isbn:006251587X> <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/People/Berners-Lee/card#i> . 
+
+<urn:isbn:006251587X> <http://purl.org/dc/elements/1.1/title> "Weaving the Web" .
+
+<http://www.w3.org/People/Berners-Lee/card#i> <http://www.w3.org/2006/vcard/title> "Director" . 

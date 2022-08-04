@@ -1,0 +1,16 @@
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/childOf> <http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jack_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/hobby> "skydiving" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/hobby> "gardening" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/hobby> "chess" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jack_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/livesIn> "Glasgow" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/livesIn> "London" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/livesIn> "London" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/parentTo> <http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jack_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/profession> "programmer" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/profession> "dietician" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/profession> "university professor" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jack_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/date>  "1983-01-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/date>  "1993-01-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/date>  "1986-01-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/John_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/favouriteTeam>  "Everton" .
+<http://www.ftn.uns.ac.rs/rdf/examples/person/Jane_Smith> <http://www.ftn.uns.ac.rs/rdf/examples/predicate/favouriteTeam>  "Chelsea" .

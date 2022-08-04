@@ -1,0 +1,6 @@
+16:53:13 INFO  exec :: BGP :: (?s <http://example.org/ab#firstName> ?first) 
+                              (?s <http://example.org/ab#lastName> ?last)
+16:53:13 INFO  exec :: Reorder :: (?s <http://example.org/ab#firstName> ?first)
+                               (?s <http://example.org/ab#lastName> ?last)
+16:53:13 INFO  exec :: BGP :: (?s <http://example.org/ab#homeTel> ?homeTel)
+16:53:13 INFO  exec :: Reorder :: (?s <http://example.org/ab#homeTel> ?homeTel)

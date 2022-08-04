@@ -1,0 +1,20 @@
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix ab:      <http://learningsparql.com/ns/addressbook#> .
+
+d:i9771
+      foaf:familyName  "Marshall" ;
+      foaf:givenName  "Cindy" ;
+      foaf:mbox_sha1sum  "821be6ab56326d7b08246f2cb9c0f68afe0156d9" .
+
+d:i0432
+      foaf:familyName  "Mutt" ;
+      foaf:givenName  "Richard" ;
+      foaf:mbox_sha1sum  "b7f191315aa6bb4a9ab56b02e334647c4b1104a0" .
+
+d:i8301
+      foaf:familyName  "Ellis" ;
+      foaf:givenName  "Craig" ;
+      foaf:mbox_sha1sum  "396d3e3aef87e0fecd3cbbdd2479eb3797d7af18" ;
+      foaf:mbox_sha1sum  "faec1b07cf7c10e302544f22958c02c53844a4fa" .
+
