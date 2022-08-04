@@ -1,0 +1,15 @@
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\bin\Debug\net6.0\helloworld.exe
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\bin\Debug\net6.0\helloworld.deps.json
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\bin\Debug\net6.0\helloworld.runtimeconfig.json
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\bin\Debug\net6.0\helloworld.dll
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\bin\Debug\net6.0\helloworld.pdb
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.csproj.AssemblyReference.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.AssemblyInfoInputs.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.AssemblyInfo.cs
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.csproj.CoreCompileInputs.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.dll
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\refint\helloworld.dll
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.pdb
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\helloworld.genruntimeconfig.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\helloworld\obj\Debug\net6.0\ref\helloworld.dll

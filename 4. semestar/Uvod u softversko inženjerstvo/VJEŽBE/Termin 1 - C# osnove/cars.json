@@ -1,0 +1,41 @@
+[
+  {
+    "$id": "1",
+    "Model": "model1",
+    "Mark": "mark1",
+    "Color": "blue",
+    "Year": 2022,
+    "Fuel": 0,
+    "Engine": {
+      "$id": "2",
+      "Name": "engine1",
+      "CubicCapacity": 1000.0,
+      "Power": 120.0
+    }
+  },
+  {
+    "$id": "3",
+    "Model": "model2",
+    "Mark": "mark2",
+    "Color": "white",
+    "Year": 2002,
+    "Fuel": 1,
+    "Engine": {
+      "$ref": "2"
+    }
+  },
+  {
+    "$id": "4",
+    "Model": "model2",
+    "Mark": "mark3",
+    "Color": "black",
+    "Year": 2014,
+    "Fuel": 1,
+    "Engine": {
+      "$id": "5",
+      "Name": "engine2",
+      "CubicCapacity": 3200.0,
+      "Power": 180.0
+    }
+  }
+]

@@ -1,0 +1,15 @@
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\bin\Debug\net6.0\stringserialize.exe
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\bin\Debug\net6.0\stringserialize.deps.json
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\bin\Debug\net6.0\stringserialize.runtimeconfig.json
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\bin\Debug\net6.0\stringserialize.dll
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\bin\Debug\net6.0\stringserialize.pdb
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.csproj.AssemblyReference.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.AssemblyInfoInputs.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.AssemblyInfo.cs
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.csproj.CoreCompileInputs.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.dll
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\refint\stringserialize.dll
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.pdb
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\stringserialize.genruntimeconfig.cache
+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\USI\VJEŽBE\Termin 1 - C# osnove\tasks\stringserialize\obj\Debug\net6.0\ref\stringserialize.dll

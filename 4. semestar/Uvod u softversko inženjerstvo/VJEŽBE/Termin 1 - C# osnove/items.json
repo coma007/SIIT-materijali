@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Milk 1l",
+    "Price": 150.0,
+    "BestBefore": "2022-03-31T00:00:00"
+  },
+  {
+    "Id": 2,
+    "Name": "Bread",
+    "Price": 50.0,
+    "BestBefore": "2022-03-11T00:00:00"
+  },
+  {
+    "Id": 3,
+    "Name": "Eggs",
+    "Price": 280.0,
+    "BestBefore": "2022-03-20T00:00:00"
+  },
+  {
+    "Id": 4,
+    "Name": "Butter",
+    "Price": 300.0,
+    "BestBefore": "2022-05-24T00:00:00"
+  }
+]
