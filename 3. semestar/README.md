@@ -72,7 +72,7 @@ Asistent: Ciganović, Radojka
 * Kolokvijumi se sastoje iz teorijskog dijela (gradivo sa predavanja) koji nosi 15 bodova i sastoji se od nekoliko kratkih zadataka ili pitanja, zadataka (gradivo sa vježbi) koji nose 30 bodova i obično budu 4 zadatka iz različitih oblasti i usmenog dijela (dokazi ili zadaci sa predavanja) koji nosi 5 bodova i predstavlja pismenu zamjenu za usmeni ispit.
 * Prvi kolokvijum se obično održi sredinom semestra i obuhvata kombinatoriku, a drugi kolokvijum u prvom ispitnom roku i obuhvata grafove. 
 * Tokom godine, moguće je ispravljati zadatke u ispitnim rokovima. Teorijski dio nije moguće ispravljati.
-* Uslov za prolaz je minimalno 9 bodova u sumi sa teorijskih dijelova, po 15 bodova sa zadataka na prvom i drugom kolokvijumu i po 3 boda na usmenom na oba kolokvijuma.
+* Uslov za prolaz je minimalno 9 bodova u sumi sa teorijskih dijelova, po 15 bodova sa zadataka na prvom i drugom kolokvijumu i po 3 boda sa usmenih na oba kolokvijuma.
 * Usmeni ispit je moguće polagati i usmeno, obično na upisu ocjene. Ponekad je ovakvo polaganje opciono, a ponekad obavezno, u zavisnosti od broja bodova.
 
 
@@ -114,7 +114,7 @@ Asistent: Perović, Mitar
 | Kolokvijum 2 / Projekat | 23 / 38  
 
 * Kolokvijumi se održavaju online i uživo (odbrana online dijela), gdje se od kuće rade zadaci kao sa vježbi, a uživo se pismeno odgovara na nekoliko teorijskih pitanja i kratkih zadataka. Prvi kolokvijum se održava sredinom, a drugi krajem semestra.
-* Prvi kolokvijum obuhvata rješavanje jednačina i nejednačina, interpolaciju i regresiju. Drugi kolokvijum obuhvata diferencijalni račun.
+* Prvi kolokvijum obuhvata rješavanje jednačina i nejednačina, interpolaciju i regresiju. Drugi kolokvijum obuhvata integralni i diferencijalni račun.
 * Postoji popravni kolokvijum, koji se održava u drugom ispitnom roku.
 * Umjesto drugog kolokvijuma, može da se radi projekat (1-3 studenta po projektu). Tema projekta se predlaže nakon prvog kolokvijuma i brani se na kraju semestra. Projekat se prezentuje pred ostalim studentima i asistentima. Od projekta se može odustati, i tada mora da se radi drugi kolokvijum kao popravni.
 
@@ -123,8 +123,8 @@ Asistent: Perović, Mitar
 | Teorijski ispit 1 | 100
 | Teorijski ispit 2 | 100
 
-* Ispit se sastoji iz dva pismena dijela. Bodovi se skaliraju na 50.
-* Ponekad se ovaj ispit ne održi, već se bodovi sa predispitnih skaliraju na 100 bodova.
+* Ispit se sastoji iz dva pismena dijela. Bodovi se skaliraju na 50 bodova.
+* Ponekad se ovaj ispit ne održi, već se bodovi sa predispitnih obaveza skaliraju na 100 bodova.
 
 
 ## Nelinearno programiranje i evolutivni algoritmi (4 ESPB)
@@ -145,11 +145,11 @@ Asistent: Buljević, Anja
 
 * Računarski kolokvijumi se polažu uživo, prvi sredinom, a drugi krajem semestra.
 * Gradivo prvog kolokvijuma obuhvata metode za jednodimenzionu i višedimenzionu optimizaciju. Gradivo drugog kolokvijuma obuhvata Simplex, genetski i PSO algoritam. Obično se na kolokvijumu dobije jedna od metoda. Nekada uz metodu dođu i kratka teorijska pitanja.
-* Umjesto drugog kolokvijuma, može da se radi projekat (1-2 studenta po projektu). Tema projekta se dobija od asistenata nakon prvog kolokvijuma i brani se na kraju semestra. Projekat predstavlja kratku primjenu neke metode optimizacije. Na odbrani se projekat prezentuje pred ostalim studentima, profesorom i asistentom, te se odgovara na pitanja vezana za gradivo na projektu.
+* Umjesto drugog računarskog kolokvijuma, može da se radi projekat (1-2 studenta po projektu). Tema projekta se dobija od asistenata nakon prvog kolokvijuma i brani se na kraju semestra. Projekat predstavlja kratku primjenu neke metode optimizacije. Na odbrani se projekat prezentuje pred ostalim studentima, profesorom i asistentom, te se odgovara na pitanja vezana za gradivo na projektu.
 * Pismeni kolokvijum obuhvata gradivo sa auditornih vježbi i održava se na kraju semestra. Na ovom kolokvijumu nekada dolazi i ispitno pitanje za potvrdu ocjene.
 
 | Ispitne  | Bodovi
 | ------------- | ------------- | 
 | Završni ispit | potvrda ocjene
 
-* Ovaj ispit se sastoji iz jednog usmenog pitanja koje je vezano za neki od dokaza ili izvođenja na predavanjima. Ne nosi bodove, njime se samo potvrđuje ocjena.
+* Ovaj ispit se sastoji iz jednog pismenog pitanja koje je vezano za neki od dokaza ili izvođenja na predavanjima. Ne nosi bodove, njime se samo potvrđuje ocjena.
