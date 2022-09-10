@@ -3,7 +3,11 @@
     
 ## Operativni sistemi (4 ESPB)
 Profesor: **Savić, Goran**  
-Asistent: Andrejević, Aleksandar  
+Asistent: Andrejević, Aleksandar 
+
+[Link ka starim predavanjima](https://www.youtube.com/watch?v=Mu_Qc25dz0I&list=PLrcYJ7SYyAtPG0ZCx4MnWFahoRR24KT3i)
+[Link ka starim vježbama iz konkurentnosti](https://www.youtube.com/watch?v=u4gNYV1nPqE&list=PLrcYJ7SYyAtPerCv5JO0Se5QQcmIIqLA1)
+[Primjeri zadataka iz konkurentnosti](https://www.youtube.com/user/ftnenastava/featured)
 
 ### Obaveze:
 
@@ -48,6 +52,8 @@ Asistent: Maksimović, Veljko
 Profesor: **Kordić, Slavica**  
 Asistent: Todorović, Nikola
 
+[Link ka repozitorijumu predmeta](http://www.acs.uns.ac.rs/sr/node/237/28)
+
 ### Obaveze:
 
 | Predispitne  | Bodovi
@@ -73,6 +79,9 @@ Asistent: Todorović, Nikola
 ## Paralelno programiranje (5 ESPB)
 Profesor: **Popović, Miroslav**  
 Asistent: Pijetlović, Stefan
+
+[Link ka sajtu predmeta](https://www.rt-rk.uns.ac.rs/?q=predmeti/siit/pp-paralelno-programiranje)
+[Repozitorijum sa zadacima iz TBB-a](https://github.com/oneapi-src/oneTBB)
 
 ### Obaveze:
 
@@ -117,6 +126,8 @@ Asistent: Vejnović, Mina
 ## Uvod u softversko inženjerstvo (6 ESPB)
 Profesor: **Luburić, Nikola**  
 Asistent: Šarenac, Balša
+
+[Clean CaDET - Smart Tutor](http://clean-cadet.tech/home)
 
 ### Obaveze:
 
