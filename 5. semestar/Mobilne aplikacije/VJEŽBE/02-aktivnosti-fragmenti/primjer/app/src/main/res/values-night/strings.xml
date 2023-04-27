@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reviewer</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="start_new_activity">START NEW ACTIVITY</string>
+    <string name="open_google">OPEN GOOGLE</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="todo">TODO</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+</resources>

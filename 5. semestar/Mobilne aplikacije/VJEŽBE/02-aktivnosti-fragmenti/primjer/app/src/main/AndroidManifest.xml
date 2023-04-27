@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Reviewer"
+        tools:targetApi="31">
+        <!--
+            Prilikom pravljenja aktivnosti, moramo dodati i specifikaciju unutar MAnifest file-a, kao
+            XML element <activity>.
+            U svakoj aktivnosti, samo jedna aktivnost treba da bude MAIN activity, da bi Android znao
+            koja je ulazna tacka u vasu aplikaciju (slicno kao main metoda u bilo kom programskom jeziku).
+
+            Koristeci XML element: <intent-filter> mozemo oznaciti koja aktivnost je MAIN aktivnost za nasu
+            aplikakiju tako sto unuar njega treba da specificiramo da je ta aktivnost koristeci <action> podelement.
+
+            Svaka aktivnost minimalno treba da ima XML atribut name, cija vrednost treba da bude
+            putanja do klase koja nasledjuje neku od Activity klasa. Ostali elementi nisu obavezni.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Reviewer.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name="com.example.reviewer.activities.SplashScreenActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.reviewer.activities.SecondActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Reviewer.NoActionBar">
+        </activity>
+
+
+    </application>
+
+</manifest>
