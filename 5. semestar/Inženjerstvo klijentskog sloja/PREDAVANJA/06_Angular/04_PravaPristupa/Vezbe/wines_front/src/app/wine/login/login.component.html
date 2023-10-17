@@ -1,0 +1,35 @@
+<div class="row justify-content-center align-items-center loginForm">
+  <form class="col-md-12 box" [formGroup]="form" (ngSubmit)="submit()">
+    <fieldset>
+      <legend>Login</legend>
+
+      <div class="form-group row">
+        <label for="username" class="control-label col-md-3"><b>Username:</b></label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="username" name="username" placeholder="username" [formControl]="form.controls['username']">
+          <small class="text-danger"  *ngIf="form.controls.username.touched && form.controls.username.errors?.required">
+            This field can't be empty!</small>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="password" class="control-label col-md-3"><b>Password:</b></label>
+        <div class="col-md-9">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password" [formControl]="form.controls.password">
+          <small class="text-danger"  *ngIf="form.controls.password.touched && form.controls.password.errors?.required">
+            This field can't be empty!</small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-9">
+          <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Login</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+

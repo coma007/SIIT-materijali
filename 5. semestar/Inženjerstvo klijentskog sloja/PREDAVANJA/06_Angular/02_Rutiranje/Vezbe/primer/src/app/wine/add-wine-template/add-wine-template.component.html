@@ -1,0 +1,73 @@
+{{wine | json}}
+
+<form (ngSubmit)="onSubmit()" #wineForm="ngForm" novalidate>
+	<div class="form-group row">
+		<label for="name" class="col-2 col-form-label">Name</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="name" placeholder="Name" 
+				name="name" [(ngModel)]="wine.name" #name="ngModel" required appStefanNameValidator minlength="2">
+			<small *ngIf="name.touched && name.errors?.required" class="text-danger">
+				Name is required</small>
+			<small *ngIf="name.touched && name.errors?.minlength" class="text-danger">
+				Name must be at least two characters long</small>
+			<small *ngIf="name.touched && name.errors?.stefanName" class="text-danger">
+				Name is not Stefan</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="year" class="col-2 col-form-label">Year</label>
+		<div class="col-10">
+			<input class="form-control" type="number" id="year" placeholder="Year"
+				name="year" [(ngModel)]="wine.year" #year="ngModel" required>
+			<small *ngIf="year.touched && year.errors?.required" class="text-danger">
+				Year is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="year" class="col-2 col-form-label">Grapes</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="grapes" placeholder="Grapes"
+				name="grapes" [(ngModel)]="wine.grapes" #grapes="ngModel" required>
+			<small *ngIf="grapes.touched && grapes.errors?.required" class="text-danger">
+				Grapes is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="country" class="col-2 col-form-label">Country</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="country" placeholder="Country"
+				name="country" [(ngModel)]="wine.country" #country="ngModel" required>
+			<small *ngIf="country.touched && country.errors?.required" class="text-danger">
+				Country is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="region" class="col-2 col-form-label">Region</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="region" placeholder="Region"
+				name="region" [(ngModel)]="wine.region" #region="ngModel" required [pattern]="regPattern">
+			<small *ngIf="region.touched && region.errors?.required" class="text-danger">
+				Region is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="description" class="col-2 col-form-label">Description</label>
+		<div class="col-10">
+			<textarea class="form-control" rows="3" id="description" placeholder="Description"
+				name="description" [(ngModel)]="wine.description" #description="ngModel" required></textarea>
+			<small *ngIf="description.touched && description.errors?.required" class="text-danger">
+				Description is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row float-right">
+		<div class="col-12">
+			<button class="btn btn-primary " type="submit" [disabled]="wineForm.form.invalid">Submit</button>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,7 @@
+<ul class="list-unstyled">
+  <li *ngFor="let blogEntry of blogEntries | async;">
+    <app-blog-entry [showComments]="false" [blogEntry]="blogEntry"></app-blog-entry>
+    <button class="btn btn-default" (click)="details(blogEntry)">details</button>
+    <button class="btn btn-danger" (click)="delete(blogEntry._id)">delete</button>
+  </li>
+</ul>

@@ -1,0 +1,16 @@
+insert into Wine_User(id, username, password, authorities) values (1, 'pera', '$2a$12$DUiRc0iWMEKTgzh6jpXpQOLs14XxmvyDdVkfBoTCwUlOy1JcXFrlC', 'ADMIN')
+insert into Wine_User(id, username, password, authorities) values (2, 'pera2', '$2a$12$DUiRc0iWMEKTgzh6jpXpQOLs14XxmvyDdVkfBoTCwUlOy1JcXFrlC', 'WINE_USER')
+-- pass: test
+
+insert into Wine(id, name, year, grapes, country, region) values (1, 'CHATEAU DE SAINT COSME1', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (2, 'CHATEAU DE SAINT COSME2', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (3, 'CHATEAU DE SAINT COSME3', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (4, 'CHATEAU DE SAINT COSME4', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (5, 'CHATEAU DE SAINT COSME5', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (6, 'CHATEAU DE SAINT COSME6', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (7, 'CHATEAU DE SAINT COSME7', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (8, 'CHATEAU DE SAINT COSME8', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (9, 'CHATEAU DE SAINT COSME9', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (10, 'CHATEAU DE SAINT COSME10', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (11, 'CHATEAU DE SAINT COSME11', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')
+insert into Wine(id, name, year, grapes, country, region) values (12, 'CHATEAU DE SAINT COSME12', 2009, 'Grenache / Syrah', 'France', 'Southern Rhone / Gigondas')

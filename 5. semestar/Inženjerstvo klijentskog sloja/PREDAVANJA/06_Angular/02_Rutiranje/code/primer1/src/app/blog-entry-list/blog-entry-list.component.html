@@ -1,0 +1,6 @@
+<ul class="list-unstyled">
+  <li *ngFor="let blogEntry of blogEntries; let i = index">
+    <app-blog-entry [showComments]="false" [blogEntry]="blogEntry"></app-blog-entry>
+    <button class="btn bnt-link" (click)="details(blogEntry, i)">details</button>
+  </li>
+</ul>

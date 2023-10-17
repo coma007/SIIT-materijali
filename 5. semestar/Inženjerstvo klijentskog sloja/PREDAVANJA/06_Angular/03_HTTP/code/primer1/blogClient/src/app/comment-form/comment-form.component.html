@@ -1,0 +1,12 @@
+<h3>Comment</h3>
+<form class="form" (ngSubmit)="save()">
+  <div class="form-group">
+    <label for="singedBy">your name:</label>
+    <input class="form-control" id="signedBy" name="signedBy" [(ngModel)]="comment.signedBy"/>
+  </div>
+  <div class="form-group">
+    <label for="comment">comment:</label>
+    <textarea class="form-control" id="title" name="title" [(ngModel)]="comment.text"></textarea>
+  </div>
+  <input class="btn btn-primary pull-right" type="submit" value="submit comment"/>
+</form>

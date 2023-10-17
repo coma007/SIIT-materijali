@@ -1,0 +1,16 @@
+{
+  "name": "vezba_05",
+  "version": "1.0.0",
+  "description": "TypeScript vezba",
+  "main": "index.js",
+  "author": "Stefan Andjelic",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "tsify": "^3.0.3",
+    "typescript": "^2.6.1"
+  },
+  "scripts": {
+    "build": "tsc ./src/program.ts --outDir ./dist && browserify ./dist/program.js -o ./dist/index.js"
+  }
+}

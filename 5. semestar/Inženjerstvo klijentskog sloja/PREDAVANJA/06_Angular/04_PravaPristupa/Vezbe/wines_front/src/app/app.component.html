@@ -1,0 +1,22 @@
+<div class="container-fluid">
+
+  <div class="row" *ngIf="role === 'ADMIN' || role === 'WINE_USER'" >
+    <div class="col">
+      <app-wc-header></app-wc-header>
+    </div>
+  </div>
+
+  <div class="row primer">
+    <div class="col">
+      <app-navbar-admin *ngIf="role === 'ADMIN'"></app-navbar-admin>
+      <app-navbar-user *ngIf="role === 'WINE_USER'"></app-navbar-user>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <router-outlet (activate)="checkRole()"></router-outlet>
+    </div>
+  </div>
+
+</div>

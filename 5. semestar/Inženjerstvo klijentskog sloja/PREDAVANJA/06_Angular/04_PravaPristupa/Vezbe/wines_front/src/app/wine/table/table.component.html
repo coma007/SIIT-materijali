@@ -1,0 +1,20 @@
+<table class="table table-striped pera">
+  <thead>
+    <tr>
+      <th>Name <button class="btn btn-link"><span class="fa fa-sort"></span></button> </th>
+      <th>Year <button class="btn btn-link"><span class="fa fa-sort"></span></button> </th>
+      <th>Grapes <button class="btn btn-link"><span class="fa fa-sort"></span></button> </th>
+      <th>Country <button class="btn btn-link"><span class="fa fa-sort"></span></button> </th>
+      <th>Region <button class="btn btn-link"><span class="fa fa-sort"></span></button> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let wine of wines">
+      <td>{{wine.name}}</td>
+      <td>{{wine.year}}</td>
+      <td>{{wine.grapes}}</td>
+      <td>{{wine.country}}</td>
+      <td>{{wine.region}}</td>
+    </tr>
+  </tbody>
+</table>

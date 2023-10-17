@@ -1,0 +1,25 @@
+<form [formGroup]="createWineForm" (ngSubmit)="add()" fxLayout="column">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="text" name="name" formControlName="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Year</mat-label>
+    <input matInput type="number" name="year" formControlName="year" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grapes</mat-label>
+    <input matInput type="text" name="grapes" formControlName="grapes" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Country</mat-label>
+    <input matInput type="text" name="country" formControlName="country" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Region</mat-label>
+    <input matInput type="text" name="region" formControlName="region" />
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutAlign="space-between end">
+    <button color="primary" type="submit" mat-raised-button>Create</button>
+  </div>
+</form>

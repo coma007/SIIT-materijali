@@ -1,0 +1,14 @@
+<div id="navigation">
+  <button style="float: right" [routerLink]="['/wine']" mat-button>
+    Wines
+  </button>
+  <button
+    style="float: right"
+    [routerLink]="['/createReactive']"
+    mat-button
+    color="primary"
+  >
+    CreateReactive
+  </button>
+  <button style="float: right" (click)="logout()" mat-button>Log out</button>
+</div>

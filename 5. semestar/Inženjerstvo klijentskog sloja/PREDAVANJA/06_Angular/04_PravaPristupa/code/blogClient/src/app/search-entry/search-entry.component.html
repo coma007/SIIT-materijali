@@ -1,0 +1,8 @@
+<h3>Filter entries</h3>
+<form class="form" (ngSubmit)="filter()">
+  <div class="form-group">
+    <input class="form-control" name="search-entry" type="text" [(ngModel)]="filterText" />
+  </div>
+  <input type="button" class="btn btn-default pull-right" value="reset" (click)="reset()" />
+  <input type="submit" class="btn btn-primary pull-right" value="search" />
+</form>

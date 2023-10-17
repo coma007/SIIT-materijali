@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Selektovanje</title>
+  </head>
+  <body>
+    <!-- sta ce se desiti kada kliknemo na dugme broj 1? -->
+    <button type="button" name="button1">dugme 1</button>
+    <button type="button" name="button2">dugme 2</button>
+    <button type="button" name="button3">dugme 3</button>
+    <script>
+      // na klik na dugme treba da se ispise poruka sa rednim brojem dugmeta (1,2,3)
+      // selektujemo sve
+      var buttons = document.getElementsByTagName("button");
+      // prodjemo krozkolekciju
+      var prikazi = function (x) {
+        var retVal = function () {
+          alert('dugme broj '+x);
+        }
+        return retVal; 
+      }
+      for (var i = 0; i < buttons.length; i++) {
+        // na klik na dugme pozovem alert sa brojem dugmeta
+        buttons[i].onclick = prikazi(i); //function() {
+          // alert("dugme broj " + i);
+          // prikazi(i);
+        //};
+      }
+    </script>
+  </body>
+</html>

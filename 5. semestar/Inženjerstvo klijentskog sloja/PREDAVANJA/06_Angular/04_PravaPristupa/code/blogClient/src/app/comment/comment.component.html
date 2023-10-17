@@ -1,0 +1,10 @@
+<div [app-emphasize]="'.comment'" [color]="'#f2f2f2'">
+    <div>
+        <b>{{comment.signedBy}}</b>
+    </div>
+    <div class="comment">{{comment.text}}</div>
+</div>
+<ng-template [ngIf]="comment.comments">
+    <app-comment-list [comments]="comment.comments"></app-comment-list>
+</ng-template>
+<!-- <app-comment-list *ngIf="comment.comments" [comments]="comment.comments"></app-comment-list> -->

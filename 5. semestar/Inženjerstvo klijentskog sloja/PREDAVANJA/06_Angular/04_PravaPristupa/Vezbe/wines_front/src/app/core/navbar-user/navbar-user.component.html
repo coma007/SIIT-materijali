@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+    <a class="navbar-brand">Wine Cellar</a>
+  
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/wines']">Home</a>
+      </li>
+    </ul>
+  
+    <ul class="navbar-nav ml-auto">   
+      <li class="nav-item">
+        <a class="nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </nav>

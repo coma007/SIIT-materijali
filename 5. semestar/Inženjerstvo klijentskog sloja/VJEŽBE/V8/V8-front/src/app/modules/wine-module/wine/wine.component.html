@@ -1,0 +1,49 @@
+<table
+  *ngIf="condition"
+  mat-table
+  [dataSource]="dataSource"
+  class="mat-elevation-z8"
+  matSort
+>
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="year">
+    <th mat-header-cell *matHeaderCellDef>Year</th>
+    <td mat-cell *matCellDef="let element">
+      {{ element.year }}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="grapes">
+    <th mat-header-cell *matHeaderCellDef>Grapes</th>
+    <td mat-cell *matCellDef="let element">{{ element.grapes }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="country">
+    <th mat-header-cell *matHeaderCellDef>Country</th>
+    <td mat-cell *matCellDef="let element">{{ element.country }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="region">
+    <th mat-header-cell *matHeaderCellDef>Region</th>
+    <td mat-cell *matCellDef="let element">{{ element.region }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr
+    mat-row
+    *matRowDef="let element; columns: displayedColumns"
+    [routerLink]="['/wine/' + element.id]"
+  ></tr>
+</table>
+
+<mat-paginator
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  showFirstLastButtons
+></mat-paginator>
+
+<button (click)="changeState()" mat-raised-button>Click!</button>
+<app-snack-bar></app-snack-bar>

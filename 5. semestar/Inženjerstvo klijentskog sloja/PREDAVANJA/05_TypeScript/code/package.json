@@ -1,0 +1,22 @@
+{
+  "name": "type_srcipt_primeri",
+  "version": "1.0.0",
+  "description": "Primeri TypeScript\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D funkcionalnosti TypeScript",
+  "main": "index.js",
+  "dependencies": {
+    "@types/lodash": "^4.14.85",
+    "@types/uuid": "^3.4.3",
+    "lodash": "^4.17.4",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "tsify": "^3.0.3",
+    "typescript": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan Segedinac",
+  "license": "ISC"
+}

@@ -1,0 +1,24 @@
+form {
+  margin: 40px;
+}
+
+#formId {
+  margin-left: 20px;
+}
+
+#sendToParent {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#sendToParentBtn {
+  margin-left: 10px;
+}
+
+#valueFromHome {
+  margin-left: 20px;
+}
+
+#itemFromParent {
+  margin-left: 20px;
+}

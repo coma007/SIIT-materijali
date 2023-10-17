@@ -1,0 +1,28 @@
+<h3>New entry</h3>
+<form class="form" (ngSubmit)="save()">
+  <div class="form-group">
+    <label for="title">title:</label>
+    <input class="form-control" id="title" name="title" [(ngModel)]="newBlogEntry.title"/>
+  </div>
+  <div class="form-group">
+    <label for="description">description:</label>
+    <input class="form-control" id="description" name="description" [(ngModel)]="newBlogEntry.description"/>
+  </div>
+  <div class="form-group">
+    <label for="entry">entry:</label>
+    <textarea class="form-control" id="entry" name="entry" [(ngModel)]="newBlogEntry.entry"></textarea>
+  </div>
+  <input class="btn btn-primary pull-right" type="submit" value="save"/>
+</form>
+
+<!-- <div>
+  <input [(ngModel)]="username">
+  
+  <p>Hello {{username}}!</p>
+</div> -->
+
+<!-- <div>
+  <input [value]="username" (input)="username = $event.target.value">
+  
+  <p>Hello {{username}}!</p>
+</div> -->

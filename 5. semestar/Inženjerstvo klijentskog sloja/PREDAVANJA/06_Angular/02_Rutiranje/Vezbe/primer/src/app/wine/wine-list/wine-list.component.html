@@ -1,0 +1,18 @@
+<h1>WineListComponent</h1>
+<div class="row">
+	<div class="col">
+		<wc-search-form></wc-search-form>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<wc-table [wines]="wineList"></wc-table>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<wc-pagination [totalItems]="totalSize" [pageSize]="pageSize"
+			(onPageSelected)="changePage($event)">
+		</wc-pagination>
+	</div>
+</div>

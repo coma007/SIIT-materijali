@@ -1,0 +1,82 @@
+<p>{{wineForm.value | json | testPipe}}</p>
+
+<form class="reactiveForm" [formGroup]="wineForm" (submit)="onSubmit()">
+	<div class="form-group row">
+		<label for="name" class="col-2 col-form-label">Name</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="name" placeholder="Name"
+				formControlName="name">	
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.name.touched && wineForm.controls.name.errors?.required">
+				Name is required</small>
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.name.touched && wineForm.controls.name.errors?.minlength">
+				Name should be at least two characters long</small>
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.name.touched && wineForm.controls.name.errors?.testError">
+				Custom validation is not satisfied</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="year" class="col-2 col-form-label">Year</label>
+		<div class="col-10">
+			<input class="form-control" type="number" id="year" placeholder="Year"
+				formControlName="year">
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.year.touched && wineForm.controls.year.errors?.required">
+				Year is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="year" class="col-2 col-form-label">Grapes</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="grapes" placeholder="Grapes"
+				formControlName="grapes">
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.grapes.touched && wineForm.controls.grapes.errors?.required">
+				Grapes is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="country" class="col-2 col-form-label">Country</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="country" placeholder="Country"
+				formControlName="country">
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.country.touched && wineForm.controls.country.errors?.required">
+				Country is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="region" class="col-2 col-form-label">Region</label>
+		<div class="col-10">
+			<input class="form-control" type="text" id="region" placeholder="Region"
+				formControlName="region">
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.region.touched && wineForm.controls.region.errors?.required">
+				Region is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="description" class="col-2 col-form-label">Description</label>
+		<div class="col-10">
+			<textarea class="form-control" rows="3" id="description" placeholder="Description"
+				formControlName="description"></textarea>
+			<small class="text-danger" 
+				*ngIf="wineForm.controls.description.touched && wineForm.controls.description.errors?.required">
+				Description is required</small>
+		</div>
+	</div>
+
+	<div class="form-group row float-right">
+		<div class="col-12">
+			<button class="btn btn-primary" type="submit"
+				[disabled]="wineForm.invalid">Submit</button>
+		</div>
+	</div>
+</form>

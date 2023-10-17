@@ -1,0 +1,20 @@
+<div class="container">
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a *ngIf="!loggedIn()" (click)="login()">login</a>
+          </li>
+          <li>
+            <a *ngIf="loggedIn()" (click)="logout()">logout</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,73 @@
+/*
+Standardni css komentari nisu podrzavali jednolinijeske komentare
+*/
+
+//u sass-u podrzani jednolinijski komentari
+
+$bg-color: lightblue;
+$text-color: green;
+$border-color: blue;
+
+$pixel-value: 10px;
+//voditi racuna oko mnozenja, 10px*2px = 20px*px 
+$padding: $pixel-value*2;
+
+/*
+Znak ,,/,, se u CSS koristi za kraci zapis nekih pravila, a isti znak se u SASSu 
+korisni za deljenje
+S obizorm da SASS nasledjuje CSS, interprateacije mora biti ispostovana.
+Neka pravila primene:
+    1. Ako su operandi smesteni u promenljive ili predstavljaju povratne vrednosti funkcija
+    2. Ako izraz zaokruzimo obicnim zagradama
+    3. Ako se izraz koristi kao de nekog drugog aritmetickog izraza
+    4. U svim ostalim slucajevima, deljenje nosi znacenje iz CSS-a
+*/
+
+.form-group {
+    padding: $padding;
+}
+
+div {
+    //primer ugnjezdavanja
+    background-color: $bg-color;
+
+    div {
+        background-color: yellow;
+        padding: $pixel-value;
+    
+        input {
+            //ugnjezdavanje pravila
+            border: {
+                style: solid;
+                width: 2px;
+                color: $border-color;
+            }
+
+            //& ce biti zamenjen sa selektorom koji je direktan roditelj pravila u kom je navedeno
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
+
+//nasledjivanje
+//placeholder selektori
+%primerKlase {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    //moguce je naravno naslediti i vise selektora
+    //UGNJEZDENI SELEKTORI SE NE MOGU NASLEDITI
+    @extend %primerKlase;
+    font-size: 24pt;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<p id="itemFromParent">{{ itemFromParent }}</p>
+<p>{{ wine | json | test }}</p>
+
+<form
+  id="formId"
+  (ngSubmit)="add()"
+  #wineForm="ngForm"
+  novalidate
+  fxLayout="column"
+>
+  <!--template prom-->
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input
+      required
+      matInput
+      type="text"
+      #name="ngModel"
+      name="name"
+      [(ngModel)]="wine.name"
+      minlength="5"
+    />
+  </mat-form-field>
+  <small *ngIf="name.touched && name.errors?.['required']" class="text-danger">
+    Name is required</small
+  >
+  <small *ngIf="name.touched && name.errors?.['minlength']" class="text-danger">
+    Name must be at least two characters long</small
+  >
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Year</mat-label>
+    <input matInput type="text" name="year" [(ngModel)]="wine.year" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Grapes</mat-label>
+    <input matInput type="text" name="grapes" [(ngModel)]="wine.grapes" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Country</mat-label>
+    <input matInput type="text" name="country" [(ngModel)]="wine.country" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Region</mat-label>
+    <input matInput type="text" name="region" [(ngModel)]="wine.region" />
+  </mat-form-field>
+  <br />
+  <button mat-raised-button [disabled]="wineForm.form.invalid" type="submit">
+    Add!
+  </button>
+</form>
+
+<div id="sendToParent">
+  <mat-form-field appearance="fill">
+    <mat-label>Send item to parent</mat-label>
+    <input matInput type="text" [(ngModel)]="itemToParent" />
+  </mat-form-field>
+  <button
+    id="sendToParentBtn"
+    mat-raised-button
+    type="button"
+    (click)="sendToParent()"
+  >
+    Send to parent
+  </button>
+</div> 
+
+<p id="valueFromHome">{{ valueFromHome }}</p>

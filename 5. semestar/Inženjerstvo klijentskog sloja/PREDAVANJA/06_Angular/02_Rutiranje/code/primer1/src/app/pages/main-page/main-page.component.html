@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-8">
+    <app-blog-entry-list [blogEntries]="blogEntries"></app-blog-entry-list>
+  </div>
+  <div class="col-md-4">
+    <app-search-entry (filterEntriesEvent)="filter($event)"></app-search-entry>
+    <app-blog-entry-form (saveBlogEntryEvent)="saveBlogEntry($event)"></app-blog-entry-form>
+  </div>
+</div>

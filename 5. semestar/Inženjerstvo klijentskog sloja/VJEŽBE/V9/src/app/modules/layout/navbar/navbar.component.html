@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <span [routerLink]="['/home']">Wine application</span>
+  <div id="navigation">
+    <app-admin-navbar *ngIf="role === 'ADMIN'"></app-admin-navbar>
+    <app-user-navbar *ngIf="role === 'WINE_USER'"></app-user-navbar>
+    <button
+      *ngIf="role === null"
+      style="float: right"
+      [routerLink]="['/login']"
+      mat-button
+    >
+      Login
+    </button>
+  </div>
+</mat-toolbar>

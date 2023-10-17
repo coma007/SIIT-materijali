@@ -1,0 +1,24 @@
+.loginForm {
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    margin-top: 250px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color:lightgray;
+    color: black;
+
+    border-radius: 18px;
+
+    padding: 18px;
+}
+@media (max-width: 350px) {
+    .myForm {
+      min-width: 90%;
+    }
+}
+
+button {
+    margin-right: 16px;
+}

@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()" fxLayout="column">
+  <mat-error *ngIf="hasError"
+    >Korisničko ime ili lozinka nisu ispravni.</mat-error
+  >
+  <mat-form-field>
+    <mat-label>Korisničko ime</mat-label>
+    <input matInput type="text" name="username" formControlName="username" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Lozinka</mat-label>
+    <input
+      matInput
+      type="password"
+      name="password"
+      formControlName="password"
+    />
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutAlign="space-between end">
+    <button color="primary" type="submit" mat-raised-button>Prijava</button>
+  </div>
+</form>

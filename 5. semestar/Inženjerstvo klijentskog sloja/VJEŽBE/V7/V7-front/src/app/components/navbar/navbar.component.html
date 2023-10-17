@@ -1,0 +1,24 @@
+<mat-toolbar>
+  <span [routerLink]="['/home']">Wine application</span>
+  <div id="navigation">
+    <button style="float: right" [routerLink]="['/wine']" mat-button>
+      Wines
+    </button>
+    <button
+      style="float: right"
+      [routerLink]="['/createReactive']"
+      mat-button
+      color="primary"
+    >
+      CreateReactive
+    </button>
+    <button
+      style="float: right"
+      [routerLink]="['/create']"
+      mat-button
+      color="primary"
+    >
+      Create
+    </button>
+  </div>
+</mat-toolbar>

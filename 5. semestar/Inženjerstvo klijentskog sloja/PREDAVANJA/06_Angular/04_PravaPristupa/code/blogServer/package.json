@@ -1,0 +1,16 @@
+{
+  "name": "NewsBackend",
+  "version": "0.1.1",
+  "description": "Primer REST back end aplikacije. Node, Express, MongoDB, Mongoose.",
+  "author": "Milan Segedinac <milan.segedinac@gmail.com>",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.13.4",
+    "jwt-simple": "^0.5.0",
+    "mongoose": "^4.3.7",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}

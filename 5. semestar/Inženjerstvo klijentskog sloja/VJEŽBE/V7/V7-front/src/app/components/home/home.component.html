@@ -1,0 +1,11 @@
+<p id="description">
+  Explore wines... (Obrati pažnju ispod je ugrađen Create Wine)
+</p>
+<p id="value">{{ valueFromChild }}</p>
+<hr />
+<app-create-wine
+  [itemFromParent]="parentToChild"
+  (newItemEvent)="addItem($event)"
+></app-create-wine>
+<hr />
+<button id="test" (click)="test()" mat-raised-button>Click!</button>
