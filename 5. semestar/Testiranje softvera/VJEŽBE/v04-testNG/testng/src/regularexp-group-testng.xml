@@ -1,0 +1,13 @@
+<suite name="Regular Exp. Group Suite" verbose="1">
+    <test name="Regular Exp. Test">
+        <groups>
+            <run>
+                <include name="include.*" />
+                <exclude name=".*exclude" />
+            </run>
+        </groups>
+        <classes>
+            <class name="group.RegularExpGroup" />
+        </classes>
+    </test>
+</suite>

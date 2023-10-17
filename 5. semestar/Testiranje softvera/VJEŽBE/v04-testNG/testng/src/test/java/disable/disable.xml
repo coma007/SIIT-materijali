@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite_name">
+    <test name="first_test_case">
+        <classes>
+            <class name="disable.DisabledEnabledTests"/>
+        </classes>
+    </test>
+    <test name="second_test_case">
+        <classes>
+            <class name="disable.DisabledEnabledTests">
+                <methods>
+                    <exclude name = "firstTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

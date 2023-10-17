@@ -1,0 +1,16 @@
+<suite name="Regular Exp Suite" verbose="1">
+    <test name="Regular Exp Test">
+        <classes>
+            <class name="regularexppackage.RegularExpClass">
+                <methods>
+                    <include name=".*Test.*" />
+                </methods>
+            </class>
+            <class name="firstpackage.FirstTestClass">
+                <methods>
+                    <exclude name="firstTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

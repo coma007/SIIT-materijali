@@ -1,0 +1,20 @@
+<suite name="First Suite" verbose="1" >
+    <test name="First Test" >
+        <classes>
+            <class name="beforeafter.TestClass" >
+                <methods>
+                    <include name="testOneMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Second Test" >
+        <classes>
+            <class name="beforeafter.TestClass" >
+                <methods>
+                    <include name="testTwoMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

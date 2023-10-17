@@ -1,0 +1,10 @@
+<suite name="Simple Reporter Suite">
+    <listeners>
+        <listener class-name="reporter.CustomReporting" />
+    </listeners>
+    <test name="Simple Reporter test">
+        <classes>
+            <class name="sample.SampleTest" />
+        </classes>
+    </test>
+</suite>

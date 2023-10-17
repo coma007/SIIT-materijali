@@ -1,0 +1,12 @@
+<suite name="Time test Suite" verbose="1">
+    <test name="Timed Test">
+        <groups>
+            <run>
+                <include name="test-group" />
+            </run>
+        </groups>
+        <classes>
+            <class name="group.TestGroup" />
+        </classes>
+    </test>
+</suite>

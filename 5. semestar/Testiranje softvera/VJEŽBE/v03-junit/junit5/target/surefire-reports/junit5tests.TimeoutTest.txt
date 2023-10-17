@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: junit5tests.TimeoutTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.516 s <<< FAILURE! - in junit5tests.TimeoutTest
+failsIfExecutionTimeExceeds500Milliseconds  Time elapsed: 0.507 s  <<< ERROR!
+java.util.concurrent.TimeoutException: failsIfExecutionTimeExceeds500Milliseconds() timed out after 500 milliseconds
+

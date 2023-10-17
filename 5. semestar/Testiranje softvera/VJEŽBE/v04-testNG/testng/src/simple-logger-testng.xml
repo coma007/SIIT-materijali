@@ -1,0 +1,10 @@
+<suite name="Simple Logger Suite">
+    <listeners>
+        <listener class-name="logger.CustomLogging" />
+    </listeners>
+    <test name="Simple Logger test">
+        <classes>
+            <class name="sample.SampleTest" />
+        </classes>
+    </test>
+</suite>

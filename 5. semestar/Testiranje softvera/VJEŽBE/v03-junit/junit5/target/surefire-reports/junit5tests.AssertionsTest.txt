@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: junit5tests.AssertionsTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in junit5tests.AssertionsTest
+assertEqualsListTest  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[firstString, secondString, thirdString]> but was: <[firstString, secondString]>
+	at junit5tests.AssertionsTest.assertEqualsListTest(AssertionsTest.java:33)
+
+assertEqualsTest  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The String values were not equal ==> expected: <firstString> but was: <secondString>
+	at junit5tests.AssertionsTest.assertEqualsTest(AssertionsTest.java:23)
+
+assertForMapTest  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: map containing [ANYTHING-><22>]
+     but: map was [<firstKey=1>, <thirdKey=3>, <secondKey=2>]
+	at junit5tests.AssertionsTest.assertForMapTest(AssertionsTest.java:70)
+
+assertArraysEqualsTest  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: array contents differ at index [1], expected: <5> but was: <2>
+	at junit5tests.AssertionsTest.assertArraysEqualsTest(AssertionsTest.java:40)
+
+assertTrueTest  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: This boolean condition did not evaluate to true ==> expected: <true> but was: <false>
+	at junit5tests.AssertionsTest.assertTrueTest(AssertionsTest.java:46)
+
+assertAllTest  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	org.opentest4j.AssertionFailedError: The String values were not equal ==> expected: <firstString> but was: <secondString>
+	org.opentest4j.AssertionFailedError: This boolean condition did not evaluate to true ==> expected: <true> but was: <false>
+	at junit5tests.AssertionsTest.assertAllTest(AssertionsTest.java:56)
+
+assertForList  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a collection containing "thirdStrings"
+     but: mismatches were: [was "firstString", was "secondString", was "thirdString"]
+	at junit5tests.AssertionsTest.assertForList(AssertionsTest.java:79)
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="junit5tests.AssertionsTest" time="0.023" tests="10" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/test-classes:/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/classes:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.0/junit-jupiter-5.9.0.jar:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/minamedic/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.0/junit-jupiter-params-5.9.0.jar:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.0/junit-jupiter-engine-5.9.0.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.9.1/junit-platform-suite-engine-1.9.1.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-suite-api/1.9.1/junit-platform-suite-api-1.9.1.jar:/Users/minamedic/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.9.1/junit-platform-suite-commons-1.9.1.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.1/junit-platform-launcher-1.9.1.jar:/Users/minamedic/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/surefire/surefirebooter3670250444725062737.jar /Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/surefire 2022-10-10T10-45-31_767-jvmRun1 surefire2440875150106260352tmp surefire_012399564668795108131tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/test-classes:/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/classes:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.0/junit-jupiter-5.9.0.jar:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/minamedic/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.0/junit-jupiter-params-5.9.0.jar:/Users/minamedic/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.0/junit-jupiter-engine-5.9.0.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.9.1/junit-platform-suite-engine-1.9.1.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-suite-api/1.9.1/junit-platform-suite-api-1.9.1.jar:/Users/minamedic/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.9.1/junit-platform-suite-commons-1.9.1.jar:/Users/minamedic/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.1/junit-platform-launcher-1.9.1.jar:/Users/minamedic/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/minamedic"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5/target/surefire/surefirebooter3670250444725062737.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="user.name" value="minamedic"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/minamedic/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/0t/r4v13j192kj4npmftwfc2kqh0000gn/T/"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="user.dir" value="/Users/minamedic/Documents/KTS/KTS2022/Vežbe_03/junit5"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/minamedic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="56.0"/>
+  </properties>
+  <testcase name="assertEqualsListTest" classname="junit5tests.AssertionsTest" time="0.001">
+    <failure message="expected: &lt;[firstString, secondString, thirdString]&gt; but was: &lt;[firstString, secondString]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[firstString, secondString, thirdString]> but was: <[firstString, secondString]>
+	at junit5tests.AssertionsTest.assertEqualsListTest(AssertionsTest.java:33)
+]]></failure>
+  </testcase>
+  <testcase name="assertThrowsTest" classname="junit5tests.AssertionsTest" time="0.001"/>
+  <testcase name="assertEqualsTest" classname="junit5tests.AssertionsTest" time="0.001">
+    <failure message="The String values were not equal ==&gt; expected: &lt;firstString&gt; but was: &lt;secondString&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The String values were not equal ==> expected: <firstString> but was: <secondString>
+	at junit5tests.AssertionsTest.assertEqualsTest(AssertionsTest.java:23)
+]]></failure>
+  </testcase>
+  <testcase name="assertForAnyOf" classname="junit5tests.AssertionsTest" time="0.005"/>
+  <testcase name="assertForMapTest" classname="junit5tests.AssertionsTest" time="0.003">
+    <failure message="&#10;Expected: map containing [ANYTHING-&gt;&lt;22&gt;]&#10;     but: map was [&lt;firstKey=1&gt;, &lt;thirdKey=3&gt;, &lt;secondKey=2&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: map containing [ANYTHING-><22>]
+     but: map was [<firstKey=1>, <thirdKey=3>, <secondKey=2>]
+	at junit5tests.AssertionsTest.assertForMapTest(AssertionsTest.java:70)
+]]></failure>
+  </testcase>
+  <testcase name="assertArraysEqualsTest" classname="junit5tests.AssertionsTest" time="0.001">
+    <failure message="array contents differ at index [1], expected: &lt;5&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: array contents differ at index [1], expected: <5> but was: <2>
+	at junit5tests.AssertionsTest.assertArraysEqualsTest(AssertionsTest.java:40)
+]]></failure>
+  </testcase>
+  <testcase name="assertForContainsAnyOrder" classname="junit5tests.AssertionsTest" time="0.001"/>
+  <testcase name="assertTrueTest" classname="junit5tests.AssertionsTest" time="0.001">
+    <failure message="This boolean condition did not evaluate to true ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: This boolean condition did not evaluate to true ==> expected: <true> but was: <false>
+	at junit5tests.AssertionsTest.assertTrueTest(AssertionsTest.java:46)
+]]></failure>
+  </testcase>
+  <testcase name="assertAllTest" classname="junit5tests.AssertionsTest" time="0.002">
+    <failure message="Multiple Failures (2 failures)&#10;	org.opentest4j.AssertionFailedError: The String values were not equal ==&gt; expected: &lt;firstString&gt; but was: &lt;secondString&gt;&#10;	org.opentest4j.AssertionFailedError: This boolean condition did not evaluate to true ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	org.opentest4j.AssertionFailedError: The String values were not equal ==> expected: <firstString> but was: <secondString>
+	org.opentest4j.AssertionFailedError: This boolean condition did not evaluate to true ==> expected: <true> but was: <false>
+	at junit5tests.AssertionsTest.assertAllTest(AssertionsTest.java:56)
+]]></failure>
+  </testcase>
+  <testcase name="assertForList" classname="junit5tests.AssertionsTest" time="0">
+    <failure message="&#10;Expected: a collection containing &quot;thirdStrings&quot;&#10;     but: mismatches were: [was &quot;firstString&quot;, was &quot;secondString&quot;, was &quot;thirdString&quot;]" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: a collection containing "thirdStrings"
+     but: mismatches were: [was "firstString", was "secondString", was "thirdString"]
+	at junit5tests.AssertionsTest.assertForList(AssertionsTest.java:79)
+</failure>
+  </testcase>
+</testsuite>
