@@ -1,0 +1,6 @@
+visitor double dispatch
+kako se koristi visitor
+chain of responsibility
+logovanje - na kraj chaina
+observer - na sta treba paziti (rekurzija)
+visitor zašto svaka instanca ima posebnu metodu
