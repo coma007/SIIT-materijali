@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Milica\Desktop\Desktop\ftn\predmeti\ISS\VJEŽBE\.metadata\.plugins\org.eclipse.jdt.core
+713528602.index
+3027656432.index
+3321751874.index

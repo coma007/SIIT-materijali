@@ -1,0 +1,21 @@
+1. struktura http zahteva
+2. struktura http odgovora
+3. options
+4. cookie
+5. jwt
+6. kako da korisnik ostane ulogovan kada ugasi pa upali racunar
+7. napisati doGet za servlet koji ispisuje prvih 100 neparnih brojeva
+8. razlika izmedju head i get
+9. kako se prosledjuju parametri forme get zahtevom 
+(primer zahteva za 2 parametra a i b sa vrednostima 5 i 6)
+10. vrste veza
+11. rest metode
+12. redirekcija
+13. joinpoint i pointcut
+14. hashset i arraylist
+15. referencijalni integritet
+16. mapiranje parametara funkcije
+17. advice
+18. refleksija Class
+19. dobavljanje veza sa fetchType.LAZY
+20. 
