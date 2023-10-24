@@ -1,0 +1,21 @@
+# Brisanje kompajliranih fajlova i "pakovanje" Spring aplikacije u jar executable
+# Pozicionirati se u folder gde se nalazi pom.xml i pozvati sledecu komandu
+# (moguce i kroz IDE)
+mvn clean package
+
+# Kopiranje jar fajla u EC2 instancu
+scp -i PUTANJA_DO_KLJUCA/IME_KLJUCA.pem PUTANJA_DO_JAR_FAJLA/spring-db-0.1.jar ec2-user@JAVNA_IPv4:/home/ec2-user
+
+# Povezivanje na EC2 instancu
+ssh -i PUTANJA_DO_KLJUCA/IME_KLJUCA.pem ec2-user@JAVNA_IPv4
+
+# Pokretanje jar-a
+java -jar putanja_do_jara
+
+# Podesavanje kljuca
+	# Linux
+chmod 400 ime_kljuca.pem
+	# Windows
+icacls ime_kljuca.pem /reset
+icacls ime_kljuca.pem /grant: "$($env:username):(r)"
+icacls ime_kljuca.pem /inheritance:r
