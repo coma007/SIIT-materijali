@@ -1,0 +1,6 @@
+text,sentiment
+The movie was great!,pos
+That was the greatest movie!,pos
+I really enjoyed the film.,pos
+The acting was terrible,neg
+I did not like the movie at all...,neg
