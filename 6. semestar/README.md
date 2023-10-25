@@ -41,7 +41,7 @@ Asistent: Janković, Eva
 Profesor: **Ovcin, Zoran**  
 Asistent: Blesić, Andrija
 
-[Link ka sajtu predmeta](https://nblok306.ftn.uns.ac.rs/~zoran/?page_id=3505)
+[Link ka sajtu predmeta](https://nblok306.ftn.uns.ac.rs/~zoran/?page_id=3505)  
 [Link ka materijalima sa predavanja](https://nblok306.ftn.uns.ac.rs/~zoran/A/)
 
 ### Obaveze:
@@ -69,7 +69,7 @@ Asistent: Blesić, Andrija
 Profesor: **Vukmirović, Srđan**  
 Asistent: Pejić, Marko
 
-[Link ka sajtu predmeta](http://www.automatika.ftn.uns.ac.rs/nastavni-materijali-snus)
+[Link ka sajtu predmeta](http://www.automatika.ftn.uns.ac.rs/nastavni-materijali-snus)  
 
 ### Obaveze:
 
@@ -92,7 +92,7 @@ Asistent: Pejić, Marko
 Profesor: **Kovačević, Aleksandar**  
 Asistent: Anđelić, Branislav
 
-[Link ka repozitorijumima sa temama projekta](https://github.com/ftn-ai-lab)
+[Link ka repozitorijumima sa temama projekta](https://github.com/ftn-ai-lab)  
 
 ### Obaveze:
 
@@ -111,7 +111,7 @@ Asistent: Anđelić, Branislav
 Profesor: **Dragan, Dinu**  
 Asistent: Jovanović, Jovana
 
-[Link ka repozitorijumu vježbi](https://github.com/FTN-SIIT-HCI-2022/HCI-2023)
+[Link ka repozitorijumu vježbi](https://github.com/FTN-SIIT-HCI-2022/HCI-2023)  
 
 ### Obaveze:
 
@@ -129,7 +129,7 @@ Asistent: Jovanović, Jovana
   
 | Ispitne | Bodovi
 | ------------- | ------------- | 
-| Završni ispit | 20
+| Završni ispit | 30
 
 * Završni ispit je pismeni. Sastoji se od tri pitanja na koja je potrebno odgovoriti što detaljnije.
 * Na časovima se zapisuje prisustvo, što nosi dodatnih 5 bodova. 
