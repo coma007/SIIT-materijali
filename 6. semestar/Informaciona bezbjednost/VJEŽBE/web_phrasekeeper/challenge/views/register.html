@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Phrase Keeper</title>
+    <link rel="stylesheet" href="/static/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/static/vendors/base/vendor.bundle.base.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/images/logo.png" />
+  </head>
+  <body>
+    <div class="container mt-5 pt-5">
+      <div class="card d-flex align-items-center justify-content-center" style="max-width: 500px; margin: auto;">
+        <div class="auth-form-transparent text-left p-3">
+            <div class="brand-logo">
+                <img src="/static/images/logo.png" alt="logo" id="main-logo"><span id="slogan">Phrase Keeper</span>
+            </div>
+                <h4 class="mt-3">New here?</h4>
+                <h6 class="fw-light">Join us today! It takes only few steps</h6>
+                <form class="pt-3" onsubmit="return false;">
+                  <div class="form-group">
+                    <label>Username</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend bg-transparent">
+                        <span class="input-group-text bg-transparent border-right-0">
+                          <i class="mdi mdi-account-outline text-primary"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg border-left-0" id="username" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend bg-transparent">
+                        <span class="input-group-text bg-transparent border-right-0">
+                          <i class="mdi mdi-email-outline text-primary"></i>
+                        </span>
+                      </div>
+                      <input type="email" class="form-control form-control-lg border-left-0" id="email" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend bg-transparent">
+                        <span class="input-group-text bg-transparent border-right-0">
+                          <i class="mdi mdi-lock-outline text-primary"></i>
+                        </span>
+                      </div>
+                      <input type="password" class="form-control form-control-lg border-left-0" id="password" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <p id="resp-msg" class="alert alert-info">Please wait...</p>
+                  </div>
+                  <div class="mt-3">
+                    <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" id="register-btn">SIGN UP</button>
+                  </div>
+                  <div class="text-center mt-4 font-weight-light"> Already have an account? <a href="/" class="text-primary">Login</a>
+                  </div>
+                </form>
+        </div>
+      </div>
+    </div>
+    <script src="/static/vendors/base/vendor.bundle.base.js"></script>
+    <script src="/static/js/off-canvas.js"></script>
+    <script src="/static/js/hoverable-collapse.js"></script>
+    <script src="/static/js/template.js"></script>
+    <script src="/static/js/register.js"></script>
+  </body>
+</html>

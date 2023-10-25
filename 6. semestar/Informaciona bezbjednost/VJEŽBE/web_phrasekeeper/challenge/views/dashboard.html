@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Phrase Keeper | Dashboard</title>
+    <link rel="stylesheet" href="/static/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/static/vendors/base/vendor.bundle.base.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/images/logo.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/static/images/logo.png" class="main-nav-logo">Phrase Keeper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+            <a class="nav-link active" href="#">Dashboard
+            </a>
+            </li>
+            {% if user.is_admin %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="/settings">Settings
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+        <form class="d-flex">
+            <a href="/logout" class="btn btn-secondary my-2 my-sm-0">Logout</a>
+        </form>
+        </div>
+    </div>
+    </nav>
+    <div class="container">
+
+      <div class="container-fluid page-body-wrapper">
+
+        <div class="main-panel mt-5">
+          <div class="content-wrapper">
+            <div class="row mb-3">
+              <div class="col-md-12 grid-margin">
+                <div class="d-flex justify-content-between flex-wrap">
+                  <div class="d-flex align-items-end flex-wrap">
+                    <div class="mr-md-3 mr-xl-5">
+                      <h2>Welcome back {{ user.username }},</h2>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-end flex-wrap">
+                    <button type="button" class="btn btn-info btn-icon mr-3 mt-2 mt-xl-0" id="showFormBtn">
+                      <i class="mdi mdi-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-12 stretch-card grid-margin">
+                <div class="card" id="form-card">
+                  <div class="card-body">
+                    <h4 class="card-title">Add Phrase 🔐</h4>
+                    <form onsubmit="return false;">
+                      <div class="form-group">
+                        <label for="newRecordType">Phrase Type</label>
+                        <select class="form-control" id="newRecordType">
+                          <option selected="true">Web</option>
+                          <option>Email</option>
+                          <option>App</option>
+                        </select>
+                      </div>
+                      <div class="form-group  mt-3">
+                        <label for="newRecordAddr">Address</label>
+                        <input type="text" class="form-control" id="newRecordAddr" placeholder="www.example.com">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="newRecordUser">Username</label>
+                        <input type="text" class="form-control" id="newRecordUser" placeholder="Username">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="newRecordPass">Password</label>
+                        <input type="password" class="form-control" id="newRecordPass" placeholder="Password">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="newRecordNote">Note</label>
+                        <input type="text" class="form-control" id="newRecordNote" placeholder="Note">
+                      </div>
+                      <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-primary mr-2" id="addRecordBtn">Add</button>
+                        <button class="btn btn-light" id="cancelBtn">Cancel</button>
+                      </div>
+                      <div class="form-group mt-3">
+                        <p class="alert alert-info" id="resp-msg">Please Wait...</p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title">Your Phrases 🔑</p>
+                    <p id="empty-table-msg">Wow, such empty 🌫 Select the plus icon at the right to add a new phrase!</p>
+                    <div class="table-responsive table-striped">
+                      <table id="password-listing" class="table text-center">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Address</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Note</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer mt-5">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-black d-block text-center text-sm-left d-sm-inline-block">Copyright © 2022, Phrase Keeper</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">We remember your secrets so you don't have to.</span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="/static/vendors/base/vendor.bundle.base.js"></script>
+    <script src="/static/js/off-canvas.js"></script>
+    <script src="/static/js/hoverable-collapse.js"></script>
+    <script src="/static/js/template.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
