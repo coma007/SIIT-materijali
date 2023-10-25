@@ -120,7 +120,7 @@ Asistent: Jovanović, Jovana
 | Projekat 1 | 15
 | Projekat 2 | 35
 | Modelovanje interakcije | 10
-| Evaluacija rje[enja | 10
+| Evaluacija rješenja | 10
 | Aktivnost | 5
 
 * Prvi projekat je kratak i tehnologija je proizvoljna. Radi se početkom semestra.
